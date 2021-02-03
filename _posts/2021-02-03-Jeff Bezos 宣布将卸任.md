@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Jeff Bezos 宣布将卸任"
+date: 2021-02-03T04:00:29.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=66840
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1612324829000-->
+[Jeff Bezos 宣布将卸任](https://www.solidot.org/story?sid=66840)
+------
+
+<div>
+亚马逊 CEO Jeff Bezos 在给员工的<a href="https://www.aboutamazon.com/news/company-news/email-from-jeff-bezos-to-employees">公开信</a>中宣布将于第三季度卸任，AWS 云计算业务负责人 Andy Jassy 将接替他担任亚马逊 CEO。Bezos 将担任执行董事长一职。他在信中<a href="https://cn.reuters.com/article/amazon-res-bezos-0203-idCNKBS2A304R">表示</a>，“作为执行董事长，我仍将会参与亚马逊的重要计划，但也会有更多的时间和精力放在Day 1基金、贝佐斯地球基金、Blue Origin、华盛顿邮报以及其他事务上。”他还说，“我的精力从未如此充沛，这不是要退休。”AWS 负责人担任 CEO 凸显了云计算服务对亚马逊的重要性。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
