@@ -1,0 +1,16 @@
+---
+layout: post
+title: "美国线上券商Robinhood放宽GameStop及AMC的买进股数限制"
+date: 2021-02-04T04:23:18.000Z
+author: 路透
+from: https://cn.reuters.com/article/robinhood-gamestop-amc-limits-0203-wedn-idCNKBS2A40FY
+tags: [ 路透 ]
+categories: [ 路透 ]
+---
+<!--1612412598000-->
+[美国线上券商Robinhood放宽GameStop及AMC的买进股数限制](https://cn.reuters.com/article/robinhood-gamestop-amc-limits-0203-wedn-idCNKBS2A40FY)
+------
+
+<div>
+<div><i>2021-02-04T04:18:00Z</i></div><p>路透2月3日 - 散户狂潮事件的核心要角--美国线上券商Robinhood周三表示，将放宽投资人买进GameStop Corp及AMC Entertainment Holdings Inc股票的限制。</p><p>Robinhood网站周三显示，目前只有对GameStop及AMC的交易做出限制，其他个股的交易限制则是已经解除。</p><p>GameStop交易股数限制从100股扩增至500股；AMC交易股数限制则是设在5,500股。</p><p>Robinhood执行长Vlad Tenev上周表示，对部分交易设下限制，因结算机构要求提供30亿美元担保品。</p><p>此一要求迫使Robinhood寻求投资人的紧急融资，投资人周一为该公司注入24亿美元资金，超过这家线上券商上周筹集的10亿美元。(完)</p><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br></div>
+</div>
