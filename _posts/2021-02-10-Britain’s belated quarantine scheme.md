@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Britain’s belated quarantine scheme"
+date: 2021-02-10T19:09:40.000Z
+author: 经济学人en
+from: https://www.economist.com/britain/2021/02/10/britains-belated-quarantine-scheme
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1612984180000-->
+[Britain’s belated quarantine scheme](https://www.economist.com/britain/2021/02/10/britains-belated-quarantine-scheme)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/2021/02/articles/main/20210213_brp501.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-02-10T00:00:00Z" >Feb 10th 2021</time><meta itemProp="author" content="The Economist"/></div><div ></div></aside><p >BY FEBRUARY 15th last year, only eight cases of covid-19 had been confirmed in Britain. On that day, the <em>Times</em> reported that the government’s existing flu pandemic strategy suggested closing the country’s borders would be pointless since it would probably hold back the virus by only a couple of weeks. “What we are seeing are the droplets before the wave,” a government official said then. Exactly a year on, as the country’s tally of cases heads towards 4m, the government is finally getting round to putting up some flood defences.</p><p >From February 15th, residents arriving from a list of 33 countries deemed especially risky will have to spend ten days in quarantine (non-residents are banned entirely). They will be charged £1,750 ($2,425) each for the privilege of being locked up in an airport hotel. Other incomers also face a beefed-up regime: “travel corridors” that allowed arrivals from low-risk countries to dodge quarantine have been scotched; three covid tests—one before departure, two in isolation—are mandatory. The idea is to minimise transmission of new variants of covid-19, such as the South African strain which public-health officials believe has yet to take hold in Britain.</p><div id="" ><div><div id="econ-1"></div></div></div><p >The announcement had been rumoured but still commanded attention thanks to the eye-catching penalties for non-compliance trailed by Matt Hancock, the health secretary. He promised fines of thousands of pounds for those who flout test or quarantine rules and prison sentences as long as ten years for anybody who attempts to conceal their arrival from one of the highest-risk countries. That may well make would-be rule-breakers think twice, even though such a sentence is unlikely ever to be passed and would ultimately lie in the gift of judges, not ministers.</p><p >Yet, as with the government’s warning last year that vandals who desecrate war memorials could spend a decade in jail, they are not the intended audience. Like that proposal, tighter covid-19 restrictions are popular with voters: according to YouGov, a pollster, about nine in ten Britons support hotel quarantine. Ministers want to undermine the impression that, compared with countries like Australia and South Korea, they have taken a laid-back approach to the border. The Scottish government will use devolved powers to insist on hotel stays for all incomers. They will not find chocolates on their pillows.</p>
+</div>
