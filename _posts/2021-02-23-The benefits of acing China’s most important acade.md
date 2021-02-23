@@ -1,0 +1,16 @@
+---
+layout: post
+title: "The benefits of acing China’s most important academic exam"
+date: 2021-02-23T19:09:47.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2021/02/23/the-benefits-of-acing-chinas-most-important-academic-exam
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1614107387000-->
+[The benefits of acing China’s most important academic exam](https://www.economist.com/graphic-detail/2021/02/23/the-benefits-of-acing-chinas-most-important-academic-exam)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/755/90/sites/default/files/images/2021/02/articles/main/20210220_woc788.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-02-23T00:00:00Z" >Feb 23rd 2021</time><meta itemProp="author" content="The Economist"/></div><div ></div></aside><p >CHINESE STUDENTS hoping for a reprieve from this year’s gruelling university-entrance exams are out of luck. Unlike America, where many top-tier universities have waived standardised testing requirements amid the covid-19 pandemic, China is keeping its students’ noses to the grindstone. On February 20th the Ministry of Education announced that the national exam, which determines which universities students can attend, will be held as planned on June 7th and 8th.</p><p >The annual assessment, known as the <em>gaokao</em>, is the biggest in the world. Every summer some 10m students in China trek to 7,000 testing centres around the country to sit the nerve-racking exam, which lasts for nine hours over two to four days. Pupils study for years, and for good reason. Those who score well on the test are eligible to apply to the country’s best universities, a prerequisite for many good jobs. The high-stakes exam is designed to be meritocratic: anyone can take it; for children from poor families, a good score can offer an escape from a life toiling on the farm or in a factory.</p><div id="" ><div><div id="econ-1"></div></div></div><p >The <em>gaokao</em> influences students’ economic prospects for years to come, according to a recent <a href="https://www.economist.comhttps://www.nber.org/system/files/working_papers/w28450/w28450.pdf">working paper</a> by Hongbin Li of Stanford University and Ruixue Jia of the London School of Economics. The authors looked at the cut-off score for qualification to enter China’s top 100 universities. Using hand-collected data from over 10,000 people, they found that, whereas students who score just below the cut-off have only a 6% chance of attending a top-tier university, those who score at or above it have a 20-40% chance. They also earn 5-9% more in their first job out of school (see chart).</p><p >Many have called for reforms to the <em>gaokao</em>, claiming that it puts too much pressure on pupils. Chinese people often compare the ordeal to “thousands of people crossing a single-log bridge”. The exam is also criticised for requiring too much rote learning and too little creative thinking. Its meritocratic reputation has also been called into question, because well-off pupils from cities have the best chance of success. Perhaps the <em>gaokao</em> does not make the grade after all.</p>
+</div>
