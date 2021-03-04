@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Retailers in the Philippines have been refusing to sell pork"
+date: 2021-03-04T17:09:58.000Z
+author: 经济学人en
+from: https://www.economist.com/asia/2021/03/06/retailers-in-the-philippines-have-been-refusing-to-sell-pork
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1614877798000-->
+[Retailers in the Philippines have been refusing to sell pork](https://www.economist.com/asia/2021/03/06/retailers-in-the-philippines-have-been-refusing-to-sell-pork)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20210306_ASP004_0.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-03-06T00:00:00Z" >Mar 6th 2021</time><meta itemProp="author" content="The Economist"/></div><div ></div></aside><p data-caps="initial" ><span data-caps="initial">L</span><small>AST MONTH</small> retailers in Manila went on a two-week “pork holiday”. That was not a fad diet, nor even a few days off scarfing sausage and bacon. They simply refused to sell the stuff, in protest at a price cap imposed by presidential decree.</p><p >Pork is a staple in the Philippines. Prices have recently soared, to over 400 pesos ($8.25) for a kilo of pork belly, more than double the norm. The rise has spurred inflation, which hit a two-year high in January of 4.2%. Both houses of Congress have held hearings on rising food prices. On February 1st the harried government instituted a 60-day price cap on pork of 300 pesos a kilo in Manila. It swiftly vanished from shops’ shelves, and a pricey black market emerged.</p><div id="" ><div><div id="econ-1"></div></div></div><p >The fiasco stems from an outbreak of African swine fever, a contagious disease that is deadly to pigs, which arrived in the archipelago in 2019. It has devastated the backyard farms where most pigs in the Philippines are raised. Last year the government launched the Integrated National Swine Production Initiatives for Recovery and Expansion, or <small>INSPIRE</small>, to replace the animals that had expired. It will provide piglets and feed to farmers—but it will be some time before those little piggies get to market.</p><p >In the meantime, the authorities have promised to “go after” smugglers and profiteers. They have shipped trucks of live hogs to the capital from islands to the south, notes Fermin Diaz, the editor of <em>Livestock and Meat Business</em>, or <em>LaMB</em>, magazine. And they have increased quotas for certain categories of imports.</p><p >What the government has not yet done is reduce tariffs on imported pork. The lowest rate is 30%, which works against the expansion of the quota, says Ramon Clarete of Building Safe Agricultural Food Enterprises, or <small>B</small>-<small>SAFE</small>. He suggests a uniform 5% rate—something the government is said to be considering, but that farmers oppose. If pork <em>adobo</em> (slathered in a sweet, vinegary sauce), is to remain the national dish, the taxman will need to go the whole hog.</p><p data-test-id="Footnote" >This article appeared in the Asia section of the print edition under the headline &quot;Pig mistake&quot;</p>
+</div>
