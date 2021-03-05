@@ -1,0 +1,16 @@
+---
+layout: post
+title: "当比特翻转发生在 PC 访问 windows.com 域名期间"
+date: 2021-03-05T08:24:09.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=67114
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1614932649000-->
+[当比特翻转发生在 PC 访问 windows.com 域名期间](https://www.solidot.org/story?sid=67114)
+------
+
+<div>
+比特翻转（Bitflips）是指储存在电子设备上的个别比特发生翻转的事件，比如从 0 变为 1 或反之亦然。导致比特翻转的自然原因主要包括宇宙射线、功率波动和温度。2010 年的一项研究估计，4G 内存的计算机在三天内有 96% 的几率会发生比特翻转。即使比特发生翻转，大部分人可能也感受不到影响。一位独立研究员<a href="https://remyhax.xyz/posts/bitsquatting-windows/" target="_blank">提出了</a>一种发生比特翻转的可能场景：当 Windows PC 尝试访问微软的域名。Windows PC 会频繁访问微软的域名以检查时钟是否精确，或者连上微软的云服务，或者报告崩溃事件。如果 PC 在尝试访问 windows.com 域名发生了比特翻转，导致访问了名叫 whndows.com 的域名？而这个域名恰好控制在恶意者的手中？研究人员发现了 32 个比特翻转后有效的域名，其中 14 个可以购买。他购买了这些域名，在两周时间内记录到了来自 626 个 IP 地址的 199,180 次尝试访问  ntp.windows.com 域名的连接。Windows 操作系统的 NTP 客户端没有身份验证，因此攻击者可以返回 2038 年的时间，让 32 位时间计数溢出。也有人<a href="https://arstechnica.com/gadgets/2021/03/windows-com-bitsquatting-hack-can-wreak-unknown-havoc-on-pcs/">指出</a>，PC 访问这些域名未必是因为比特翻转导致的，因为也可能是输错了。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
