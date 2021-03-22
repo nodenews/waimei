@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Increasingly, Europeans do not trust AstraZeneca’s vaccine"
+date: 2021-03-22T20:57:02.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2021/03/22/increasingly-europeans-do-not-trust-astrazenecas-vaccine
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1616446622000-->
+[Increasingly, Europeans do not trust AstraZeneca’s vaccine](https://www.economist.com/graphic-detail/2021/03/22/increasingly-europeans-do-not-trust-astrazenecas-vaccine)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/755/90/sites/default/files/images/2021/03/articles/main/20210327_woc261.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-03-22T00:00:00Z" >Mar 22nd 2021</time><meta itemProp="author" content="The Economist"/></div><div ></div></aside><p >EUROPEANS HAVE grown worryingly sceptical about AstraZeneca&#x27;s covid-19 vaccine over the past month, according to <a href="https://www.economist.comhttps://docs.cdn.yougov.com/wzsxt5o2be/YouGov%20-%20EuroTrack%20vaccine%20safety%20Mar%202021.pdf">polling data</a> released by YouGov on March 22nd. More than a dozen countries in Europe paused their roll-out of the AstraZeneca jab last week, after reports of blood clots in some of those who had been vaccinated. The doubts started when Norway’s medical regulator reported four cases of clotting. That was followed by similar reports from Denmark, Italy and Austria. By the end of last week many countries were jabbing again after the European Medicines Agency, the EU’s drug regulator, said in a preliminary review that the AstraZeneca vaccine was safe and that it was not linked with an overall risk of blood clots.</p><p >Still, European citizens seem spooked. In France 61% of respondents to the YouGov poll said they thought the AstraZeneca vaccine was somewhat or very unsafe. That was up from 43% two weeks earlier. More than half of Germans—55%—think the AstraZeneca vaccine is unsafe, up from 40% the month before. Only 32% of Germans and 23% of the French thought the jab was safe or somewhat safe. In both Italy and Spain, the number of people who considered the AstraZeneca vaccine to be unsafe more than doubled in the past month: from 16% to 43% in Italy and 25% to 52% in Spain.</p><div id="" ><div><div id="econ-1"></div></div></div><p >Even in Britain, where AstraZeneca developed the vaccine in partnership with the University of Oxford, the number of people who felt the jab was very or somewhat safe dropped slightly from 81% in February to 77% in March. There was also a slight increase—from 5% to 9%—in Britons who thought the vaccine was unsafe.</p><p >The AstraZeneca jab, which is cheaper to produce and easier to store and distribute than the vaccines currently being administered across Europe from Pfizer-BioNTech and Moderna, was meant to be a workhorse of the continent’s vaccination drive. That plan could be in trouble, however, if citizens across Europe continue to believe that the AstraZeneca vaccine is unsafe and, as a result, refuse to bare their arms for it.</p><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.top" style="color:orange" target="_blank">https://feedx.top</a><br></div>
+</div>
