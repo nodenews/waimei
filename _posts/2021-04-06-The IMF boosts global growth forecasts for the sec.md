@@ -1,0 +1,16 @@
+---
+layout: post
+title: "The IMF boosts global growth forecasts for the second time this year"
+date: 2021-04-06T17:57:02.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2021/04/06/the-imf-boosts-global-growth-forecasts-for-the-second-time-this-year
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1617731822000-->
+[The IMF boosts global growth forecasts for the second time this year](https://www.economist.com/graphic-detail/2021/04/06/the-imf-boosts-global-growth-forecasts-for-the-second-time-this-year)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/750/90/sites/default/files/images/2021/04/articles/main/20210410_woc421.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-04-06T00:00:00Z" >Apr 6th 2021</time><meta itemProp="author" content="The Economist"/></div><div ></div></aside><p >AS COVID-19 began spreading around the world in early 2020, the IMF warned of a global economic downturn on a par with the Depression of the 1930s. A year on, as its (virtual) spring pow-wow begins, the fund’s mood is more upbeat. The worst of the downturn is past, and the prospects for the world economy are brightening. Global GDP is expected to expand by 6% in 2021, nearly a full percentage point more than what the fund had forecast six months ago.</p><p >Forecasts for richer countries have been upgraded the most. Growth in advanced economies has been revised up by 1.2 percentage points since October, spurred by the availability of vaccines and the speed of vaccination programmes. The forecast for emerging and middle-income economies has also been raised, albeit by less. Prospects for the poorest countries over the next couple of years, however, have only become grimmer. The fund has downgraded its growth forecasts for these countries by 0.6 percentage points, as the virus continues to spread and immediate prospects for mass vaccination seem slim. But the most striking downgrade is that for Myanmar, where a military coup took place in February. In October the fund expected GDP to grow by 5.7% in 2021. It now predicts a contraction of nearly 9%.</p><div id="" ><div><div id="econ-1"></div></div></div><p >The lion’s share of the good news for rich countries reflects expectations of a roaring recovery in America. Since December Congress has passed two stimulus packages, together worth nearly $3trn. And nearly a third of Americans have had at least one dose of a vaccine. In the euro area, by contrast, forecasts have been marked down as lockdowns have persisted into 2021. But the forecast for next year, once enough arms have been jabbed, has been upgraded.</p><p >Still, America’s forecast performance looks exceptional. The fund estimates that by 2024 American GDP will have returned to the path projected in January 2020, before the pandemic hit. The world economy, by contrast, will still be nearly 3% below its pre-pandemic trajectory. Even China will not yet have caught up to GDP forecasts made before covid; and other emerging and poor economies will remain a wretched 8% below pre-pandemic forecasts.</p><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.top" style="color:orange" target="_blank">https://feedx.top</a><br></div>
+</div>
