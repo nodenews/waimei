@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Codecov bash uploader 被发现过去几个月包含后门"
+date: 2021-04-18T15:10:55.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=67523
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1618758655000-->
+[Codecov bash uploader 被发现过去几个月包含后门](https://www.solidot.org/story?sid=67523)
+------
+
+<div>
+Codecov (Codecov 代表 Code Coverage，代码覆盖率，软件测试中的一种度量)发布<a href="https://about.codecov.io/security-update/">安全警告</a>，称它的 bash uploader 被发现从 1 月 31 日到 4 月 1 日之间包含后门，后门会导致开发者的电脑向黑客控制的服务器发送秘密的认证令牌和其它敏感数据。Codecov&nbsp;bash uploader 被用于发送代码覆盖率报告，部分开发项目整合了 Codecov 或其它类似的第三方服务。Codecov 称它的调查发现黑客利用  Codecov Docker 镜像创建过程中的一个错误提取出修改  Bash Uploader 脚本所需的凭证，未经许可修改了脚本。植入的后门代码将 GitHub 库位置和整个过程环境发送到远程服务器，其中包括令牌、凭证等秘密的敏感数据。利用这些敏感信息，黑客能访问私有库访问非公开的源代码，甚至可以进一步发动供应链攻击——在这些源代码中再次植入后门。Codecov 督促在此期间使用它的 bash uploader 的开发者立即撤销所有凭证和令牌。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
