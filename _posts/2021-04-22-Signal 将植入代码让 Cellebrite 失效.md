@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Signal 将植入代码让 Cellebrite 失效"
+date: 2021-04-22T06:00:56.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=67564
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1619071256000-->
+[Signal 将植入代码让 Cellebrite 失效](https://www.solidot.org/story?sid=67564)
+------
+
+<div>
+以色列公司 Cellebrite 的数字取证工具被专制政府广泛用于从 Android 和 iPhone 手机中提取数据，它最近加入了对 Signal 的支持。Cellebrite 的软件主要包含两部分：UFED 和Physical Analyzer，UFED 用于创建备份，而 Physical Analyzer 则从备份文件里解析文件以可读的格式展示文件，支持 Signal 意味着 Physical Analyzer 加入了对 Signal 所使用文件格式的支持。Signal 创始人 Moxie Marlinspike 获得了一个 Cellebrite 设备（据说是从卡车上掉下来恰好掉到他身前，这是不愿意透露设备来源使用的借口），对其进行分析后发现，Cellebrite 看起来一点也不在意自家软件的安全，软件存在大量可利用的漏洞，比如它捆绑的  FFmpeg DLL 是 2012 年构建的。<a href="https://signal.org/blog/cellebrite-vulnerabilities/" target="_blank">他们找到了漏洞可以在 Cellebrite 设备上执行任意代码</a>，Signal 将随机向应用数据内储存一些让 Cellebrite 失效的代码，该代码不仅会修改当前的 Cellebrite 报告，还会以随机方式破坏以前和未来产生的 Cellebrite 报告。Signal 还发现 Physical Analyzer 的安装程序捆绑了苹果签名的两个安装包。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
