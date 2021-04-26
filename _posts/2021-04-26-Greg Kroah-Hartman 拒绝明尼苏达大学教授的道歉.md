@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Greg Kroah-Hartman 拒绝明尼苏达大学教授的道歉"
+date: 2021-04-26T06:03:00.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=67607
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1619416980000-->
+[Greg Kroah-Hartman 拒绝明尼苏达大学教授的道歉](https://www.solidot.org/story?sid=67607)
+------
+
+<div>
+明尼苏达大学助理教授 Kangjie Lu 及其博士生 Qiushi Wu 未经许可将 Linux 内核维护者作为研究对象的安全研究引发了争议，最终导致内核社区拒绝接受来自明尼苏达大学的所有代码。上周六，Kangjie Lu 等三人发表了公开信，向 Linux 社区<a href="https://www.solidot.org/story?sid=67604">公开道歉</a>。但稳定版内核维护者 Greg Kroah-Hartman <a href="https://lore.kernel.org/lkml/YIV+pLR0nt94q0xQ@kroah.com/" target="_blank">拒绝了这一道歉</a>，他表示 Linux 基金会和基金会的技术咨询委员会已经在上周五致函明尼苏达大学，概述了需要采取的具体行动，以让 Lu 的研究小组和大学重新获得内核社区的信任。在采取行动前，内核社区不会在这一问题继续展开进一步的讨论。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
