@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Linus Torvalds 谈 Linux 三十年"
+date: 2021-04-30T07:46:50.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=67660
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1619768810000-->
+[Linus Torvalds 谈 Linux 三十年](https://www.solidot.org/story?sid=67660)
+------
+
+<div>
+Linux 作者 Linus Torvalds <a href="https://www.tag1consulting.com/blog/interview-linus-torvalds-linux-and-git">接受了邮件采访</a>，回顾了 Linux 的三十年，GPL 许可证以及 Git 版本控制系统。在三十年内，Linux 从一个业余性质的个人项目成为最广泛使用的专业操作系统，Top500 超算全都运行 Linux，超过七成的智能手机运行基于 Linux 的 Android。Torvalds 说开发 Linux 时他真的没有想得太远，更多是一种概念验证，向外展示下他过去几个月的工作成果，更好的理解他的新 PC 硬件。但到了 92 年初 Linux 就比他预想的更庞大了。从个人项目到其他人也使用的项目是一个巨大的转变。Linux 最初是作为替代提供给负担不起昂贵商业 UNIX 系统的人，因此它采用的许可证是不能商业使用。当有人想通过软盘在本地的 Unix 用户组分发 Linux 但想要至少收回软盘的费用后，他切换到了 GPL 许可证，随后基于软盘的发行版  SLS 和 Slackware 就诞生了。对于这一选择他并不后悔，他相信选择 GPL 是 Linux 以及 Git 成功的一个重要部分。他认为  GPLv2 完全的平衡了“每个人在相同规则下工作”。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
