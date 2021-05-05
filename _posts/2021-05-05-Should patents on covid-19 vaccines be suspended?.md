@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Should patents on covid-19 vaccines be suspended?"
+date: 2021-05-05T14:57:03.000Z
+author: 经济学人en
+from: https://www.economist.com/by-invitation/2021/05/05/should-patents-on-covid-19-vaccines-be-suspended
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1620226623000-->
+[Should patents on covid-19 vaccines be suspended?](https://www.economist.com/by-invitation/2021/05/05/should-patents-on-covid-19-vaccines-be-suspended)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/2021/05/articles/main/20210508_blp510.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-05-05T00:00:00Z" >May 5th 2021</time><meta itemProp="author" content="The Economist"/></div><div ></div></aside><p >SHOULD PATENTS be abrogated in the service of humanity? Every person who falls ill or dies today of covid-19 might have been spared had they received just one of the millions of doses that have been available since last December. But their scarcity means that people, notably in poor countries, must wait—and suffer.</p><p >Why not develop new manufacturing lines in poor countries to increase supply? Some countries argue that doing this requires waiving the intellectual-property (IP) rights of drug firms, and have <a href="https://www.economist.com/finance-and-economics/2021/02/20/the-wto-has-a-new-chief-is-it-time-for-new-trade-rules-too">petitioned</a> the World Trade Organisation.</p><p >Writing in our By Invitation section, three academics—Mariana Mazzucato, Jayati Ghosh and Els Torreele—argue <a href="https://www.economist.com/by-invitation/2021/04/20/mariana-mazzucato-jayati-ghosh-and-els-torreele-on-waiving-covid-patents">against patents</a>, so that more firms can make vaccines. The crisis will not end, they write, “unless we have the courage to embrace new solutions for knowledge sharing and co-operation to meet our moment in history—and to affirm our humanity.”</p><div id="" ><div><div id="econ-1"></div></div></div><p >Yet Michelle McMurry-Heath, the boss of the Biotechnology Innovation Organization, a trade association, makes a case for <a href="https://www.economist.com/by-invitation/2021/04/20/michelle-mcmurry-heath-on-maintaining-intellectual-property-amid-covid-19">maintaining intellectual property</a>. “The speed with which covid-19 vaccines were developed will go down as one of science&#x27;s greatest achievements. We need to vaunt, not devalue, the intellectual-property system that made it possible,” she writes.</p><p >The question of what to do is a controversial one. As our Free exchange columnist recently <a href="https://www.economist.com/finance-and-economics/2021/04/22/how-to-think-about-vaccines-and-patents-in-a-pandemic">put it</a>: “Even though IP protections are not a big constraint on vaccine production today, the experience of covid-19 suggests that a re-examination of IP rights in the context of health emergencies is overdue.”</p><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.top" style="color:orange" target="_blank">https://feedx.top</a><br></div>
+</div>
