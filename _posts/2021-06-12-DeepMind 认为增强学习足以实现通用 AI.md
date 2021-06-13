@@ -1,0 +1,16 @@
+---
+layout: post
+title: "DeepMind 认为增强学习足以实现通用 AI"
+date: 2021-06-12T14:43:30.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=68024
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1623509010000-->
+[DeepMind 认为增强学习足以实现通用 AI](https://www.solidot.org/story?sid=68024)
+------
+
+<div>
+过去几十年计算机科学家创造的 AI 系统只能在受限环境下解决特定问题，离通用 AI 还有一段距离。DeepMind 的科学家现在<a href="https://venturebeat.com/2021/06/09/deepmind-says-reinforcement-learning-is-enough-to-reach-general-ai/">认为</a>，通用 AI 能通过一个简单而强有力的原则去实现：奖励最大化。他们发表了论文《<a href="https://www.sciencedirect.com/science/article/pii/S0004370221000862">Reward is Enough</a>》，认为奖励最大化和试错足以发展出与智能相关的行为。AI 的一个分支强化学习（reinforcement learning） 是基于奖励最大化，能引领通用 AI 的发展。DeepMind 的研究人员提出一个假说：奖励最大化的通用目标足以驱动大部分如果不是全部的智能行为。大自然就是如此运作的，复杂有机物不存在自上而下的智能设计，数十亿年的自然选择和随机突变过滤出适合生存和繁殖的生命形式。能更好处理挑战和适应环境的生命生存和繁衍，其余则销声匿迹。这种简单而有效的机制演化出生命的各种能力和技能。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
