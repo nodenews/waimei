@@ -45,9 +45,9 @@ layout: default
       {% if post.comments %}
       {% if site.disqus %}
             {% if post.link %}
-      <a href="{{ post.link }}#disqus_thread" style="font-size:14px;color:teal;">
+      <a href="{{ site.url }}{{ post.link }}#disqus_thread" style="font-size:14px;color:teal;">
             {% else %}
-      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" style="font-size:14px;color:teal;">
+      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}#disqus_thread" style="font-size:14px;color:teal;">
             {% endif %}
         评论
       </a>  
