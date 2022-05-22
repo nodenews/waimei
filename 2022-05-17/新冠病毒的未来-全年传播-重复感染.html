@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>新冠病毒的未来：全年传播，重复感染？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+新冠病毒的未来：全年传播，重复感染？
+——
+" />
+    <meta property="og:description" content="
+新冠病毒的未来：全年传播，重复感染？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="新冠病毒的未来：全年传播，重复感染？" />
+    <meta property="twitter:title" content="新冠病毒的未来：全年传播，重复感染？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20220517%2Fcovid-reinfection%2F&t=%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E7%9A%84%E6%9C%AA%E6%9D%A5%EF%BC%9A%E5%85%A8%E5%B9%B4%E4%BC%A0%E6%92%AD%EF%BC%8C%E9%87%8D%E5%A4%8D%E6%84%9F%E6%9F%93%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20220517%2Fcovid-reinfection%2F&t=%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E7%9A%84%E6%9C%AA%E6%9D%A5%EF%BC%9A%E5%85%A8%E5%B9%B4%E4%BC%A0%E6%92%AD%EF%BC%8C%E9%87%8D%E5%A4%8D%E6%84%9F%E6%9F%93%EF%BC%9F&d=2022-05-17&e=
+新冠病毒的未来：全年传播，重复感染？
+——
+
+
+  
+APOORVA MANDAVILLI
+  
+  2022年5月17日
+  
+    
+去年圣地亚哥的一个新冠病毒检测点。在疫情早期，专家们认为接种疫苗或以前感染产生的免疫力可以防止再次感染，但奥密克戎改变了这一点。 Ariana Drehsler for The New York Times
+    
+  
+  
+    一种看起来不打算消失的病毒，拥有擅长躲避身体防御的变异，每年都会带来两三波感染——一些科学家现在担心，这可能就是新冠病毒的未来。
+    核心问题是，新冠病毒已变得更容易再次感染。已经有报告说，感染了第一个奥密克戎变异株的人第二次感染了该变异株的较新版本——美国的BA.2或BA2.12.1，或者南非的BA.4和BA.5。
+    研究人员在采访中说，这些人可能会继续第三次或第四次感染，甚至在今年之内。一小部分人..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20220517%2Fcovid-reinfection%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/science/20220517/covid-reinfection/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/science/20220517/covid-reinfection/&text=新冠病毒的未来：全年传播，重复感染？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/science/20220517/covid-reinfection/&title=新冠病毒的未来：全年传播，重复感染？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/science/20220517/covid-reinfection/&title=新冠病毒的未来：全年传播，重复感染？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=新冠病毒的未来：全年传播，重复感染？&body=
+新冠病毒的未来：全年传播，重复感染？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/science/20220517/covid-reinfection/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/science/20220517/covid-reinfection/&title=新冠病毒的未来：全年传播，重复感染？&caption=
+新冠病毒的未来：全年传播，重复感染？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=新冠病毒的未来：全年传播，重复感染？&url=https://cn.nytimes.com/science/20220517/covid-reinfection/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>新冠病毒的未来：全年传播，重复感染？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/science/20220517/covid-reinfection/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20220517%2Fcovid-reinfection%2F&t=%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E7%9A%84%E6%9C%AA%E6%9D%A5%EF%BC%9A%E5%85%A8%E5%B9%B4%E4%BC%A0%E6%92%AD%EF%BC%8C%E9%87%8D%E5%A4%8D%E6%84%9F%E6%9F%93%EF%BC%9F&d=2022-05-17&e=
+新冠病毒的未来：全年传播，重复感染？
+——
+
+
+  
+APOORVA MANDAVILLI
+  
+  2022年5月17日
+  
+    
+去年圣地亚哥的一个新冠病毒检测点。在疫情早期，专家们认为接种疫苗或以前感染产生的免疫力可以防止再次感染，但奥密克戎改变了这一点。 Ariana Drehsler for The New York Times
+    
+  
+  
+    一种看起来不打算消失的病毒，拥有擅长躲避身体防御的变异，每年都会带来两三波感染——一些科学家现在担心，这可能就是新冠病毒的未来。
+    核心问题是，新冠病毒已变得更容易再次感染。已经有报告说，感染了第一个奥密克戎变异株的人第二次感染了该变异株的较新版本——美国的BA.2或BA2.12.1，或者南非的BA.4和BA.5。
+    研究人员在采访中说，这些人可能会继续第三次或第四次感染，甚至在今年之内。一小部分人..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20220517%2Fcovid-reinfection%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652771222000-->
+<p><a href="https://cn.nytimes.com/science/20220517/covid-reinfection/">新冠病毒的未来：全年传播，重复感染？</a>
+——</p>
+
+<div>
+  <address>
+APOORVA MANDAVILLI
+  </address>
+  <time pudate="2022-05-17 02:29:02" datetime="2022-05-17 02:29:02">2022年5月17日</time>
+  <figure>
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2022/05/16/science/16virus-reinfection1/merlin_181863720_c8ddbe6c-7d77-4e8b-81b5-e229caadf381-master1050.jpg" width="1050" height="700" />    <figcaption>
+去年圣地亚哥的一个新冠病毒检测点。在疫情早期，专家们认为接种疫苗或以前感染产生的免疫力可以防止再次感染，但奥密克戎改变了这一点。 <cite>Ariana Drehsler for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <section>
+    <p>一种看起来不打算消失的病毒，拥有擅长躲避身体防御的变异，每年都会带来两三波感染——一些科学家现在担心，这可能就是新冠病毒的未来。</p>
+    <p>核心问题是，新冠病毒已变得更容易再次感染。已经有报告说，感染了第一个奥密克戎变异株的人第二次感染了该变异株的较新版本——美国的BA.2或BA2.12.1，或者南非的BA.4和BA.5。</p>
+    <p>研究人员在采访中说，这些人可能会继续第三次或第四次感染，甚至在今年之内。一小部分人的症状可能会持续数月或数年，这种情况被称为长期新冠病毒感染。</p>
+    <p>“在我看来，这可能会成为一种长期模式，”南非斯泰伦博斯大学流行病学家朱丽叶·普利亚姆说。</p>
+    <p>“病毒会继续进化，”她还说。“可能会有很多人一生中再次感染很多次。”</p>
+    <p>再次感染率很难被量化，部分原因是许多感染现在都没有报告。普利亚姆和她的同事在南非收集了足够的数据，可以证明，<a rel="noopener noreferrer" target="_blank" href="https://www.science.org/doi/10.1126/science.abn4947">与之前的变异株相比，奥密克戎的再次感染率更高</a>。</p>
+    <p>这种情况是出人意料的。疫情早期，专家们认为，接种疫苗或以前感染所产生的免疫力可以预防大多数再次感染。</p>
+    <p>奥密克戎变异株使得这样的希望破灭了。与之前的变异株不同，奥密克戎和它的许多后裔似乎已经进化到可以逃避部分免疫。这使得每个人——即使是那些已经多次接种疫苗的人——都容易受到多次感染。</p>
+    <p>“如果我们以现在的方式来应对，那么大多数人一年至少会感染几次，”圣地亚哥斯克里普斯研究所的病毒学家克里斯蒂安·安德森说。 “如果不是这样的结果，我会非常惊讶。”</p>
+    <p>新的变异株并没有改变新冠疫苗的基本有效性。如果新冠病毒检测结果呈阳性，大多数接受过三剂甚至两剂疫苗者病情不会发展到需要医疗护理的程度。而且，像<a rel="noopener noreferrer" target="_blank" href="https://www.medrxiv.org/content/10.1101/2022.04.19.22274056v1">之前的病毒暴发</a>时一样，加强针似乎确实可以减少再次感染的机会——但不会减少太多。</p>
+    <p>疫情开始时，许多专家以他们最熟悉的病毒敌人——流感病毒为基础，对新冠病毒的走势进行预测。他们预测，就像流感一样，新冠病毒疫情每年可能会有一次大暴发，最有可能发生在秋季。尽量减少传播的方法是在疫情到来之前给人们接种疫苗。</p>
+    <p>相反，新冠病毒的表现更像它的四个近亲，它们都是全年传播并导致感冒。纽约哥伦比亚大学的流行病学家杰弗里·沙曼说，在研究普通感冒冠状病毒时，“我们发现人们在一年时间里多次感染。”</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2022/05/16/science/16virus-reinfection2/merlin_206440887_f7d544ac-da5d-41a9-a78c-d0cda6a7266f-master1050.jpg" /><small style="color: #999;">76岁的克莱姆·威廉姆斯本月在北卡罗来纳州达勒姆接受加强针注射。</small></p>
+    <p>他说，如果再次感染成为常态，新冠病毒“将不仅仅是这种每年冬季发生一次的事情，就发病率和死亡率而言，它也不会是一种轻微的小麻烦”。</p>
+    <p>包括德尔塔在内的一些以前的变异株也会发生再次感染，但相对少见。但普利亚姆说，南非的再次感染速度在9月似乎有所加快，到了11月，也就是奥密克戎变异株被确认的时候，再感染的速度明显加快。</p>
+    <p>与美国一样，南非的再次感染似乎更加明显，因为目前有许多人已经接种了疫苗，或者至少被感染过一次。</p>
+    <p>“这种感受放大了生物学上实际发生的情况，”普利亚姆说。“只是有更多人符合再次感染的条件。”</p>
+    <p>奥密克戎变异株与德尔塔不同，德尔塔与新冠病毒的早期版本也不同，因此一些再次感染是可以预期的。但现在，奥密克戎似乎正在进化新的形式，可以穿透免疫防御系统，其遗传密码的变化相对较少。</p>
+    <p>“这实际上让我有点吃惊，”非洲卫生研究所的病毒学家亚历克斯·西格尔说。“我曾经以为会有一种全新的变异株，从而让我们摆脱这个变异株。但事实上似乎不是这样。”</p>
+    <p>感染奥密克戎后会产生较弱的免疫反应，与以前的变异株造成的感染相比，这种反应似乎很快就会减弱。尽管较新版本的几个变异株之间有着密切的关系，但从免疫角度来看，它们之间的差异很大，感染一个变异株所产生的免疫力<a rel="noopener noreferrer" target="_blank" href="https://www.medrxiv.org/content/10.1101/2022.04.29.22274455v1">并不能</a>对其他变异株<a rel="noopener noreferrer" target="_blank" href="https://www.medrxiv.org/content/10.1101/2022.04.29.22274477v1">提供多少保护</a>——当然在感染三四个月后也不能。</p>
+    <p>不过，好消息是，大多数再次感染新版本奥密克戎病毒的人不会患上重病。至少目前，该病毒还没有找到一种完全避开免疫系统的方法。</p>
+    <p>“这可能是目前最好的结果了，”西格尔说。“当变异株完全不同时，最大的危险可能就来了。”</p>
+    <p>每一次感染都会带来长期新冠的可能性，即可能持续数月或数年的一系列症状组合。目前还不足以判断奥密克戎感染导致长期新冠症状的几率，尤其是在接种过疫苗的人群中。</p>
+    <p>还有专家表示，为了跟上不断演变的病毒，新冠疫苗的更新速度要加快，甚至比流感疫苗每年的更新速度更快。他们说，即使疫苗与新型冠状病毒并不完全匹配，也会扩大免疫力，提供一些保护。</p>
+    <p>“每当我们认为已经度过了难关，每当我们认为占了上风的时候，病毒就会捉弄我们，”安德森说。“控制它的办法并不是，‘让我们每年都感染几次，然后期待最好的结果。’”</p>
+  </section>
+  <footer>
+    <p>Apoorva Mandavilli为时报报道科学和全球健康相关议题。她在2019年获得了科恩医学科学报道杰出奖(Victor Cohn Prize for Excellence in Medical Science Reporting)。欢迎在Twitter上关注她：<a rel="nofollow" target="_blank" href="https://twitter.com/apoorva_nyc">@apoorva_nyc</a>。<br />翻译：晋其角<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2022/05/16/health/covid-reinfection.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-17/%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%8E%87%E4%BB%85%E4%B8%BA%E7%BE%8E%E5%9B%BD1-10-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%81%9A%E5%AF%B9%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BA%8B">
+          新冠死亡率仅为美国1/10，澳大利亚做对了哪些事？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-17/%E6%99%AE%E4%BA%AC%E7%9A%84%E7%A5%9E%E7%A7%98%E5%AE%B6%E5%BA%AD-%E5%A5%B3%E5%84%BF%E5%92%8C%E6%83%85%E5%A6%87%E4%BB%AC">
+          普京的神秘家庭、女儿和情妇们
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E7%AE%80%E6%8A%A5-%E5%8C%97%E5%A4%A7%E5%AD%A6%E5%AD%90%E4%B8%8D%E6%BB%A1%E5%B0%81%E6%A0%A1%E6%94%BF%E7%AD%96%E8%81%9A%E9%9B%86%E6%8A%97%E8%AE%AE-%E4%B9%8C%E5%85%8B%E5%85%B0%E5%AE%A3%E5%B8%83%E9%A9%AC%E9%87%8C%E4%B9%8C%E6%B3%A2%E5%B0%94-%E6%88%98%E6%96%97%E4%BB%BB%E5%8A%A1-%E7%BB%93%E6%9D%9F">
+          简报：北大学子不满封校政策聚集抗议；乌克兰宣布马里乌波尔“战斗任务”结束
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E5%8C%97%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%B8%8D%E6%BB%A1%E6%A0%A1%E6%96%B9%E5%BB%BA%E9%9A%94%E7%A6%BB%E5%A2%99-%E5%A4%9A%E4%BA%BA%E8%81%9A%E9%9B%86%E4%B8%BE%E8%A1%8C%E6%8A%97%E8%AE%AE">
+          北大学生不满校方建隔离墙，多人聚集举行抗议
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-17/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0-AI-%E8%83%BD%E9%80%9A%E8%BF%87-X-%E5%B0%84%E7%BA%BF%E6%88%90%E5%83%8F%E8%AF%86%E5%88%AB%E4%BA%BA%E7%9A%84%E7%A7%8D%E6%97%8F">
+            前一篇：科学家发现 AI 能通过 X 射线成像识别人的种族 
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-17/%E6%B8%AF%E5%BA%9C%E6%8D%AE%E6%8A%A5%E6%8B%9F%E5%B0%81%E9%94%81Telegram%E9%81%8F%E5%88%B6%E8%B5%B7%E5%BA%95%E8%A1%8C%E4%B8%BA">
+            后一篇：港府据报拟封锁Telegram遏制起底行为
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-17/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0-AI-%E8%83%BD%E9%80%9A%E8%BF%87-X-%E5%B0%84%E7%BA%BF%E6%88%90%E5%83%8F%E8%AF%86%E5%88%AB%E4%BA%BA%E7%9A%84%E7%A7%8D%E6%97%8F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-17/%E6%B8%AF%E5%BA%9C%E6%8D%AE%E6%8A%A5%E6%8B%9F%E5%B0%81%E9%94%81Telegram%E9%81%8F%E5%88%B6%E8%B5%B7%E5%BA%95%E8%A1%8C%E4%B8%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-17/%E6%99%AE%E4%BA%AC%E7%9A%84%E7%A5%9E%E7%A7%98%E5%AE%B6%E5%BA%AD-%E5%A5%B3%E5%84%BF%E5%92%8C%E6%83%85%E5%A6%87%E4%BB%AC'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-16/%E7%AE%80%E6%8A%A5-%E5%8C%97%E5%A4%A7%E5%AD%A6%E5%AD%90%E4%B8%8D%E6%BB%A1%E5%B0%81%E6%A0%A1%E6%94%BF%E7%AD%96%E8%81%9A%E9%9B%86%E6%8A%97%E8%AE%AE-%E4%B9%8C%E5%85%8B%E5%85%B0%E5%AE%A3%E5%B8%83%E9%A9%AC%E9%87%8C%E4%B9%8C%E6%B3%A2%E5%B0%94-%E6%88%98%E6%96%97%E4%BB%BB%E5%8A%A1-%E7%BB%93%E6%9D%9F'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-17/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0-AI-%E8%83%BD%E9%80%9A%E8%BF%87-X-%E5%B0%84%E7%BA%BF%E6%88%90%E5%83%8F%E8%AF%86%E5%88%AB%E4%BA%BA%E7%9A%84%E7%A7%8D%E6%97%8F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-17/%E6%B8%AF%E5%BA%9C%E6%8D%AE%E6%8A%A5%E6%8B%9F%E5%B0%81%E9%94%81Telegram%E9%81%8F%E5%88%B6%E8%B5%B7%E5%BA%95%E8%A1%8C%E4%B8%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-17/%E6%99%AE%E4%BA%AC%E7%9A%84%E7%A5%9E%E7%A7%98%E5%AE%B6%E5%BA%AD-%E5%A5%B3%E5%84%BF%E5%92%8C%E6%83%85%E5%A6%87%E4%BB%AC">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-16/%E7%AE%80%E6%8A%A5-%E5%8C%97%E5%A4%A7%E5%AD%A6%E5%AD%90%E4%B8%8D%E6%BB%A1%E5%B0%81%E6%A0%A1%E6%94%BF%E7%AD%96%E8%81%9A%E9%9B%86%E6%8A%97%E8%AE%AE-%E4%B9%8C%E5%85%8B%E5%85%B0%E5%AE%A3%E5%B8%83%E9%A9%AC%E9%87%8C%E4%B9%8C%E6%B3%A2%E5%B0%94-%E6%88%98%E6%96%97%E4%BB%BB%E5%8A%A1-%E7%BB%93%E6%9D%9F">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>秦朔朋友圈｜亲历48小时帝都弹窗记 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+秦朔朋友圈｜亲历48小时帝都弹窗记
+——
+" />
+    <meta property="og:description" content="
+秦朔朋友圈｜亲历48小时帝都弹窗记
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="秦朔朋友圈｜亲历48小时帝都弹窗记" />
+    <meta property="twitter:title" content="秦朔朋友圈｜亲历48小时帝都弹窗记" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681158.html&t=%E7%A7%A6%E6%9C%94%E6%9C%8B%E5%8F%8B%E5%9C%88%EF%BD%9C%E4%BA%B2%E5%8E%8648%E5%B0%8F%E6%97%B6%E5%B8%9D%E9%83%BD%E5%BC%B9%E7%AA%97%E8%AE%B0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681158.html&t=%E7%A7%A6%E6%9C%94%E6%9C%8B%E5%8F%8B%E5%9C%88%EF%BD%9C%E4%BA%B2%E5%8E%8648%E5%B0%8F%E6%97%B6%E5%B8%9D%E9%83%BD%E5%BC%B9%E7%AA%97%E8%AE%B0&d=2022-05-11&e=
+秦朔朋友圈｜亲历48小时帝都弹窗记
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：亲历48小时帝都弹窗记作者：任我行来源：微信公众号 “秦朔朋友圈”发表日期：2022.5.10主题归类：北京疫情CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  2022年的春天，因为有国内外的大事发生，注定载入史册。我个人也一样，欲独善其身而不能，最近经历过的一个“48小时”，注定铭刻于心，终身难忘。
+  1
+  3月9日，我从上海到了杭州，算是躲过了魔都此后两个月的静态管理。虽然有家不能回，但看着魔都兄弟们的困境，还是觉得自己有幸做了个正确的决定。之后是全国两会、冬残奥会，我一直在寻找到北京的窗口期。终于在4月27日顺利抵京，准备把积攒了几个月的工作集..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681158.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681158.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681158.html&text=秦朔朋友圈｜亲历48小时帝都弹窗记&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681158.html&title=秦朔朋友圈｜亲历48小时帝都弹窗记" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681158.html&title=秦朔朋友圈｜亲历48小时帝都弹窗记" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=秦朔朋友圈｜亲历48小时帝都弹窗记&body=
+秦朔朋友圈｜亲历48小时帝都弹窗记
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681158.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681158.html&title=秦朔朋友圈｜亲历48小时帝都弹窗记&caption=
+秦朔朋友圈｜亲历48小时帝都弹窗记
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=秦朔朋友圈｜亲历48小时帝都弹窗记&url=https://chinadigitaltimes.net/chinese/681158.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>秦朔朋友圈｜亲历48小时帝都弹窗记</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681158.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681158.html&t=%E7%A7%A6%E6%9C%94%E6%9C%8B%E5%8F%8B%E5%9C%88%EF%BD%9C%E4%BA%B2%E5%8E%8648%E5%B0%8F%E6%97%B6%E5%B8%9D%E9%83%BD%E5%BC%B9%E7%AA%97%E8%AE%B0&d=2022-05-11&e=
+秦朔朋友圈｜亲历48小时帝都弹窗记
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：亲历48小时帝都弹窗记作者：任我行来源：微信公众号 “秦朔朋友圈”发表日期：2022.5.10主题归类：北京疫情CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  2022年的春天，因为有国内外的大事发生，注定载入史册。我个人也一样，欲独善其身而不能，最近经历过的一个“48小时”，注定铭刻于心，终身难忘。
+  1
+  3月9日，我从上海到了杭州，算是躲过了魔都此后两个月的静态管理。虽然有家不能回，但看着魔都兄弟们的困境，还是觉得自己有幸做了个正确的决定。之后是全国两会、冬残奥会，我一直在寻找到北京的窗口期。终于在4月27日顺利抵京，准备把积攒了几个月的工作集..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681158.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652284848000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681158.html">秦朔朋友圈｜亲历48小时帝都弹窗记</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>亲历48小时帝都弹窗记<br /><strong>作者：</strong>任我行<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/mooABFnRcmaFhXako9E3tA" target="_blank" rel="noopener">微信公众号 “秦朔朋友圈”</a><br /><strong>发表日期：</strong>2022.5.10<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/北京疫情" target="_blank">北京疫情</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>2022年的春天，因为有国内外的大事发生，注定载入史册。我个人也一样，欲独善其身而不能，最近经历过的一个“48小时”，注定铭刻于心，终身难忘。</p>
+  <h2 id="section">1</h2>
+  <p>3月9日，我从上海到了杭州，算是躲过了魔都此后两个月的静态管理。虽然有家不能回，但看着魔都兄弟们的困境，还是觉得自己有幸做了个正确的决定。之后是全国两会、冬残奥会，我一直在寻找到北京的窗口期。终于在4月27日顺利抵京，准备把积攒了几个月的工作集中处理一下，没想到“自投罗网”，一头扎进帝都的疫情防控高潮。</p>
+  <p>先在三元桥住了两天酒店，目睹了朝阳区防疫的方兴未艾，T先生和F先生说，你赶紧搬到西城区来，这里是政治文化中心的核心承载区，比较安全。听人劝吃饱饭，我在朝阳全面上演管控前的窗口期，于4月30号搬到金融街的酒店，当年曾在金融街战斗过十几年，也算故地重游。T&amp;F先生为了表示欢迎，说要请我堂食一顿（后面才知道堂食是多么奢侈）。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681158-627bbcd9e4ba3." alt="image" /></p>
+  <div class="ts">
+金融街
+  </div>
+  <p>入住金融街，感觉美美哒，北京的天气也异常配合，蓝天白云是我在帝都工作时很少享受过的，五一放假，喧闹的金融街一下子清静下来，我独享空无一人的绿地花园，每天还有智友美食相伴，谈人生谈哲学谈战略谈经济谈金融，何其美哉！</p>
+  <p>没想到第二天，5月1日，全市停止堂食，与T&amp;F先生的餐聚也戛然而止，于是我的帝都旅居每天变成两点一线：上午酒店门口晒太阳，下午走500米做核酸（做核酸成为每日必备，优先级高于吃饭睡觉上厕所）。每隔半小时必须干的事不是喝水，是刷手机健康宝和核酸报告，保码成为第一要务，“生命诚可贵，自由价更高，若无健康宝，一切都得抛”。有一个正常的健康宝，比健康更重要！</p>
+  <p>安然无恙地在金融街住了4天，每天认真做核酸，从收费做到免费，因为帝都开始大规模全民核酸，我享受到了政策红利。生活很美好，每天阳光、绿地、水果、核酸，好健康的生活啊，不能堂食也好，正好趁机减减肥。在帝都日益严峻的防控中，我独处金融街似乎是世外桃源。</p>
+  <p>然而故事从此急转直下，进入惊魂48小时。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681158-627bbcd9f0654." alt="image" /></p>
+  <h2 id="section-1">2</h2>
+  <p>5月4日早上8点，我又例行走出酒店，准备赶早去捅个核酸，然后晒太阳，欢度一下青年节，展望一下人生未来，思考一下第二天上班开工的重大战略。走出酒店大门，习惯成自然地刷了一下手机健康宝，被惊到了，居然喜提“弹窗3”一枚。</p>
+  <p>此时的尴尬是，酒店回不去了，任何场所进不去了，每天捅核酸的地方也不能去了，有了弹窗必须去指定地点捅核酸，指定地点在哪里一头雾水。我一分钟秒变成了在帝都无处可归的游魂！</p>
+  <p>隔着酒店大门，紧急和大堂经理沟通，他们一听我“喜提弹窗”，立马高度警戒：你是万万不能再进来的，否则酒店会被封掉。于是隔着10米我这个槛外游魂和槛内人沟通，怎么才能申诉把我的弹窗消除掉。</p>
+  <p>混乱的48小时开启了。此时不要问我为什么出弹窗，不要质疑我都来北京10天了，天天做核酸为什么还出弹窗？这些问题都毫无意义，也没有人能给出答案。</p>
+  <p>如何申诉解除弹窗成为第一要务！于是各路大神支招：</p>
+  <p>方案一，打12345电话（事实证明永远打不通）；方案二，微信北京12345申诉（事实证明是与系统自说自话，还得等待它不知何时受理）；方案三，找居住地居委会（我没有住家，任何一个居委会都如临大敌把我拒之门外——你不是我们驻地人员）；方案四，通过酒店向文旅局申报（可酒店苦苦哀求千万别通过我们申报，为了你好，一申报你就得被疾控中心拉走，我们酒店也得被封控）。</p>
+  <p>一瞬间，五四青年节阳光灿烂的早上，我站在空荡荡的金融大街上，被困在弹窗里。</p>
+  <p>在家靠父母，出门靠朋友！把我无处可归的状态告诉T&amp;F先生后，他们第一时间两肋插刀，不到20分钟两位开车到了酒店门口，坚定地站在我身边，这绝对是真爱！我上一秒秒变homeless，这一秒来了两个护法金刚！</p>
+  <p>既然站在街上也解决不了问题，不能让你流落街头，先上车，T&amp;F表现出了大无畏的人道主义精神和勇于担当的绅士风度。既然带着弹窗市里不容，我们拉你去郊区，一边吹风爬长城一边想办法。我的三毛流浪记立马不悲催了，还充满了喜乐安逸，有护法金刚在，妥妥地安心，先郊区游走起。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681158-627bbcda0e5d7." alt="image" /></p>
+  <h2 id="section-2">3</h2>
+  <p>帝都的五四，蓝天白云，因为每日核酸检测管控，外地人来不了，本地人不出门，所以一路畅通，郊区更是没什么人。我们一路畅谈半个多小时就到了延庆的长城脚下，那个美啊，从独享金融街花园，变成了独享绿水青山水长城！</p>
+  <p>三个人一鼓作气爬上长城，吹着没人吹过的风，路过没人路过的烽火台，瞬间有了大好青年意气风发的味道！T先生忍不住赋诗：尽管暮年对残阳，青春之心仍激荡！F先生也在手机上找出那篇著名的《年轻》，三人站在长城之巅高声诵读。一时间三人发了少年狂，管他弹窗不弹窗！</p>
+  <p>然而，现实不仅有美好，更多是惊扰。从在长城上接到第一个电话开始，对我的“追查令”如十二面金牌滚滚而来。大数据果然厉害，我的弹窗状态，因为手机定位已被精准推送到了延庆疾控中心。北京这轮疫情防控以来，延庆一例没有，我的到来让他们如临大敌。后面的故事也确实证明，我让延庆各级领导各个部门操碎了心。</p>
+  <p>第一个电话来自长城脚下的某镇居委会，小伙子太紧张，都有点结巴了：“你在哪里？什么位置？住哪里了？”我说：“我没法住啊，有弹窗哪里也进不去，在野长城上吹风呢。”小伙子说：“你赶紧下来，找个位置，我们疾控中心得去车把你拉走定点隔离。”</p>
+  <p>天啊，要被拉走隔离？脑海中浮现出各种方仓怪相，出了一身冷汗。万万使不得呀，我不就是出了个弹窗吗？天天做核酸都是阴性，又不是“羊”，也没密接，为啥要拉走隔离？小伙子说：“这是政策规定！没得解释。”之后各色部门人员给我的围追电话，话术高度一致——政策规定！</p>
+  <p>由于我在山上，他们肯定不能把车开到长城上，所以要求我下来后告知具体位置，他们来车拉我。从此开启了每15分钟一次的电话追踪，有居委会的、有卫健委的、有疾控中心的、有区政府办的……大家都是一个目的——告诉我们具体位置，别动，派车去拉你隔离。</p>
+  <p>此时和市区的沟通也陷入了悖论——我没有住在社区，所有社区居委会既不欢迎我也不能帮我申诉解除弹窗，说我是“社会面”的，不归他们管，也千万别来。这才理解“社会面”的意思就是无处可归谁都不管。</p>
+  <p>作为“社会面”的一员，可以住酒店，酒店不通过居委会而通过文旅局申报解除弹窗，可问题是我现在有弹窗，所有酒店按照“政策规定”不让入住。我这个社会人，掉进了“社会面”的缝里。</p>
+  <p>前一阵还是站在长城之巅“一览众山小上下五千年”，突然发现自己被真空了。T&amp;F再次表现出了大无畏担当精神，三个人成立了临时小组，F先生任书记，紧急席地研究磋商，先分析政策、形势，推演各种接下来的可能性。</p>
+  <p>三个臭皮匠讨论后形成一致决定：1、肯定不能在延庆被拉走隔离；2、明确下一步战略方向：必须回到市区解决问题；3、提出具体工作举措：住到他们家里，通过居委会申报；4、拟订了应对围追电话的话术口径：马上离开延庆返回市区。</p>
+  <p>临时小组的战斗堡垒作用在烽火台上熊熊燃烧，有组织有方向有举措，立马感觉无比强大，三个人忍不住叉腰迎风肃立，一副山河已定的豪情。</p>
+  <p>然而现实不给豪情面子。T&amp;F的社区居委会断然否决了我们的行动计划：有弹窗绝对不能进社区！如果进来全家封控隔离14天！三人组重新研究出路，一个基本原则是肯定不能被拉走隔离，在此基础上多方调动资源，寻求PlanB、C、D……</p>
+  <p>此时延庆的各路电话还在源源而至，按既定话术，我告诉他们要离开延庆返回市区，听得出他们如释重负，但一定要追问回市区的具体位置，因为他们要把我的数据发到相应的居委会，他们的工作才算彻底完成。可此时我确实不知道回到市区能去哪里，所以一边在荒山野岭游走，一边接着每15分钟一次的围追电话，一边调度联系市里的各路兄弟寻求解决之道。顺便看了长城落日，讨论了俄乌战争，研判了疫情对金融市场的影响。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681158-627bbcda25563." alt="image" /></p>
+  <h2 id="section-3">4</h2>
+  <p>太阳西下，我们否决了在长城上露营的幻想，下了山，此时高频电话终于耗尽了手机电池，“围追令”再也不响了。三人组再次研究，在市里没有确定落脚点前，先就近找个酒店住下。当然我是不能住酒店的，我以壮士断腕的豪情决定：不能给酒店添麻烦，我住车里！之前在网上看到魔都有人露宿桥洞的图片，原来竟是真的，若没有朋友，我岂不是也要露宿山野？</p>
+  <p>T&amp;F很仗义地陪我散步聊天熬到半夜，缩短了我独自在车里的时间。第二天早上8点多手机充好电开机，瞬间收到了几十个来电短信提示，还没看明白咋回事，电话就打进来了——延庆疾控中心。电话里一连串炮轰：“你在哪里？电话为什么打不通？我们区里疫情防控各级领导和部门一夜都没下班，一直在联系你！”我给吓到了，赶紧说对不起手机没电了，在车里待了一晚。</p>
+  <p>对方又说：“车在什么位置，我们马上来拉你隔离。”吓得我赶紧说：“我们已经出发往市里走了，已经上高速了。”对方紧追不舍：“去市里哪里？必须告诉我具体地址！”我说：“正在联系，联系好了告诉你。”</p>
+  <p>至此，我才知道我给延庆人民添了多大麻烦，从区领导到街道，太辛苦了，基层工作人员实在不容易！又想想，如果不是手机没电，他们昨晚挖地三尺也要把我找到拉走吧，看来延庆是不能待了，即便是在车上。我立马把T&amp;F两位叫来，开车出发返城，回市区的高速公路一路畅通，我第一次觉得不堵车也很烦人，因为路的那头还没有目的地，只能边走边联系。</p>
+  <p>人品好没办法，就在往市区逃还要应对围追电话的路上，上帝派来了天使！一个多年之前的同事向我伸出了救援之手：他们新开了一家商务酒店，没什么人，可以接纳我，就算隔离在他的酒店，帮我向文旅局申报解除弹窗！</p>
+  <p>简直就是救命稻草啊，赶紧让他发了酒店地址，我们直奔而去！此时延庆追击电话打来，我把刚刚到手的地址告诉了他，电话里几乎都能听到他们喜极雀跃的笑声，我这个皮球终于有了去处，他们紧绷了两天的神经放松了，温柔地和我说了很多客气话，强调了他们的难处，表达了一直围追打电话的不好意思，最后，让我给他们的工作做个评价。我果断地点击了1号——很好！</p>
+  <p>感谢延庆人民，你们辛苦了！</p>
+  <h2 id="section-4">5</h2>
+  <p>我们顺利到达朋友的酒店，我向T&amp;F挥手告别，让他们回家，我有人接手了，你们可以歇歇啦。感谢两位，在我流落街头时，对我不抛弃不放弃，并肩同行，锻炼了我的身体、放松了我的精神、愉悦了我的心情、拓展了我的视野，更值得一提的是还探讨了我的天道战略！有友如此，夫复何求！</p>
+  <p>我进了酒店，第一时间通过酒店系统录入申请，上传身份证、手机号、来京车票、弹窗截图，还有之前每天的核酸检测报告。提交申请后，又立刻到酒店旁边最近的检测点享受了一次免费核酸。回到酒店房间进入自我隔离状态，在微信上给T&amp;F汇报进展，进了朋友圈才欣喜地看到原来弹窗一片片，弹友遍京城！我不是孤军奋战，我是“弹3”，还有一大批“弹4”！帝都，已经是弹窗天下！</p>
+  <p>忐忑地等待，如同初恋时等男朋友信息一样，每几分钟就得刷一次手机，看我的健康宝有没从弹窗里跳出来。一直到晚上，弹窗岿然不动！</p>
+  <p>朋友说，可能明天还得申报一次。看来系统太忙，部门太忙，人手太忙，我这个皮球还得静静等待。就在无奈准备睡觉时，5月5日22：09，我的弹窗神奇地不见啦！赶紧再刷一遍，我的亲亲的健康宝啊，正常啦！！！</p>
+  <p>我一下从床上跳起来，赶紧截图，发给T&amp;F，发给酒店朋友，哈哈，健康啦！T&amp;F迅速给我发来贺电，喜大普奔，立马邀请我继续搬回金融街。此刻的我，从没有这样喜悦过，这是一种重获自由的喜悦！想冲到大街上去吹吹风，想呼朋唤友，想宣告我的自由！解除了弹窗，恢复了自由，暗自决定明天一早起来就奔高铁，打道回府，免生事端再来弹窗。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681158-627bbcda3f688." alt="image" /></p>
+  <div class="ts">
+空荡荡的北京南站
+  </div>
+  <p>一晚上也没睡好，还是继续高频刷手机，就怕再蹦出个窗来。失而复得之后的喜悦是短暂的，更长久的是得而怕失的担忧。</p>
+  <p>6日早上8点，再看一眼健康宝，确定正常无弹窗，心生欢喜。突然电话响了，居委会继续围追，延庆把我这个球踢了过来，这边居委会不知道我已经通过酒店向文旅局申报了，更不知道我的弹窗已经解除了，还在紧张围追我。听完我的解释后，长出了一口气，要了一个“很好”的评价，感谢我的配合。</p>
+  <p>刚刚放下手机，又有来电，这次是流调审核，又把给居委会的话重复了一遍，对方也如释重负，感谢配合，要了个评价。我坐等第三个第四个电话，没有再响。</p>
+  <p>我默默分析了一下，处理弹窗这件事牵扯居委会、文旅局、卫健委、防控中心等跨部门，看来他们的数据是相互不能实时打通的，信息传递是滞后的，各个部门又要一丝不苟严格执行工作流程，所以为了我这个皮球，动用了这么多政府资源和人力，被政府追着服务的体验这还是第一次！</p>
+  <p>估计不会再有人给我打电话了，我暗暗下决心，一定要和北京大数据局对接一下，帮他们把数字政府和数字社会的系统建设优化升级，要达到浙江标准。</p>
+  <p>至此，我的帝都弹窗记终于消停了，想着给T&amp;F发个微信，约个午饭庆祝一下。新的故事来了：F先生弹窗了，“弹窗4”。果然是人生无弹窗不完美！三人组迅速线上集结，分析原因，研究政策，“弹窗3”和“弹窗4”的政策不同，要制定应对策略，明确实施步骤。</p>
+  <p>有了之前的团队作战经验，三人组这次决策高效精准细致。同时结合《新闻联播》重要精神，预判了京城防疫大方向后，为防患于未然，迅速部署三人下一步行动方案：我，立马滚蛋，离开京城；T先生，虽然还没有喜提弹窗，但决不能侥幸，要提高政治站位，必须每天坚持捅核酸，自证青绿！F先生，弹窗解除前，必须坚决居家自我封闭，不允许出来乱溜达，要有公民意识和责任心，不给社区、居委会和政府添乱！</p>
+  <p>当我在滚蛋的高铁上开始写下这段经历，F先生还在弹窗中，T先生在可能弹窗的路上，弹窗记还在未完待续……</p>
+  <p>我把这篇弹窗记发给T&amp;F先生，T先生睹文思人，诗兴难抑，赋诗一首，题为《七律·友人遇北京“弹窗”》：</p>
+  <p>    <strong>  青年节至遇弹窗，</strong><br /><strong>      帝都防疫不寻常。</strong><br /><strong>      街头无助去何处？</strong><br /><strong>      人中有缘来此乡。</strong><br /><strong>      长城电急夕阳短，</strong><br /><strong>      公社酒美夜风长。</strong><br /><strong>      欲评此番曲折事，</strong><br /><strong>      立夏已过细思量。</strong></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-11</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-11/CDTV-%E4%B8%8A%E6%B5%B7%E7%96%BE%E6%8E%A7%E4%BA%BA%E5%91%98%E5%8F%82%E6%BC%94%E7%9A%84%E6%9C%80%E4%BD%B3%E8%AF%AD%E8%A8%80%E7%B1%BB%E8%8A%82%E7%9B%AE-Are-u-there-No!">
+          【CDTV】上海疾控人员参演的最佳语言类节目《Are u there?No!》
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-11</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-11/%E4%B8%81%E9%A6%99%E5%8C%BB%E7%94%9F-%E6%9C%89%E5%85%B3%E6%96%B0%E5%86%A0%E6%B6%88%E6%9D%80-%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84-7-%E4%B8%AA%E7%9C%9F%E7%9B%B8">
+          丁香医生｜有关新冠消杀，你需要知道的 7 个真相
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-11</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-11/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.11">
+          每日一语 2022.5.11
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-11</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-11/CDTV-%E9%98%B2%E7%96%AB%E4%BA%BA%E5%91%98-%E5%A4%84%E7%BD%9A%E4%BA%86%E4%BB%A5%E5%90%8E-%E8%A6%81%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E4%B8%89%E4%BB%A3-%E5%B8%82%E6%B0%91-%E8%BF%99%E6%98%AF%E6%88%91%E4%BB%AC%E6%9C%80%E5%90%8E%E4%B8%80%E4%BB%A3-%E8%B0%A2%E8%B0%A2">
+          【CDTV】防疫人员：“处罚了以后，要影响你的三代！” 市民：“这是我们最后一代，谢谢！”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-11/%E8%8B%B1%E5%9B%BD%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E6%B5%81%E4%BA%A1%E6%B8%AF%E4%BA%BA%E5%85%B3%E6%B3%A8%E5%80%99%E9%80%89%E4%BA%BA%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%BB%9F%E6%88%98%E6%B4%BB%E5%8A%A8%E5%85%B3%E7%B3%BB">
+            前一篇：英国地方选举 流亡港人关注候选人与中国统战活动关系
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-11/%E6%96%AF%E9%87%8C%E5%85%B0%E5%8D%A1-%E5%8F%98%E5%A4%A9-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%80%BA%E5%8A%A1%E5%8D%B1%E6%9C%BA%E5%86%8D%E6%88%90%E7%84%A6%E7%82%B9">
+            后一篇：斯里兰卡"变天"   "一带一路"债务危机再成焦点
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-11/%E8%8B%B1%E5%9B%BD%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E6%B5%81%E4%BA%A1%E6%B8%AF%E4%BA%BA%E5%85%B3%E6%B3%A8%E5%80%99%E9%80%89%E4%BA%BA%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%BB%9F%E6%88%98%E6%B4%BB%E5%8A%A8%E5%85%B3%E7%B3%BB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-11/%E6%96%AF%E9%87%8C%E5%85%B0%E5%8D%A1-%E5%8F%98%E5%A4%A9-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%80%BA%E5%8A%A1%E5%8D%B1%E6%9C%BA%E5%86%8D%E6%88%90%E7%84%A6%E7%82%B9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-11/%E4%B8%81%E9%A6%99%E5%8C%BB%E7%94%9F-%E6%9C%89%E5%85%B3%E6%96%B0%E5%86%A0%E6%B6%88%E6%9D%80-%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84-7-%E4%B8%AA%E7%9C%9F%E7%9B%B8'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-11/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.11'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-11/%E8%8B%B1%E5%9B%BD%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E6%B5%81%E4%BA%A1%E6%B8%AF%E4%BA%BA%E5%85%B3%E6%B3%A8%E5%80%99%E9%80%89%E4%BA%BA%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%BB%9F%E6%88%98%E6%B4%BB%E5%8A%A8%E5%85%B3%E7%B3%BB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-11/%E6%96%AF%E9%87%8C%E5%85%B0%E5%8D%A1-%E5%8F%98%E5%A4%A9-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%80%BA%E5%8A%A1%E5%8D%B1%E6%9C%BA%E5%86%8D%E6%88%90%E7%84%A6%E7%82%B9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-11/%E4%B8%81%E9%A6%99%E5%8C%BB%E7%94%9F-%E6%9C%89%E5%85%B3%E6%96%B0%E5%86%A0%E6%B6%88%E6%9D%80-%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84-7-%E4%B8%AA%E7%9C%9F%E7%9B%B8">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-11/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.11">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

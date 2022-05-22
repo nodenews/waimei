@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+——
+" />
+    <meta property="og:description" content="
+【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸" />
+    <meta property="twitter:title" content="【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681591.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E7%81%B0%E9%B8%BD%E5%8F%94%E5%8F%94%EF%BD%9C%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%BA%9B%E6%8A%A5%E9%81%93%EF%BC%8C%E6%81%90%E6%80%95%E4%BC%9A%E6%8A%8A%E6%88%91%E7%9A%84%E8%80%81%E9%A2%86%E5%AF%BC%E6%B0%94%E7%82%B8" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681591.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E7%81%B0%E9%B8%BD%E5%8F%94%E5%8F%94%EF%BD%9C%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%BA%9B%E6%8A%A5%E9%81%93%EF%BC%8C%E6%81%90%E6%80%95%E4%BC%9A%E6%8A%8A%E6%88%91%E7%9A%84%E8%80%81%E9%A2%86%E5%AF%BC%E6%B0%94%E7%82%B8&d=2022-05-18&e=
+【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸作者：灰鸽叔叔来源：微信公众号“灰鸽叔叔”发表日期：2022.5.18主题归类：新闻专业主义CDS收藏：真理馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  1
+  老读者们知道，我有14年的媒体从业经历。
+  不管在哪个类别的岗位上，都是被老领导、老法师一路训来的。有时温柔些，有时严厉些。
+  “情况说明”（其实就是检讨）写过挺多篇，因为有篇稿子信源不准，把“某人透露”理解成了“某部门表示”，不但工资扣了个七七八八，接下来整整两个月，都只能做手工录入的工作。
+  那时候还没AI识别，如果要把采访内容..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681591.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681591.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681591.html&text=【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681591.html&title=【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681591.html&title=【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸&body=
+【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681591.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681591.html&title=【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸&caption=
+【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸&url=https://chinadigitaltimes.net/chinese/681591.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681591.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681591.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E7%81%B0%E9%B8%BD%E5%8F%94%E5%8F%94%EF%BD%9C%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%BA%9B%E6%8A%A5%E9%81%93%EF%BC%8C%E6%81%90%E6%80%95%E4%BC%9A%E6%8A%8A%E6%88%91%E7%9A%84%E8%80%81%E9%A2%86%E5%AF%BC%E6%B0%94%E7%82%B8&d=2022-05-18&e=
+【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸作者：灰鸽叔叔来源：微信公众号“灰鸽叔叔”发表日期：2022.5.18主题归类：新闻专业主义CDS收藏：真理馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  1
+  老读者们知道，我有14年的媒体从业经历。
+  不管在哪个类别的岗位上，都是被老领导、老法师一路训来的。有时温柔些，有时严厉些。
+  “情况说明”（其实就是检讨）写过挺多篇，因为有篇稿子信源不准，把“某人透露”理解成了“某部门表示”，不但工资扣了个七七八八，接下来整整两个月，都只能做手工录入的工作。
+  那时候还没AI识别，如果要把采访内容..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681591.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652872065000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681591.html">【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸<br /><strong>作者：</strong>灰鸽叔叔<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/x0lvP3DZNwFSrW5vExU1Qw" target="_blank" rel="noopener">微信公众号“灰鸽叔叔”</a><br /><strong>发表日期：</strong>2022.5.18<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/新闻专业主义/" target="_blank">新闻专业主义</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E7%9C%9F%E7%90%86%E9%A6%86" target="_blank" rel="noopener">真理馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <h4 id="section">1</h4>
+  <p>老读者们知道，我有14年的媒体从业经历。</p>
+  <p>不管在哪个类别的岗位上，都是被老领导、老法师一路训来的。有时温柔些，有时严厉些。</p>
+  <p>“情况说明”（其实就是检讨）写过挺多篇，因为有篇稿子信源不准，把“某人透露”理解成了“某部门表示”，不但工资扣了个七七八八，接下来整整两个月，都只能做手工录入的工作。</p>
+  <p>那时候还没AI识别，如果要把采访内容整理成文字，就是拿一个开盘带，放一段，打下来，放一段，打下来……</p>
+  <p>那时还有一位实习生，稿子写得非常老练，领导觉得“妥妥可以进来”，但在审听一篇报道时，大家产生了一个疑问：</p>
+  <p>一位受访农民工的表达“精炼而不自然”。</p>
+  <p>领导很直接：这句话是不是你教农民工说的？</p>
+  <p>实习生有些惊慌，但也算老实：对，我觉得他原来说的不好，就写了一个给到他。我觉得意思是差不多的。</p>
+  <p>这名实习生当天就结束了实习。领导痛心地说：</p>
+  <p><strong>引以为戒</strong>。</p>
+  <p>仔细想想，这事儿也过去了近20年。</p>
+  <h4 id="section-1">2</h4>
+  <p>当时的老师，大多已经退休。还有一些，已经转行或者去了其他的岗位。</p>
+  <p>看他们的朋友圈，有些不太说话，还有一些，常常很生气。</p>
+  <p>我很理解他们。确实，这两个月，有话匣子系和一财系的亮点，但也有些令人摸不着头脑的内容，前两天，《<a href="https://mp.weixin.qq.com/s?__biz=MzI3NjE5MTE5Nw==&amp;mid=2658940865&amp;idx=3&amp;sn=a766408bd0909c84fbd86550a3e78015&amp;scene=21#wechat_redirect">直击上海复商复市首日</a>》更是几乎把大家气炸。</p>
+  <p>如果说4月17日的《<a href="http://mp.weixin.qq.com/s?__biz=MzAwNjk5ODk5NA==&amp;mid=2247531365&amp;idx=1&amp;sn=84f02e11aeed2b29d924bfe68f141d2c&amp;chksm=9b06e5d8ac716cced92d7635d28d5b8101a0b7f4081996e6180233cf30bf6b85fe54dc3e1bbc&amp;scene=21#wechat_redirect">做好生活物资供应</a>》、5月3日《<a href="http://mp.weixin.qq.com/s?__biz=MzA4NDI3NjcyNA==&amp;mid=2649798646&amp;idx=2&amp;sn=73194965b5c05aa857d7700427ed4f35&amp;chksm=87edb36db09a3a7bd2a45cd84dd5e3e280336174929a0b24185b5fcab946b31d386aa2cebb43&amp;scene=21#wechat_redirect">熟悉的上海 正在渐渐回来</a>》只是“用个别远郊代表上海”的“以偏概全”，属于“偷偷误导”，那这篇5月16日的新闻，做了一件让老新闻人都很讶异的事情：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652871659870.png" alt="file" /></p>
+  <p><strong>它直接使用了一张地方媒体发布于5月6日的图片，改成了“5月16日”。</strong></p>
+  <p>也就是说，在“引导”的时候，连“5W”原则都被“放过了”。</p>
+  <p>“搜图”并不是什么稀罕功能，这事儿是很容易穿帮的。但整整九位记者，以及背后的二审三审，都没制住它。</p>
+  <p>我相信会有处理。媒体再变化也不至于此。但它带来的伤害，也显而易见。</p>
+  <p>用一位网友的话说，我已经接受了你瞎，但你居然还骗。</p>
+  <h4 id="section-2">3</h4>
+  <p>包括我在内，大家还哀叹于舆情的判断力。</p>
+  <p>例如，那个年代很有默契的“小骂大帮忙”，几乎很难再取得默契，许多致力于取得共识与理解的尝试，常常被斥责“不懂大局”；但反过来，我们当年很警觉的“赞美闯大祸”，却会时不时冒出来。</p>
+  <p>最后就是被迫精选评论、关闭评论、关闭转发，实在熬不住就删帖。</p>
+  <p><strong>正面报道的目的没有达到，与公众的隔阂却加深了一层。</strong></p>
+  <p>复工复商的报道只是一个片段，且不提它与多数公众的感知是否相符，我想信息发布者可能完全不会考虑到，对手握一大堆“因不可抗力”无法执行的企业来说，各位的报道可能成为对方索赔的依据。</p>
+  <p>在媒体中，我们还可以看到更多的导致矛盾的“正面报道”。</p>
+  <p>有的聚焦发了几十次物资的街道，有的宣扬着越读越别扭的典型，我一直觉得《<a href="http://mp.weixin.qq.com/s?__biz=MjM5ODI2NDMwMw==&amp;mid=2652982148&amp;idx=2&amp;sn=02ec8c0387135223cd4be6900b8c8e76&amp;chksm=bd1887048a6f0e1243da298528ad4467dc6312bcc0b8c8ea2fc5d772a29a1c27901ce2d773dc&amp;scene=21#wechat_redirect">上海一名机关干部自述：十几年来第一次下基层，居委原来在干这些事</a>》会删，但它还真的没删。</p>
+  <p>不展开说了。<strong>哪怕从标题来说，我也是真吃不准，它是表扬，还是曝光。</strong>换我们老领导，肯定一把拍回去了：</p>
+  <p>“别坑人了。既气了下头，也害了上头。”</p>
+  <p>按理说后台的留言已经足够让编辑警觉了，但编辑还是挺坚强。</p>
+  <p>抬残疾老爷爷下楼做核酸的帖子已经删了，一个月志愿服务766小时的帖子也已经改了，类似的新闻，还是值得盘一盘。</p>
+  <p>用我老师的话说：</p>
+  <p><strong>正面报道，不是让领导满意，而是要让老百姓对领导满意。</strong></p>
+  <h4 id="section-3">4</h4>
+  <p>至于“共情”的缺失，可能已经不是什么太要紧的事情。</p>
+  <p>但我还是想说一说。</p>
+  <p>比如，怎么用形容词，怎么用动词，甚至怎么用量词，它都是有讲究的。</p>
+  <p>我当时的老师说，哪怕读者读不出来，听众听不出来，我们也要有这根弦。</p>
+  <p>比如这篇《<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTE1MzkyOA==&amp;mid=2651224228&amp;idx=3&amp;sn=a14d22c8753f9b6a0925c8127ab1d03d&amp;chksm=8d009443ba771d55b79932da9beaab6c87f161a94978f459483eb0825c6364049b14192b5d12&amp;scene=21#wechat_redirect">上海警方查获“黑骑手”591人，已有330人被拘留</a>》，我觉得绝大多数人读不出什么问题。</p>
+  <p>那我还是把它点出来吧：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681591-6284d3816e4e6.png" alt="image" /></p>
+  <p><strong>“闲来无事”这四个字，其实是完全没有必要的。</strong></p>
+  <p>如果说一个送妻子看病，自己见缝插针也要去挣点钱的中年男性，属于“闲来无事”，那字里行间未免也显得太冷漠。</p>
+  <p>我没看出“闲来无事”，我只看出生活的艰难。</p>
+  <p>如果我们足够仔细，会发现许许多多类似的词语出现在了疫情的报道里，代表着撰写者的某种喜恶——</p>
+  <p>但它真的没有必要。</p>
+  <h4 id="section-4">5</h4>
+  <p>这两个月，我常常想起那些守着开盘机的时光。足不出户的时间，和我当时离岗打下手的时间差不多长。</p>
+  <p>开盘带在机器里刷刷地转着，传出或清晰或模糊的声音。有标准的普通话，也有吴侬软语。有时候一个多小时的文字稿整理出来，能够呈现在节目中的可能就只有一分钟。</p>
+  <p>记者很小心地避免断章取义，编辑很仔细地拿捏着上下文。</p>
+  <p>我很仔细地记录下每一句话。</p>
+  <p>编辑说，你看，这段写成：</p>
+  <p>他遗憾地说，未来这栋楼，再也看不到了（接实况）：“我会想念它的。”——行不行？</p>
+  <p>那时的老师仔细地回听了下声音，删掉了“遗憾”两个字：</p>
+  <p>他说，未来这栋楼，再也看不到了（接实况）：“哎，（有两秒的停顿），我会想念它的。”</p>
+  <p>老师说，不用那么着急代替别人做判断。如果我们是一个合格的新闻人，那就应该有自信——</p>
+  <p><strong>那些受众，只需要看到我们的记录，就会有着和我们同样的感情。</strong></p>
+  <p>这样的自信，怎么就消失了呢？</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.18">
+          每日一语 2022.5.18
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/NOWNESS%E7%8E%B0%E5%9C%A8-%E5%A6%82%E6%9E%9C-%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%AA%E5%89%A9%E4%B8%8B%E5%BF%85%E8%A6%81">
+          NOWNESS现在｜如果，我的生活只剩下必要
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%B0%91%E8%88%AA%E5%B1%80%E5%8F%91%E5%B8%83%E4%B8%9C%E8%88%AA%E7%A9%BA%E9%9A%BE-%E4%B8%87%E8%83%BD%E5%9B%9E%E5%BA%94-%E6%97%A2%E4%B8%8D%E6%89%BF%E8%AE%A4%E4%B9%9F%E4%B8%8D%E5%90%A6%E8%AE%A4">
+          【网络民议】民航局发布东航空难“万能回应”：既不承认也不否认
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E6%98%9F%E7%90%83%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA-%E8%A6%81%E5%85%81%E8%AE%B8%E4%B8%80%E4%BA%9B%E4%BA%BA%E5%85%88%E8%B7%91%E8%B5%B7%E6%9D%A5">
+          星球商业评论｜要允许一些人先跑起来
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-18/%E6%B3%B0%E5%9C%8B%E9%A6%96%E5%AD%A3%E5%9C%8B%E5%85%A7%E8%88%AA%E7%8F%AD%E9%87%8F%E6%81%A2%E5%BE%A9%E7%96%AB%E6%83%85%E5%89%8D%E6%B0%B4%E6%BA%96-%E5%9C%8B%E9%9A%9B%E7%B7%9A%E5%BE%85%E5%8A%AA%E5%8A%9B">
+            前一篇：泰國首季國內航班量恢復疫情前水準 國際線待努力
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-18/Science-%E6%9C%9D%E9%B2%9C%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E5%85%B3%E4%BA%8E%E7%A1%AE%E8%AF%8A-%E6%AD%BB%E4%BA%A1-%E7%96%AB%E8%8B%97%E7%AD%89%E6%88%91%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88">
+            后一篇：[Science] 朝鲜新冠疫情：关于确诊、死亡、疫苗等我们已经知道什么
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E6%B3%B0%E5%9C%8B%E9%A6%96%E5%AD%A3%E5%9C%8B%E5%85%A7%E8%88%AA%E7%8F%AD%E9%87%8F%E6%81%A2%E5%BE%A9%E7%96%AB%E6%83%85%E5%89%8D%E6%B0%B4%E6%BA%96-%E5%9C%8B%E9%9A%9B%E7%B7%9A%E5%BE%85%E5%8A%AA%E5%8A%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/Science-%E6%9C%9D%E9%B2%9C%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E5%85%B3%E4%BA%8E%E7%A1%AE%E8%AF%8A-%E6%AD%BB%E4%BA%A1-%E7%96%AB%E8%8B%97%E7%AD%89%E6%88%91%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/NOWNESS%E7%8E%B0%E5%9C%A8-%E5%A6%82%E6%9E%9C-%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%AA%E5%89%A9%E4%B8%8B%E5%BF%85%E8%A6%81'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%B0%91%E8%88%AA%E5%B1%80%E5%8F%91%E5%B8%83%E4%B8%9C%E8%88%AA%E7%A9%BA%E9%9A%BE-%E4%B8%87%E8%83%BD%E5%9B%9E%E5%BA%94-%E6%97%A2%E4%B8%8D%E6%89%BF%E8%AE%A4%E4%B9%9F%E4%B8%8D%E5%90%A6%E8%AE%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-18/%E6%B3%B0%E5%9C%8B%E9%A6%96%E5%AD%A3%E5%9C%8B%E5%85%A7%E8%88%AA%E7%8F%AD%E9%87%8F%E6%81%A2%E5%BE%A9%E7%96%AB%E6%83%85%E5%89%8D%E6%B0%B4%E6%BA%96-%E5%9C%8B%E9%9A%9B%E7%B7%9A%E5%BE%85%E5%8A%AA%E5%8A%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-18/Science-%E6%9C%9D%E9%B2%9C%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E5%85%B3%E4%BA%8E%E7%A1%AE%E8%AF%8A-%E6%AD%BB%E4%BA%A1-%E7%96%AB%E8%8B%97%E7%AD%89%E6%88%91%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-18/NOWNESS%E7%8E%B0%E5%9C%A8-%E5%A6%82%E6%9E%9C-%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%AA%E5%89%A9%E4%B8%8B%E5%BF%85%E8%A6%81">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-18/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%B0%91%E8%88%AA%E5%B1%80%E5%8F%91%E5%B8%83%E4%B8%9C%E8%88%AA%E7%A9%BA%E9%9A%BE-%E4%B8%87%E8%83%BD%E5%9B%9E%E5%BA%94-%E6%97%A2%E4%B8%8D%E6%89%BF%E8%AE%A4%E4%B9%9F%E4%B8%8D%E5%90%A6%E8%AE%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

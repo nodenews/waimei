@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海
+——
+" />
+    <meta property="og:description" content="
+台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海" />
+    <meta property="twitter:title" content="台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517%2F6576581.html&t=%E5%8F%B0%E6%B9%BE%E4%BA%BA%E5%9C%A8%E4%B8%8A%E6%B5%B7%EF%BC%9A%E5%90%AC%E5%88%B0%E9%97%A8%E9%93%83%E5%A3%B0%E5%B0%B1%E5%BE%88%E7%B4%A7%E5%BC%A0+%E6%97%A0%E6%97%B6%E6%97%A0%E5%88%BB%E4%B8%8D%E6%83%B3%E9%80%83%E7%A6%BB%E4%B8%8A%E6%B5%B7" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517%2F6576581.html&t=%E5%8F%B0%E6%B9%BE%E4%BA%BA%E5%9C%A8%E4%B8%8A%E6%B5%B7%EF%BC%9A%E5%90%AC%E5%88%B0%E9%97%A8%E9%93%83%E5%A3%B0%E5%B0%B1%E5%BE%88%E7%B4%A7%E5%BC%A0+%E6%97%A0%E6%97%B6%E6%97%A0%E5%88%BB%E4%B8%8D%E6%83%B3%E9%80%83%E7%A6%BB%E4%B8%8A%E6%B5%B7&d=2022-05-17&e=
+台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海
+——
+
+
+  
+Tue, 17 May 2022 10:19:01 GMT
+  
+  
+上海封城期间两名女子在一条被封的街道上拥抱。（2022年5月16日）
+  
+  封城超过6周的上海当局星期天宣布，自5月16日起分阶段复商复市。对许多人来说，这段严格封控时期无疑是一段非常艰辛的历程，对外地人而言更是如此。在过去的一些日子里，有被困在上海的台湾人甚至现在只要听到门铃声，就头皮发麻，浑身紧张，无时无刻不想要逃出上海。历经1个多月封城，上海解封终露曙光。中国官方15日宣布，自5月16日起分3阶段恢复正常生活，预计6月1日至6月中下旬，全面恢复全市正常生产生活秩序。上海政府表示，5月16日起将按照“有序放开、有限流动、有效管控、分类管理”的原则分阶段复商复市，将从民生需求开始，包括购物中心、百货商场、超市卖场、便利店、药店等商业网..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517%2F6576581.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html&text=台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html&title=台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html&title=台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海&body=
+台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html&title=台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海&caption=
+台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海&url=https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517%2F6576581.html&t=%E5%8F%B0%E6%B9%BE%E4%BA%BA%E5%9C%A8%E4%B8%8A%E6%B5%B7%EF%BC%9A%E5%90%AC%E5%88%B0%E9%97%A8%E9%93%83%E5%A3%B0%E5%B0%B1%E5%BE%88%E7%B4%A7%E5%BC%A0+%E6%97%A0%E6%97%B6%E6%97%A0%E5%88%BB%E4%B8%8D%E6%83%B3%E9%80%83%E7%A6%BB%E4%B8%8A%E6%B5%B7&d=2022-05-17&e=
+台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海
+——
+
+
+  
+Tue, 17 May 2022 10:19:01 GMT
+  
+  
+上海封城期间两名女子在一条被封的街道上拥抱。（2022年5月16日）
+  
+  封城超过6周的上海当局星期天宣布，自5月16日起分阶段复商复市。对许多人来说，这段严格封控时期无疑是一段非常艰辛的历程，对外地人而言更是如此。在过去的一些日子里，有被困在上海的台湾人甚至现在只要听到门铃声，就头皮发麻，浑身紧张，无时无刻不想要逃出上海。历经1个多月封城，上海解封终露曙光。中国官方15日宣布，自5月16日起分3阶段恢复正常生活，预计6月1日至6月中下旬，全面恢复全市正常生产生活秩序。上海政府表示，5月16日起将按照“有序放开、有限流动、有效管控、分类管理”的原则分阶段复商复市，将从民生需求开始，包括购物中心、百货商场、超市卖场、便利店、药店等商业网..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517%2F6576581.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652783943000-->
+<p><a href="https://www.voachinese.com/a/taiwanese-in-shanghai-are-very-nervous-when-they-hear-the-doorbell-ringing-20220517/6576581.html">台湾人在上海：听到门铃声就很紧张 无时无刻不想逃离上海</a>
+——</p>
+
+<div>
+  <div>
+<em>Tue, 17 May 2022 10:19:01 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/03190000-0aff-0242-c8ec-08da37ede5f6_cx1_cy4_cw91_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">上海封城期间两名女子在一条被封的街道上拥抱。（2022年5月16日）</small>
+  </div>
+  <p>封城超过6周的上海当局星期天宣布，自5月16日起分阶段复商复市。对许多人来说，这段严格封控时期无疑是一段非常艰辛的历程，对外地人而言更是如此。在过去的一些日子里，有被困在上海的台湾人甚至现在只要听到门铃声，就头皮发麻，浑身紧张，无时无刻不想要逃出上海。<br /><br />历经1个多月封城，上海解封终露曙光。中国官方15日宣布，自5月16日起分3阶段恢复正常生活，预计6月1日至6月中下旬，全面恢复全市正常生产生活秩序。<br /><br />上海政府表示，5月16日起将按照“有序放开、有限流动、有效管控、分类管理”的原则分阶段复商复市，将从民生需求开始，包括购物中心、百货商场、超市卖场、便利店、药店等商业网点逐步恢复线下营业，划定进出通道，做好人员限流；菜市场恢复线下营业，控制开摊率和客流量；餐饮服务实行线上、线下外卖；理发、洗染服务实行错峰限流等措施。<br /><br />不过，有网友拍到有的上海社区不但没拆掉隔离墙，反而在解封前夕加封铁板。社交平台微博上更有大批网友嘲讽：“新闻上说上海5月16日复市，但是5月15日还在加封，这是说给外地人听的吗？”网友质疑“复商复市”根本是在骗人。<br /><br />对外地人来说，不管是清零还是解封，他们只希望能过着一个有尊严、有人权的生活。<br /><br />现年36岁在上海从事金融科技的台湾人林小姐在接受美国之音采访时表示，他们小区目前正处于“静默期”，就是相较先前封城期间还能从社区团购蔬菜或上网订菜，现在则是完全不行，因为社区前的马路全部都钉上木栅栏封死，即使订了菜，外送员也无法进入。小区民众完全无法走出去，每天唯一能出门做的事情就是下楼测核酸。<br /><br />她说，他们社区5月10日收到要展开“静默期”的公文，原本说要“静默”至13日，但13日又收到延期通知说要延到20日，“你永远不知道要延到什么时候”。<br /><br />她表示，自封城至今，她一共收过六次政府发放的物资，但她气愤地形容那些都是“废物”。<br /><br />林小姐说：“有一次是口罩，有一次收过3瓶300毫升的牛奶，另有三次是蔬菜，而其中一次的菜几乎全是烂的，超傻眼！”<br /><br /><strong>非法强拉阴性民众送隔离</strong><br /><br />她还说，上周有新冠病毒检测阴性民众被强迫拉去隔离，且不给任何隔离地点、时间以及理由的明确答复。倘若民众拒绝，就会有民警上门拉去隔离。她强调，上述行为都是在没有任何中国合法官方文件下去执行的。<br /><br />不过，林小姐说，在中国宪法学者童之伟出面批评政府此举是非法行为之后，“大白”（身穿白色防护服的防疫工作人员）的做法有了一些改变。童之伟的微博目前已经被官方禁言。<br /><br />她说，现在“大白”每天还是会从上午九点到晚上十二点之间，挨家挨户地敲门叫人去隔离，但他们现在的“话术”是：“我们不会进去你家，你不想留钥匙也没关系，你不去隔离也可以，但我们会把你的『随申码』从绿色变成黄色或红色。”<br /><br />林小姐说，上海的“随申码”分为绿黄红三种颜色，绿码代表阴性可自由通行，红码代表阳性须需离，黄码则是禁止出入某些公共场所。她说，有些居民想赌一把，先待在家里，之后看看怎么样再说；但也有人被骗去五星级酒店隔离，但实际传回来的照片，隔离点根本就是毛胚房，而且其“随申码”还莫名其妙地变成红码。<br /><br /><strong>对上海失望</strong><br /><br />林小姐说，另一个令她心惊的事情，是有新冠病毒检测阴性的邻居被抓去隔离后，晚上却有不认识的人出现在邻居家中。她后来才发现，社区马路被封死的栅栏有一块木板是开着的，但能打开木栅栏的人只有居委会或是街道办事处的人，所以她怀疑是他们让不认识的人进到被隔离者的家中。<br /><br />她说，现在只要听到门铃声响起，都会紧张的不得了，深怕自己突然就被强制带走隔离。<br /><br />她表示：“来到上海是因为觉得上海应该就是全中国最不中国的地方，最贴近西方社会，也比较自由，可如今（上海当局）做出这一系列的政策之后，打破了大家对上海的印象，就是不管是台湾人，还有很多外国人，甚至连中国自己内地的人都对上海非常的失望，每个人都想要逃出去。我以一个外来人的角度，我无时无刻都想要逃出这个地方。”<br /><br />林小姐还讲述了同社区一位美国女生自述的经历。她说，这个女生前几天为了小狗不得不在深夜偷偷溜出去遛狗，但遇到两位“大白”紧跟在后，因为语言不通，她抬起脚模仿小狗要上厕所的模样，遭大白嘲笑，也抬起脚踢了小狗几下，小狗受到惊吓躲在主人脚边，主人被气哭，但同时也很害怕，因为两位“大白”一直尾随她。<br /><br />另一位32岁从事设计工作的台湾人吴小姐就稍微比较幸运了。她告诉美国之音，他们小区很小，一直都可以下楼拿菜，只是不能走到马路上。大概一个多礼拜前，他们小区本来有望解封，结果在解封前一天测出有一位阳性，只好整个小区全部重来14天不能出门。<br /><br /><strong>40天才吃到一颗花椰菜</strong><br /><br />她说，现在菜真的很不好买，以前上网买菜可以将品项放入购物车后，还能慢慢逛其他商场再结帐，但现在变成要一直盯着各家卖场，因为可能某个便利店或是超市会突然上线5分钟可以买菜，此时消费者必须要快速选好品项，下单并结帐，时常一结帐完，该卖场就显示已关闭。<br /><br />吴小姐说：“比如说，我想吃花椰菜想了很久，我从封城到现在都没有买到，送的物资也没有，然后我前几天就是一直在刷那个APP，然后突然有一个超市可能开了5分钟，我什么都不管就是买下去，40几天终于买到一个花椰菜。”<br /><br />吴小姐并表示，她没有遇过有大白强制入户之事，但有朋友的社区确实因为同栋有一位阳性，使得其他阴性的人也要“连坐”，被带走隔离的情况。但从朋友发回的照片来看，他们住的都是还不错的五星级酒店，而且一人一间。<br /><br /><strong>离开上海</strong><br /><br />吴小姐说，经过这次封城，她有种害怕被莫名其妙带走的不安全感，她和先生已经萌生想要搬离上海的念头。<br /><br />香港福克斯传媒旗下的一家平台“这是上海”曾在四月中旬对上海950名外国侨民进行调查，结果显示，约48%的受访者计划在今后12个月内离开上海；另有37%的人表示，他们会等到疫情结束再看情况是否离开。<br /><br />日本《产经新闻》台北支局长矢板明夫也曾在脸书透露，很多日本商人正计划离开中国，其中有不少人是他的朋友。<br /><br />法律学者、美国芝加哥大学客座教授滕彪在接受美国之音采访时表示，“大白”强制入户消杀以及强行要求交出钥匙等行为与中国现行的包括《宪法》、《刑事诉讼法》、《治安处罚法》和《传染病防治法》等都是相违背的。他们的做法没有任何的法律依据，甚至本身的行为即已构成犯罪。<br /><br /><strong>要求出具法律依据</strong><br /><br />他表示，遇到这种状况，居民可以要求“大白”出具法律依据并亮明身份，了解他们是代表哪一个政府部门。不过，滕彪也感叹，中国把清零当作头号政治任务，绝大多数的“大白”都不去理会这些公民的合法要求，民众的抵抗与维权都没有效。<br /><br />滕彪说：“这里边就遇到一个困境，一方面，公民有这些基本的人身权利、自由权利和财产权利，应该据理力争；但另一方面，他们这种最基本的要求也可能被置之不理，在很多情况下也无济于事，没有办法去阻挡当局的种种非法行为。”<br /><br /><strong>通过外交途径交涉</strong><br /><br />他还说，依照中国的法律，在防疫上并没有将外国人区别对待，也就是说，不管来自多么自由民主的外国人，他们的防疫待遇跟中国人是相同的，所以如果在上海的外国人感觉人权遭受侵害时，相关的外国政府就应通过外交途径进行谴责，然后提出交涉，包括提供一些领事服务与协助等等。<br /><br />台湾陆委会发言人邱垂正在接受美国之音采访时表示，近日确曾接获部分旅居上海的台湾民众反映，担心被强制带往异地进行隔离，相关个案已请海基会进行了解，并透过适当管道要求中共有关部门应以合理方式安排防疫措施。他并表示，就台湾方面了解，已有部分个案经协助后不会被强制带离，也有允许人道离境的案例。</p>
+  <p>他并再次提醒，如果台湾民众有赴陆的规划，应将中共当前各项防疫措施及可能产生的风险列入考量，避免造成个人财产或人身权益等损害。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-17/%E5%8F%B0%E6%B9%BE%E6%80%BB%E7%BB%9F%E8%94%A1%E8%8B%B1%E6%96%87%E8%B0%B4%E8%B4%A3%E5%8D%97%E5%8A%A0%E5%B7%9E%E5%8F%B0%E6%B9%BE%E6%95%99%E4%BC%9A%E6%9E%AA%E5%87%BB%E6%A1%88-%E5%90%91%E7%BD%B9%E9%9A%BE%E8%80%85%E5%AE%B6%E5%B1%9E%E5%8F%8A%E4%BC%A4%E8%80%85%E8%A1%A8%E7%A4%BA%E6%85%B0%E9%97%AE">
+          台湾总统蔡英文谴责南加州台湾教会枪击案，向罹难者家属及伤者表示慰问
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-17/%E5%86%85%E9%9C%80%E5%8F%97%E5%8E%8B%E4%BA%BA%E6%B0%91%E5%B8%81%E8%B4%AC%E5%80%BC-%E4%B8%AD%E5%9B%BD%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E6%88%96%E6%8B%96%E7%B4%AF%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E">
+          内需受压人民币贬值 中国清零政策或拖累全球经济
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E5%9C%9F%E8%80%B3%E5%85%B6%E6%80%BB%E7%BB%9F%E9%87%8D%E7%94%B3%E5%8F%8D%E5%AF%B9%E7%AB%8B%E5%9C%BA-%E7%91%9E%E5%85%B8%E5%92%8C%E8%8A%AC%E5%85%B0%E5%8A%A0%E5%85%A5%E5%8C%97%E7%BA%A6%E7%9A%84%E5%8A%AA%E5%8A%9B%E9%81%87%E9%98%BB">
+          土耳其总统重申反对立场 瑞典和芬兰加入北约的努力遇阻
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E6%9C%9D%E9%B2%9C%E7%96%91%E4%BC%BC%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E5%8D%87%E8%87%B3150%E4%B8%87-%E5%BD%93%E5%B1%80%E6%B4%BE%E5%86%9B%E9%98%9F%E7%96%8F%E9%80%9A%E8%8D%AF%E6%9D%90%E4%BE%9B%E5%BA%94">
+          朝鲜疑似新冠感染者升至150万 当局派军队疏通药材供应
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-17/%E6%9F%AC%E5%AE%98%E5%93%A1%E6%8F%90%E8%AD%B0%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97%E5%8F%AF%E5%85%8D%E9%9A%94%E9%9B%A2-%E7%B8%BD%E7%90%86%E6%B4%AA%E6%A3%AE%E4%B8%80%E5%8F%A3%E5%9B%9E%E7%B5%95">
+            前一篇：柬官員提議不打疫苗可免隔離  總理洪森一口回絕
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-17/%E8%B7%AF%E9%80%8F-%E7%BE%8E%E8%B4%A2%E9%95%BF%E5%92%8C%E8%B4%B8%E6%98%93%E4%BB%A3%E8%A1%A8%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%95%86%E5%93%81%E5%85%B3%E7%A8%8E%E9%97%AE%E9%A2%98%E4%B8%8A%E5%87%BA%E7%8E%B0%E5%88%86%E6%AD%A7">
+            后一篇：路透：美财长和贸易代表在中国商品关税问题上出现分歧
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-17/%E6%9F%AC%E5%AE%98%E5%93%A1%E6%8F%90%E8%AD%B0%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97%E5%8F%AF%E5%85%8D%E9%9A%94%E9%9B%A2-%E7%B8%BD%E7%90%86%E6%B4%AA%E6%A3%AE%E4%B8%80%E5%8F%A3%E5%9B%9E%E7%B5%95'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-17/%E8%B7%AF%E9%80%8F-%E7%BE%8E%E8%B4%A2%E9%95%BF%E5%92%8C%E8%B4%B8%E6%98%93%E4%BB%A3%E8%A1%A8%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%95%86%E5%93%81%E5%85%B3%E7%A8%8E%E9%97%AE%E9%A2%98%E4%B8%8A%E5%87%BA%E7%8E%B0%E5%88%86%E6%AD%A7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-17/%E5%86%85%E9%9C%80%E5%8F%97%E5%8E%8B%E4%BA%BA%E6%B0%91%E5%B8%81%E8%B4%AC%E5%80%BC-%E4%B8%AD%E5%9B%BD%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E6%88%96%E6%8B%96%E7%B4%AF%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-16/%E5%9C%9F%E8%80%B3%E5%85%B6%E6%80%BB%E7%BB%9F%E9%87%8D%E7%94%B3%E5%8F%8D%E5%AF%B9%E7%AB%8B%E5%9C%BA-%E7%91%9E%E5%85%B8%E5%92%8C%E8%8A%AC%E5%85%B0%E5%8A%A0%E5%85%A5%E5%8C%97%E7%BA%A6%E7%9A%84%E5%8A%AA%E5%8A%9B%E9%81%87%E9%98%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-17/%E6%9F%AC%E5%AE%98%E5%93%A1%E6%8F%90%E8%AD%B0%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97%E5%8F%AF%E5%85%8D%E9%9A%94%E9%9B%A2-%E7%B8%BD%E7%90%86%E6%B4%AA%E6%A3%AE%E4%B8%80%E5%8F%A3%E5%9B%9E%E7%B5%95">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-17/%E8%B7%AF%E9%80%8F-%E7%BE%8E%E8%B4%A2%E9%95%BF%E5%92%8C%E8%B4%B8%E6%98%93%E4%BB%A3%E8%A1%A8%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%95%86%E5%93%81%E5%85%B3%E7%A8%8E%E9%97%AE%E9%A2%98%E4%B8%8A%E5%87%BA%E7%8E%B0%E5%88%86%E6%AD%A7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-17/%E5%86%85%E9%9C%80%E5%8F%97%E5%8E%8B%E4%BA%BA%E6%B0%91%E5%B8%81%E8%B4%AC%E5%80%BC-%E4%B8%AD%E5%9B%BD%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E6%88%96%E6%8B%96%E7%B4%AF%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-16/%E5%9C%9F%E8%80%B3%E5%85%B6%E6%80%BB%E7%BB%9F%E9%87%8D%E7%94%B3%E5%8F%8D%E5%AF%B9%E7%AB%8B%E5%9C%BA-%E7%91%9E%E5%85%B8%E5%92%8C%E8%8A%AC%E5%85%B0%E5%8A%A0%E5%85%A5%E5%8C%97%E7%BA%A6%E7%9A%84%E5%8A%AA%E5%8A%9B%E9%81%87%E9%98%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

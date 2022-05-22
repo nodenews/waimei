@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】山中木白｜今天，上海的魔幻又被刷新 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】山中木白｜今天，上海的魔幻又被刷新
+——
+" />
+    <meta property="og:description" content="
+【404文库】山中木白｜今天，上海的魔幻又被刷新
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】山中木白｜今天，上海的魔幻又被刷新" />
+    <meta property="twitter:title" content="【404文库】山中木白｜今天，上海的魔幻又被刷新" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F680952.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E5%B1%B1%E4%B8%AD%E6%9C%A8%E7%99%BD%EF%BD%9C%E4%BB%8A%E5%A4%A9%EF%BC%8C%E4%B8%8A%E6%B5%B7%E7%9A%84%E9%AD%94%E5%B9%BB%E5%8F%88%E8%A2%AB%E5%88%B7%E6%96%B0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F680952.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E5%B1%B1%E4%B8%AD%E6%9C%A8%E7%99%BD%EF%BD%9C%E4%BB%8A%E5%A4%A9%EF%BC%8C%E4%B8%8A%E6%B5%B7%E7%9A%84%E9%AD%94%E5%B9%BB%E5%8F%88%E8%A2%AB%E5%88%B7%E6%96%B0&d=2022-05-09&e=
+【404文库】山中木白｜今天，上海的魔幻又被刷新
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：今天，上海的魔幻又被刷新作者：山中木白发表日期：2022.5.8发现被 404 日期：2022.5.9来源：微信公众号“山中木白”主题归类：上海疫情CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  今天的事情，先从一则正能量说起，毕竟这个是主流，就像电影这玩意，主旋律一定要成为兵家必争之地。
+  
+  说的是一个苏州的13岁男孩，因为上海疫情，父母均被封锁在上海，他只能一个人在家独自呆了66天。小伙子很坚强，一个人在家上网课，还把宠物猫宠物狗都照顾的好好的。
+  
+  怎么说，13岁的孩子，首先这个独立能力是值得认可的，很多媒体也将传播元素定..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F680952.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/680952.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/680952.html&text=【404文库】山中木白｜今天，上海的魔幻又被刷新&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/680952.html&title=【404文库】山中木白｜今天，上海的魔幻又被刷新" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/680952.html&title=【404文库】山中木白｜今天，上海的魔幻又被刷新" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】山中木白｜今天，上海的魔幻又被刷新&body=
+【404文库】山中木白｜今天，上海的魔幻又被刷新
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/680952.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/680952.html&title=【404文库】山中木白｜今天，上海的魔幻又被刷新&caption=
+【404文库】山中木白｜今天，上海的魔幻又被刷新
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】山中木白｜今天，上海的魔幻又被刷新&url=https://chinadigitaltimes.net/chinese/680952.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】山中木白｜今天，上海的魔幻又被刷新</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/680952.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F680952.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E5%B1%B1%E4%B8%AD%E6%9C%A8%E7%99%BD%EF%BD%9C%E4%BB%8A%E5%A4%A9%EF%BC%8C%E4%B8%8A%E6%B5%B7%E7%9A%84%E9%AD%94%E5%B9%BB%E5%8F%88%E8%A2%AB%E5%88%B7%E6%96%B0&d=2022-05-09&e=
+【404文库】山中木白｜今天，上海的魔幻又被刷新
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：今天，上海的魔幻又被刷新作者：山中木白发表日期：2022.5.8发现被 404 日期：2022.5.9来源：微信公众号“山中木白”主题归类：上海疫情CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  今天的事情，先从一则正能量说起，毕竟这个是主流，就像电影这玩意，主旋律一定要成为兵家必争之地。
+  
+  说的是一个苏州的13岁男孩，因为上海疫情，父母均被封锁在上海，他只能一个人在家独自呆了66天。小伙子很坚强，一个人在家上网课，还把宠物猫宠物狗都照顾的好好的。
+  
+  怎么说，13岁的孩子，首先这个独立能力是值得认可的，很多媒体也将传播元素定..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F680952.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652083345000-->
+<p><a href="https://chinadigitaltimes.net/chinese/680952.html">【404文库】山中木白｜今天，上海的魔幻又被刷新</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>今天，上海的魔幻又被刷新<br /><strong>作者：</strong>山中木白<br /><strong>发表日期：</strong>2022.5.8<br /><strong>发现被 404 日期：</strong>2022.5.9<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/e21T_ShuB2uktYjXvU-FtQ" target="_blank">微信公众号“山中木白”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/%e4%b8%8a%e6%b5%b7%e7%96%ab%e6%83%85" target="_blank">上海疫情</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>今天的事情，先从一则正能量说起，毕竟这个是主流，就像电影这玩意，主旋律一定要成为兵家必争之地。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e252c4a." alt="image" /></p>
+  <p>说的是一个苏州的13岁男孩，因为上海疫情，父母均被封锁在上海，他只能一个人在家独自呆了66天。小伙子很坚强，一个人在家上网课，还把宠物猫宠物狗都照顾的好好的。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2606ac." alt="image" /></p>
+  <p>怎么说，13岁的孩子，首先这个独立能力是值得认可的，很多媒体也将传播元素定位在这个独立自主的优秀层面上。</p>
+  <p>不过也有网友认为，一个未成年小孩单独在家没人管，其他亲戚，邻居，社区，当地警察等等都不管的吗？</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e26903b." alt="image" /></p>
+  <p>在这位网友的评论下面，也有人认为网友太矫情，留守儿童那么多，很多比这个年龄小的不都这样自己在家照顾自己。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e270a70." alt="image" /></p>
+  <p>但也有人认为，这个与留守儿童的性质不同，这里有个主观意愿与被动意愿，当政负因传染病法隔离禁锢居民自由的时候，是要做好善后工作的。</p>
+  <p>就好比下面这个网友说，有没有自理能力是一回事，万一出了事，譬如触电之类的危险，那最终谁负责？</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e27a8a8." alt="image" /></p>
+  <p>法律上，未成年保护法中规定单独留下14岁以下的独自在家是犯法的，没出事的时候不要紧，出了事情父母一定会受到法律惩罚！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2853d0." alt="image" /></p>
+  <p>更多的人，认为这是一件危险的事；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e28d09f." alt="image" /></p>
+  <p>也有网友认为，与自理能力，不害怕，这完全是两个概念，不值得宣扬。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e29995c." alt="image" /></p>
+  <p>不知道各位怎么看？</p>
+  <p>我关注的只有一点，万一出了事政负会怎么对待？</p>
+  <p>第二个事，其实挺可怕的，从一个小区的通知群上，我们可以看到上面说：“目前疫情形势和政策变化很大，根据最新通知，一栋楼只要出现一例阳性，整栋楼会被转移进行隔离！希望大家尽量停止团购、禁止离开楼栋、坚持在家足不出户！”</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2a587b." alt="image" /></p>
+  <p>有渐冻人也被拉走，有87岁老太肝癌，有2岁孩子的家庭不去被撬锁；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2b06ab." alt="image" /></p>
+  <p>现场的视频截图，说是不能动的渐冻人；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2bc9f5." alt="image" /></p>
+  <p>还有这种情况的，</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2c8588." alt="image" /></p>
+  <p>这个事，今天在网上讨论的特别激烈，</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2d35b7." alt="image" /></p>
+  <p>有医院的盆友打电话说，是新政策，一人感染，全楼转运。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2dcbe8." alt="image" /></p>
+  <p>宠物也成了问题，询问志愿者，是不允许被带去酒店的。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e2e900c." alt="image" /></p>
+  <p>更重要的是，从一个录音中，可以听到，现在街道要入室消杀；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e3001c2." alt="image" /></p>
+  <p>录音现在虽然没有了，不过有朋友做了总结。</p>
+  <p>反向询问领导们，你们的家可以随意让陌生人进来，交出钥匙离开吗？</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e31163f." alt="image" /></p>
+  <p>宠物，也会被例行处理吗？</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e31c83e." alt="image" /></p>
+  <p>目前，这个一系列的加码，并没有看到明确的官方通报，</p>
+  <p>能看到的只有一张张，打赢大上海保卫战的告知书；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e32604c." alt="image" /></p>
+  <p>很多地方又开始静默了；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e330c00." alt="image" /></p>
+  <p>期待早日解封；</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e33bdb0." alt="image" /></p>
+  <p>不过，令人意味深长的是，在今天的官媒上，可以看到，</p>
+  <p>上海卫健委是反对搞一刀切的，坚持科学流调管控。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e349ec2." alt="image" /></p>
+  <p>这种自相矛盾的事情不是一次了！</p>
+  <p>5月7日才通知全市本轮核酸检测是最后一次;</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e35c185." alt="image" /></p>
+  <p>结果到了5月8日，又开始新一轮！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e36d070." alt="image" /></p>
+  <p>新的14天，一直在不停循环！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e3763e7." alt="image" /></p>
+  <p>很多人已经佛系了！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e3847f2." alt="image" /></p>
+  <p>这则聊天还是蛮让人触动的，说实话，经历这次后，我如此切身的体会到人类永远没有真正的感同身受。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e393899." alt="image" /></p>
+  <p>哪有感同身受，必须挨过鞭子才知道！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e3a0813." alt="image" /></p>
+  <p>爱咋咋地吧！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-680952-627899e3ac122." alt="image" /></p>
+  <p>这种心态，我不知道多少人有！</p>
+  <p>总之我本人真的就是这种心态。</p>
+  <p>当下，不再去关注何时是个头！</p>
+  <p>未来，也不关心更大的风雨波动。</p>
+  <p>那句古语说得好，哀莫大于心死！</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E9%87%8D%E6%B8%A9-%E8%B4%A2%E7%BB%8F-%E4%B8%93%E8%AE%BF%E7%AB%A5%E4%B9%8B%E4%BC%9F-%E5%9C%A8%E6%B3%95%E6%B2%BB%E8%BD%A8%E9%81%93%E4%B8%8A%E5%8C%96%E8%A7%A3%E5%85%AC%E5%85%B1%E5%8D%AB%E7%94%9F%E5%8D%B1%E6%9C%BA">
+          【重温】财经｜专访童之伟：在法治轨道上化解公共卫生危机
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA-%E4%B8%A7%E4%BA%8B%E5%96%9C%E5%8A%9E%E8%80%81%E4%BC%A0%E7%BB%9F-%E5%8F%8D%E4%BA%BA%E7%B1%BB%E7%9A%84%E4%BA%8B%E5%BC%80%E5%87%BA%E7%BB%9A%E7%83%82%E8%8A%B1%E6%9C%B5">
+          【翻车现场】丧事喜办老传统：反人类的事开出绚烂花朵
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E5%B0%B1%E5%8F%AB%E7%99%BD%E5%86%99-%E6%9C%89%E5%B9%B8%E7%BB%8F%E5%8E%86%E4%BA%86%E4%B8%80%E5%9C%BA%E7%AC%91%E8%AF%9D">
+          就叫白写｜有幸经历了一场笑话
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E9%99%88%E5%B0%8F%E8%8A%B1%E6%95%85%E4%BA%8B%E4%BC%9A-%E7%8E%B0%E5%9C%A8%E7%9A%84%E6%A0%B8%E9%85%B8%E6%96%B9%E6%A1%88-%E7%AE%97%E4%B8%8D%E7%AE%97%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82">
+          陈小花故事会｜现在的核酸方案，算不算精神分裂？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-09/%E6%9C%88%E7%90%83%E6%B0%B8%E4%B9%85%E9%98%B4%E5%BD%B1%E7%9A%84%E7%A7%98%E5%AF%86%E5%8D%B3%E5%B0%86%E5%A4%A7%E7%99%BD%E5%A4%A9%E4%B8%8B">
+            前一篇：月球永久阴影的秘密即将大白天下
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-09/%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA-%E4%B8%A7%E4%BA%8B%E5%96%9C%E5%8A%9E%E8%80%81%E4%BC%A0%E7%BB%9F-%E5%8F%8D%E4%BA%BA%E7%B1%BB%E7%9A%84%E4%BA%8B%E5%BC%80%E5%87%BA%E7%BB%9A%E7%83%82%E8%8A%B1%E6%9C%B5">
+            后一篇：【翻车现场】丧事喜办老传统：反人类的事开出绚烂花朵
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E6%9C%88%E7%90%83%E6%B0%B8%E4%B9%85%E9%98%B4%E5%BD%B1%E7%9A%84%E7%A7%98%E5%AF%86%E5%8D%B3%E5%B0%86%E5%A4%A7%E7%99%BD%E5%A4%A9%E4%B8%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA-%E4%B8%A7%E4%BA%8B%E5%96%9C%E5%8A%9E%E8%80%81%E4%BC%A0%E7%BB%9F-%E5%8F%8D%E4%BA%BA%E7%B1%BB%E7%9A%84%E4%BA%8B%E5%BC%80%E5%87%BA%E7%BB%9A%E7%83%82%E8%8A%B1%E6%9C%B5'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA-%E4%B8%A7%E4%BA%8B%E5%96%9C%E5%8A%9E%E8%80%81%E4%BC%A0%E7%BB%9F-%E5%8F%8D%E4%BA%BA%E7%B1%BB%E7%9A%84%E4%BA%8B%E5%BC%80%E5%87%BA%E7%BB%9A%E7%83%82%E8%8A%B1%E6%9C%B5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E5%B0%B1%E5%8F%AB%E7%99%BD%E5%86%99-%E6%9C%89%E5%B9%B8%E7%BB%8F%E5%8E%86%E4%BA%86%E4%B8%80%E5%9C%BA%E7%AC%91%E8%AF%9D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-09/%E6%9C%88%E7%90%83%E6%B0%B8%E4%B9%85%E9%98%B4%E5%BD%B1%E7%9A%84%E7%A7%98%E5%AF%86%E5%8D%B3%E5%B0%86%E5%A4%A7%E7%99%BD%E5%A4%A9%E4%B8%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-09/%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA-%E4%B8%A7%E4%BA%8B%E5%96%9C%E5%8A%9E%E8%80%81%E4%BC%A0%E7%BB%9F-%E5%8F%8D%E4%BA%BA%E7%B1%BB%E7%9A%84%E4%BA%8B%E5%BC%80%E5%87%BA%E7%BB%9A%E7%83%82%E8%8A%B1%E6%9C%B5">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-09/%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA-%E4%B8%A7%E4%BA%8B%E5%96%9C%E5%8A%9E%E8%80%81%E4%BC%A0%E7%BB%9F-%E5%8F%8D%E4%BA%BA%E7%B1%BB%E7%9A%84%E4%BA%8B%E5%BC%80%E5%87%BA%E7%BB%9A%E7%83%82%E8%8A%B1%E6%9C%B5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-09/%E5%B0%B1%E5%8F%AB%E7%99%BD%E5%86%99-%E6%9C%89%E5%B9%B8%E7%BB%8F%E5%8E%86%E4%BA%86%E4%B8%80%E5%9C%BA%E7%AC%91%E8%AF%9D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

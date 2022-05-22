@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？
+——
+" />
+    <meta property="og:description" content="
+全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？" />
+    <meta property="twitter:title" content="全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fshould-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510%2F6565780.html&t=%E5%85%A8%E7%90%83%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%B3%B0%E4%BC%9A%E5%8D%B3%E5%B0%86%E5%8F%AC%E5%BC%80%EF%BC%8C%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%92%8C%E9%97%AE%E8%B4%A3%E6%98%AF%E5%90%A6%E5%BA%94%E7%BA%B3%E5%85%A5%E8%AE%AE%E7%A8%8B%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fshould-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510%2F6565780.html&t=%E5%85%A8%E7%90%83%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%B3%B0%E4%BC%9A%E5%8D%B3%E5%B0%86%E5%8F%AC%E5%BC%80%EF%BC%8C%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%92%8C%E9%97%AE%E8%B4%A3%E6%98%AF%E5%90%A6%E5%BA%94%E7%BA%B3%E5%85%A5%E8%AE%AE%E7%A8%8B%EF%BC%9F&d=2022-05-10&e=
+全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？
+——
+
+
+  
+Tue, 10 May 2022 19:52:53 GMT
+  
+  
+资料图：拜登总统和美国常驻联合国代表琳达·托马斯-格林菲尔德出席第一届全球新冠疫情峰会（2021年9月22日）
+  
+  美国总统拜登星期四（5月12日）将在第二届全球新冠疫情视频峰会并发表讲话。此次峰会旨在动员全球努力结束新冠疫情的急性阶段，并为未来的健康威胁做好准备。一些分析人士认为，新冠溯源和问责应作为峰会的议程之一，以便更好地防范下一场大流行病的爆发。但也有卫生政策专家表示，新冠溯源固然重要，但是眼下更需关注如何结束疫情，应对疫苗等公共卫生资源全球不平等的问题。星期四的峰会由美国与加勒比共同体的主席国伯利兹、七国集团轮值主席国德国、二十国集团轮值主席国印度尼西亚和非洲联盟主席国塞内加尔共同主办。白宫表示，此次峰会将延续去年9月首届..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fshould-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510%2F6565780.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html&text=全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html&title=全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html&title=全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？&body=
+全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html&title=全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？&caption=
+全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？&url=https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fshould-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510%2F6565780.html&t=%E5%85%A8%E7%90%83%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%B3%B0%E4%BC%9A%E5%8D%B3%E5%B0%86%E5%8F%AC%E5%BC%80%EF%BC%8C%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%92%8C%E9%97%AE%E8%B4%A3%E6%98%AF%E5%90%A6%E5%BA%94%E7%BA%B3%E5%85%A5%E8%AE%AE%E7%A8%8B%EF%BC%9F&d=2022-05-10&e=
+全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？
+——
+
+
+  
+Tue, 10 May 2022 19:52:53 GMT
+  
+  
+资料图：拜登总统和美国常驻联合国代表琳达·托马斯-格林菲尔德出席第一届全球新冠疫情峰会（2021年9月22日）
+  
+  美国总统拜登星期四（5月12日）将在第二届全球新冠疫情视频峰会并发表讲话。此次峰会旨在动员全球努力结束新冠疫情的急性阶段，并为未来的健康威胁做好准备。一些分析人士认为，新冠溯源和问责应作为峰会的议程之一，以便更好地防范下一场大流行病的爆发。但也有卫生政策专家表示，新冠溯源固然重要，但是眼下更需关注如何结束疫情，应对疫苗等公共卫生资源全球不平等的问题。星期四的峰会由美国与加勒比共同体的主席国伯利兹、七国集团轮值主席国德国、二十国集团轮值主席国印度尼西亚和非洲联盟主席国塞内加尔共同主办。白宫表示，此次峰会将延续去年9月首届..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fshould-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510%2F6565780.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652212743000-->
+<p><a href="https://www.voachinese.com/a/should-the-2nd-covid-summit-focus-on-accountability-and-virus-origins-2022-510/6565780.html">全球新冠疫情峰会即将召开，病毒溯源和问责是否应纳入议程？</a>
+——</p>
+
+<div>
+  <div>
+<em>Tue, 10 May 2022 19:52:53 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/03a90000-0aff-0242-f82f-08da21623727_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料图：拜登总统和美国常驻联合国代表琳达·托马斯-格林菲尔德出席第一届全球新冠疫情峰会（2021年9月22日）</small>
+  </div>
+  <p>美国总统拜登星期四（5月12日）将在第二届全球新冠疫情视频峰会并发表讲话。此次峰会旨在动员全球努力结束新冠疫情的急性阶段，并为未来的健康威胁做好准备。一些分析人士认为，新冠溯源和问责应作为峰会的议程之一，以便更好地防范下一场大流行病的爆发。但也有卫生政策专家表示，新冠溯源固然重要，但是眼下更需关注如何结束疫情，应对疫苗等公共卫生资源全球不平等的问题。<br /><br />星期四的峰会由美国与加勒比共同体的主席国伯利兹、七国集团轮值主席国德国、二十国集团轮值主席国印度尼西亚和非洲联盟主席国塞内加尔共同主办。<br /><br />白宫表示，此次峰会将延续去年9月首届峰会的主题，并关注于四个目标：获得新的抗疫资源和政策承诺，增加全球疫苗接种的数量和质量，保护高风险人群，以及防范未来的大流行病。<br /><br />华盛顿战略与研究中心全球卫生政策中心主任斯蒂芬·莫里森（Stephen Morrison）对美国之音表示，在全球更多地关注俄乌局势之际，全球新冠疫情峰会“试图将世界的注意力重新聚焦到有关此次大流行病的未竟事业上。”<br /><br /><strong>疫情溯源</strong><br /><br />在此次峰会召开之际，新冠大流行已经进入第三年，新的变异株仍不断出现。世界卫生组织说，从2020年1月1日至2021年12月31日，这场大流行病直接或间接导致了全球近1500万人死亡。<br /><br />但是，对于引发这一切的病毒的源头，仍然尚无定论，科学家们继续争论病毒是从野生动物自然溢出的还是可能来自实验室泄漏。<br /><br />今年2月，两份由多名美国研究人员参与撰写的研究报告通过分析多种数据后认为，武汉华南海鲜市场可能是新冠病毒的起源地，病毒可能是从野生动物传播到在市场工作或购物的人身上的。一些科学家认为这两项未经同行评审的研究为自然溢出说提供了进一步有信服力的证据，但是另一些科学家则认为分析没有确定病毒外溢的动物种类，不足以表明任何一种情况是高度可信的。<br /><br />澳大利亚国立大学国家流行病学和人口健康中心名誉教授科林·巴特勒(Colin Butler)认为，溯源和问责问题应当成为这次全球新冠峰会的关注议题之一，以帮助预防未来可能出现的流行病。<br /><br />巴特勒去年受联合国环境署委托撰写了一份题为《COVID-19警告：应对亚太地区环境威胁和未来大流行病的风险》的报告。在这项尚待发布的研究中，他列出可能导致人畜传播疫情和大流行病的七大风险因素，其中包括野生动物交易养殖，以及医疗和实验室程序。</p>
+  <p>巴特勒认为，病毒源自实验室或从实验室逃逸的可能性是存在的，需要对这种可能性展开透明调查。“真的可能来自实验室的话，从某种程度来说也不是坏事，因为如果我们可以充分控制实验室工作，我们也许可以防止疫情再次发生，”他对美国之音表示。<br /><br />虽然新冠溯源问题受到很多关注，但是华盛顿战略与研究中心的莫里森预计，这个问题不会是本次峰会上的重要议题。他说：“对于实验室泄漏假说和人畜共患病溢出说，都还有很多工作要做，但是不幸的是，这并没有发生，有点像是进入暂停状态。”<br /><br />世界卫生组织去年发布的溯源报告认为病毒由实验室引入“极不可能”，但是建议对野生动物农场开展更多研究，以便更好地厘清病毒传播的潜在宿主。报告还建议对2019年9月至12月期间从人们身上采集并储存在武汉血液中心的献血进行新冠病毒抗体检测。北京表示会尽快完成需要补充完善的任务，但是目前还未有相关发布。<br /><br />世卫生组织还提出应展开第二阶段的溯源研究，将武汉相关实验室和研究机构纳入调查对象，并要求中国提供“大流行病初期的信息和原始数据”。但是北京拒绝，称第二阶段溯源计划“在某些方面可以说是既不尊重常识，也违背科学。”<br /><br />美国杜克大学全球健康创新中心创始主任克里什纳·乌达雅库马尔（Krishna Udayakumar）认为，新冠溯源问题固然非常重要，但是将这个议题纳入全球新冠峰会议程恐怕不会“富有成效”。<br /><br />他认为，峰会需要聚焦当务之急，包括如何为全球的疫情应对重新注入能量，如何获得更多的承诺和行动，如何尽早结束新冠大流行病的急性传播阶段，如何解决全球疫苗和其他治疗资源不公平的问题等等。<br /><br /><strong>新的承诺</strong><br /><br />各国在第一届全球新冠峰会上承诺捐赠更多疫苗，提供治疗和检测支持，增加国内和地区的疫苗生产，但是分析人士说，这些目标还远未达成。<br /><br />“美国和其他国家在疫苗和援助上做出了大胆的承诺，但是没有落实。我们仍然看到全球范围内的巨大不平等，”乔治城大学全国与全球卫生法律研究所主任劳伦斯·哥斯汀（Lawrence Gostin）对美国之音说。<br /><br />数据显示，目前已至少有218个国家的地区施打了110亿剂新冠疫苗，但是低收入国家的平均接种率仅有15%左右。<br /><br />由世卫组织和合作伙伴发起的获取COVID-19工具加速计划（ACT-Accelerator）星期二<a href="https://www.who.int/news/item/10-05-2022-leaders-urged-to-make-firm-commitments-for-second-global-covid-19-summit-by-act-accelerator-agency-leads" target="_blank">敦促</a>全球领导人趁着第二届全球新冠峰会的机会，调动资金和政治意愿，做出坚实承诺，以实现全球新冠疫苗接种覆盖率、检测率和获得治疗的目标。<br /><br />负责这项计划的世卫组织总干事谭德塞及其他合作伙伴负责人在一份声明中说：“达成这些目标可以减少病毒传播，保护人们免受新冠伤害，对结束此次大流行病至关重要。”<br /><br />美国还没有公布将在峰会上做出哪些新的承诺。拜登政府还在争取获得更多的抗疫资金。行政当局此前提出为应对新冠疫情追加225亿美元的响应资金，包括50亿美元用于全球抗疫，但是这个请求在国会的法案讨论中被搁置。<br /><br />美国有线电视新闻网（CNN）援引消息人士的话说，峰会前夕，拜登总统呼吁中高收入和高收入国家向低收入国家捐赠价值20亿美元的治疗药物以及10亿美元的氧气供应。<br /><br />杜克大学的乌达雅库马尔（Krishna Udayakumar）表示，相比第一次峰会，此次峰会“可能会看到较小规模的有针对性的承诺与行动。”他说：“我们需要确保我们考虑关键的优先事项，让资源的输送是有效的和有效率的。”<br /><br />“这将是渐进的。”华盛顿战略与研究中心的莫里森说，“在这个在资金和政治关注度上的困难时期，我们需要有切实的期望，也需要有更多的高层接触。”<br /><br /><strong>中国会否参会？</strong><br /><br />白宫星期二公布了出席第二届全球新冠峰会的部分国家、非政府组织和私营企业的<a href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/05/10/media-advisory-second-covid-19-summit/" target="_blank">名单</a>，这些国家和机构已做出财政或政策承诺。此外，包括世卫组织、世界银行和世贸组织在内的国际和其他多边机构也将参会。<br /><br />目前尚不清楚中国是否会参加。中国外交部发言人汪文斌4月19日在回答记者提问时称，“中方欢迎一切有助于国际社会团结抗疫、科学抗疫的努力”，但是没有表示中国是否会出席。中国没有参加去年的峰会。<br /><br />公共卫生政策专家表示，如果中国缺席，将令人遗憾。莫里森说：“中国可以贡献很多。没有中国的参与，你无法在卫生安全事务上有任何的全球解决方案。”<br /><br />乌达雅库马尔说，相比美国和其他国家，中国在财政贡献和疫苗捐赠上都略显逊色，比如中国向获取COVID-19工具加速计划提供的资金为1.16亿美元，而美国是68亿美元；中国向全球捐赠的疫苗数量不足美国的一半。<br /><br />他说：“我们最希望看到来自中国的更强有力的全球响应，以及更积极的参与。”<br /><br />另一方面，台湾外长吴钊燮证实已收到峰会邀请，并将派代表出席，但是拒绝说明台湾总统蔡英文是否会参加峰会，表示参会人选的公布时机将配合主办单位。台湾去年是由前副总统陈建仁参加。<br /><br />北京反对与它建交的国家与台湾进行任何正式的官方往来，如果台湾总统蔡英文参加这次峰会的话，势必会引发北京的强烈反对。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E9%A2%84%E8%AE%A1%E5%B0%86%E6%88%90%E4%B8%BA%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%96%B0%E6%80%BB%E7%BB%9F%E7%9A%84%E5%B0%8F%E9%A9%AC%E7%A7%91%E6%96%AF%E4%B8%8D%E6%83%B3%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%8F%B2%E8%80%8C%E8%A2%AB%E8%AF%84%E5%88%A4">
+          预计将成为菲律宾新总统的小马科斯不想因家族史而被评判
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%80%BB%E5%B9%B2%E4%BA%8B-%E4%B8%AD%E5%9B%BD%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E4%B8%8D%E5%8F%AF%E6%8C%81%E7%BB%AD">
+          世卫组织总干事：中国清零政策不可持续
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E7%BE%8E%E5%9B%BD%E8%AF%B4-%E4%BF%84%E7%BD%97%E6%96%AF%E5%85%A5%E4%BE%B5%E4%B9%8C%E5%85%8B%E5%85%B0%E5%89%8D%E5%90%8E%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%8F%91%E5%8A%A8%E4%BA%86%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB">
+          美国说，俄罗斯入侵乌克兰前后对乌克兰发动了网络攻击
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%B0%86%E5%85%83%E5%AE%87%E5%AE%99%E5%86%9B%E4%BA%8B%E5%8C%96-%E8%A7%A3%E6%94%BE%E5%86%9B%E6%8A%A5-%E4%BB%8E%E5%92%8C%E5%B9%B3%E5%88%B0%E6%88%98%E4%BA%89-%E6%9E%84%E6%83%B3%E8%A7%81%E7%AB%AF%E5%80%AA">
+          中国要将元宇宙军事化？解放军报“从和平到战争”构想见端倪
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%B0%81%E5%9F%8E%E4%B8%8B%E4%B9%B0%E4%B8%8D%E5%88%B0%E5%90%83%E7%9A%84-%E5%9C%A8%E5%8D%8E%E6%9C%9D%E9%B2%9C%E5%8A%B3%E5%B7%A5%E5%AE%81%E6%84%BF%E5%B7%A5%E5%8E%82%E5%85%B3%E9%97%A8">
+            前一篇：封城下买不到吃的 在华朝鲜劳工宁愿工厂关门
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E6%8B%9C%E7%99%BB%E7%AD%BE%E7%BD%B2-%E7%A7%9F%E5%80%9F%E6%B3%95%E6%A1%88-%E5%A4%A7%E5%B9%85%E5%A2%9E%E5%8A%A0%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%86%9B%E4%BA%8B%E4%B8%8E%E7%BB%8F%E6%B5%8E%E6%8F%B4%E5%8A%A9">
+            后一篇：拜登签署《租借法案》大幅增加对乌克兰军事与经济援助
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%B0%81%E5%9F%8E%E4%B8%8B%E4%B9%B0%E4%B8%8D%E5%88%B0%E5%90%83%E7%9A%84-%E5%9C%A8%E5%8D%8E%E6%9C%9D%E9%B2%9C%E5%8A%B3%E5%B7%A5%E5%AE%81%E6%84%BF%E5%B7%A5%E5%8E%82%E5%85%B3%E9%97%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E6%8B%9C%E7%99%BB%E7%AD%BE%E7%BD%B2-%E7%A7%9F%E5%80%9F%E6%B3%95%E6%A1%88-%E5%A4%A7%E5%B9%85%E5%A2%9E%E5%8A%A0%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%86%9B%E4%BA%8B%E4%B8%8E%E7%BB%8F%E6%B5%8E%E6%8F%B4%E5%8A%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%80%BB%E5%B9%B2%E4%BA%8B-%E4%B8%AD%E5%9B%BD%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E4%B8%8D%E5%8F%AF%E6%8C%81%E7%BB%AD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E7%BE%8E%E5%9B%BD%E8%AF%B4-%E4%BF%84%E7%BD%97%E6%96%AF%E5%85%A5%E4%BE%B5%E4%B9%8C%E5%85%8B%E5%85%B0%E5%89%8D%E5%90%8E%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%8F%91%E5%8A%A8%E4%BA%86%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%B0%81%E5%9F%8E%E4%B8%8B%E4%B9%B0%E4%B8%8D%E5%88%B0%E5%90%83%E7%9A%84-%E5%9C%A8%E5%8D%8E%E6%9C%9D%E9%B2%9C%E5%8A%B3%E5%B7%A5%E5%AE%81%E6%84%BF%E5%B7%A5%E5%8E%82%E5%85%B3%E9%97%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E6%8B%9C%E7%99%BB%E7%AD%BE%E7%BD%B2-%E7%A7%9F%E5%80%9F%E6%B3%95%E6%A1%88-%E5%A4%A7%E5%B9%85%E5%A2%9E%E5%8A%A0%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%86%9B%E4%BA%8B%E4%B8%8E%E7%BB%8F%E6%B5%8E%E6%8F%B4%E5%8A%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%80%BB%E5%B9%B2%E4%BA%8B-%E4%B8%AD%E5%9B%BD%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E4%B8%8D%E5%8F%AF%E6%8C%81%E7%BB%AD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-10/%E7%BE%8E%E5%9B%BD%E8%AF%B4-%E4%BF%84%E7%BD%97%E6%96%AF%E5%85%A5%E4%BE%B5%E4%B9%8C%E5%85%8B%E5%85%B0%E5%89%8D%E5%90%8E%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%8F%91%E5%8A%A8%E4%BA%86%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【立此存照】在“来去自由”的中国，过一种“非必要”的生活 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【立此存照】在“来去自由”的中国，过一种“非必要”的生活
+——
+" />
+    <meta property="og:description" content="
+【立此存照】在“来去自由”的中国，过一种“非必要”的生活
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【立此存照】在“来去自由”的中国，过一种“非必要”的生活" />
+    <meta property="twitter:title" content="【立此存照】在“来去自由”的中国，过一种“非必要”的生活" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681232.html&t=%E3%80%90%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7%E3%80%91%E5%9C%A8%E2%80%9C%E6%9D%A5%E5%8E%BB%E8%87%AA%E7%94%B1%E2%80%9D%E7%9A%84%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%87%E4%B8%80%E7%A7%8D%E2%80%9C%E9%9D%9E%E5%BF%85%E8%A6%81%E2%80%9D%E7%9A%84%E7%94%9F%E6%B4%BB" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681232.html&t=%E3%80%90%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7%E3%80%91%E5%9C%A8%E2%80%9C%E6%9D%A5%E5%8E%BB%E8%87%AA%E7%94%B1%E2%80%9D%E7%9A%84%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%87%E4%B8%80%E7%A7%8D%E2%80%9C%E9%9D%9E%E5%BF%85%E8%A6%81%E2%80%9D%E7%9A%84%E7%94%9F%E6%B4%BB&d=2022-05-12&e=
+【立此存照】在“来去自由”的中国，过一种“非必要”的生活
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【立此存照】在“来去自由”的中国，过一种“非必要”的生活作者：中国数字时代来源：微信公众号“”发表日期：2022.5.12主题归类：出境限制CDS收藏：老大哥馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  5月12日，多家官方媒体转发了来自国家移民管理局的消息，消息称将“从严限制中国公民非必要出境活动”，据称这一目的是为“配合打好疫情防控战”。从即将颁布的相关措施来看，未来中国公民“出入境证件审批签发”、“没必要出境活动”等方面将受到更严格的限制。
+  
+    @中国新闻网：【国家移民管理局：#从严限制中国公民非必要出境活动#】#关注新冠肺炎# ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681232.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681232.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681232.html&text=【立此存照】在“来去自由”的中国，过一种“非必要”的生活&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681232.html&title=【立此存照】在“来去自由”的中国，过一种“非必要”的生活" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681232.html&title=【立此存照】在“来去自由”的中国，过一种“非必要”的生活" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【立此存照】在“来去自由”的中国，过一种“非必要”的生活&body=
+【立此存照】在“来去自由”的中国，过一种“非必要”的生活
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681232.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681232.html&title=【立此存照】在“来去自由”的中国，过一种“非必要”的生活&caption=
+【立此存照】在“来去自由”的中国，过一种“非必要”的生活
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【立此存照】在“来去自由”的中国，过一种“非必要”的生活&url=https://chinadigitaltimes.net/chinese/681232.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【立此存照】在“来去自由”的中国，过一种“非必要”的生活</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681232.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681232.html&t=%E3%80%90%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7%E3%80%91%E5%9C%A8%E2%80%9C%E6%9D%A5%E5%8E%BB%E8%87%AA%E7%94%B1%E2%80%9D%E7%9A%84%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%87%E4%B8%80%E7%A7%8D%E2%80%9C%E9%9D%9E%E5%BF%85%E8%A6%81%E2%80%9D%E7%9A%84%E7%94%9F%E6%B4%BB&d=2022-05-12&e=
+【立此存照】在“来去自由”的中国，过一种“非必要”的生活
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【立此存照】在“来去自由”的中国，过一种“非必要”的生活作者：中国数字时代来源：微信公众号“”发表日期：2022.5.12主题归类：出境限制CDS收藏：老大哥馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  5月12日，多家官方媒体转发了来自国家移民管理局的消息，消息称将“从严限制中国公民非必要出境活动”，据称这一目的是为“配合打好疫情防控战”。从即将颁布的相关措施来看，未来中国公民“出入境证件审批签发”、“没必要出境活动”等方面将受到更严格的限制。
+  
+    @中国新闻网：【国家移民管理局：#从严限制中国公民非必要出境活动#】#关注新冠肺炎# ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681232.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652363217000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681232.html">【立此存照】在“来去自由”的中国，过一种“非必要”的生活</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【立此存照】在“来去自由”的中国，过一种“非必要”的生活<br /><strong>作者：</strong>中国数字时代<br /><strong>来源：</strong><a href="填入文章 URL" target="_blank" rel="noopener">微信公众号“”</a><br /><strong>发表日期：</strong>2022.5.12<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/出境限制/" target="_blank">出境限制</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%80%81%E5%A4%A7%E5%93%A5%E9%A6%86" target="_blank" rel="noopener">老大哥馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>5月12日，多家官方媒体转发了来自国家移民管理局的消息，消息称将“从严限制中国公民非必要出境活动”，据称这一目的是为“配合打好疫情防控战”。从即将颁布的相关措施来看，未来中国公民“出入境证件审批签发”、“没必要出境活动”等方面将受到更严格的限制。</p>
+  <blockquote>
+    <p>@中国新闻网：【国家移民管理局：#从严限制中国公民非必要出境活动#】#关注新冠肺炎# 据“国家移民管理局”微信公众号消息，5月10日下午，国家移民管理局党组召开会议专题研究加强疫情防控等工作，会议要求，要从严从实从细落实疫情防控各项措施，巩固拓展疫情防控战略成果。要严格执行从严从紧的出入境政策，从严限制中国公民非必要出境活动，严格出入境证件审批签发。</p>
+  </blockquote>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652359500564.png" alt="file" /></p>
+  <ul>
+    <li><a href="https://news.sina.com.cn/c/2022-05-12/doc-imcwipii9472444.shtml" title="澎湃新闻｜国家移民管理局：从严限制中国公民非必要出境活动">澎湃新闻｜国家移民管理局：从严限制中国公民非必要出境活动</a></li>
+  </ul>
+  <p>由于近来中文互联网“润学”流行，这一消息的释出也大大加剧了墙内网民的焦虑情绪，尤其报道中“非必要”的模糊表述更是引起了强烈争议。</p>
+  <blockquote>
+    <p>润学，动词形式润（拼音：run，引申为跑开、移民海外之义），是一个源于中国大陆的網路迷因，意指研究如何离开中国并移民到发达国家的学问。 “润”与内卷、躺平被认为是中国90后和00后年轻人职业发展的三种选择。（维基百科）</p>
+  </blockquote>
+  <p>有网民发现，面对大量的批评意见，官方很快开启了几乎所有微博蓝V账号下的网络评论，禁止对该话题妄议，通过微博实时搜索内容“从严限制中国公民非必要出境活动”不会显示任何个人用户的评论（仅显示蓝V账号）：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652360853538.png" alt="file" /></p>
+  <p>相关话题“#从严限制中国公民非必要出境活动”亦排除了普通网民的参与，发布带话题的内容无法通过广场查看。而微博话题数据显示：该话题阅读量高达1.2亿，讨论数却仅有3.2万。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652360925645.png" alt="file" /><br /><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652360960322.png" alt="file" /></p>
+  <p>例如，@中国新闻网 已开启评论区审核，已有的四千余条网民评论无法显示：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652361321757.png" alt="file" /><br /><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652359525699.png" alt="file" /></p>
+  <p>推特网友对评论审查的观察：</p>
+  <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+    <p lang="zh" dir="ltr">从严限制中国公民非必要出境活动的官媒下，评论都已精选。唯独第一财经日报下面还没有完全精选 <a href="https://t.co/QdS2kGS9OU">pic.twitter.com/QdS2kGS9OU</a></p>
+    <p>— 大耳朵猫妹 (@big_ear_cat) <a href="https://twitter.com/big_ear_cat/status/1524703851286253570?ref_src=twsrc%5Etfw">May 12, 2022</a></p>
+  </blockquote>
+  <p>    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+  <p>2020年6月，外交部发言人赵立坚在回答外国记者有关“近四成香港人想移民，中国是否介意”的问题时颇有气势的回答道“中国来去自由”，而这段内容也再度被网民引用，视作自行打脸。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652361715704.png" alt="file" /></p>
+  <p>    <iframe loading="lazy" id="reddit-embed" src="https://www.redditmedia.com/r/China_irl/comments/ufy34q/%E8%B5%B5%E7%AB%8B%E5%9D%9A%E6%88%91%E4%B8%8D%E7%9F%A5%E9%81%93%E4%BD%A0%E7%9A%84%E9%97%AE%E9%A2%98%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%E4%B8%AD%E5%9B%BD%E6%9D%A5%E5%8E%BB%E8%87%AA%E7%94%B1/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="434" width="640" scrolling="no"></iframe>
+</p>
+  <p><strong>以下为中国数字时代编辑摘自网民评论：</strong></p>
+  <blockquote>
+    <p>酱油谦peter：坚坚：中国来去自由。</p>
+    <p>陈思扬CHEN：“我不知道你这个问题什么意思，中国，来去自由”。</p>
+    <p>MElmerW：來去自由，只限境內。</p>
+    <p>四季de风：你和你的祖国，一刻也不能分割。</p>
+    <p>SkyBluePink_lila：鎖就鎖啦，又拿防疫做擋箭牌，病毒得到如此重視只能長駐報恩了。</p>
+    <p>ReLocus：谁都别想跑，都给我留下来偷着乐。</p>
+    <p>唯一幸运男孩：境外旅行社可以直接关门了。</p>
+    <p>陈子轩2010：是否必要还不是你们说了算。</p>
+    <p>sxmarin：现在是什么新闻都不能评论了，你们到底想干嘛？</p>
+    <p>Edric66：前有恶意回乡，现有非必要出境。</p>
+    <p>七元老师：怎么算必要，怎么算非必要？</p>
+    <p>Margaret2late：过几年要是发现大家连越南，菲律宾都跑，包帝的面子往哪儿搁。</p>
+    <p>Fox_Mulder7777：这下太平洋加盖了。</p>
+    <p>爸伯爵：平壤直呼内行。</p>
+    <p>leeing1992：今天新闻说，从严控制，非必要，不出境什么是必要呢？我觉得上学，工作都不是必要的。我认为只有探亲是必要的，因为现在在外面的人真的回去。不过这也不可能，毕竟你爹死了你该隔离还是隔离，最后一面都看不见。所以唯一必要的是什么，大概就是国家必要的外交活动吧</p>
+    <p>JLLiberty：非必要，不恋爱；非必要，不结婚，非必要，不生娃；非必要，不买房；非必要，不买车；非必要，不炒股；非必要，不投资；非必要，不内卷；非必要，不“歌德”。</p>
+    <p>Ben9869：我记得明清时期也有类似的政策。</p>
+    <p>Ely_海浪韬韬的黑眼圈：两年了，官方终于肯承认了，这是要进一步加码的意思。</p>
+    <p>PayneCT二号机：“非必要” 已经成了它们新的万金油说法。</p>
+    <p>非必要出境活动There4I：你在你國，過著一種非必要的生活。</p>
+    <p>aalassigh：恶意出境。</p>
+    <p>hughwUuuuuuuuuu：早就开始了，现在算是加码了。</p>
+    <p>SH_Fairfield：感恩就完事了。</p>
+    <p>此間常闔：泪目，为了不把病毒传至外国，开始封锁，坚决支持。</p>
+  </blockquote>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-12</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-12/404%E6%96%87%E5%BA%93-CDTV-%E6%9C%9D%E9%98%B3%E7%BE%A4%E4%BC%97%E6%8B%92%E7%BB%9D-%E7%A1%AC%E9%9A%94%E7%A6%BB-%E8%A6%81%E6%B1%82%E5%9C%A8%E6%B3%95%E5%BE%8B%E6%A1%86%E6%9E%B6%E4%B8%8B%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86">
+          【404文库】【CDTV】朝阳群众拒绝“硬隔离”，要求在法律框架下自我管理
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-12</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-12/404%E6%96%87%E5%BA%93-%E4%BD%95%E7%90%9B%E6%B2%A1%E6%9C%89%E4%BB%A5-%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%BC%80IP%E5%9C%B0%E5%9D%80%E5%B1%9E%E5%9C%B0%E4%BF%A1%E6%81%AF%E7%9A%84%E9%97%AE%E7%AD%94">
+          【404文库】何琛没有以｜平台公开IP地址属地信息的问答
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-12</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-12/%E5%9F%8E%E5%B8%82%E6%95%B0%E6%8D%AE%E5%9B%A2-2%E4%BA%BF%E4%BA%BA%E5%8F%A3%E5%9C%A84%E6%9C%88%E9%9D%99%E6%AD%A2">
+          城市数据团｜2亿人口在4月静止
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-12</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-12/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.11">
+          每日一语 2022.5.11
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-12/%E4%B8%8A%E6%B5%B7%E5%A4%AB%E5%A6%BB%E5%9B%9E%E5%BA%94-%E6%83%A9%E7%BD%9A%E4%B8%89%E4%BB%A3-%E5%A8%81%E8%83%81-%E6%88%91%E4%BB%AC%E6%98%AF%E6%9C%80%E5%90%8E%E4%B8%80%E4%BB%A3-%E8%B0%A2%E8%B0%A2">
+            前一篇：上海夫妻回应“惩罚三代”威胁：我们是最后一代，谢谢！
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-12/%E5%8D%8A%E5%B2%9B%E7%94%B5%E8%A7%86%E5%8F%B0%E8%AE%B0%E8%80%85%E5%9C%A8%E4%BB%A5%E8%89%B2%E5%88%97%E5%86%9B%E4%BA%8B%E8%A1%8C%E5%8A%A8%E4%B8%AD%E4%B8%A7%E7%94%9F">
+            后一篇：半岛电视台记者在以色列军事行动中丧生
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-12/%E4%B8%8A%E6%B5%B7%E5%A4%AB%E5%A6%BB%E5%9B%9E%E5%BA%94-%E6%83%A9%E7%BD%9A%E4%B8%89%E4%BB%A3-%E5%A8%81%E8%83%81-%E6%88%91%E4%BB%AC%E6%98%AF%E6%9C%80%E5%90%8E%E4%B8%80%E4%BB%A3-%E8%B0%A2%E8%B0%A2'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-12/%E5%8D%8A%E5%B2%9B%E7%94%B5%E8%A7%86%E5%8F%B0%E8%AE%B0%E8%80%85%E5%9C%A8%E4%BB%A5%E8%89%B2%E5%88%97%E5%86%9B%E4%BA%8B%E8%A1%8C%E5%8A%A8%E4%B8%AD%E4%B8%A7%E7%94%9F'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-12/404%E6%96%87%E5%BA%93-%E4%BD%95%E7%90%9B%E6%B2%A1%E6%9C%89%E4%BB%A5-%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%BC%80IP%E5%9C%B0%E5%9D%80%E5%B1%9E%E5%9C%B0%E4%BF%A1%E6%81%AF%E7%9A%84%E9%97%AE%E7%AD%94'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-12/%E5%9F%8E%E5%B8%82%E6%95%B0%E6%8D%AE%E5%9B%A2-2%E4%BA%BF%E4%BA%BA%E5%8F%A3%E5%9C%A84%E6%9C%88%E9%9D%99%E6%AD%A2'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-12/%E4%B8%8A%E6%B5%B7%E5%A4%AB%E5%A6%BB%E5%9B%9E%E5%BA%94-%E6%83%A9%E7%BD%9A%E4%B8%89%E4%BB%A3-%E5%A8%81%E8%83%81-%E6%88%91%E4%BB%AC%E6%98%AF%E6%9C%80%E5%90%8E%E4%B8%80%E4%BB%A3-%E8%B0%A2%E8%B0%A2">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-12/%E5%8D%8A%E5%B2%9B%E7%94%B5%E8%A7%86%E5%8F%B0%E8%AE%B0%E8%80%85%E5%9C%A8%E4%BB%A5%E8%89%B2%E5%88%97%E5%86%9B%E4%BA%8B%E8%A1%8C%E5%8A%A8%E4%B8%AD%E4%B8%A7%E7%94%9F">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-12/404%E6%96%87%E5%BA%93-%E4%BD%95%E7%90%9B%E6%B2%A1%E6%9C%89%E4%BB%A5-%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%BC%80IP%E5%9C%B0%E5%9D%80%E5%B1%9E%E5%9C%B0%E4%BF%A1%E6%81%AF%E7%9A%84%E9%97%AE%E7%AD%94">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-12/%E5%9F%8E%E5%B8%82%E6%95%B0%E6%8D%AE%E5%9B%A2-2%E4%BA%BF%E4%BA%BA%E5%8F%A3%E5%9C%A84%E6%9C%88%E9%9D%99%E6%AD%A2">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

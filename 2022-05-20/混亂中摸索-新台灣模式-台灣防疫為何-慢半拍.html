@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+——
+" />
+    <meta property="og:description" content="
+混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？" />
+    <meta property="twitter:title" content="混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25B7%25B7%25E4%25BA%2582%25E4%25B8%25AD%25E6%2591%25B8%25E7%25B4%25A2%25E3%2580%258C%25E6%2596%25B0%25E5%258F%25B0%25E7%2581%25A3%25E6%25A8%25A1%25E5%25BC%258F%25E3%2580%258D%25EF%25BC%259A%25E5%258F%25B0%25E7%2581%25A3%25E9%2598%25B2%25E7%2596%25AB%25E7%2582%25BA%25E4%25BD%2595%25E3%2580%258C%25E6%2585%25A2%25E5%258D%258A%25E6%258B%258D%25E3%2580%258D%25EF%25BC%259F%2Fa-61873741&t=%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25B7%25B7%25E4%25BA%2582%25E4%25B8%25AD%25E6%2591%25B8%25E7%25B4%25A2%25E3%2580%258C%25E6%2596%25B0%25E5%258F%25B0%25E7%2581%25A3%25E6%25A8%25A1%25E5%25BC%258F%25E3%2580%258D%25EF%25BC%259A%25E5%258F%25B0%25E7%2581%25A3%25E9%2598%25B2%25E7%2596%25AB%25E7%2582%25BA%25E4%25BD%2595%25E3%2580%258C%25E6%2585%25A2%25E5%258D%258A%25E6%258B%258D%25E3%2580%258D%25EF%25BC%259F%2Fa-61873741&t=%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F&d=2022-05-20&e=
+混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+——
+
+
+  
+William Yang2022-05-20T07:47:12.868Z
+  
+  
+台灣總統蔡英文在4月6日宣布實施「新台灣模式」。
+  
+  （德國之聲中文網）台灣新冠疫情持續升溫，根據中央流行疫情指揮中心，台灣週五（5月20日）新增85720例本土確診病例，49例死亡。前一天，台灣衛福部表示疫情「進入廣泛社區流行階段」，預計5月下旬達到高峰。
+  因應疫情變化，台灣政府不斷調整防疫政策。例如，自5月12日起實施的「快篩陽性即確診」政策規定，有3類對象若快篩為陽性，視同確診，包括居家檢疫（入境人士）、居家隔離（與確診者有接觸）、自主防疫者。
+  但快篩陽性後，仍需透過遠距醫療診斷，經醫生判讀確認後才能被列為確診。若對快篩結果無共識，或者並非這3類的其他民眾，則可由衛生單位安排進行PCR核酸檢測。
+  該政策主要..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25B7%25B7%25E4%25BA%2582%25E4%25B8%25AD%25E6%2591%25B8%25E7%25B4%25A2%25E3%2580%258C%25E6%2596%25B0%25E5%258F%25B0%25E7%2581%25A3%25E6%25A8%25A1%25E5%25BC%258F%25E3%2580%258D%25EF%25BC%259A%25E5%258F%25B0%25E7%2581%25A3%25E9%2598%25B2%25E7%2596%25AB%25E7%2582%25BA%25E4%25BD%2595%25E3%2580%258C%25E6%2585%25A2%25E5%258D%258A%25E6%258B%258D%25E3%2580%258D%25EF%25BC%259F%2Fa-61873741" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741&text=混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741&title=混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741&title=混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？&body=
+混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741&title=混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？&caption=
+混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？&url=https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25B7%25B7%25E4%25BA%2582%25E4%25B8%25AD%25E6%2591%25B8%25E7%25B4%25A2%25E3%2580%258C%25E6%2596%25B0%25E5%258F%25B0%25E7%2581%25A3%25E6%25A8%25A1%25E5%25BC%258F%25E3%2580%258D%25EF%25BC%259A%25E5%258F%25B0%25E7%2581%25A3%25E9%2598%25B2%25E7%2596%25AB%25E7%2582%25BA%25E4%25BD%2595%25E3%2580%258C%25E6%2585%25A2%25E5%258D%258A%25E6%258B%258D%25E3%2580%258D%25EF%25BC%259F%2Fa-61873741&t=%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F&d=2022-05-20&e=
+混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+——
+
+
+  
+William Yang2022-05-20T07:47:12.868Z
+  
+  
+台灣總統蔡英文在4月6日宣布實施「新台灣模式」。
+  
+  （德國之聲中文網）台灣新冠疫情持續升溫，根據中央流行疫情指揮中心，台灣週五（5月20日）新增85720例本土確診病例，49例死亡。前一天，台灣衛福部表示疫情「進入廣泛社區流行階段」，預計5月下旬達到高峰。
+  因應疫情變化，台灣政府不斷調整防疫政策。例如，自5月12日起實施的「快篩陽性即確診」政策規定，有3類對象若快篩為陽性，視同確診，包括居家檢疫（入境人士）、居家隔離（與確診者有接觸）、自主防疫者。
+  但快篩陽性後，仍需透過遠距醫療診斷，經醫生判讀確認後才能被列為確診。若對快篩結果無共識，或者並非這3類的其他民眾，則可由衛生單位安排進行PCR核酸檢測。
+  該政策主要..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25B7%25B7%25E4%25BA%2582%25E4%25B8%25AD%25E6%2591%25B8%25E7%25B4%25A2%25E3%2580%258C%25E6%2596%25B0%25E5%258F%25B0%25E7%2581%25A3%25E6%25A8%25A1%25E5%25BC%258F%25E3%2580%258D%25EF%25BC%259A%25E5%258F%25B0%25E7%2581%25A3%25E9%2598%25B2%25E7%2596%25AB%25E7%2582%25BA%25E4%25BD%2595%25E3%2580%258C%25E6%2585%25A2%25E5%258D%258A%25E6%258B%258D%25E3%2580%258D%25EF%25BC%259F%2Fa-61873741" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1653034625000-->
+<p><a href="https://www.dw.com/zh/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2%E3%80%8C%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F%E3%80%8D%EF%BC%9A%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95%E3%80%8C%E6%85%A2%E5%8D%8A%E6%8B%8D%E3%80%8D%EF%BC%9F/a-61873741">混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？</a>
+——</p>
+
+<div>
+  <div>
+<em>William Yang<br />2022-05-20T07:47:12.868Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61607443_303.jpg" width="100%" />  <div>
+<small style="color: #999;">台灣總統蔡英文在4月6日宣布實施「新台灣模式」。</small>
+  </div>
+  <p>（德國之聲中文網）台灣新冠疫情持續升溫，根據中央流行疫情指揮中心，台灣週五（5月20日）新增85720例本土確診病例，49例死亡。前一天，台灣衛福部表示疫情「進入廣泛社區流行階段」，預計5月下旬達到高峰。</p>
+  <p>因應疫情變化，台灣政府不斷調整防疫政策。例如，自5月12日起實施的「快篩陽性即確診」政策規定，有3類對象若快篩為陽性，視同確診，包括居家檢疫（入境人士）、居家隔離（與確診者有接觸）、自主防疫者。</p>
+  <p>但快篩陽性後，仍需透過遠距醫療診斷，經醫生判讀確認後才能被列為確診。若對快篩結果無共識，或者並非這3類的其他民眾，則可由衛生單位安排進行PCR核酸檢測。</p>
+  <p>該政策主要是為了輕重症分流，並避免民眾湧入醫院篩檢導致醫療負荷超載，然而實際執行情況卻令不少民眾感到混亂難從。</p>
+  <p><strong>大眾難以跟上防疫政策 </strong></p>
+  <p>「我有試著預約線上看診，根本預約不到。App根本沒顯示台北市有可以預約的診所或醫院，然後它給了一堆合作的診所，電話都打不進去。後來也聽說App早就掛了，太多人湧入。」一名5月13日在隔離期間快篩陽性確診的楊小姐向德國之聲表示。</p>
+  <p>楊小姐說，快篩陽性者向政府通報病例的過程「很複雜」，有些年長者乾脆直接放棄。她告訴德國之聲：「我覺得三五天就改一次政策滿讓人不解，感覺政府沒有全盤計畫，打帶跑的感覺。」</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/57667353_303.jpg" width="100%" />  <div>
+<small style="color: #999;">防疫政策的變化、遠端醫療的應用，對與老年人來說恐是困難。</small>
+  </div>
+  <p>另一名陳小姐告訴德國之聲，不斷變化的政策令人難以跟上腳步。她在快篩陽性後，嘗試透過網路搜索最新的政策指引，以確認自己是否符合標準、應該如何遵守規範，但這「對於已經生病的人來說，是一個很大的壓力。」她說：「確診後還要研究隔離的規定、還要去搶著預約有限的PCR，其實對確診者來說是蠻累的。」</p>
+  <p>5月18日，台灣再宣布即日起65歲以上老人，無論是居家隔離、檢疫或自主防疫，只要快篩陽性並經醫事人員確認，即為確診。老人可就近至醫療院所或透過遠距門診醫療，請醫師協助評估確認。</p>
+  <p>許多醫生指出，遠距醫療對於不熟悉智慧型手機或網路設備的老人及偏鄉民眾來說，仍非常困難。美國奧勒岡州立大學全球衛生中心主任紀駿輝告訴德國之聲，「台灣的遠距醫療相當落後」，很多區域醫院到現在才趕快發展遠距醫療，這次危機可能正好也是契機，「督促台灣的醫療機構跟衛福部積極發展遠距醫療。」</p>
+  <p><strong>專家：台灣防疫「慢好幾拍」</strong></p>
+  <p>台灣總統蔡英文在4月6日宣布實施「新台灣模式」，蔡英文表示，台灣現階段目標為「重症求清零、有效管控輕症」，持續以「減災」為目標，而非全面「清零」；但也不是放任病毒肆虐式的「與病毒共存」，而是有效的疫情控管。</p>
+  <p>5月初，台灣宣布輕症、無症狀確診者實施「7+7」，也就是居家照護7天、自主健康管理7天的措施；入境人士的居家檢疫從10天縮短為7天；密切接觸者的匡列改以「同住親友」為原則。自5月17日開始，台灣將密接者的居家隔離放寬為「0+7」，只要完成施打3劑新冠疫苗就不用隔離，只需配合7天自主防疫，快篩陰性可外出。</p>
+  <p>台灣防疫政策短期內不斷變化，美國奧勒岡州立大學全球衛生中心主任紀駿輝認為，台灣上半場防疫非常成功，但「今年在面對奧密克戎（Omicron）產生的本土疫情時，很遺憾也是跟去年一樣，顯得準備不足」，未能從去年春天的本土疫情中吸取教訓。</p>
+  <p>紀駿輝告訴德國之聲，面對奧密克戎台灣已有歐美經驗可循，但卻沒有及早因應，「好像是走一步、看一步然後再做一步。」他舉例，隔離檢疫政策「每一、兩個星期就改一次」，且一直忽略疫苗施打狀態，一直到5月17日的最新政策才有所更改，宣布密接者打滿三劑疫苗不用隔離。</p>
+  <p>他解釋：「不管有沒有完成疫苗施打，只要有感染或接觸史，所有的檢疫隔離規定都是一視同仁，這等於是間接向民眾宣示疫苗無效。這樣是很矛盾的，一方面政府的政策是間接宣布疫苗無效，為何又要鼓勵民眾打疫苗？這也是反映出台灣從去年的本土疫情，對於疫情的防範跟控制，好像跟前半段很不一樣。」</p>
+  <p>紀駿輝告訴德國之聲，疫情前半段，台灣一直強調超前部署，但奧密克戎疫情以來顯示的是，「台灣防疫不只是慢半拍，而是慢好幾拍。」</p>
+  <p><strong>受困過去成功經驗</strong></p>
+  <p>台灣民意基金會週五（5月20日）公布蔡英文就職六週年的有關民調。結果顯示，蔡英文「總統職務表現贊同率」為46.2%，與上個月相比下滑 3.7%。疫情是否衝擊聲望也受到外界關注。</p>
+  <p>紀駿輝指出，台灣過去把重點放在「清零」，投入大量資源防堵跟做疫調，很難將資源優先投入在如何應對新疫情爆發。他也認為，台灣的防疫「成也SARS，敗也SARS」，由於上半場防疫太成功，便認為所有SARS的經驗都可以延續到新冠疫情，卻忽略了兩者雖有相似之處，但也有很不一樣的地方。</p>
+  <p>他向德國之聲解釋，SARS沒有所謂的無症狀或輕症感染，一旦感染，症狀都很嚴重，新冠病毒卻不一定是這樣，加上奧密克戎跟先前的變種病毒特性不同，幾乎要把他看成不同的疾病，但台灣防疫措施依然延續過去成功的部分，認為做得很成功為何要改，這也是導致台灣為何在面對本波疫情時，政策往往慢好幾拍的原因。</p>
+  <p>他認為，參照丹麥及歐美經驗，台灣這波疫情要往下降，就要讓健康或打過疫苗的人有機會暴露跟感染，提高人口的群體免疫。但台灣面臨的兩難是，一方面由於醫療設施不夠，75歲以上老年人只有73%完成疫苗施打，不能讓短期內爆發太多病例，另一方面又不能把防疫規範綁得太緊，導致疫情拖太久。</p>
+  <p>台灣衛福部長陳時中週四（5月19日）表示，目前台北市與新北市的專責與負壓病房空床率整體約50%左右，雙北的病床確實相對少，但「台灣目前的醫療狀況絕對不到崩潰的階段，說崩潰未免有些危言聳聽」。</p>
+  <p>紀駿輝指出，台灣目前確診總數約100多萬，相對2300萬人口來說還是太少，還不足以讓奧密克戎疫情平緩下來。依照歐美經驗，至少要到40%至50%的人感染，疫情才會慢慢下降。</p>
+  <p><em>© 2022年德國之聲版權聲明：本文所有內容受到著作權法保護，如無德國之聲特別授權，不得擅自使用。任何不當行為都將導致追償，並受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-20</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%8C%B4%E7%97%98-%E5%A4%9A%E5%9B%BD%E7%9B%B8%E7%BB%A7%E5%8F%91%E7%8E%B0%E7%8C%B4%E7%97%98%E7%97%85%E4%BE%8B">
+          什么是猴痘？多国相继发现猴痘病例  
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-20</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-20/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8-%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA">
+          澳洲大選：你必須知道的八個人
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-19</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-19/%E7%8B%AC%E5%AE%B6-%E5%9C%A8%E5%BE%B7%E5%9B%BD%E7%9A%84%E4%B8%AD%E5%9B%BD%E8%AE%BF%E9%97%AE%E5%AD%A6%E8%80%85-%E4%B8%BA%E5%86%9B%E6%96%B9%E6%9C%8D%E5%8A%A1">
+          独家：在德国的中国访问学者——为军方服务？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-19</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-19/%E6%8B%9C%E7%99%BB%E9%A6%96%E6%AC%A1%E4%BA%9E%E6%B4%B2%E8%A1%8C%E5%95%9F%E7%A8%8B-%E8%BF%91%E5%B9%BE%E9%80%B1%E6%88%96%E8%88%87%E7%BF%92%E8%BF%91%E5%B9%B3%E9%80%9A%E8%A9%B1">
+          拜登首次亞洲行啟程  近幾週或與習近平通話 
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-20/%E5%9C%A8%E7%BE%8E%E6%B0%91%E8%BF%90%E4%BA%BA%E5%A3%AB%E7%8E%8B%E4%B9%A6%E5%90%9B%E8%A2%AB%E6%8C%87%E4%B8%BA%E4%B8%AD%E5%9B%BD%E9%97%B4%E8%B0%8D-%E5%89%8D%E6%94%AF%E8%81%94%E4%BC%9A%E4%B8%BB%E5%B8%AD%E4%BD%95%E4%BF%8A%E4%BB%81%E8%A2%AB%E5%A5%97%E6%96%99">
+            前一篇：在美民运人士王书君被指为中国间谍 前支联会主席何俊仁被套料
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-20/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8-%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA">
+            后一篇：澳洲大選：你必須知道的八個人
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E5%9C%A8%E7%BE%8E%E6%B0%91%E8%BF%90%E4%BA%BA%E5%A3%AB%E7%8E%8B%E4%B9%A6%E5%90%9B%E8%A2%AB%E6%8C%87%E4%B8%BA%E4%B8%AD%E5%9B%BD%E9%97%B4%E8%B0%8D-%E5%89%8D%E6%94%AF%E8%81%94%E4%BC%9A%E4%B8%BB%E5%B8%AD%E4%BD%95%E4%BF%8A%E4%BB%81%E8%A2%AB%E5%A5%97%E6%96%99'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8-%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8-%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-19/%E7%8B%AC%E5%AE%B6-%E5%9C%A8%E5%BE%B7%E5%9B%BD%E7%9A%84%E4%B8%AD%E5%9B%BD%E8%AE%BF%E9%97%AE%E5%AD%A6%E8%80%85-%E4%B8%BA%E5%86%9B%E6%96%B9%E6%9C%8D%E5%8A%A1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-20/%E5%9C%A8%E7%BE%8E%E6%B0%91%E8%BF%90%E4%BA%BA%E5%A3%AB%E7%8E%8B%E4%B9%A6%E5%90%9B%E8%A2%AB%E6%8C%87%E4%B8%BA%E4%B8%AD%E5%9B%BD%E9%97%B4%E8%B0%8D-%E5%89%8D%E6%94%AF%E8%81%94%E4%BC%9A%E4%B8%BB%E5%B8%AD%E4%BD%95%E4%BF%8A%E4%BB%81%E8%A2%AB%E5%A5%97%E6%96%99">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-20/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8-%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-20/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8-%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-19/%E7%8B%AC%E5%AE%B6-%E5%9C%A8%E5%BE%B7%E5%9B%BD%E7%9A%84%E4%B8%AD%E5%9B%BD%E8%AE%BF%E9%97%AE%E5%AD%A6%E8%80%85-%E4%B8%BA%E5%86%9B%E6%96%B9%E6%9C%8D%E5%8A%A1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

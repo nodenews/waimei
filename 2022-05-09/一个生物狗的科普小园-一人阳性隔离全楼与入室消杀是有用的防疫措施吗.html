@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？
+——
+" />
+    <meta property="og:description" content="
+一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？" />
+    <meta property="twitter:title" content="一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681019.html&t=%E4%B8%80%E4%B8%AA%E7%94%9F%E7%89%A9%E7%8B%97%E7%9A%84%E7%A7%91%E6%99%AE%E5%B0%8F%E5%9B%AD%EF%BD%9C%E4%B8%80%E4%BA%BA%E9%98%B3%E6%80%A7%E9%9A%94%E7%A6%BB%E5%85%A8%E6%A5%BC%E4%B8%8E%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%E6%98%AF%E6%9C%89%E7%94%A8%E7%9A%84%E9%98%B2%E7%96%AB%E6%8E%AA%E6%96%BD%E5%90%97%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681019.html&t=%E4%B8%80%E4%B8%AA%E7%94%9F%E7%89%A9%E7%8B%97%E7%9A%84%E7%A7%91%E6%99%AE%E5%B0%8F%E5%9B%AD%EF%BD%9C%E4%B8%80%E4%BA%BA%E9%98%B3%E6%80%A7%E9%9A%94%E7%A6%BB%E5%85%A8%E6%A5%BC%E4%B8%8E%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%E6%98%AF%E6%9C%89%E7%94%A8%E7%9A%84%E9%98%B2%E7%96%AB%E6%8E%AA%E6%96%BD%E5%90%97%EF%BC%9F&d=2022-05-09&e=
+一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：一人阳性隔离全楼与入室消杀是有用的防疫措施吗？作者： Y博的科普园来源：微信公众号 “一个生物狗的科普小园”发表日期：2022.5.９主题归类：上海疫情CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  申明：仅代表个人观点，不代表任何组织与单位
+  看到上海有人说非密切接触者的阴性居民也被要求集中隔离，以及防疫人员对居民家中进行消杀时，最初的震惊仅仅维持了很短的时间，随之而来的是一种麻木与无奈。
+  现在看到这些消息已经不会有“不可思议”的感觉了。回想一个月前看到一条柯基在马路上被所谓“无害化”处理时，若非亲眼看到视频，我..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681019.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681019.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681019.html&text=一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681019.html&title=一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681019.html&title=一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？&body=
+一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681019.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681019.html&title=一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？&caption=
+一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？&url=https://chinadigitaltimes.net/chinese/681019.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681019.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681019.html&t=%E4%B8%80%E4%B8%AA%E7%94%9F%E7%89%A9%E7%8B%97%E7%9A%84%E7%A7%91%E6%99%AE%E5%B0%8F%E5%9B%AD%EF%BD%9C%E4%B8%80%E4%BA%BA%E9%98%B3%E6%80%A7%E9%9A%94%E7%A6%BB%E5%85%A8%E6%A5%BC%E4%B8%8E%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%E6%98%AF%E6%9C%89%E7%94%A8%E7%9A%84%E9%98%B2%E7%96%AB%E6%8E%AA%E6%96%BD%E5%90%97%EF%BC%9F&d=2022-05-09&e=
+一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：一人阳性隔离全楼与入室消杀是有用的防疫措施吗？作者： Y博的科普园来源：微信公众号 “一个生物狗的科普小园”发表日期：2022.5.９主题归类：上海疫情CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  申明：仅代表个人观点，不代表任何组织与单位
+  看到上海有人说非密切接触者的阴性居民也被要求集中隔离，以及防疫人员对居民家中进行消杀时，最初的震惊仅仅维持了很短的时间，随之而来的是一种麻木与无奈。
+  现在看到这些消息已经不会有“不可思议”的感觉了。回想一个月前看到一条柯基在马路上被所谓“无害化”处理时，若非亲眼看到视频，我..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681019.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652149492000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681019.html">一个生物狗的科普小园｜一人阳性隔离全楼与入室消杀是有用的防疫措施吗？</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>一人阳性隔离全楼与入室消杀是有用的防疫措施吗？<br /><strong>作者：</strong> Y博的科普园<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/hexMMTrALsjDT_VfMF7vRg" target="_blank" rel="noopener">微信公众号 “一个生物狗的科普小园”</a><br /><strong>发表日期：</strong>2022.5.９<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/" target="_blank">上海疫情</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>申明：仅代表个人观点，不代表任何组织与单位</strong></p>
+  <p>看到上海有人说非密切接触者的阴性居民也被要求集中隔离，以及防疫人员对居民家中进行消杀时，最初的震惊仅仅维持了很短的时间，随之而来的是一种麻木与无奈。</p>
+  <p>现在看到这些消息已经不会有“不可思议”的感觉了。回想一个月前看到一条柯基在马路上被所谓“无害化”处理时，若非亲眼看到视频，我大概还是会怀疑其真实性的。短短一个月，“离谱”的阈值竟被如此迅速地提高，照此发展，再过几天，恐怕连最初的震惊都将不复存在，只剩下麻木与无奈。古人云“如入鲍鱼之肆，久而不闻其臭”，大抵也是在讲类似的道理。</p>
+  <p>但无论是否还对上海乃至内地发生各种事情存在惊讶感，这些事情本身有无科学性并不会因此而改变。</p>
+  <p>以一人阳性，全楼隔离这件事来说，其科学性的问题本质在于<strong>隔离的科学性问题</strong>。</p>
+  <p>隔离不是没事就把人关起来，而是通过把<strong>感染者</strong>或<strong>潜在的感染者</strong>与未感染者分开，阻断病毒的传播。两类人需要隔离，也对应了两种隔离。</p>
+  <p>一类是确认了的感染者，也就是阳性病人，是<strong>确诊的新冠感染者</strong>。把他（她）们隔离是为了防止病毒传播，所以对应的隔离时间是他（她）们有传染性的阶段，英文里这种隔离叫做<strong>isolation</strong>。从英文用词来看就知道这是比较严苛的，因为确诊阳性意味着这人是明确有传染性的，不单独隔离开，周围的人有被感染的切实危险。</p>
+  <p>另一类是潜在的感染者，如阳性病人的密接者。他（她）现在不是阳性，但可能还在潜伏期。这些人也要隔离，但和阳性病人的隔离不一样，这些人隔离是为了及时确认他（她）们到底有没有感染。英文里叫做<strong>quarantine</strong>，翻译成<strong>检疫隔离</strong>。注意这里面“检”是关键。检疫隔离对应病毒的潜伏期，期间通过检测来确认是否感染，如能在这个隔离阶段发现感染，就防止出现传播给其他人的情况。</p>
+  <p>可以看出无论是隔离还是检疫隔离，都有明确的目的——减少或阻止传播的出现，也对应明确的人群与时间段——传染期与潜伏期。</p>
+  <p>楼里出了阳性就把整栋楼给拉去隔离，符合隔离或检疫隔离吗？隔离肯定不符合，因为这些人是阴性。检疫隔离呢？也不符合！因为这些人只是刚巧住在了同一幢楼，按上海不少居民足不出户，或者至少不是同时出户的情况看，并不是密接。</p>
+  <p>而且检疫隔离的目的是防止传播。按楼里出了阳性，整幢楼就拉去隔离的做法，这些人最后去哪里隔离？很有可能是某个方舱或人员众多的隔离酒店。这些地方什么特征？一是人多、密集，二是里面可能有确诊的阳性或者还在潜伏期的人，说白了，是一个<strong>感染风险很高的地方</strong>。把那么多非密接、实际风险非常低的人，拉到一个感染风险很高的地方，这不叫防止传播，这叫增加传播风险。</p>
+  <p>因此，把阴性的同楼住户拉去隔离的做法，不仅不符合隔离的科学初衷，反而在个体层面上给居民带来健康风险，在防疫上带来病毒进一步扩散的隐患。</p>
+  <p>随着所谓防疫的常态化，<strong>任何防疫措施都要考虑其科学性、必要性</strong>，对普通百姓的影响，对资源配置的影响，不应该想到哪出就来哪出。</p>
+  <p>隔离或检疫隔离，这种措施对于被隔离的人，必然是限制其自由、影响其生活的，对任何一个人做出这样的措施，一定要建立在绝对的必要性上，应该是“不得已而为之”，不能是攀比谁网撒得大。像隔离同楼住户这种做法，对普通老百姓正常生活是巨大、非必要的干扰，还平白无故增加了大量的隔离人员，增大了防疫工作量。</p>
+  <p>同样在科学性与必要性上可疑的是入室消杀。作为一个呼吸道传染病，<strong>新冠通过物品表面接触传播的可能性是非常低的</strong>。实际上除了中国，其它国家地区都没有报道物传人现象。甚至是在中国，这些报道也是猎奇性质高于科学严谨性。</p>
+  <p>在这样的科学基础上，去居民家中做消杀的必要性本身就极为可疑。去做室内消杀，背后的思想基础是只要一个阳性的人呆过，这个地方就一直存在活病毒。这一思想其实是极为荒诞的。病毒又不是不死的妖怪。任何病毒都是寄生生活的，离开了宿主都很脆弱。</p>
+  <p>以新冠病毒为例，离开了人体，在环境中没法复制，不会增加活病毒的数量，随着时间推移，活病毒反而越来越少。<strong>即便检测出来物体表面阳性，大概率也只是病毒尸体</strong>，尸体是感染不了人的，消杀又有什么必要？</p>
+  <p>实际上早在2020年，以色列科学家在有新冠病人的医院与隔离酒店中做环境检测，就发现虽然能检测到病毒基因组，但都不具备活性【1】。今年年初，英国科学家也发现在更接近现实的环境中，气溶胶中的新冠病毒会迅速失活，20分钟就会失去90%的传染性【2】。</p>
+  <p>这些研究都指向，接近真实环境，新冠在物体表面维持活性的时间非常短暂，接触传播风险极低。需要注意，一些研究中新冠在物体表面长期存活，往往都是基于实验室的特殊条件，与现实差距较远【3】。</p>
+  <p>甚至按实验室中较理想的物体表面病毒存活时间来分析，一个新冠感染者呆过的房间在感染者离开72小时后，无论是否做表面消毒，再发生接触传播的风险也能忽略不计【4】。</p>
+  <p>综合这些研究来看，做所谓的室内消杀，完全是多此一举。</p>
+  <p>关于即使阴性也要集中隔离以及防疫人员的入室消杀，不少人从公民权利角度表达愤慨，这无疑是对的，也是更重要的角度。只不过，即便抛开一切法律制度、公民权利不谈，单从科学依据上看，这样的防疫措施也是<strong>毫无必要</strong>，甚至是对防疫<strong>只有副作用或反作用</strong>的。</p>
+  <p>在新增病例走低，处于所谓最后攻坚阶段时，何必采用这些有弊无利，且又占用大量人力物力的措施？</p>
+  <p>参考资料：</p>
+  <ol>
+    <li>
+      <p><a href="https://pubmed.ncbi.nlm.nih.gov/32919072/">https://pubmed.ncbi.nlm.nih.gov/32919072/</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.medrxiv.org/content/10.1101/2022.01.08.22268944v1">https://www.medrxiv.org/content/10.1101/2022.01.08.22268944v1</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.nature.com/articles/d41586-021-00251-4#ref-CR7">https://www.nature.com/articles/d41586-021-00251-4#ref-CR7</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/more/science-and-research/surface-transmission.html">https://www.cdc.gov/coronavirus/2019-ncov/more/science-and-research/surface-transmission.html</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.9">
+          每日一语 2022.5.9
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E5%85%AB%E7%82%B9%E5%81%A5%E9%97%BB-%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%97%B6%E4%BB%A3%E5%92%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E9%87%8D%E5%A1%91%E7%9A%84%E7%94%9F%E6%B4%BB">
+          八点健闻｜全民核酸时代和我们被重塑的生活
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E5%AD%A6%E8%80%8C%E4%B8%94%E6%80%9D-%E4%BB%8A%E5%B9%B4%E7%9C%9F%E7%9A%84%E6%9C%89%E5%BE%88%E5%A4%9A%E7%A7%81%E8%90%A5%E4%BC%81%E4%B8%9A%E7%A0%B4%E4%BA%A7-%E5%BE%88%E5%A4%9A%E4%BA%BA%E5%A4%B1%E4%B8%9A%E5%90%97">
+          学而且思｜今年真的有很多私营企业破产，很多人失业吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/404%E6%96%87%E5%BA%93-%E4%B8%BA%E4%BD%A0%E5%86%99%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B-%E5%BE%88%E5%A4%9A%E4%BA%BA%E8%A2%AB%E5%85%A5%E6%88%B7%E6%B6%88%E6%9D%80%E7%9A%84%E8%A7%86%E9%A2%91%E5%90%93%E5%88%B0%E4%BA%86">
+          【404文库】为你写一个故事｜很多人被入户消杀的视频吓到了
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-09/%E4%B8%AD%E5%9B%BD%E9%93%B6%E4%BF%9D%E7%9B%91%E4%BC%9A-%E6%88%BF%E5%9C%B0%E4%BA%A7%E8%B4%B7%E6%AC%BE%E4%B8%8D%E8%89%AF%E7%8E%87%E6%98%8E%E6%98%BE%E4%BD%8E%E4%BA%8E%E5%85%A8%E9%83%A8%E8%B4%B7%E6%AC%BE">
+            前一篇：中国银保监会：房地产贷款不良率明显低于全部贷款
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-09/%E5%B8%AE%E4%B8%AD%E5%85%B1%E7%AA%83%E5%B7%A8%E9%A2%9D%E6%9C%BA%E5%AF%86-%E7%BE%8E%E5%8D%8E%E8%A3%94%E5%8C%96%E5%AD%A6%E5%AE%B6%E8%8E%B7%E5%88%9114%E5%B9%B4">
+            后一篇：帮中共窃巨额机密 美华裔化学家获刑14年
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E4%B8%AD%E5%9B%BD%E9%93%B6%E4%BF%9D%E7%9B%91%E4%BC%9A-%E6%88%BF%E5%9C%B0%E4%BA%A7%E8%B4%B7%E6%AC%BE%E4%B8%8D%E8%89%AF%E7%8E%87%E6%98%8E%E6%98%BE%E4%BD%8E%E4%BA%8E%E5%85%A8%E9%83%A8%E8%B4%B7%E6%AC%BE'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E5%B8%AE%E4%B8%AD%E5%85%B1%E7%AA%83%E5%B7%A8%E9%A2%9D%E6%9C%BA%E5%AF%86-%E7%BE%8E%E5%8D%8E%E8%A3%94%E5%8C%96%E5%AD%A6%E5%AE%B6%E8%8E%B7%E5%88%9114%E5%B9%B4'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E5%85%AB%E7%82%B9%E5%81%A5%E9%97%BB-%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%97%B6%E4%BB%A3%E5%92%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E9%87%8D%E5%A1%91%E7%9A%84%E7%94%9F%E6%B4%BB'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-09/%E5%AD%A6%E8%80%8C%E4%B8%94%E6%80%9D-%E4%BB%8A%E5%B9%B4%E7%9C%9F%E7%9A%84%E6%9C%89%E5%BE%88%E5%A4%9A%E7%A7%81%E8%90%A5%E4%BC%81%E4%B8%9A%E7%A0%B4%E4%BA%A7-%E5%BE%88%E5%A4%9A%E4%BA%BA%E5%A4%B1%E4%B8%9A%E5%90%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-09/%E4%B8%AD%E5%9B%BD%E9%93%B6%E4%BF%9D%E7%9B%91%E4%BC%9A-%E6%88%BF%E5%9C%B0%E4%BA%A7%E8%B4%B7%E6%AC%BE%E4%B8%8D%E8%89%AF%E7%8E%87%E6%98%8E%E6%98%BE%E4%BD%8E%E4%BA%8E%E5%85%A8%E9%83%A8%E8%B4%B7%E6%AC%BE">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-09/%E5%B8%AE%E4%B8%AD%E5%85%B1%E7%AA%83%E5%B7%A8%E9%A2%9D%E6%9C%BA%E5%AF%86-%E7%BE%8E%E5%8D%8E%E8%A3%94%E5%8C%96%E5%AD%A6%E5%AE%B6%E8%8E%B7%E5%88%9114%E5%B9%B4">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-09/%E5%85%AB%E7%82%B9%E5%81%A5%E9%97%BB-%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%97%B6%E4%BB%A3%E5%92%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E9%87%8D%E5%A1%91%E7%9A%84%E7%94%9F%E6%B4%BB">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-09/%E5%AD%A6%E8%80%8C%E4%B8%94%E6%80%9D-%E4%BB%8A%E5%B9%B4%E7%9C%9F%E7%9A%84%E6%9C%89%E5%BE%88%E5%A4%9A%E7%A7%81%E8%90%A5%E4%BC%81%E4%B8%9A%E7%A0%B4%E4%BA%A7-%E5%BE%88%E5%A4%9A%E4%BA%BA%E5%A4%B1%E4%B8%9A%E5%90%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

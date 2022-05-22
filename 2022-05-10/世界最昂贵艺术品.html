@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>世界最昂贵艺术品 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+世界最昂贵艺术品
+——
+" />
+    <meta property="og:description" content="
+世界最昂贵艺术品
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="世界最昂贵艺术品" />
+    <meta property="twitter:title" content="世界最昂贵艺术品" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2596%25E7%2595%258C%25E6%259C%2580%25E6%2598%2582%25E8%25B4%25B5%25E8%2589%25BA%25E6%259C%25AF%25E5%2593%2581%2Fa-41429054&t=%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2596%25E7%2595%258C%25E6%259C%2580%25E6%2598%2582%25E8%25B4%25B5%25E8%2589%25BA%25E6%259C%25AF%25E5%2593%2581%2Fa-41429054&t=%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81&d=2022-05-10&e=
+世界最昂贵艺术品
+——
+
+
+  
+《枪击玛莉莲 -- 鼠尾草蓝版》（Shot Sage Blue Marilyn）：1. 95亿美元：波普艺术大师安迪·沃霍尔（Andy Warhol）此作品2022年5月在纽约佳士得拍卖行以1.95亿美元成交，这幅作品创下沃霍尔作品迄今最高拍卖价的纪录。此肖像画是他为梦露画的五幅肖像画系列的一部分，被称为《枪击》系列。这个绰号的由来是，一位到访沃霍尔在曼哈顿工作室的访客向画作开枪刺穿了肖像画，这些痕迹后来被修复了。
+  
+  
+《救世主》（Salvator Mundi）：4. 5亿美元：2017年11月，一名匿名买主在纽约佳士得为这幅可能是私人收藏的最后一幅达芬奇作品付下这一数目。该画于1500年问世，是这位大师不足20幅流传至今的油画之一。1958年，该画曾以60美元价格易主，—当事人相信，它不是真迹。对该画的真伪迄今存有争议。
+  
+  
+《阿..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2596%25E7%2595%258C%25E6%259C%2580%25E6%2598%2582%25E8%25B4%25B5%25E8%2589%25BA%25E6%259C%25AF%25E5%2593%2581%2Fa-41429054" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054&text=世界最昂贵艺术品&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054&title=世界最昂贵艺术品" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054&title=世界最昂贵艺术品" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=世界最昂贵艺术品&body=
+世界最昂贵艺术品
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054&title=世界最昂贵艺术品&caption=
+世界最昂贵艺术品
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=世界最昂贵艺术品&url=https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>世界最昂贵艺术品</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2596%25E7%2595%258C%25E6%259C%2580%25E6%2598%2582%25E8%25B4%25B5%25E8%2589%25BA%25E6%259C%25AF%25E5%2593%2581%2Fa-41429054&t=%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81&d=2022-05-10&e=
+世界最昂贵艺术品
+——
+
+
+  
+《枪击玛莉莲 -- 鼠尾草蓝版》（Shot Sage Blue Marilyn）：1. 95亿美元：波普艺术大师安迪·沃霍尔（Andy Warhol）此作品2022年5月在纽约佳士得拍卖行以1.95亿美元成交，这幅作品创下沃霍尔作品迄今最高拍卖价的纪录。此肖像画是他为梦露画的五幅肖像画系列的一部分，被称为《枪击》系列。这个绰号的由来是，一位到访沃霍尔在曼哈顿工作室的访客向画作开枪刺穿了肖像画，这些痕迹后来被修复了。
+  
+  
+《救世主》（Salvator Mundi）：4. 5亿美元：2017年11月，一名匿名买主在纽约佳士得为这幅可能是私人收藏的最后一幅达芬奇作品付下这一数目。该画于1500年问世，是这位大师不足20幅流传至今的油画之一。1958年，该画曾以60美元价格易主，—当事人相信，它不是真迹。对该画的真伪迄今存有争议。
+  
+  
+《阿..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2596%25E7%2595%258C%25E6%259C%2580%25E6%2598%2582%25E8%25B4%25B5%25E8%2589%25BA%25E6%259C%25AF%25E5%2593%2581%2Fa-41429054" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652183225000-->
+<p><a href="https://www.dw.com/zh/%E4%B8%96%E7%95%8C%E6%9C%80%E6%98%82%E8%B4%B5%E8%89%BA%E6%9C%AF%E5%93%81/a-41429054">世界最昂贵艺术品</a>
+——</p>
+
+<div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61743786_303.jpg" width="100%" /><br /><strong>《枪击玛莉莲 -- 鼠尾草蓝版》（Shot Sage Blue Marilyn）：1. 95亿美元</strong>：波普艺术大师安迪·沃霍尔（Andy Warhol）此作品2022年5月在纽约佳士得拍卖行以1.95亿美元成交，这幅作品创下沃霍尔作品迄今最高拍卖价的纪录。此肖像画是他为梦露画的五幅肖像画系列的一部分，被称为《枪击》系列。这个绰号的由来是，一位到访沃霍尔在曼哈顿工作室的访客向画作开枪刺穿了肖像画，这些痕迹后来被修复了。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/41397421_303.jpg" width="100%" /><br /><strong>《救世主》（Salvator Mundi）：4. 5亿美元</strong>：2017年11月，一名匿名买主在纽约佳士得为这幅可能是私人收藏的最后一幅达芬奇作品付下这一数目。该画于1500年问世，是这位大师不足20幅流传至今的油画之一。1958年，该画曾以60美元价格易主，—当事人相信，它不是真迹。对该画的真伪迄今存有争议。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18444997_303.jpg" width="100%" /><br /><strong>《阿尔吉尔女人们》（Die Frauen von Algier）：1.794亿美元</strong>：这是迄今拍卖的毕加索油画中的最贵作品。由德拉克洛瓦（Eugène Delacroix）获得灵感，1955年，这位西班牙大师创作出此画。2015年，该作品在纽约佳士得以1.794亿美元成交。从那以来，该作品一直为私人所藏。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18837797_303.jpg" width="100%" /><br /><strong>《斜躺的裸女》（Nu couché）：1.704亿美元</strong>：逝世前３年，意大利画家莫迪利亚尼（Amedeo Modigliani）于1917年完成此画。2015年11月，该作在纽约佳士得拍卖，—不仅创下高价，且一举登上当年全球最昂贵艺术品排名榜第二名宝座。该作品新主人是上海亿万富商刘益谦。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17244177_303.jpg" width="100%" /><br /><strong>《卢西安·弗洛伊德肖像画3习作》（Three Studies of Lucian Freud）：1.424亿美元</strong>：爱尔兰画家弗朗西斯·培根（Francis Bacon）于1969年创作了这幅三联画。在作品中，他探究人的肉体，这里表现的是英国画家卢西安·弗洛伊德（Lucian Freud）。2013年，在佳士得拍卖会上，该作拍得1.424亿美元。现在，该画为美国女艺术收藏家伊莱恩·温（Elaine Wynn）所有。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17244223_303.jpg" width="100%" /><br /><strong>《呐喊》（Der Schrei）：1.199亿美元</strong>：挪威画家爱德华·蒙克（Edvard Munch）的《呐喊》是一个有名的题材，不过，很多人不知道，该画有4个版本。《呐喊》被认为是仅次于达芬奇的《蒙娜丽莎》和梵高的《向日葵》的世上最著名油画之一。2012年，《呐喊》的1895年版本在纽约苏富比拍卖行成交。买者是美国企业家布莱克（Leon Black）。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/43709968_303.jpg" width="100%" /><br /><strong>《手执花篮的少女》（Junges Mädchen mit Blumenkorb）：1.15亿美元</strong>：2018年5月毕加索《手执花篮的少女》的作品以1.15亿美元的价格在纽约Christie's拍卖行敲定成交，由此进入全球前十最昂贵油画。它原是已故亿万富翁大卫·洛克费德的私人收藏。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/48741069_303.jpg" width="100%" /><br /><strong>《干草堆》（Heuhaufen im Sonnenlicht）：1.11亿美元</strong>：在夕阳的照耀下，草堆的轮廓越来越清晰，五彩的光线照亮了田野。法国印象派画家莫奈（Claude Monet）的这幅画作生动地描绘出晚霞中安宁恬静的气氛。这是莫奈《干草堆》系列画作中的一幅，在纽约苏富比拍卖行拍出1.11亿美元的价格，创下莫奈作品的拍卖纪录。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15919884_303.jpg" width="100%" /><br /><strong>《裸体、绿叶和半身像》（Nu au Plateau de Sculpteur）：1.065亿美元</strong>：《裸体、绿叶和半身像》是毕加索于1932年仅花了一天就完成的油画，画中的人物是毕加索的情妇玛丽-德雷莎（Marie-Thérèse Walter）。2009年，一位通过电话出价的买家竞拍到这幅画。最终的竞拍价达到1.065亿美元。如果毕加索还活着，这幅画可以给他带来100万美元的时薪。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18599983_303.jpg" width="100%" /><br /><strong>《伸手指示的人》（Zeigender Mann ）：1.413亿美元</strong>：不一定总是油画。瑞士艺术家阿尔贝托·贾科梅蒂（Alberto Giacometti,）的这个铜雕2015年5月拍卖。一名叫做科恩（Steven Cohen）的瑞士对冲基金经理以1.413亿美元在纽约佳士得拍得这个真人般大小的雕塑。《伸手指示的人》由此成为世上最昂贵雕塑。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/48756027_303.jpg" width="100%" /><br /><strong>《兔子》（Rabbit）：9110万美元</strong>：这个不锈钢制的兔子高104厘米，集可爱和壮观于一身，同时糅合了极简主义特有的光泽感和卡通形象的趣味性。但也有人认为它欠缺深度、没有收藏价值、是艺术史的一大笑话。这件艺术品的创作者是美国艺术家杰夫‧昆斯（Jeff Koons）。这只“兔子”在美国佳士得拍卖行被以9110万美元的高价拍卖，是目前在世的艺术家的作品被拍卖出的最高价纪录。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18840769_303.jpg" width="100%" /><br /><strong>《金色的阿黛尔》（Goldene Adele）：1.35亿美元</strong>：《阿黛尔·布洛赫—鲍尔肖像I》（Bildnis Adele Bloch-Bauer I）更以《金色的阿黛尔》闻名，为奥地利画家古斯塔夫·克里姆特（Gustav Klimt）1907年所绘。2006年，美国企业家劳德尔（Ronald Lauder）为纽约曼哈顿新画廊购下此画。从那时起，该画在此展出。虽然那是一次私人出售，但经由佳士得完成。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18840756_303.jpg" width="100%" /><br /><strong>《银色车祸》（Silver Car Crash）：1.054亿美元</strong>：美国艺术家安迪·沃霍尔（Andy Warhol）1963年创作了这一丝网印刷作品，通过各单张图像表现一次车祸。在20年时间里，这一经典之作为私人所藏。2013年11月，在苏富比拍卖。买者的名字从未公布。《银色车祸》成为有史以来一位波普艺术家的最昂贵作品。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16725917_303.jpg" width="100%" /><br /><strong>《拿烟斗的男孩》（Junge mit Pfeife）：1.042亿美元</strong>：它也是毕加索的作品，画于1905年，标志着他从蓝色进入粉红时期的过渡。此时，毕加索开始用粉红色调添入蓝色调。2004年，该画在纽约苏富比拍卖。买者的名字从未被正式公布。不过，有猜测说，买家有可能是意大利面大亨巴里拉（Guido Maria Barilla）。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17246691_303.jpg" width="100%" /><br /><strong>《行走的人》（Schreitender Mann）：1.037亿美元</strong>：在伦敦苏富比的拍卖会上，阿尔贝托·贾科梅蒂的又一件铜雕的拍资超过1亿美元。目前，该雕塑由巴西人萨福拉（Lily Safra）所藏。《行走的人》问世于1960年，属于瑞士20世纪艺术的最重要作品。直到今天，它还印在100瑞士法郎纸钞上。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56337066_303.jpg" width="100%" /><br /><strong>《手持圆形圣像的年轻男子》（Portrait of a Young Man Holding a Roundel）：9920万美元</strong>：欧洲文艺复兴时期佛罗伦萨画派艺术家桑德罗·波提切利（Sandro Botticelli）创作的这幅《手持圆形圣像的年轻男子》代表了文艺复兴时期佛罗伦萨上流社会的审美观念。今年1月，该画作在纽约苏富比拍卖会上以超过9220万美元的价格被出售。这是意大利文艺复兴时期大师的作品在拍卖会上被拍出的最高价格。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/59811026_303.jpg" width="100%" /><br /><strong>《橄榄树和柏树间的木屋》（Cabanes de bois parmi les oliviers et cyprès）：7135万美元</strong>：《橄榄树和柏树间的木屋》是荷兰画家梵高（Vincent van Gogh）在 1889年10月完成的一幅画作。当时梵高因精神问题在圣雷米郊外疗养院休养，他对普罗旺斯风景中常见的橄榄树和柏树着迷不已，认为它们是生命、感触和力量的象征，就如同阿尔勒的向日葵一般。画作中的卷曲和旋转反映出艺术家躁动不安的情感和疯狂的幻觉世界。这幅画作近日在佳士得纽约拍卖会上以7135万美元成交，成为当场拍卖会上成交价最高的作品。
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E6%9C%9F%E5%BE%85%E6%8B%9C%E7%99%BB%E5%88%B0%E8%AE%BF-%E9%9F%A9%E5%9B%BD%E6%96%B0%E6%80%BB%E7%BB%9F%E5%AE%A3%E8%AA%93%E5%B0%B1%E8%81%8C">
+          期待拜登到访 韩国新总统宣誓就职     
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%9B%9E%E5%88%B0%E5%B8%83%E6%9F%A5-%E5%BA%9F%E5%A2%9F%E4%B8%8A%E9%87%8D%E5%BB%BA%E5%AE%B6%E5%9B%AD">
+          回到布查：废墟上重建家园
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E9%A9%AC%E5%85%8B%E9%BE%99%E8%AE%BF%E6%9F%8F%E6%9E%97-%E5%91%BC%E5%90%81%E4%B9%8C%E6%88%98%E5%81%9C%E7%81%AB">
+          马克龙访柏林：呼吁乌战停火
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E6%AC%A7%E7%9B%9F%E5%AE%98%E5%91%98%E4%B8%8E%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%B1%E6%AC%A7%E7%9B%9F%E6%95%B0%E5%AD%97%E6%9C%8D%E5%8A%A1%E6%B3%95%E6%A1%88%E8%BE%BE%E6%88%90%E4%B8%80%E8%87%B4">
+          欧盟官员与马斯克就欧盟数字服务法案达成一致
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%B0%8F%E9%A9%AC%E7%A7%91%E6%96%AF%E5%B0%86%E6%88%90%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%96%B0%E6%80%BB%E7%BB%9F-%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E4%B8%8E%E7%BE%8E%E5%9B%BD%E5%92%8C%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%97%E7%9E%A9%E7%9B%AE-%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4">
+            前一篇：小马科斯将成菲律宾新总统 怎么处理与美国和与中国的关系受瞩目 - 要闻解说
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%9B%9E%E5%88%B0%E5%B8%83%E6%9F%A5-%E5%BA%9F%E5%A2%9F%E4%B8%8A%E9%87%8D%E5%BB%BA%E5%AE%B6%E5%9B%AD">
+            后一篇：回到布查：废墟上重建家园
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%B0%8F%E9%A9%AC%E7%A7%91%E6%96%AF%E5%B0%86%E6%88%90%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%96%B0%E6%80%BB%E7%BB%9F-%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E4%B8%8E%E7%BE%8E%E5%9B%BD%E5%92%8C%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%97%E7%9E%A9%E7%9B%AE-%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%9B%9E%E5%88%B0%E5%B8%83%E6%9F%A5-%E5%BA%9F%E5%A2%9F%E4%B8%8A%E9%87%8D%E5%BB%BA%E5%AE%B6%E5%9B%AD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%9B%9E%E5%88%B0%E5%B8%83%E6%9F%A5-%E5%BA%9F%E5%A2%9F%E4%B8%8A%E9%87%8D%E5%BB%BA%E5%AE%B6%E5%9B%AD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E9%A9%AC%E5%85%8B%E9%BE%99%E8%AE%BF%E6%9F%8F%E6%9E%97-%E5%91%BC%E5%90%81%E4%B9%8C%E6%88%98%E5%81%9C%E7%81%AB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%B0%8F%E9%A9%AC%E7%A7%91%E6%96%AF%E5%B0%86%E6%88%90%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%96%B0%E6%80%BB%E7%BB%9F-%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E4%B8%8E%E7%BE%8E%E5%9B%BD%E5%92%8C%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%97%E7%9E%A9%E7%9B%AE-%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%9B%9E%E5%88%B0%E5%B8%83%E6%9F%A5-%E5%BA%9F%E5%A2%9F%E4%B8%8A%E9%87%8D%E5%BB%BA%E5%AE%B6%E5%9B%AD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%9B%9E%E5%88%B0%E5%B8%83%E6%9F%A5-%E5%BA%9F%E5%A2%9F%E4%B8%8A%E9%87%8D%E5%BB%BA%E5%AE%B6%E5%9B%AD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-10/%E9%A9%AC%E5%85%8B%E9%BE%99%E8%AE%BF%E6%9F%8F%E6%9E%97-%E5%91%BC%E5%90%81%E4%B9%8C%E6%88%98%E5%81%9C%E7%81%AB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>普京的胜利日讲话传达了什么信息？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+普京的胜利日讲话传达了什么信息？
+——
+" />
+    <meta property="og:description" content="
+普京的胜利日讲话传达了什么信息？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="普京的胜利日讲话传达了什么信息？" />
+    <meta property="twitter:title" content="普京的胜利日讲话传达了什么信息？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20220510%2Fputin-speech-victory-day-ukraine-war%2F&t=%E6%99%AE%E4%BA%AC%E7%9A%84%E8%83%9C%E5%88%A9%E6%97%A5%E8%AE%B2%E8%AF%9D%E4%BC%A0%E8%BE%BE%E4%BA%86%E4%BB%80%E4%B9%88%E4%BF%A1%E6%81%AF%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20220510%2Fputin-speech-victory-day-ukraine-war%2F&t=%E6%99%AE%E4%BA%AC%E7%9A%84%E8%83%9C%E5%88%A9%E6%97%A5%E8%AE%B2%E8%AF%9D%E4%BC%A0%E8%BE%BE%E4%BA%86%E4%BB%80%E4%B9%88%E4%BF%A1%E6%81%AF%EF%BC%9F&d=2022-05-10&e=
+普京的胜利日讲话传达了什么信息？
+——
+
+
+  
+ANTON TROIANOVSKI
+  
+  2022年5月10日
+  
+    
+俄罗斯总统普京在胜利日讲话中为入侵乌克兰的决定进行了辩护，并错误地将俄罗斯的行动描述为欧洲反纳粹斗争的延续。 Maxim Shemetov/Reuters
+    
+  
+  
+    他没有宣称胜利或“任务完成”，没有承诺乌克兰的战斗会很快结束。但俄罗斯总统普京周一在莫斯科红场发表讲话时，也没有呼吁做出新的牺牲或动员，没有威胁进行核打击，没有严正宣布要与西方打一场生死攸关的战争。
+    相反，普京在俄罗斯最重要的非宗教节日发表讲话，向俄罗斯广大民众传达了这样一个信息：他们可以继续自己的生活。他做出了军方会继续战斗，以清除乌克兰的“施虐者、行刑队和纳粹”这样的虚假陈述，但普京没有再一次试图让他的人民为更广泛的冲突做好准备。
+    这种经过精心调整..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20220510%2Fputin-speech-victory-day-ukraine-war%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/&text=普京的胜利日讲话传达了什么信息？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/&title=普京的胜利日讲话传达了什么信息？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/&title=普京的胜利日讲话传达了什么信息？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=普京的胜利日讲话传达了什么信息？&body=
+普京的胜利日讲话传达了什么信息？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/&title=普京的胜利日讲话传达了什么信息？&caption=
+普京的胜利日讲话传达了什么信息？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=普京的胜利日讲话传达了什么信息？&url=https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>普京的胜利日讲话传达了什么信息？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20220510%2Fputin-speech-victory-day-ukraine-war%2F&t=%E6%99%AE%E4%BA%AC%E7%9A%84%E8%83%9C%E5%88%A9%E6%97%A5%E8%AE%B2%E8%AF%9D%E4%BC%A0%E8%BE%BE%E4%BA%86%E4%BB%80%E4%B9%88%E4%BF%A1%E6%81%AF%EF%BC%9F&d=2022-05-10&e=
+普京的胜利日讲话传达了什么信息？
+——
+
+
+  
+ANTON TROIANOVSKI
+  
+  2022年5月10日
+  
+    
+俄罗斯总统普京在胜利日讲话中为入侵乌克兰的决定进行了辩护，并错误地将俄罗斯的行动描述为欧洲反纳粹斗争的延续。 Maxim Shemetov/Reuters
+    
+  
+  
+    他没有宣称胜利或“任务完成”，没有承诺乌克兰的战斗会很快结束。但俄罗斯总统普京周一在莫斯科红场发表讲话时，也没有呼吁做出新的牺牲或动员，没有威胁进行核打击，没有严正宣布要与西方打一场生死攸关的战争。
+    相反，普京在俄罗斯最重要的非宗教节日发表讲话，向俄罗斯广大民众传达了这样一个信息：他们可以继续自己的生活。他做出了军方会继续战斗，以清除乌克兰的“施虐者、行刑队和纳粹”这样的虚假陈述，但普京没有再一次试图让他的人民为更广泛的冲突做好准备。
+    这种经过精心调整..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20220510%2Fputin-speech-victory-day-ukraine-war%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652170021000-->
+<p><a href="https://cn.nytimes.com/world/20220510/putin-speech-victory-day-ukraine-war/">普京的胜利日讲话传达了什么信息？</a>
+——</p>
+
+<div>
+  <address>
+ANTON TROIANOVSKI
+  </address>
+  <time pudate="2022-05-10 03:58:47" datetime="2022-05-10 03:58:47">2022年5月10日</time>
+  <figure>
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2022/05/09/world/09ukraine-putin-vid-cover-sub/merlin_206613408_80b4e2df-4be5-49bd-897e-9ee13ccec3a9-master1050.jpg" width="1050" height="714" />    <figcaption>
+俄罗斯总统普京在胜利日讲话中为入侵乌克兰的决定进行了辩护，并错误地将俄罗斯的行动描述为欧洲反纳粹斗争的延续。 <cite>Maxim Shemetov/Reuters</cite>
+    </figcaption>
+  </figure>
+  <section>
+    <p>他没有宣称胜利或“任务完成”，没有承诺乌克兰的战斗会很快结束。但俄罗斯总统普京周一在莫斯科红场发表讲话时，也没有呼吁做出新的牺牲或动员，没有威胁进行核打击，没有严正宣布要与西方打一场生死攸关的战争。</p>
+    <p>相反，普京在俄罗斯最重要的非宗教节日发表讲话，向俄罗斯广大民众传达了这样一个信息：他们可以继续自己的生活。他做出了军方会继续战斗，以清除乌克兰的“施虐者、行刑队和纳粹”这样的虚假陈述，但普京没有再一次试图让他的人民为更广泛的冲突做好准备。</p>
+    <p>这种经过精心调整的语气表明，尽管一些西方官员预测普京会<a href="https://www.nytimes.com/2022/05/08/world/europe/russia-may-9-victory-day-ukraine.html">利用5月9日的节日</a>加大对这场战争的投入，但他仍保持谨慎态度，没有向普通俄罗斯人要求太多。事实上，普京在讲话中宣布的唯一一项政策是为了减轻战争直接造成的痛苦——一项为阵亡和受伤士兵的子女提供额外援助的法令。</p>
+    <p>“他对什么可能、什么不可能已经形成了某种概念，”曾为普京亲信、直到2011年与其闹翻的格列布·帕夫洛夫斯基在解释俄罗斯领导人为何似乎不准备进行大规模动员时说。“他明白，任何宣传本身都无法迫使一个人去死。”</p>
+    <p>与过去两个月在其他场合发表的激烈言辞相比，普京这一次的讲话显得低调。这也是他最近所有公开讲话中，俄罗斯人民最有可能看到的一次，因为这是在电视转播的胜利日阅兵式上发表的。胜利日是俄罗斯一年一度的盛大活动，庆祝苏联在二战中战胜纳粹德国。</p>
+    <p>一些分析人士表示，尽管民调显示俄罗斯民众普遍支持战争，但克里姆林宫似乎担心这种支持并不深入。帕夫洛夫斯基说，总统似乎希望避免进一步破坏他上台后与俄罗斯人民达成的默契：普通俄罗斯人不参与政治，克里姆林宫在很大程度上让他们过自己的生活。</p>
+    <p>在战争的头几周，有超过15000名俄罗斯人在反战抗议活动中被捕，但绝大多数俄罗斯人保持沉默，即使他们反对战争。虽然西方的制裁打击了俄罗斯的经济，但经济并没有崩溃，许多人的生活基本上与2月24日入侵前一样。</p>
+    <p>独立民调机构列瓦达上月发现，39%的俄罗斯人对克里姆林宫在乌克兰所谓的“特别军事行动”几乎不关注。</p>
+    <p>在乌克兰，总统弗拉基米尔·泽连斯基否认了普京的说法：入侵是为了清除纳粹主义，因而是正当行为。他在周一发布的视频中说，如今，正是这位俄罗斯领导人在“重复希特勒政权的可怕罪行”。</p>
+    <p>“在战胜纳粹的这一天，我们正在为新的胜利而战，”泽连斯基说。视频画面中，他独自走在基辅的街道上，经过被障碍物和铁丝网保护着的政府大楼。</p>
+    <p>这些讲话表明，两位领导人都在全力应对一场可能旷日持久的战斗。在乌克兰东部顿巴斯地区，乌克兰军队配备了西方提供的重型武器，正在沿着一条480公里长的前线与俄罗斯军队作战。经过数周激烈战斗，俄罗斯只取得了些许进展。</p>
+    <p>乌克兰军方表示，俄军在俄罗斯边境城镇别尔哥罗德部署了19个营级战术群——一个战术群的士兵可达1000人——准备发起攻击，以减缓乌克兰在哈尔科夫附近的反攻，并突破该地区其他地方的乌克兰防线。</p>
+    <p>在华沙，高呼“法西斯”的抗议者将红色液体泼在俄罗斯驻波兰大使谢尔盖·安德烈耶夫的脸上，当时他和其他俄罗斯外交官正在参观“二战”红军阵亡士兵纪念碑。俄罗斯外交部发言人玛丽亚·扎哈罗娃称抗议者是“新纳粹主义的崇拜者”。</p>
+    <p>西方和乌克兰官员曾推测，普京可能会利用5月9日仪式上的军力展示正式宣布俄罗斯处于战争状态并扩大征兵规模，使他能够为因面临重重困难而枯竭殆尽的部队增加兵力。</p>
+    <p>但分析人士表示，对俄罗斯公众的大规模动员、增加征兵或转向战时紧缩经济政策将破坏他所达成的平衡，并将战争现实带入更多家庭。普京早些时候承诺，那些按要求服一年义务役的俄罗斯男青年不会被派上战场。在发现许多这样的义务兵被派上战场后，<a href="https://www.nytimes.com/2022/03/30/world/europe/putin-advisers-ukraine.html">普京</a>下令进行调查。</p>
+    <p>“也许正如人们所说，他们可能会在家里坐在电视机前支持战争，但他们根本没有准备去战斗，”帕夫洛夫斯基说。“普京明白这一核心立场，并且试图不去触及它。”</p>
+    <p>阅兵式的编排本身似乎针对的是熟悉的观众：像往年一样，军队和车辆在红场推进前行，并没有展示代表支持乌克兰战争的“Z”符号。</p>
+    <p>即使在周一的庆祝活动中，俄罗斯国内的动荡局势的影子仍在继续显现。维权组织OVD-Info<a rel="noopener noreferrer" target="_blank" href="https://ovd.news/news/2022/02/24/akcii-v-podderzhku-naroda-ukrainy-i-protiv-voyny">报道</a>了分散在全国各地的抗议者被拘留的情况。该组织发出了一名男子的照片，这位男子在莫斯科市中心的一个长凳上放了一盒巧克力，旁边是一个手写的标识：“如果你反对战争，请吃点糖果。”他因此被捕。</p>
+    <p>在最戏剧性的抗议活动中，亲克里姆林宫新闻网站Lenta.ru的两名俄罗斯记者突然用反战文章填满该网站主页，其中包括一篇宣称“普京必须下台”的文章。</p>
+    <p>“不要害怕！”这篇短暂出现的文章说。“不要沉默！抵抗吧！你并不孤单，我们有很多人！未来是我们的！”</p>
+    <p>普京在讲话中重申了旧的论点——入侵是“唯一正确的决定”，因为他错误地声称，乌克兰正计划对其俄罗斯控制的领土进行“惩罚性入侵”，并且因为北约正在俄罗斯的边境附近集结军队。</p>
+    <p>但一些分析人士警告称，即使普京并没有像西方预测的那样将事态升级，未来几周仍然面临很大的威胁。创立了总部位于法国的政治分析公司R.Politik的塔蒂亚娜·斯塔诺瓦娅研究普京多年，她表示，俄罗斯总统可能认为，胜利日阅兵这个场合不适合传达局势升级的信息——尤其考虑到许多俄罗斯人仍然在享受该国5月初的传统假日。</p>
+    <p>她说，最大的危险在于普京对西方向乌克兰运送武器的不满程度，他可能会利用俄罗斯庞大的核武库进行威慑，<a rel="noopener noreferrer" target="_blank" href="https://www.wilsoncenter.org/article/russias-nuclear-threats-recast-cold-war-dangers-delicate-balance-terror-revisited">引爆单一武器</a>以达到威慑效果。在普京的叙述中，西方正在煽动乌克兰抵抗以削弱俄罗斯；上个月末，普京警告那些“对俄罗斯构成战略威胁”的国家可能会遭到“闪电般快速”的“报复性打击”。</p>
+    <p>“在他的理解中，俄罗斯目前在乌克兰面临的问题并非源于缺乏兵力，而是源于西方武装乌克兰，”斯塔诺瓦娅说。“他的交战对手是西方，所以他就得向西方展示它必须后退。他必须以一种让每个人都非常害怕的方式来展示它。”</p>
+    <p>在周一的演讲中，普京将最严厉的措辞留给了美国。他说，是美国及其“喽啰”利用乌克兰“新纳粹分子”威胁俄罗斯，迫使他做出军事回应，是美国在苏联解体后通过宣扬其“例外主义”来“羞辱”世界。</p>
+    <p>“如果西方不后退，普京现在不可能赢得战争，”斯塔诺瓦娅说。</p>
+  </section>
+  <footer>
+    <p>Michael Levenson、Marc Santora、Andrew Higgins和Ivan Nechepurenko对本文有报道贡献。</p>
+    <p>Anton Troianovski是时报莫斯科分社社长，他曾担任《华盛顿邮报》莫斯科分社社长，也在柏林和纽约为《华尔街日报》工作了九年。欢迎在Twitter上关注他：<a rel="nofollow" target="_blank" href="https://twitter.com/antontroian">@antontroian</a>。</p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2022/05/09/world/europe/putin-speech-victory-day-ukraine-war.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E7%8B%AC%E8%A3%81%E8%80%85%E4%B9%8B%E5%AD%90%E5%B0%8F%E9%A9%AC%E7%A7%91%E6%96%AF%E6%96%99%E5%B0%86%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F-%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%B0%91%E4%B8%BB%E6%9C%AA%E6%9D%A5%E9%9A%BE%E6%96%99">
+          独裁者之子小马科斯料将当选总统，菲律宾民主未来难料
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%A6%82%E6%9E%9C%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E8%BF%99%E4%B9%88%E8%81%AA%E6%98%8E-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E4%BB%AC%E4%B8%8D%E5%AF%8C%E6%9C%89">
+          “如果经济学家这么聪明，为什么他们不富有？”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/2022%E5%B9%B4%E6%99%AE%E5%88%A9%E7%AD%96%E5%A5%96-%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5-%E8%8E%B7%E5%9B%BD%E9%99%85%E6%8A%A5%E9%81%93%E7%AD%89%E5%A4%9A%E4%B8%AA%E5%A5%96%E9%A1%B9">
+          2022年普利策奖：《纽约时报》获国际报道等多个奖项
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-09</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-09/%E7%AE%80%E6%8A%A5-%E5%8F%B0%E6%B9%BE%E8%BD%AC%E5%90%91%E4%B8%8E%E7%97%85%E6%AF%92%E5%85%B1%E5%AD%98-%E5%8C%97%E4%BA%AC%E7%BB%A7%E7%BB%AD%E6%94%B6%E7%B4%A7%E9%98%B2%E6%8E%A7%E6%8E%AA%E6%96%BD-%E6%99%AE%E4%BA%AC%E8%83%9C%E5%88%A9%E6%97%A5%E8%AE%B2%E8%AF%9D%E8%A8%80%E8%BE%9E%E6%8C%91%E8%A1%85%E4%BD%86%E6%9C%AA%E5%8D%87%E7%BA%A7%E7%AB%8B%E5%9C%BA">
+          简报：台湾转向与病毒共存，北京继续收紧防控措施；普京胜利日讲话言辞挑衅但未升级立场
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%BE%AE%E8%BD%AF%E5%BB%BA%E8%AE%AE-Windows-11-%E7%94%A8%E6%88%B7%E5%8D%B8%E8%BD%BD%E5%8F%AF%E9%80%89%E6%9B%B4%E6%96%B0-KB5012643">
+            前一篇：微软建议 Windows 11 用户卸载可选更新 KB5012643
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%8F%B0%E4%B8%AD%E7%A7%91%E9%99%A2%E8%BF%9E3%E5%A4%A9%E7%81%AB%E7%82%AE%E8%AF%95%E5%B0%84-%E4%B8%AD%E5%85%B1%E5%86%9B%E8%88%B0%E7%8E%B0%E8%B8%AA%E5%85%B0%E5%B1%BF%E5%A4%96%E6%B5%B7">
+            后一篇：台中科院连3天火炮试射 中共军舰现踪兰屿外海
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%BE%AE%E8%BD%AF%E5%BB%BA%E8%AE%AE-Windows-11-%E7%94%A8%E6%88%B7%E5%8D%B8%E8%BD%BD%E5%8F%AF%E9%80%89%E6%9B%B4%E6%96%B0-KB5012643'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%8F%B0%E4%B8%AD%E7%A7%91%E9%99%A2%E8%BF%9E3%E5%A4%A9%E7%81%AB%E7%82%AE%E8%AF%95%E5%B0%84-%E4%B8%AD%E5%85%B1%E5%86%9B%E8%88%B0%E7%8E%B0%E8%B8%AA%E5%85%B0%E5%B1%BF%E5%A4%96%E6%B5%B7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%A6%82%E6%9E%9C%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E8%BF%99%E4%B9%88%E8%81%AA%E6%98%8E-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E4%BB%AC%E4%B8%8D%E5%AF%8C%E6%9C%89'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/2022%E5%B9%B4%E6%99%AE%E5%88%A9%E7%AD%96%E5%A5%96-%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5-%E8%8E%B7%E5%9B%BD%E9%99%85%E6%8A%A5%E9%81%93%E7%AD%89%E5%A4%9A%E4%B8%AA%E5%A5%96%E9%A1%B9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%BE%AE%E8%BD%AF%E5%BB%BA%E8%AE%AE-Windows-11-%E7%94%A8%E6%88%B7%E5%8D%B8%E8%BD%BD%E5%8F%AF%E9%80%89%E6%9B%B4%E6%96%B0-KB5012643">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%8F%B0%E4%B8%AD%E7%A7%91%E9%99%A2%E8%BF%9E3%E5%A4%A9%E7%81%AB%E7%82%AE%E8%AF%95%E5%B0%84-%E4%B8%AD%E5%85%B1%E5%86%9B%E8%88%B0%E7%8E%B0%E8%B8%AA%E5%85%B0%E5%B1%BF%E5%A4%96%E6%B5%B7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%A6%82%E6%9E%9C%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E8%BF%99%E4%B9%88%E8%81%AA%E6%98%8E-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E4%BB%AC%E4%B8%8D%E5%AF%8C%E6%9C%89">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-10/2022%E5%B9%B4%E6%99%AE%E5%88%A9%E7%AD%96%E5%A5%96-%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5-%E8%8E%B7%E5%9B%BD%E9%99%85%E6%8A%A5%E9%81%93%E7%AD%89%E5%A4%9A%E4%B8%AA%E5%A5%96%E9%A1%B9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

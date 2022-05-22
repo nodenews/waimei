@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议
+——
+" />
+    <meta property="og:description" content="
+简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议" />
+    <meta property="twitter:title" content="简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2022%2F05%2F18%2Fworld%2Fasia%2Fnorth-korea-covid-china-backfire.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%9C%9D%E9%B2%9C%E5%AD%A6%E4%B9%A0%E4%B8%AD%E5%9B%BD%E6%8A%97%E7%96%AB%E6%A8%A1%E5%BC%8F%E6%88%96%E5%8A%A0%E5%89%A7%E7%81%BE%E9%9A%BE%EF%BC%9B%E4%B8%AD%E5%9B%BD%E7%A4%BE%E5%AA%92%E5%BC%BA%E5%88%B6%E6%8A%AB%E9%9C%B2%E7%94%A8%E6%88%B7IP%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2022%2F05%2F18%2Fworld%2Fasia%2Fnorth-korea-covid-china-backfire.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%9C%9D%E9%B2%9C%E5%AD%A6%E4%B9%A0%E4%B8%AD%E5%9B%BD%E6%8A%97%E7%96%AB%E6%A8%A1%E5%BC%8F%E6%88%96%E5%8A%A0%E5%89%A7%E7%81%BE%E9%9A%BE%EF%BC%9B%E4%B8%AD%E5%9B%BD%E7%A4%BE%E5%AA%92%E5%BC%BA%E5%88%B6%E6%8A%AB%E9%9C%B2%E7%94%A8%E6%88%B7IP%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE&d=2022-05-18&e=
+简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议
+——
+
+
+  
+    
+Image      
+      
+朝鲜官方媒体提供的照片显示，朝鲜领导人金正恩上周在平壤召开了一个抗击新冠病毒战略的会议。Credit...Korean Central News Agency, via Associated Press
+      
+    
+    
+      
+        朝鲜欲向中国学习“成功”抗疫经验，或加剧灾难。中国遏制新冠病毒传播依靠的是严格封锁、大规模核酸检测以及疫苗接种，而朝鲜缺乏中国可调动的最基本的药物和食品供应。朝鲜似乎正在按照一种与中国类似的策略行事，但也有所不同，该国仍敦促继续“组织生产工作”。公共卫生专家警告，金正恩想按照中国模式去做的愿望只会加剧这场灾难的冲击。朝鲜官媒周三称，100万名发热患者已康复。专家对朝鲜通报的数字表示怀疑..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2022%2F05%2F18%2Fworld%2Fasia%2Fnorth-korea-covid-china-backfire.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html&text=简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html&title=简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html&title=简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议&body=
+简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html&title=简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议&caption=
+简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议&url=https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2022%2F05%2F18%2Fworld%2Fasia%2Fnorth-korea-covid-china-backfire.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%9C%9D%E9%B2%9C%E5%AD%A6%E4%B9%A0%E4%B8%AD%E5%9B%BD%E6%8A%97%E7%96%AB%E6%A8%A1%E5%BC%8F%E6%88%96%E5%8A%A0%E5%89%A7%E7%81%BE%E9%9A%BE%EF%BC%9B%E4%B8%AD%E5%9B%BD%E7%A4%BE%E5%AA%92%E5%BC%BA%E5%88%B6%E6%8A%AB%E9%9C%B2%E7%94%A8%E6%88%B7IP%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE&d=2022-05-18&e=
+简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议
+——
+
+
+  
+    
+Image      
+      
+朝鲜官方媒体提供的照片显示，朝鲜领导人金正恩上周在平壤召开了一个抗击新冠病毒战略的会议。Credit...Korean Central News Agency, via Associated Press
+      
+    
+    
+      
+        朝鲜欲向中国学习“成功”抗疫经验，或加剧灾难。中国遏制新冠病毒传播依靠的是严格封锁、大规模核酸检测以及疫苗接种，而朝鲜缺乏中国可调动的最基本的药物和食品供应。朝鲜似乎正在按照一种与中国类似的策略行事，但也有所不同，该国仍敦促继续“组织生产工作”。公共卫生专家警告，金正恩想按照中国模式去做的愿望只会加剧这场灾难的冲击。朝鲜官媒周三称，100万名发热患者已康复。专家对朝鲜通报的数字表示怀疑..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2022%2F05%2F18%2Fworld%2Fasia%2Fnorth-korea-covid-china-backfire.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652927822000-->
+<p><a href="https://www.nytimes.com/zh-hans/2022/05/18/world/asia/north-korea-covid-china-backfire.html">简报：朝鲜学习中国抗疫模式或加剧灾难；中国社媒强制披露用户IP引发争议</a>
+——</p>
+
+<div>
+  <section name="articleBody">
+    <figure aria-label="media" role="group">
+Image      <picture><source media="(max-width: 599px) and (min-device-pixel-ratio: 3),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 3),(max-width: 599px) and (min-resolution: 3dppx),(max-width: 599px) and (min-resolution: 288dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2022/05/17/world/CN-00virus-nkorea-china-01-copy/00virus-nkorea-china-01-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=600" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 2),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 2),(max-width: 599px) and (min-resolution: 2dppx),(max-width: 599px) and (min-resolution: 192dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2022/05/17/world/CN-00virus-nkorea-china-01-copy/00virus-nkorea-china-01-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1200" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 1),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 1),(max-width: 599px) and (min-resolution: 1dppx),(max-width: 599px) and (min-resolution: 96dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2022/05/17/world/CN-00virus-nkorea-china-01-copy/00virus-nkorea-china-01-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1800" /><img /></picture>
+      <figcaption>
+朝鲜官方媒体提供的照片显示，朝鲜领导人金正恩上周在平壤召开了一个抗击新冠病毒战略的会议。Credit...Korean Central News Agency, via Associated Press
+      </figcaption>
+    </figure>
+    <ul>
+      <li>
+        <p><a href="https://www.nytimes.com/2022/05/18/world/asia/north-korea-covid-china.html" title="">朝鲜欲向中国学习“成功”抗疫经验</a>，或加剧灾难。中国遏制新冠病毒传播依靠的是严格封锁、大规模核酸检测以及疫苗接种，而朝鲜缺乏中国可调动的最基本的药物和食品供应。朝鲜似乎正在按照一种与中国类似的策略行事，但也有所不同，该国仍敦促继续“组织生产工作”。公共卫生专家警告，金正恩想按照中国模式去做的愿望只会加剧这场灾难的冲击。朝鲜官媒周三称，100万名发热患者已康复。专家对朝鲜通报的数字表示怀疑。</p>
+      </li>
+      <li>
+        <p>中国的审查新策略：<a href="https://www.nytimes.com/2022/05/18/business/china-internet-censors-ip-address.html?te=1&amp;nl=morning-briefing%3A-asia-pacific-edition&amp;emc=edit_mbae_20220519" title="">强制披露用户IP信息</a>。有关部门称，这些自动显示的位置信息将有助于发现旨在破坏中国稳定的海外虚假信息活动。但此举日益将中国公民的居住地与他们对国家的忠诚联系起来，在海外发帖的中国人或来自被认为不够爱国的省份的人很容易成为民族主义活动人士的目标。这项政策最初被用于提到俄罗斯入侵乌克兰的帖子上，现已迅速扩大至多个社交媒体平台。学者称，这将使公开对话变得越来越难。</p>
+      </li>
+    </ul>
+    <aside aria-label="companion column"></aside>
+    <figure aria-label="media" role="group">
+Image      <figcaption>
+周三，一名俄罗斯士兵在马里乌波尔巡逻。Credit...Associated Press
+      </figcaption>
+    </figure>
+    <ul>
+      <li>
+        <p><a href="https://www.nytimes.com/2022/05/18/world/europe/russian-soldier-war-crime-ukraine-law.html" title="">一名俄罗斯士兵在乌克兰法庭认罪</a>，承认开枪打死平民。这是自俄罗斯全面入侵乌克兰以来，乌克兰对可能被视为战争罪的行为进行的首次审判。这名21岁的中士被控射杀了一名边骑自行车边打电话的62岁男子。他将面临10年至终身监禁。</p>
+      </li>
+      <li>
+        <p>芬兰和瑞典正式申请加入北约，<a href="https://www.nytimes.com/live/2022/05/18/world/russia-ukraine-war/turkey-blocks-an-early-nato-effort-to-fast-track-swedens-and-finlands-applications?smid=url-share" title="">土耳其对快速通过审核提出异议</a>。北约成员国土耳其提交了一份不满清单，主要是关于西方对库尔德的支持（土耳其将该组织认定为恐怖分子），该国还阻止了北约迅速推进申请的程序性投票。分析人士称，土耳其对申请的阻挠并非埃尔多安的最终决定，而是为了让成员国认真解决其安全担忧。</p>
+      </li>
+      <li>
+        <p>G7财长会议召开，讨论如何向莫斯科施压、<a href="https://www.nytimes.com/2022/05/18/us/politics/russia-finance-ministers-economy.html" title="">避免全球经济衰退</a>。随着供应链堵塞、物价上涨、食品和能源短缺以及俄罗斯对乌克兰的持续入侵，世界经济正进入一个潜在的严峻时期。美国财长耶伦警告，食品和能源价格上涨抑制了支出和经济产出，在全球范围内<a href="https://www.nytimes.com/live/2022/05/18/business/economy-news-stocks-inflation/yellen-warns-price-increases-are-causing-global-stagflationary-effects?smid=url-share" title="">造成了“滞胀效应”</a>。</p>
+      </li>
+    </ul>
+    <aside aria-label="companion column"></aside>
+    <figure aria-label="media" role="group">
+Image      <figcaption>
+5月初，京都一条通常备受外国人欢迎的街道只有几个日本游客。Credit...Kosuke Okahara for The New York Times
+      </figcaption>
+    </figure>
+    <ul>
+      <li>
+        <p>日本将允许小规模游客入境，<a href="https://www.nytimes.com/live/2022/05/18/world/covid-19-mandates-vaccine-cases?name=styln-coronavirus&amp;region=TOP_BANNER&amp;block=storyline_menu_recirc&amp;action=click&amp;pgtype=Interactive&amp;variant=show&amp;is_new=false#japan-tourists-reopening-test" title="">试探性重新开放</a>。日本本月将允许来自美国、泰国、新加坡和澳大利亚四国接种过加强针的小规模游客入境。自疫情开始以来，日本一直保持严格的边境控制。随着7月全国议会选举的临近，全面重新开放等重大举措对政治领导人来说存在风险。</p>
+      </li>
+      <li>
+        <p><a href="https://www.nytimes.com/2022/05/18/sports/soccer/us-soccer-equal-pay-deal.html" title="">美国男女足将实现同工同酬</a>。根据美国足球协会周三签署的一份具有里程碑意义的协议，代表美国男子和女子国家队的足球运动员在参加国际比赛时将获得相同的报酬。此外，从明年男足世界杯开始，两队还将平分各自在世界杯比赛中获得的奖金。几十年来，女足运动员的薪水和比赛奖金一直低于男性同行。</p>
+      </li>
+      <li>
+        <p>观点：白人权力极端分子背后的“大取代”理论。白人权力活动者一直认为精英试图用非白人群体压倒并摧毁白人种族。极端分子数十年来制造的暴力告诉我们，这种观点将导致进一步的暴力。（<a href="https://cn.nytimes.com/opinion/20220518/buffalo-shooting-replacement-theory/" title="">阅读本文中文版</a>）</p>
+      </li>
+      <li>
+        <p>观点：美国富人和你想象的不一样，幸福也是。一项研究发现，美国典型的富人并非都是科技巨头，而是汽车经销商或饮品经销商这类群体。大数据则为我们揭示了一些关于幸福的真相。（<a href="https://cn.nytimes.com/opinion/20220518/rich-happiness-big-data/" title="">阅读本文中文版</a>）</p>
+      </li>
+    </ul>
+    <p>感谢阅读今天的简报，新读者请<a href="https://www.nytimes.com/newsletters/chinese-briefing" title="">点击此处订阅</a>。点击<a href="https://www.nytimes.com/zh-hans/series/daily-briefing-chinese" title="">这里</a>查看往日更新。欢迎在Twitter(<a href="https://twitter.com/nytchinese" title="" rel="noopener noreferrer" target="_blank">@nytchinese</a>)、<a href="https://www.instagram.com/cn.nytimes/?hl=zh-tw" title="" rel="noopener noreferrer" target="_blank">Instagram</a>和<a href="https://www.facebook.com/nytimeschinese.t/" title="" rel="noopener noreferrer" target="_blank">Facebook</a>上关注我们，了解更多中文资讯。也欢迎访问<a href="https://cn.nytimes.com/" title="">中文网首页</a>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.newsletter@nytimes.com。</p>
+    <aside aria-label="companion column"></aside>
+  </section>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-19</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-19/%E7%BA%A6%E7%BF%B0%E5%B0%BC-%E5%BE%B7%E6%99%AE%E8%AF%BD%E8%B0%A4%E6%A1%88%E4%B8%8E%E5%8E%8C%E5%A5%B3%E7%8B%82%E7%83%AD">
+          约翰尼·德普诽谤案与厌女狂热
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E5%AA%92%E5%BC%BA%E5%88%B6%E6%8A%AB%E9%9C%B2%E7%94%A8%E6%88%B7IP-%E6%B5%B7%E5%A4%96%E5%9C%B0%E5%9D%80%E6%88%90%E4%BC%97%E7%9F%A2%E4%B9%8B%E7%9A%84">
+          中国社媒强制披露用户IP，海外地址成众矢之的
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E9%87%91%E6%AD%A3%E6%81%A9%E6%AC%B2%E5%AD%A6-%E4%B8%AD%E5%9B%BD%E6%A8%A1%E5%BC%8F-%E4%B8%93%E5%AE%B6%E8%AD%A6%E5%91%8A%E6%81%90%E5%8A%A0%E5%89%A7%E7%96%AB%E6%83%85%E5%8D%B1%E6%9C%BA">
+          金正恩欲学“中国模式”，专家警告恐加剧疫情危机
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E7%BE%8E%E5%9B%BD%E5%AF%8C%E4%BA%BA%E5%92%8C%E4%BD%A0%E6%83%B3%E8%B1%A1%E7%9A%84%E4%B8%8D%E4%B8%80%E6%A0%B7-%E5%B9%B8%E7%A6%8F%E4%B9%9F%E6%98%AF">
+          美国富人和你想象的不一样，幸福也是
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-18/%E7%99%BD%E5%AE%AE-%E6%8B%9C%E7%99%BB%E4%BA%9E%E6%B4%B2%E8%A1%8C%E5%B0%87%E5%AE%A3%E5%B8%83%E5%95%9F%E5%8B%95%E5%8D%B0%E5%A4%AA%E7%B6%93%E6%BF%9F%E6%9E%B6%E6%A7%8B">
+            前一篇：白宮：拜登亞洲行將宣布啟動印太經濟架構
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-18/Gitee-%E5%BC%80%E6%BA%90%E5%BA%93%E5%B0%86%E5%85%88%E5%AE%A1%E5%86%8D%E4%B8%8A%E7%BA%BF">
+            后一篇：Gitee 开源库将先审再上线
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E7%99%BD%E5%AE%AE-%E6%8B%9C%E7%99%BB%E4%BA%9E%E6%B4%B2%E8%A1%8C%E5%B0%87%E5%AE%A3%E5%B8%83%E5%95%9F%E5%8B%95%E5%8D%B0%E5%A4%AA%E7%B6%93%E6%BF%9F%E6%9E%B6%E6%A7%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/Gitee-%E5%BC%80%E6%BA%90%E5%BA%93%E5%B0%86%E5%85%88%E5%AE%A1%E5%86%8D%E4%B8%8A%E7%BA%BF'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E5%AA%92%E5%BC%BA%E5%88%B6%E6%8A%AB%E9%9C%B2%E7%94%A8%E6%88%B7IP-%E6%B5%B7%E5%A4%96%E5%9C%B0%E5%9D%80%E6%88%90%E4%BC%97%E7%9F%A2%E4%B9%8B%E7%9A%84'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E9%87%91%E6%AD%A3%E6%81%A9%E6%AC%B2%E5%AD%A6-%E4%B8%AD%E5%9B%BD%E6%A8%A1%E5%BC%8F-%E4%B8%93%E5%AE%B6%E8%AD%A6%E5%91%8A%E6%81%90%E5%8A%A0%E5%89%A7%E7%96%AB%E6%83%85%E5%8D%B1%E6%9C%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-18/%E7%99%BD%E5%AE%AE-%E6%8B%9C%E7%99%BB%E4%BA%9E%E6%B4%B2%E8%A1%8C%E5%B0%87%E5%AE%A3%E5%B8%83%E5%95%9F%E5%8B%95%E5%8D%B0%E5%A4%AA%E7%B6%93%E6%BF%9F%E6%9E%B6%E6%A7%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-18/Gitee-%E5%BC%80%E6%BA%90%E5%BA%93%E5%B0%86%E5%85%88%E5%AE%A1%E5%86%8D%E4%B8%8A%E7%BA%BF">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-18/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E5%AA%92%E5%BC%BA%E5%88%B6%E6%8A%AB%E9%9C%B2%E7%94%A8%E6%88%B7IP-%E6%B5%B7%E5%A4%96%E5%9C%B0%E5%9D%80%E6%88%90%E4%BC%97%E7%9F%A2%E4%B9%8B%E7%9A%84">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-18/%E9%87%91%E6%AD%A3%E6%81%A9%E6%AC%B2%E5%AD%A6-%E4%B8%AD%E5%9B%BD%E6%A8%A1%E5%BC%8F-%E4%B8%93%E5%AE%B6%E8%AD%A6%E5%91%8A%E6%81%90%E5%8A%A0%E5%89%A7%E7%96%AB%E6%83%85%E5%8D%B1%E6%9C%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="git.io/JJCxX 老实报新闻 少整妖蛾子">
+    <meta property="og:description" content="git.io/JJCxX 老实报新闻 少整妖蛾子" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage13%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage13%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90&d=&e={% if site.posts.size == 0 %}
+  No post found
+{% endif %}
+
+
+
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        {{ month }}
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage13%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://nodebe4.github.io/waimei/page13/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://nodebe4.github.io/waimei/page13/&text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://nodebe4.github.io/waimei/page13/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://nodebe4.github.io/waimei/page13/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&body=" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://nodebe4.github.io/waimei/page13/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://nodebe4.github.io/waimei/page13/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&caption=&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&url=https://nodebe4.github.io/waimei/page13/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+<ul class="archive">
+
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E9%A6%99%E6%B8%AF%E6%96%B0%E5%A2%9E%E6%9C%AC%E5%9C%9F298%E4%BE%8B%E6%84%9F%E6%9F%93-%E7%96%AB%E6%83%85%E7%A9%A9%E5%AE%9A">
+      
+        香港新增本土298例感染 疫情穩定
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180271.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E9%9F%93%E7%BE%8E%E5%B3%B0%E6%9C%83%E9%80%B1%E6%9C%AB%E7%99%BB%E5%A0%B4-%E5%8D%97%E9%9F%93%E5%82%99%E5%A6%A5B%E6%96%B9%E6%A1%88%E5%9B%A0%E6%87%89%E5%8C%97%E9%9F%93%E6%8C%91%E9%87%81">
+      
+        韓美峰會週末登場 南韓備妥B方案因應北韓挑釁
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180279.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%8B%B1%E5%9C%8B%E9%80%9A%E8%86%A8%E6%94%80%E6%8A%B540%E5%B9%B4%E9%AB%98%E9%BB%9E-%E7%94%9F%E6%B4%BB%E6%88%90%E6%9C%AC%E9%A3%86%E6%BC%B2%E5%8D%B1%E6%A9%9F%E6%83%A1%E5%8C%96">
+      
+        英國通膨攀抵40年高點 生活成本飆漲危機惡化
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180268.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BE%8E%E5%9C%8B%E6%9F%93%E7%96%AB%E6%96%B0%E5%A2%9E%E7%97%85%E4%BE%8B%E6%94%80%E5%8D%87-%E6%B2%BB%E7%99%82%E7%94%A8%E8%97%A5%E9%9C%80%E6%B1%82%E5%A4%A7%E6%BC%B2">
+      
+        美國染疫新增病例攀升 治療用藥需求大漲
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180252.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%97%A5%E6%9C%AC%E6%84%9B%E7%9F%A5%E7%B8%A3%E4%BE%9B%E6%B0%B4%E8%A8%AD%E6%96%BD%E6%BC%8F%E6%B0%B4-%E6%B1%BD%E8%BB%8A%E7%9B%B8%E9%97%9C%E6%A5%AD%E8%80%85%E6%81%90%E5%8F%97%E5%BD%B1%E9%9F%BF">
+      
+        日本愛知縣供水設施漏水 汽車相關業者恐受影響
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180275.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E6%97%A5%E5%A4%96%E9%95%B7%E8%AB%87%E5%8F%B0%E7%81%A3-%E7%8E%8B%E6%AF%85%E8%A6%81%E6%B1%82%E5%8D%B3%E6%99%82%E6%8E%92%E9%99%A4%E5%B9%B2%E6%93%BE%E5%9B%A0%E7%B4%A0">
+      
+        中日外長談台灣 王毅要求即時排除干擾因素
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180251.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B8%AF%E7%A4%BE%E8%BF%90%E4%BA%BA%E5%A3%AB%E9%BB%84%E6%B4%8B%E8%BE%BE%E7%A7%B0%E5%9B%BD%E5%AE%89%E5%A4%84%E4%B8%8A%E9%97%A8%E8%A6%81%E6%B1%82%E5%88%A0%E7%A4%BE%E5%AA%92%E5%86%85%E5%AE%B9">
+      
+        港社运人士黄洋达称国安处上门要求删社媒内容
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274022" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%B0%AD%E5%BE%B7%E5%A1%9E%E5%86%8D%E8%AF%84%E4%B8%AD%E5%9B%BD%E5%92%8C%E6%9C%9D%E9%B2%9C%E9%98%B2%E7%96%AB%E6%94%BF%E7%AD%96">
+      
+        谭德塞再评中国和朝鲜防疫政策
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20220518-%E8%B0%AD%E5%BE%B7%E5%A1%9E%E5%86%8D%E8%AF%84%E4%B8%AD%E5%9B%BD%E5%92%8C%E6%9C%9D%E9%B2%9C%E9%98%B2%E7%96%AB%E6%94%BF%E7%AD%96" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%99%BD%E4%BA%BA%E6%9D%83%E5%8A%9B%E6%9E%81%E7%AB%AF%E5%88%86%E5%AD%90%E8%83%8C%E5%90%8E%E7%9A%84-%E5%A4%A7%E5%8F%96%E4%BB%A3-%E7%90%86%E8%AE%BA">
+      
+        白人权力极端分子背后的“大取代”理论
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#纽约时报" class="tag">
+        纽约时报
+      </a>
+      
+
+      
+      <a href="https://cn.nytimes.com/opinion/20220518/buffalo-shooting-replacement-theory/" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%BE%B3%E6%B4%B2%E8%8F%AF%E8%A3%94%E5%9C%8B%E6%9C%83%E8%AD%B0%E5%93%A1%E5%80%99%E9%81%B8%E4%BA%BA-%E7%AB%9F%E8%88%87%E4%B8%AD%E5%9C%8B%E7%B5%B1%E6%88%B0%E9%83%A8%E6%9C%89%E7%93%9C%E8%91%9B">
+      
+        澳洲華裔國會議員候選人 竟與中國統戰部有瓜葛
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180227.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%97%A5%E4%B8%AD%E5%A4%96%E9%95%B7%E6%9C%83%E8%AB%87-%E6%97%A5%E6%96%B9%E5%BC%B7%E8%AA%BF%E5%8F%B0%E6%B5%B7%E5%92%8C%E5%B9%B3%E7%A9%A9%E5%AE%9A%E9%87%8D%E8%A6%81%E6%80%A7">
+      
+        日中外長會談 日方強調台海和平穩定重要性
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180226.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%A4%96%E5%AA%92-%E4%B8%AD%E5%9C%8B%E5%81%9C%E6%AD%A2%E6%9B%B4%E6%96%B0%E5%A2%83%E5%A4%96%E6%A9%9F%E6%A7%8B%E5%82%B5%E5%88%B8%E4%BA%A4%E6%98%93%E6%95%B8%E6%93%9A">
+      
+        外媒：中國停止更新境外機構債券交易數據
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180233.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9C%8B%E8%AA%BF%E6%95%B4%E5%85%A5%E5%A2%83%E9%98%B2%E7%96%AB-%E8%87%AA%E7%BE%8E%E5%9C%8B%E5%87%BA%E7%99%BC%E8%A1%8C%E5%89%8D%E6%AA%A2%E6%B8%AC%E8%A6%8F%E5%AE%9A%E6%94%BE%E5%AF%AC">
+      
+        中國調整入境防疫  自美國出發行前檢測規定放寬
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180228.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/4%E6%9C%88%E5%A4%A7%E9%99%8670%E5%9F%8E%E6%96%B0%E6%88%BF%E4%BB%B7%E6%A0%BC6%E5%B9%B4%E6%9D%A5%E9%A6%96%E6%AC%A1%E7%8E%AF%E6%AF%94%E4%B8%8B%E8%B7%8C">
+      
+        4月大陆70城新房价格6年来首次环比下跌
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739723.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BE%8E%E5%9B%BD%E8%AD%A6%E6%96%B9-%E6%9E%AA%E5%87%BB%E6%A1%88%E6%98%AF%E6%94%BF%E6%B2%BB%E4%BB%87%E6%81%A8-%E5%8F%B0%E6%B9%BE%E9%95%BF%E8%80%81%E6%95%99%E4%BC%9A-%E8%A6%81%E4%B8%A5%E6%83%A9%E4%BB%87%E8%A7%86%E7%BD%AA">
+      
+        美国警方：枪击案是政治仇恨 台湾长老教会 :要严惩仇视罪
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/renquanfazhi/hx1-05182022045113.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%86%9B%E6%96%B9%E6%89%BF%E8%AE%A4%E6%8A%B5%E5%BE%A1%E4%BF%84%E7%BD%97%E6%96%AF%E4%BE%B5%E4%B9%8C%E8%BF%9B%E5%85%A5%E6%8C%81%E4%B9%85%E6%88%98">
+      
+        乌克兰军方承认抵御俄罗斯侵乌进入持久战
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E6%AC%A7%E6%B4%B2/20220518-%E4%B9%8C%E5%85%8B%E5%85%B0%E5%86%9B%E6%96%B9%E6%89%BF%E8%AE%A4%E6%8A%B5%E5%BE%A1%E4%BF%84%E7%BD%97%E6%96%AF%E4%BE%B5%E4%B9%8C%E8%BF%9B%E5%85%A5%E6%8C%81%E4%B9%85%E6%88%98" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%9C%E8%88%AA%E7%A9%BA%E9%9A%BE-%E5%8D%8E%E6%97%A5%E6%9B%9D%E6%95%85%E6%84%8F%E4%BF%AF%E5%86%B2%E5%9D%A0%E6%AF%81-%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E7%A7%B0%E6%B2%A1%E6%9C%89%E8%B0%83%E6%9F%A5%E4%BA%BA%E5%91%98%E5%90%91%E5%AA%92%E4%BD%93%E5%8F%91%E5%B8%83%E8%AE%AF%E6%81%AF">
+      
+        东航空难：华日曝故意俯冲坠毁 中国官方称没有调查人员向媒体发布讯息
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20220518-%E4%B8%9C%E8%88%AA%E7%A9%BA%E9%9A%BE-%E5%8D%8E%E6%97%A5%E6%9B%9D%E6%95%85%E6%84%8F%E4%BF%AF%E5%86%B2%E5%9D%A0%E6%AF%81-%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E7%A7%B0%E6%B2%A1%E6%9C%89%E8%B0%83%E6%9F%A5%E4%BA%BA%E5%91%98%E5%90%91%E5%AA%92%E4%BD%93%E5%8F%91%E5%B8%83%E8%AE%AF%E6%81%AF" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BB%8F%E6%B8%AF%E7%8F%A0%E6%BE%B3%E5%A4%A7%E6%A1%A5%E6%8A%B5%E9%A6%99%E6%B8%AF%E6%9C%BA%E5%9C%BA%E8%BD%AC%E6%9C%BA%E5%AE%A2%E5%85%8D%E7%A6%BB%E5%A2%83%E7%A8%8E">
+      
+        经港珠澳大桥抵香港机场转机客免离境税
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274005" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%8D%97%E4%BA%AC-%E6%B4%97%E8%A1%A3%E6%B6%B2%E5%A5%B6%E8%8C%B6-%E8%A2%AB%E4%B8%8B%E6%9E%B6%E8%B0%83%E6%9F%A5">
+      
+        南京“洗衣液奶茶”被下架调查
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274015" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%98%9F%E7%90%83%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA-%E8%A6%81%E5%85%81%E8%AE%B8%E4%B8%80%E4%BA%9B%E4%BA%BA%E5%85%88%E8%B7%91%E8%B5%B7%E6%9D%A5">
+      
+        星球商业评论｜要允许一些人先跑起来
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/681572.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%94%BF%E5%BA%9C%E5%81%87%E6%96%B0%E8%81%9E%E7%B2%89%E9%A3%BE%E5%A4%AA%E5%B9%B3-%E7%BD%91%E6%B0%91%E5%90%91%E5%8F%8D%E8%AF%88%E4%B8%AD%E5%BF%83%E4%B8%BE%E6%8A%A5">
+      
+        上海市政府假新聞粉飾太平   网民向反诈中心举报
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/huanjing/ql1-05182022043556.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BD%91%E6%B0%91%E4%B8%BE%E6%8A%A5%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%94%BF%E5%BA%9C%E4%BB%A5%E5%81%87%E6%96%B0%E9%97%BB%E7%B2%89%E9%A5%B0%E5%A4%AA%E5%B9%B3">
+      
+        网民举报上海市政府以假新闻粉饰太平
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/huanjing/ql1-05182022043556.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%94%BF%E5%BA%9C%E5%81%87%E6%96%B0%E9%97%BB%E7%B2%89%E9%A5%B0%E5%A4%AA%E5%B9%B3-%E7%BD%91%E6%B0%91%E5%90%91%E5%8F%8D%E8%AF%88%E4%B8%AD%E5%BF%83%E4%B8%BE%E6%8A%A5">
+      
+        上海市政府假新闻粉饰太平   网民向反诈中心举报
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/huanjing/ql1-05182022043556.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E9%87%91%E6%AD%A3%E6%81%A9%E5%85%A9%E9%9B%A3-%E6%8B%89%E4%B8%8B%E8%87%89%E6%B1%82%E5%A4%96%E6%8F%B4-%E6%88%96%E8%AE%93%E7%96%AB%E6%83%85%E5%A4%B1%E6%8E%A7%E5%8B%95%E5%9C%8B%E6%9C%AC">
+      
+        金正恩兩難：拉下臉求外援 或讓疫情失控動國本
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180219.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%97%A5%E6%9C%AC%E5%A5%B3%E9%AB%98%E4%B8%AD%E7%94%9F%E6%B6%89%E7%B3%BE%E7%BA%8F%E5%81%B6%E5%83%8F%E5%9C%98%E9%AB%94%E6%88%90%E5%93%A1-%E9%81%AD%E8%AD%A6%E6%96%B9%E9%80%AE%E6%8D%95">
+      
+        日本女高中生涉糾纏偶像團體成員 遭警方逮捕
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180223.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B1%9F%E8%A5%BF%E5%A4%AB%E5%A6%BB%E6%9D%A5%E6%B2%AA%E7%9C%8B%E7%97%85%E9%81%87%E5%B0%81%E5%9F%8E-%E6%B5%81%E6%B5%AA%E8%A1%97%E5%A4%B4%E4%B8%A4%E4%B8%AA%E6%9C%88">
+      
+        江西夫妻来沪看病遇封城 流浪街头两个月
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739761.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0%E4%BE%A7%E4%BF%A1%E9%81%93%E6%97%A0%E5%85%B3%E7%9A%84-QKD-%E5%AE%9E%E9%AA%8C">
+      
+        中科大首次实现侧信道无关的 QKD 实验
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71566" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%A4%A7%E9%99%86%E4%B8%A4%E5%8D%AB%E5%81%A5%E5%A7%94%E5%AE%98%E5%91%98%E6%89%B9%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96-%E8%A2%AB%E6%8C%87%E4%B8%8D%E5%AF%BB%E5%B8%B8">
+      
+        大陆两卫健委官员批清零政策  被指不寻常
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739710.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8-%E7%BE%8E%E5%9C%A8%E5%8F%B0%E6%B9%BE%E9%97%AE%E9%A2%98%E4%B8%8A%E8%BF%9D%E8%AF%BA%E5%BF%85%E5%8F%97%E6%83%A9%E7%BD%9A">
+      
+        中国外交部：美在台湾问题上违诺必受惩罚
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274010" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%8E%8B%E6%AF%85-%E6%97%A5%E7%BE%8E%E5%90%88%E4%BD%9C%E4%B8%8D%E5%BA%94%E6%8C%91%E5%8A%A8%E9%98%B5%E8%90%A5%E5%AF%B9%E6%8A%97">
+      
+        王毅：日美合作不应挑动阵营对抗
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274008" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%9B%9B%E5%B7%9D%E5%B9%BF%E5%AE%899%E5%A4%A9%E8%BF%91800%E4%BA%BA%E6%84%9F%E6%9F%93%E4%B8%94%E7%96%AB%E6%83%85%E5%A4%96%E6%BA%A2">
+      
+        四川广安9天近800人感染且疫情外溢
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274009" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B8%AF%E5%BA%9C%E6%96%B0%E7%AE%A1%E6%B2%BB%E7%8F%AD%E5%AD%90%E5%B0%86%E6%89%A9%E8%87%B3%E5%8E%86%E5%8F%B2%E6%80%A7%E5%BA%9E%E5%A4%A7-%E5%A2%9E%E8%AE%BE%E5%89%AF%E5%8F%B8%E9%95%BF%E6%83%B9%E5%BF%A7%E7%96%91">
+      
+        港府新管治班子将扩至历史性庞大 增设副司长惹忧疑
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20220518-%E6%B8%AF%E5%BA%9C%E6%96%B0%E7%AE%A1%E6%B2%BB%E7%8F%AD%E5%AD%90%E5%B0%86%E6%89%A9%E8%87%B3%E5%8E%86%E5%8F%B2%E6%80%A7%E5%BA%9E%E5%A4%A7-%E5%A2%9E%E8%AE%BE%E5%89%AF%E5%8F%B8%E9%95%BF%E6%83%B9%E5%BF%A7%E7%96%91" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B6%88%E6%81%AF%E6%8C%87%E6%B8%AF%E5%BA%9C%E6%8B%9F%E7%A6%81%E7%94%A8Telegram-%E4%B8%93%E5%AE%B6%E7%A7%B0%E4%B8%8D%E5%8F%AF%E8%A1%8C%E5%85%BC%E6%AF%81%E9%A6%99%E6%B8%AF%E4%BF%A1%E6%81%AF%E4%B8%AD%E5%BF%83%E5%9C%B0%E4%BD%8D">
+      
+        消息指港府拟禁用Telegram 专家称不可行兼毁香港信息中心地位
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20220518-%E6%B6%88%E6%81%AF%E6%8C%87%E6%B8%AF%E5%BA%9C%E6%8B%9F%E7%A6%81%E7%94%A8telegram-%E4%B8%93%E5%AE%B6%E7%A7%B0%E4%B8%8D%E5%8F%AF%E8%A1%8C%E5%85%BC%E6%AF%81%E9%A6%99%E6%B8%AF%E4%BF%A1%E6%81%AF%E4%B8%AD%E5%BF%83%E5%9C%B0%E4%BD%8D" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%AC%A7%E6%B4%B2%E8%AE%AE%E4%BC%9A%E6%8F%90%E7%A2%B3%E7%A8%8E%E6%B3%95%E8%A7%84-%E4%B8%AD%E5%9B%BD%E5%A4%9A%E4%BA%A7%E4%B8%9A%E5%B0%86%E5%8F%97%E5%86%B2%E5%87%BB">
+      
+        欧洲议会提碳税法规 中国多产业将受冲击
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20220518-%E6%AC%A7%E6%B4%B2%E8%AE%AE%E4%BC%9A%E6%8F%90%E7%A2%B3%E7%A8%8E%E6%B3%95%E8%A7%84-%E4%B8%AD%E5%9B%BD%E5%A4%9A%E4%BA%A7%E4%B8%9A%E5%B0%86%E5%8F%97%E5%86%B2%E5%87%BB" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%97%A5%E6%9C%AC%E5%A4%96%E7%9B%B8%E6%9E%97%E8%8A%B3%E6%AD%A3%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%96%E9%95%BF%E7%8E%8B%E6%AF%85%E4%B8%BE%E8%A1%8C%E8%A7%86%E9%A2%91%E4%BC%9A%E8%B0%88">
+      
+        日本外相林芳正与中国外长王毅举行视频会谈
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20220518-%E6%97%A5%E6%9C%AC%E5%A4%96%E7%9B%B8%E6%9E%97%E8%8A%B3%E6%AD%A3%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%96%E9%95%BF%E7%8E%8B%E6%AF%85%E4%B8%BE%E8%A1%8C%E8%A7%86%E9%A2%91%E4%BC%9A%E8%B0%88" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8-%E9%87%91%E7%A0%96%E4%BA%94%E5%9B%BD%E5%A4%96%E9%95%BF19%E6%97%A5%E4%B8%BE%E8%A1%8C%E4%BC%9A%E6%99%A4">
+      
+        中国外交部：金砖五国外长19日举行会晤
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274002" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%BF%84%E7%BD%97%E6%96%AF%E8%A1%A8%E7%A4%BA%E6%97%A0%E6%84%8F%E5%88%87%E6%96%AD%E4%B8%8E%E5%85%A8%E7%90%83%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E6%8E%A5%E5%85%A5">
+      
+        俄罗斯表示无意切断与全球互联网的接入
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71565" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BD%91%E7%BB%9C%E7%9B%9B%E4%BC%A0-%E4%B9%A0%E4%B8%8B%E6%9D%8E%E4%B8%8A-%E5%88%86%E6%9E%90%E6%8C%87%E6%AD%A4%E8%A8%80%E8%AE%BA%E6%97%A0%E6%A0%B9%E6%8D%AE">
+      
+        网络盛传“习下李上” 分析指此言论无根据
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739579.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/Chinese-Telegram-%E9%A6%99%E6%B8%AF%E5%B0%81%E9%94%81%E5%A4%A7%E5%9E%8B%E9%80%9A%E8%AE%AF%E8%BD%AF%E4%BB%B6%E5%8F%AF%E4%BB%A5%E8%A7%A3%E5%86%B3-%E8%B5%B7%E5%BA%95-%E9%97%AE%E9%A2%98%E5%90%97">
+      
+        [Chinese] Telegram：香港封锁大型通讯软件可以解决“起底”问题吗
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-61476089?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%E5%9B%BD%E4%BC%9A%E8%AE%AE%E5%91%98%E5%85%AC%E5%BC%80%E6%8C%BA%E5%8F%B0%E5%8F%82%E4%B8%8E%E4%B8%96%E5%8D%AB%E5%A4%A7%E4%BC%9A">
+      
+        罗马尼亚国会议员公开挺台参与世卫大会
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739706.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%AD%90%E6%B4%B2%E8%AD%B0%E6%9C%83%E6%8F%90%E7%A2%B3%E7%A8%85%E6%B3%95%E8%A6%8F-%E5%B0%87%E8%A1%9D%E6%93%8A%E4%B8%AD%E5%9C%8B%E9%90%B5%E9%8B%81%E6%B0%B4%E6%B3%A5%E7%AD%89%E7%94%A2%E6%A5%AD">
+      
+        歐洲議會提碳稅法規 將衝擊中國鐵鋁水泥等產業
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180186.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9C%8B%E5%8D%83%E8%90%AC%E7%95%A2%E6%A5%AD%E7%94%9F%E9%81%AD%E9%81%87%E7%96%AB%E6%83%85-%E6%B1%82%E8%81%B7%E8%80%83%E7%A0%94%E8%A6%8F%E5%8A%83%E5%A4%A7%E4%BA%82">
+      
+        中國千萬畢業生遭遇疫情  求職考研規劃大亂
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180190.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%BA%91%E5%8D%97%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD%E6%9C%80%E9%AB%98%E6%A0%91%E6%9C%A8">
+      
+        云南发现中国最高树木
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71564" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%86%8D%E7%8E%B0%E9%9B%B6%E6%98%9F%E9%98%B3%E6%80%A7%E5%A6%82%E4%BD%95%E5%A4%84%E7%BD%AE-%E4%B8%8A%E6%B5%B7-%E5%81%9A%E5%88%B0%E5%BF%AB%E5%87%86%E7%AE%A1">
+      
+        再现零星阳性如何处置？上海：做到快准管
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1274000" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%8F%97%E8%B4%BF%E9%80%BE%E5%8D%83%E4%B8%87%E5%85%83-%E5%B9%BF%E8%A5%BF%E4%BD%8F%E5%BB%BA%E5%8E%85%E5%89%8D%E9%AB%98%E5%AE%98%E8%8E%B7%E5%88%9111%E5%B9%B4">
+      
+        受贿逾千万元 广西住建厅前高官获刑11年
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739678.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%8F%B0%E6%B9%BE%E6%96%B0%E5%A2%9E8%E4%B8%875356%E8%B5%B7%E7%A1%AE%E8%AF%8A-%E4%B8%BA%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+      
+        台湾新增8万5356起确诊 为单日新高
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273994" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B3%95%E5%9B%BD%E5%A4%96%E8%B4%B8%E9%93%B6%E8%A1%8C%E4%B8%8B%E8%B0%83%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%80%9F%E9%A2%84%E4%BC%B0">
+      
+        法国外贸银行下调中国经济增速预估
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273992" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%A4%B1%E8%B9%A4%E4%BA%BA%E5%8F%A3%E7%A0%B410%E8%90%AC-%E8%81%AF%E5%90%88%E5%9C%8B-%E6%A5%B5%E5%A4%A7%E6%82%B2%E5%8A%87">
+      
+        墨西哥失蹤人口破10萬 聯合國：極大悲劇
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180174.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%9F%BA%E6%9C%AC%E6%B3%9523%E6%A2%9D%E7%AB%8B%E6%B3%95-%E6%B8%AF%E5%AE%98-%E5%B0%87%E5%8F%83%E8%80%83%E8%8B%B1%E5%9C%8B%E6%B3%95%E5%BE%8B%E7%AD%89">
+      
+        基本法23條立法 港官：將參考英國法律等
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180164.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E6%95%B0%E5%AD%A6%E4%B8%8A%E5%AE%8C%E7%BE%8E%E7%9A%84%E8%BD%AF%E4%BB%B6">
+      
+        如何编写数学上完美的软件
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71563" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC%E8%87%B4%E5%8A%9B%E4%BA%8E%E7%90%86%E8%A7%A3-UFO-%E7%9A%84%E8%B5%B7%E6%BA%90">
+      
+        五角大楼致力于理解 UFO 的起源
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71562" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B6%88%E6%81%AF-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%AD%A3%E4%B8%8E%E6%B1%BD%E8%BD%A6%E5%88%B6%E9%80%A0%E5%95%86%E5%B0%B1%E5%BB%B6%E9%95%BF%E7%94%B5%E5%8A%A8%E8%BD%A6%E8%A1%A5%E8%B4%B4%E8%B0%88%E5%88%A4">
+      
+        消息：中国政府正与汽车制造商就延长电动车补贴谈判
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273895" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/DeepMind-%E9%80%8F%E9%9C%B2%E8%83%BD%E5%AE%8C%E6%88%90%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E7%9A%84-Gato-AI">
+      
+        DeepMind 透露能完成复杂任务的 Gato AI
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71561" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%B0%BD%E7%AE%A1%E7%96%AB%E6%83%85%E4%B8%A5%E5%B3%BB-%E6%9C%9D%E9%B2%9C%E6%8D%AE%E4%BF%A1%E5%87%86%E5%A4%87%E5%9C%A8%E6%8B%9C%E7%99%BB%E8%AE%BF%E9%9F%A9%E5%9B%BD%E5%89%8D%E8%AF%95%E5%B0%84%E6%B4%B2%E9%99%85%E5%AF%BC%E5%BC%B9">
+      
+        尽管疫情严峻 朝鲜据信准备在拜登访韩国前试射洲际导弹
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/north-korea-missile-biden-visit-20220518/6578113.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BD%97%E6%99%BA%E5%BC%BA%E5%85%B3%E9%97%AD%E9%80%89%E4%B8%BE%E5%8B%9F%E6%AC%BE%E8%B4%A6%E6%88%B7">
+      
+        罗智强关闭选举募款账户
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273889" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%A1%9B%E6%98%9F%E5%9C%96%E5%83%8F%E9%A1%AF%E7%A4%BA-%E4%B8%AD%E5%9C%8B%E6%8C%81%E7%BA%8C%E6%BF%AB%E5%BB%BA%E4%B8%A6%E8%BB%8D%E4%BA%8B%E5%8C%96%E5%8D%97%E6%B5%B7%E5%B3%B6%E7%A4%81">
+      
+        衛星圖像顯示  中國持續濫建並軍事化南海島礁
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180142.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%8C%97%E4%BA%AC%E5%AD%B8%E8%80%85-%E6%B1%BA%E7%AD%96%E5%B1%A4%E6%AD%A3%E5%9C%A8%E7%B3%BE%E5%81%8F%E6%88%BF%E5%B8%82%E5%B9%B3%E5%8F%B0%E7%B6%93%E6%BF%9F%E5%BC%B7%E7%9B%A3%E7%AE%A1">
+      
+        北京學者：決策層正在糾偏房市平台經濟強監管
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180147.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9C%8B%E6%B1%BD%E8%BB%8A%E5%B8%82%E5%A0%B44%E6%9C%88%E7%94%A2%E9%8A%B7%E6%9A%B4%E8%B7%8C-%E9%99%B8%E5%AA%92%E6%8F%90-%E4%B8%89%E6%AD%A5%E8%B5%B0-%E6%95%91%E5%B8%82">
+      
+        中國汽車市場4月產銷暴跌 陸媒提「三步走」救市
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180143.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9C%8B%E5%AE%98%E6%96%B9%E9%87%8B%E9%AC%86%E7%B6%81%E7%9B%A3%E7%AE%A1%E4%BF%A1%E8%99%9F-%E6%95%B8%E4%BD%8D%E7%B6%93%E6%BF%9F%E6%A6%82%E5%BF%B5%E8%82%A1%E4%B8%8A%E6%BC%B2">
+      
+        中國官方釋鬆綁監管信號 數位經濟概念股上漲
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180158.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%93%9D%E8%90%A5%E6%B0%91%E8%B0%83-%E8%BF%87%E5%8D%8A%E5%8F%B0%E6%B0%91%E4%BC%97%E5%AF%B9%E5%8F%B8%E6%94%B9%E6%B2%A1%E4%BF%A1%E5%BF%83">
+      
+        蓝营民调：过半台民众对司改没信心
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273885" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/Chinese-%E9%BB%84%E9%9B%AA%E7%90%B4%E5%92%8C%E7%8E%8B%E5%BB%BA%E5%85%B5-%E5%A4%B1%E8%B8%AA-%E4%B8%AD%E5%9B%BD%E5%A5%B3%E6%9D%83%E8%AE%B0%E8%80%85%E5%92%8C%E5%8A%B3%E5%B7%A5%E7%BB%B4%E6%9D%83%E4%BA%BA%E9%9D%A2%E4%B8%B4%E5%AE%A1%E5%88%A4-%E8%8B%B1%E5%9B%BD%E6%9C%BA%E6%9E%84%E8%A2%AB%E6%8C%87-%E6%97%A0%E4%B8%BA">
+      
+        [Chinese] 黄雪琴和王建兵：“失踪”中国女权记者和劳工维权人面临审判 英国机构被指“无为”
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-61467390?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%94%B5%E7%8E%A9%E5%AF%B9%E5%84%BF%E7%AB%A5%E6%99%BA%E5%95%86%E6%9C%89%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E5%BD%B1%E5%93%8D">
+      
+        电玩对儿童智商有意想不到的影响
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71560" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E6%88%9B%E7%BA%B3%E7%94%B5%E5%BD%B1%E8%8A%82%E5%BC%80%E5%B9%95%E5%BC%8F%E5%8F%91%E8%A8%80-%E6%83%A0%E7%89%B9%E5%85%8B%E8%8E%B7%E8%8D%A3%E8%AA%89%E9%87%91%E6%A3%95%E6%A6%88%E5%A4%A7%E5%A5%96-%E7%89%B9%E5%88%AB%E8%8A%82%E7%9B%AE">
+      
+        泽连斯基戛纳电影节开幕式发言 惠特克获荣誉金棕榈大奖 - 特别节目
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%89%B9%E5%88%AB%E8%8A%82%E7%9B%AE/20220518-%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E6%88%9B%E7%BA%B3%E7%94%B5%E5%BD%B1%E8%8A%82%E5%BC%80%E5%B9%95%E5%BC%8F%E5%8F%91%E8%A8%80-%E6%83%A0%E7%89%B9%E5%85%8B%E8%8E%B7%E8%8D%A3%E8%AA%89%E9%87%91%E6%A3%95%E6%A6%88%E5%A4%A7%E5%A5%96" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%90%B4%E9%92%8A%E7%87%AE-%E9%9D%A2%E5%AF%B9%E4%B8%AD%E5%85%B1%E5%86%9B%E4%BA%8B%E5%A8%81%E8%83%81-%E5%8F%B0%E9%A1%BB%E5%BC%BA%E5%8C%96%E5%85%A8%E6%B0%91%E9%98%B2%E5%8D%AB">
+      
+        吴钊燮：面对中共军事威胁 台须强化全民防卫
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739645.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%8E%E5%B0%8F%E9%A9%AC%E5%8F%AF%E6%96%AF%E9%80%9A%E8%AF%9D-%E5%B8%8C%E6%9C%9B%E8%8F%B2%E7%BB%A7%E7%BB%AD%E5%A5%89%E8%A1%8C%E7%8B%AC%E7%AB%8B%E8%87%AA%E4%B8%BB%E5%A4%96%E4%BA%A4%E6%94%BF%E7%AD%96">
+      
+        习近平与小马可斯通话：希望菲继续奉行独立自主外交政策
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273884" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%9D%B1%E8%88%AA%E7%A9%BA%E9%9B%A3-%E4%B8%AD%E5%9C%8B%E5%AE%98%E5%AA%92-%E7%BE%8E%E8%AA%BF%E6%9F%A5%E5%93%A1%E6%9C%AA%E5%90%91%E5%AA%92%E9%AB%94%E7%99%BC%E5%B8%83%E8%A8%8A%E6%81%AF">
+      
+        東航空難 中國官媒：美調查員未向媒體發布訊息
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180128.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%97%A5%E6%9C%AC%E5%B0%8D%E5%8D%B0%E5%A4%AA%E7%B6%93%E6%BF%9F%E6%9E%B6%E6%A7%8B%E8%A1%A8%E6%AD%A1%E8%BF%8E-%E7%A9%8D%E6%A5%B5%E6%AA%A2%E8%A8%8E%E5%8A%A0%E5%85%A5">
+      
+        日本對印太經濟架構表歡迎 積極檢討加入
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180125.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%97%A5%E6%9C%AC1%E5%88%B03%E6%9C%88GDP%E5%AD%A3%E6%B8%9B0.2-%E7%96%AB%E6%83%85%E5%BD%B1%E9%9F%BF%E5%80%8B%E4%BA%BA%E6%B6%88%E8%B2%BB">
+      
+        日本1到3月GDP季減0.2% 疫情影響個人消費
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180131.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%B0%B9%E9%8C%AB%E6%82%85%E5%85%81%E8%AB%BE%E5%AE%88%E8%AD%B7518%E7%B2%BE%E7%A5%9E-%E7%9B%BC%E8%87%AA%E7%94%B1%E6%B0%91%E4%B8%BB%E4%BF%83%E5%9C%98%E7%B5%90">
+      
+        尹錫悅允諾守護518精神 盼自由民主促團結
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180136.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%8F%B0%E5%A4%96%E9%95%BF-%E5%8F%B0%E6%B9%BE%E4%B8%8E%E5%8C%97%E7%BA%A6%E6%9C%AA%E6%9D%A5%E5%BA%94%E5%BD%93%E6%9C%89%E5%90%88%E4%BD%9C%E7%A9%BA%E9%97%B4">
+      
+        台外长：台湾与北约未来应当有合作空间
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273883" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%8B%89%E4%B8%81%E7%BE%8E%E6%B4%B2%E5%8F%8A%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B720%E5%9B%BD-%E6%8C%BA%E5%8F%B0%E5%8F%82%E4%B8%8E%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87">
+      
+        拉丁美洲及加勒比海20国 挺台参与世卫组织
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739661.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%9B%BD%E6%B0%91%E5%85%9A%E5%B0%86%E6%8E%A8%E4%B8%BE%E5%BC%A0%E5%96%84%E6%94%BF%E5%8F%82%E9%80%89%E6%A1%83%E5%9B%AD%E5%B8%82%E9%95%BF">
+      
+        国民党将推举张善政参选桃园市长
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273880" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%A4%A7%E9%99%86%E4%BB%8A%E5%B9%B4%E8%B6%85130%E5%9F%8E%E5%87%BA%E6%89%8B%E6%95%91%E6%A5%BC%E5%B8%82-%E8%A2%AB%E6%8C%87%E9%9A%BE%E6%9C%89%E6%95%88">
+      
+        大陆今年超130城出手救楼市  被指难有效
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739556.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E5%85%AD%E4%BA%BA%E6%B6%89%E5%AB%8C%E5%80%92%E5%8D%96%E7%A6%BB%E6%B2%AA%E7%81%AB%E8%BD%A6%E7%A5%A8%E8%A2%AB%E6%8D%95">
+      
+        六人涉嫌倒卖离沪火车票被捕
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273859" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/404%E5%B8%96%E5%AD%90-%E7%9F%A5%E4%B9%8E-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E4%BE%BF%E8%A1%A3%E4%BF%9D%E5%AE%89%E5%92%8C%E5%AD%A6%E5%B7%A5%E8%B7%9F%E8%B8%AA%E6%89%93%E5%8E%8B%E5%B8%A6%E6%9C%89%E5%BD%A9%E8%99%B9%E5%85%83%E7%B4%A0%E7%9A%84%E5%90%8C%E5%AD%A6">
+      
+        【404帖子】知乎｜如何看待北京大学便衣保安和学工跟踪打压带有彩虹元素的同学?
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/681558.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E9%9F%93%E5%9C%8B%E6%B1%BA%E5%AE%9A%E5%8A%A0%E5%85%A5%E5%8D%B0%E5%A4%AA%E7%B6%93%E6%BF%9F%E6%9E%B6%E6%A7%8B-%E5%B0%87%E8%A6%96%E8%A8%8A%E5%8F%83%E8%88%87%E6%88%90%E7%AB%8B%E5%AE%A3%E8%A8%80">
+      
+        韓國決定加入印太經濟架構 將視訊參與成立宣言
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180106.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%BE%8E%E5%80%8B%E4%BA%BA%E6%AD%A6%E5%99%A8%E6%B0%BE%E6%BF%AB-%E6%A7%8D%E6%9E%9D%E8%A3%BD%E9%80%A0%E5%95%8620%E5%B9%B4%E7%94%9F%E7%94%A2%E9%80%BE1%E5%84%84%E6%8A%8A%E6%A7%8D">
+      
+        美個人武器氾濫 槍枝製造商20年生產逾1億把槍
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180117.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%A6%8F%E5%B3%B6%E6%A0%B8%E5%BB%A2%E6%B0%B4%E6%AC%B2%E6%8E%92%E6%94%BE%E5%85%A5%E6%B5%B7-%E6%97%A5%E6%9C%AC%E5%AE%98%E6%96%B9%E4%BA%8B%E5%AF%A6%E4%B8%8A%E5%AF%A9%E6%9F%A5%E5%90%88%E6%A0%BC">
+      
+        福島核廢水欲排放入海 日本官方事實上審查合格
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202205180120.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%BF%88%E9%98%BF%E5%AF%86%E5%B8%82%E9%95%BF%E6%94%AF%E6%8C%81%E7%9A%84%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E8%B4%AC%E5%80%BC-95">
+      
+        迈阿密市长支持的加密货币贬值 95%
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71559" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%91%97%E5%90%8D%E5%BC%82%E8%AE%AE%E8%AF%97%E4%BA%BA%E7%8E%8B%E8%97%8F-%E7%8E%8B%E5%88%A9%E8%8A%B9%E5%A4%AB%E5%A6%87%E9%81%AD%E6%8A%93%E6%8D%95%E5%B0%86%E6%BB%A1%E4%B8%A4%E5%B9%B4-%E5%AE%B6%E4%BA%BA%E5%A2%83%E5%86%B5%E8%89%B0%E8%BE%9B-%E5%A4%A7%E5%84%BF%E6%88%90%E7%BB%A9%E4%B8%8B%E9%99%8D%E8%87%AA%E4%BC%A4%E8%87%AA%E6%AE%8B-%E8%80%81%E7%A5%96%E6%AF%8D%E7%85%A7%E9%A1%BE">
+      
+           著名异议诗人王藏、王利芹夫妇遭抓捕将满两年  家人境况艰辛：大儿成绩下降自伤自残  老祖母照顾四孙几崩溃         
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2022/05/blog-post_54.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E6%93%AC%E7%A6%81%E7%94%A8Telegram-%E6%B8%AF%E5%BA%9C-%E9%81%95%E8%A6%8F%E8%B5%B7%E5%BA%95%E5%95%8F%E9%A1%8C%E6%9C%AA%E7%8D%B2%E5%9B%9E%E6%87%89">
+      
+        擬禁用Telegram 港府：違規起底問題未獲回應
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180097.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E5%9C%8B%E7%A0%94%E7%99%BC%E6%8A%97%E6%96%B0%E5%86%A0%E5%8F%A3%E6%9C%8D%E8%97%A5%E7%89%A9-%E9%A6%96%E5%80%8B%E8%87%A8%E5%BA%8A%E7%A0%94%E7%A9%B6%E7%99%BC%E5%B8%83">
+      
+        中國研發抗新冠口服藥物 首個臨床研究發布
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180095.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E4%B8%AD%E6%B1%BD%E5%8D%8F-%E4%BC%81%E4%B8%9A%E6%AD%A3%E5%B8%B8%E7%94%9F%E4%BA%A7%E7%BB%8F%E8%90%A5%E5%8F%97%E5%88%B0%E4%B8%A5%E9%87%8D%E9%98%BB%E7%A2%8D">
+      
+        中汽协：企业正常生产经营受到严重阻碍
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273861" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E7%A1%AE%E9%9C%80%E9%A9%BE%E8%BD%A6%E7%A6%BB%E6%B2%AA%E4%BA%BA%E5%91%98%E5%8F%AF%E7%94%B3%E8%AF%B7%E7%A6%BB%E6%B2%AA%E8%AF%81%E6%98%8E-%E6%9C%89%E6%95%88%E5%85%AD%E5%B0%8F%E6%97%B6">
+      
+        确需驾车离沪人员可申请离沪证明 有效六小时
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273873" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-18/%E8%8D%92%E8%AF%9E%E7%9A%84%E6%AD%A6%E6%B1%89%E9%98%B2%E7%96%AB-%E7%8E%8B%E8%83%9C%E7%94%9F%E5%BE%8B%E5%B8%88%E8%A2%AB%E7%95%99%E7%BD%AE%E6%AD%A6%E6%B1%89%E7%81%AB%E8%BD%A6%E7%AB%99-%E8%BF%94%E7%A8%8B%E8%A2%AB%E6%8B%92">
+      
+           荒诞的武汉防疫：王胜生律师被留置武汉火车站，返程被拒   
+      </a>
+      <time>2022-05-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2022/05/blog-post_18.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2022-05-17</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E4%B8%AD%E5%9B%BD%E7%99%BE%E4%BC%81%E6%B5%B7%E5%A4%96%E4%BC%A0%E6%92%AD%E5%8A%9B%E6%8A%A5%E5%91%8A-%E5%8D%8E%E4%B8%BA%E5%85%B3%E6%B3%A8%E5%BA%A6%E6%9C%80%E9%AB%98">
+      
+        中国百企海外传播力报告：华为关注度最高
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273872" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E5%8C%97%E4%BA%AC%E5%B0%81101%E4%B8%AA%E5%9C%B0%E9%93%81%E7%AB%99-%E4%B8%B0%E5%8F%B0%E5%8C%BA%E9%83%A8%E5%88%86%E5%8C%BA%E5%9F%9F%E5%B0%81%E4%B8%83%E5%A4%A9">
+      
+        北京封101个地铁站 丰台区部分区域封七天
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739596.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E8%8F%AF%E4%BA%BA%E6%88%90%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9E%E8%81%AF%E9%82%A6%E5%A4%A7%E9%81%B8%E9%97%9C%E9%8D%B5%E5%B0%91%E6%95%B8">
+      
+        華人成澳大利亞聯邦大選關鍵少數？ 
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E8%8F%AF%E4%BA%BA%E6%88%90%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9E%E8%81%AF%E9%82%A6%E5%A4%A7%E9%81%B8%E9%97%9C%E9%8D%B5%E5%B0%91%E6%95%B8%EF%BC%9F%20/a-61833503" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E6%9D%B1%E8%88%AA%E7%A9%BA%E9%9B%A3-%E7%BE%8E%E5%AA%92%E7%A8%B1%E9%BB%91%E7%9B%92%E5%AD%90%E5%88%9D%E5%88%A4%E7%82%BA%E8%93%84%E6%84%8F%E5%A2%9C%E6%A9%9F">
+      
+        東航空難：美媒稱黑盒子初判為蓄意墜機
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E6%9D%B1%E8%88%AA%E7%A9%BA%E9%9B%A3%EF%BC%9A%E7%BE%8E%E5%AA%92%E7%A8%B1%E9%BB%91%E7%9B%92%E5%AD%90%E5%88%9D%E5%88%A4%E7%82%BA%E8%93%84%E6%84%8F%E5%A2%9C%E6%A9%9F/a-61833499" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E9%82%93%E7%82%B3%E5%BC%BA-%E6%B8%AF23%E6%9D%A1%E7%AB%8B%E6%B3%95%E5%B0%86%E5%8F%82%E8%80%83%E8%8B%B1%E5%9B%BD%E5%90%8C%E7%B1%BB%E6%B3%95%E5%BE%8B">
+      
+        邓炳强：港23条立法将参考英国同类法律
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273856" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E5%BC%A0%E6%96%87%E5%AE%8F%E9%A2%86%E8%A1%94-%E9%A6%96%E4%B8%AA%E4%B8%AD%E5%9B%BD%E5%9B%BD%E4%BA%A7%E5%86%A0%E7%97%85%E8%8D%AF%E7%A0%94%E7%A9%B6%E7%BB%93%E6%9E%9C%E5%8F%91%E8%A1%A8">
+      
+        张文宏领衔 首个中国国产冠病药研究结果发表
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20220518-1273871" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E7%BB%8F%E6%B5%8E%E8%A7%82%E5%AF%9F%E6%8A%A5-%E5%B9%95%E5%B8%83%E5%8D%87%E8%B5%B7%E5%89%8D-%E8%88%9E%E5%9B%A2%E5%B7%B2%E8%A7%A3%E6%95%A3">
+      
+        经济观察报｜幕布升起前 舞团已解散
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/681556.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E9%99%88%E5%85%89%E8%AF%9A%E8%8E%B7%E5%B8%83%E6%8B%89%E5%BE%B7%E5%88%A9%E5%A5%96-%E8%A1%A8%E5%BD%B0%E5%85%B6%E4%B8%BA%E8%87%AA%E7%94%B1%E7%9A%84%E6%96%97%E4%BA%89">
+      
+        陈光诚获布拉德利奖 表彰其为自由的斗争
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/chen-guangcheng-bradley-prize-20220517/6578084.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E7%BE%8E%E5%9B%BD%E5%8F%B8%E6%B3%95%E9%83%A8%E6%8C%87%E6%8E%A7%E8%B5%8C%E5%9C%BA%E5%A4%A7%E4%BA%A8%E4%BB%A3%E8%A1%A8%E4%B8%AD%E5%9B%BD%E6%B8%B8%E8%AF%B4%E7%89%B9%E6%9C%97%E6%99%AE">
+      
+        美国司法部指控赌场大亨代表中国游说特朗普
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#纽约时报" class="tag">
+        纽约时报
+      </a>
+      
+
+      
+      <a href="https://cn.nytimes.com/business/20220518/doj-steve-wynn-trump-china/" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E6%96%B0%E9%97%BB%E7%9C%8B%E7%82%B9-%E4%B8%8A%E6%B5%B7%E7%83%9F%E7%81%AB%E6%B0%94%E5%9B%9E%E6%9D%A5%E4%BA%86-%E8%AF%84%E8%AE%BA%E5%8C%BA%E7%BF%BB%E8%BD%A6">
+      
+        【新闻看点‭】上海烟火气回来了？评论区翻车
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/17/n13739273.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E4%B8%AD%E5%9C%8B%E9%98%B2%E7%96%AB%E5%B0%81%E5%9F%8E%E5%9A%87%E8%B7%91%E5%B0%88%E6%89%8D-%E6%83%B3-%E6%BD%A4-%E6%AD%90%E7%BE%8E%E4%BA%BA%E6%95%B8%E7%88%86%E5%A2%9E">
+      
+        中國防疫封城嚇跑專才 想「潤」歐美人數爆增
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180083.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E4%B8%AD%E5%9C%8B%E5%87%BA%E7%94%9F%E4%BA%BA%E5%8F%A3%E4%B8%8B%E6%BB%91-11%E7%9C%81%E5%B8%82%E4%BA%BA%E5%8F%A3%E8%BD%89%E8%B2%A0%E6%88%90%E9%95%B7">
+      
+        中國出生人口下滑  11省市人口轉負成長
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202205180088.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E4%B8%AD%E8%8A%AF%E5%9B%BD%E9%99%85%E7%A7%B0%E6%89%8B%E6%9C%BA%E8%8A%AF%E7%89%87%E9%9C%80%E6%B1%82%E5%A4%A7%E5%B9%85%E4%B8%8B%E9%99%8D">
+      
+        中芯国际称手机芯片需求大幅下降
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=71558" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E5%B9%BF%E4%B8%9C%E5%AF%B9%E7%BE%8E%E5%9B%BD%E5%A4%87%E6%88%98%E7%A7%98%E5%AF%86%E5%BD%95%E9%9F%B3%E6%9B%9D%E5%85%89">
+      
+        【翻墙必看】广东对美国备战秘密录音曝光
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/22/5/18/n13739530.htm" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-05-17/%E5%83%8F%E4%B8%80%E5%9D%97%E9%A1%BD%E7%9F%B3-%E5%88%9A%E4%BB%8E%E6%96%B9%E8%88%B1%E5%9B%9E%E6%9D%A5-%E5%A5%B9%E5%85%BB%E4%BA%8610%E5%B9%B4%E7%9A%84%E7%8B%97%E8%A2%AB%E6%B6%88%E6%9D%80%E6%AD%BB%E4%BA%86">
+      
+        像一块顽石｜刚从方舱回来，她养了10年的狗被消杀死了
+      </a>
+      <time>2022-05-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/681554.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+
+</ul>
+
+<div class="pagination">
+  
+    <span class="prev">
+      <a href="/waimei/page12/" class="prev">
+        上一页
+      </a>
+    </span>
+  
+  
+    <span class="next">
+      <a href="/waimei/page14/" class="next">
+        下一页
+      </a>
+    </span>
+  
+
+  <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="/waimei/page12/">
+      <i>上</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="/waimei/page14/">
+      <i>下</i>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '/waimei/page12/'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '/waimei/page14/'; } // right arrow key
+  };
+
+  </script>
+
+</div>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

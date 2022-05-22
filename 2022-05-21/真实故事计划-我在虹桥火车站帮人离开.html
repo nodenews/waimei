@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>真实故事计划｜我在虹桥火车站帮人离开 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+真实故事计划｜我在虹桥火车站帮人离开
+——
+" />
+    <meta property="og:description" content="
+真实故事计划｜我在虹桥火车站帮人离开
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="真实故事计划｜我在虹桥火车站帮人离开" />
+    <meta property="twitter:title" content="真实故事计划｜我在虹桥火车站帮人离开" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681812.html&t=%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92%EF%BD%9C%E6%88%91%E5%9C%A8%E8%99%B9%E6%A1%A5%E7%81%AB%E8%BD%A6%E7%AB%99%E5%B8%AE%E4%BA%BA%E7%A6%BB%E5%BC%80" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681812.html&t=%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92%EF%BD%9C%E6%88%91%E5%9C%A8%E8%99%B9%E6%A1%A5%E7%81%AB%E8%BD%A6%E7%AB%99%E5%B8%AE%E4%BA%BA%E7%A6%BB%E5%BC%80&d=2022-05-21&e=
+真实故事计划｜我在虹桥火车站帮人离开
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：我在虹桥火车站帮人离开作者：莫狄骁来源：微信公众号 “真实故事计划”（Weixin ID：zhenshigushi1）发表日期：2022.5.21主题归类：上海封城CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  虹桥火车站以往是许多人前往上海奋斗的起点。而现在，因为众所周知的原因，许多人正排队离开。5月16日上海宣布宣布分阶段复工复市后，许多沪漂涌向这里，有人回家探亲，有人彻底告别上海。
+  离开的人潮中，上海市徐汇区骑手余林用电瓶车摆渡了十数位离沪者去虹桥火车站。在公共交通尚未完全恢复的情况下，无私家车的乘客需要步行前往车站，有的路程长达数十公里。
+..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681812.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681812.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681812.html&text=真实故事计划｜我在虹桥火车站帮人离开&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681812.html&title=真实故事计划｜我在虹桥火车站帮人离开" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681812.html&title=真实故事计划｜我在虹桥火车站帮人离开" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=真实故事计划｜我在虹桥火车站帮人离开&body=
+真实故事计划｜我在虹桥火车站帮人离开
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681812.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681812.html&title=真实故事计划｜我在虹桥火车站帮人离开&caption=
+真实故事计划｜我在虹桥火车站帮人离开
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=真实故事计划｜我在虹桥火车站帮人离开&url=https://chinadigitaltimes.net/chinese/681812.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>真实故事计划｜我在虹桥火车站帮人离开</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681812.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681812.html&t=%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92%EF%BD%9C%E6%88%91%E5%9C%A8%E8%99%B9%E6%A1%A5%E7%81%AB%E8%BD%A6%E7%AB%99%E5%B8%AE%E4%BA%BA%E7%A6%BB%E5%BC%80&d=2022-05-21&e=
+真实故事计划｜我在虹桥火车站帮人离开
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：我在虹桥火车站帮人离开作者：莫狄骁来源：微信公众号 “真实故事计划”（Weixin ID：zhenshigushi1）发表日期：2022.5.21主题归类：上海封城CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  虹桥火车站以往是许多人前往上海奋斗的起点。而现在，因为众所周知的原因，许多人正排队离开。5月16日上海宣布宣布分阶段复工复市后，许多沪漂涌向这里，有人回家探亲，有人彻底告别上海。
+  离开的人潮中，上海市徐汇区骑手余林用电瓶车摆渡了十数位离沪者去虹桥火车站。在公共交通尚未完全恢复的情况下，无私家车的乘客需要步行前往车站，有的路程长达数十公里。
+..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681812.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1653192056000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681812.html">真实故事计划｜我在虹桥火车站帮人离开</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>我在虹桥火车站帮人离开<br /><strong>作者：</strong>莫狄骁<br /><strong>来源：</strong>微信公众号 “真实故事计划”（Weixin ID：zhenshigushi1）<br /><strong>发表日期：</strong>2022.5.21<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/上海封城" target="_blank">上海封城</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>虹桥火车站以往是许多人前往上海奋斗的起点。而现在，因为众所周知的原因，许多人正排队离开。5月16日上海宣布宣布分阶段复工复市后，许多沪漂涌向这里，有人回家探亲，有人彻底告别上海。</strong></p>
+  <p><strong>离开的人潮中，上海市徐汇区骑手余林用电瓶车摆渡了十数位离沪者去虹桥火车站。在公共交通尚未完全恢复的情况下，无私家车的乘客需要步行前往车站，有的路程长达数十公里。</strong></p>
+  <p><strong>在眼下的上海，余林看见过了太多离去者的背影。他说，见证了一群人的离开，也在思索自己和他们共同的命运。</strong></p>
+  <p><strong>以下是余林的自述：</strong></p>
+  <h2 id="section">01 摆渡</h2>
+  <p>到你找我为止，我接送了十一二个人。5月16日，上海宣布开始分阶段复工复市，同时宣布增加虹桥火车站的发车班次。这天之后，我明显感觉路上的行人多了起来。</p>
+  <p>街上背着背包的、拉着行李箱的人里，许多人都要去虹桥火车站乘车返乡。目前上海市内的公共交通还没有开放，想要去火车站，要么开私家车，要有通行证，要么骑共享单车，但走着去的大有人在。</p>
+  <p>5月18号上热搜那条视频我也看到了，是由我送到虹桥火车站的吴先生发布的。那是5月17号凌晨，我开送外卖的电动车，从徐汇区带他到火车站。抵达火车站的时候，已经凌晨一点半了。他第二天中午12点的车，早到了半天，他打算就地找个避风的角落将就一晚，第二天白天就能上车、回家了。当时，我看到检票厅外还有很多露宿的人。他们中有的人已经买到票了，在等第二天乘车回家，还有的人仍在等着买票。一路上，我看到需要帮助的人很多。我想着既然自己有电动车，能帮上忙就多送几回。</p>
+  <p>上海疫情就快满三个月了，没想到会这么久。</p>
+  <p>我今年26岁，本职工作是一名外卖骑手，干了快3年，骑坏了好几辆车。疫情开始前，我刚换了台新的电动车。起初，我和家人被封控在小区里， 4月27号拿到了平台的保供人员名额后，才走出封控的小区开始配送工作。刚开始，骑士们总是在跑区内的各个药店，居民们买的大多是药品、消毒水、口罩一类的医疗物资。超市复工后，买食品物资的人也多起来。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681812-6289912a874c6.png" alt="image" /></p>
+  <div class="ts">
+图 | 余林每天会路过的虹梅高架路
+  </div>
+  <p>从小区出来，我露宿了一段时间，如今住到了徐汇区钦州路上的一家旅店里，每晚150元住宿费。5月16日起上海市开始分阶段复工复市，徐汇区开门营业的超市有十几家，我每天跑单数量也比之前稍微多了点，从早上八点跑到晚上七点多，约莫能有二十多单，将好够一晚150元的房钱。</p>
+  <p>工作间隙，我喜欢刷视频解闷。15号晚上，我一打开短视频软件，就看到里面有许多在上海的人发的“找人拼车”、“XX号前往虹桥火车站”的消息。</p>
+  <p>我看到了一个博主徒步前往虹桥火车站的视频，有人留言称也打算步行二十公里过去。我联系上了那个人——就是吴先生。发现他也在徐汇区，我跟他说，我可以无偿送他过去。</p>
+  <p>17号凌晨12点，我接到吴先生。将他的行李箱放在我前面的踏板上，让他坐在身后，就出发了。他在后座拍了一段视频上传到网络，我送人的事就这样上了新闻，其实我真的觉得自己只是做了一件很小的事。</p>
+  <p>上海高架桥多，层层叠叠的。我们的车上不去，就沿着沪闵高架桥下面的小路走。以前我好几次路过沪闵高架，印象中它总堵车，但现在我在高架附近都听不见汽车的声音。</p>
+  <p>上海的居民大多还没出家门，一路上都很安静。离火车站还有五六公里的时候，我听到一阵阵滑轮摩擦的声音，是那些步行去火车站的人，他们拉着行李箱，箱子底部的滑轮在水泥路上滚动，发出了刷啦啦的声音。</p>
+  <p>他们看起来很累，路过他们身边的时候，我有了一个念头——把吴先生送到后，再尽量接多一些人去车站。于是我对吴先生说：我们开快一点。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681812-6289912a8f84e." alt="image" /></p>
+  <div class="ts">
+图 | 走着前往虹桥火车站的人
+  </div>
+  <p>那天晚上我骑着电动车来来回回，在火车站检票厅外和疲惫的旅客之间摆渡，又送了三个人。他们之前都走了好几个小时，也都抢到了第二天的车票。</p>
+  <p>决定接下来几天多送点人之后，我调整了自己的送单时间。原本我会从早上八点跑到晚上十点，现在到晚上7点多我就会回去休息，然后零点骑车出来，载人去虹桥火车站。</p>
+  <h2 id="section-1">02 异乡人</h2>
+  <p>我用电动车送到火车站的第一个人，不是吴先生。</p>
+  <p>4月30号晚上10点多，我送完最后一单外卖准备回去休息，在徐汇区的路边看到了一位拉着行李箱，背着双肩包的女性，大约三十多岁。</p>
+  <p>我以为她是找地方露宿的人。那个时候上海街道有不少人流浪在外，我自己也是，和朋友在石龙路天桥下搭了帐篷住。当时夜很深，我担心她遇到危险，想着如果她正在找地方落脚，就告诉她我们露宿的地方，互相有个照应比较安全。我停下电动车，问她：“你是流浪在外面的人吗？”</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681812-6289912a96622." alt="image" /></p>
+  <div class="ts">
+图 | 仍露宿街边的人们
+  </div>
+  <p>她告诉我她要去虹桥火车站，走着去。在封控政策松动之前，当时虹桥火车站也有少量班次发车。从我们相遇那个地点，她想走到虹桥火车站，步行需要十几公里，大约三四个小时，但在那时候，她没有别的选择。我想着自己晚上也没有事情忙，就和她说，可以免费骑车载她去。起初她比较警惕，拒绝了这个提议。还是我和她说：到时候你把钱给我就行了。这句话出口，她放松了些，上了电动车。</p>
+  <p>车程很顺，很安静。我问她家乡哪里，她坐在车后座，回答我说是湖南。路上，我们就这样在风里聊了聊。我得知她在徐汇的一家店铺做收银员的工作，店关了，她交不上房租，实在是因为扛不下去了，才决定离开，买的还是黄牛票。</p>
+  <p>我也是来上海打工的，理解她的处境。封控的时候，我们最难的就是吃和住。吃不起，更别提房租了。为了节省每天的开销，我现在顿顿吃泡面。很多扛不住的人选择离开，如果不是生活的压力，谁愿意走十几公里去虹桥火车站，留在这里不好吗？</p>
+  <p>虹桥火车站前后有好几条路，建虹路、申兰路、申长路，没走过的人容易绕远。我将她载到离进站口较近的申贵路。下车后，没等她和我说价钱的事儿，我立刻将电动车掉头准备走了，本来就没打算收她的钱。没想到的是，我开出去了两三米，她却叫住我，哭着朝我鞠了一躬。</p>
+  <p>远远看着她弯腰的样子，我眼眶热热的，心脏像被一只手攥住一样难受。我只是做了一件举手之劳的事情而已。回去的路上，我发现火车站周围已经住着一些露宿的人，晚上我看不清楚，只看见一些行李和睡袋。那时候班次少，车票很难买，他们滞留在火车站周围，什么时候买到，什么时候走。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681812-6289912a9e804." alt="image" /></p>
+  <div class="ts">
+图 | 睡在虹桥火车站外的桥洞的人
+  </div>
+  <p>没离开车站多远，我骑车穿过一个桥洞，被睡在桥洞里的男人叫住了。他问有没有水，我就将放在电动车上备用的水递给了他。灯光昏暗，我看不清他的长相，约莫五六十岁的年纪，听口音是北方人。他告诉我他从宝山区走了两天一夜来到火车站，买不到回家乡的票，就在附近露宿。</p>
+  <p>他说着话，我站在旁边从口袋摸出一根烟燃起来，也勾起了他的烟瘾。他问我还有没有烟，他可以花钱买。当时市区里超市开得少，买烟不容易，还都是加价的，平时10块钱一包的烟要花18块买到。我考虑到他露宿在外，连瓶水都不容易买，就把车上、身上仅剩的两包烟都递给了他。</p>
+  <p>我读书少，没有啥文化，说不了那么多道理。但是看到那么多异乡人睡在火车站外面时，我觉得很不忍心，很难相信上海变成这个样子，也搞不清楚这样的状况是怎么出现的。</p>
+  <h2 id="section-2">03 沪漂的告别</h2>
+  <p>后来我意识到，“摆渡”这些离开的人们同时，我和我的车后座有意无意见证了许多人和这个城市的告别。</p>
+  <p>我发觉人们离开上海时都很沉默。他们坐在我的后座，大部分时间里我们都很少说话。夜晚的氛围令人感到低落，我们的模样都像挨了现实一巴掌。</p>
+  <p>前几天，我送了一个女大学生，她是去年来到上海小米手机公司实习的。现在因为疫情无法去办公楼，只得居家办公，而在上海的房租太贵了，就买了回家的车票。起初她准备打车去车站，苦于价格太贵而作罢。从徐汇区到虹桥火车站，步行四五个小时，骑电动车1个多小时，开车不足30分钟的路程，打车却要价1000元。</p>
+  <p>原本，往年像她一样来上海找工作的大学生多得是，而今年，本地学校着手安排学生返乡，外省学校的学生也无法来到上海。</p>
+  <p>20号凌晨12点，我按照约定去徐汇区龙腾大道接人，是一位五十多岁、在工地打工的大哥。他不会使用社交媒体，所以由他的侄女联系我，请我帮忙送大哥去车站。把他的行李放好后，我们简单聊了几句，他说自己所在的工地虽然有住的地方，但不能保障食物的供给。考虑自己年纪也大了，思来想去，还是决定买车票回老家。车票是21号的，他准备在火车站外面露宿两天，说住在车站旁边就是一种安慰，一种能马上回到家的安慰。</p>
+  <p>有一个人明确告诉我他不会再回来上海了。5月初，我接上了一位三十七八岁的男人，他在徐汇区一家餐馆做厨师，老婆孩子都在老家，自己来上海挣钱。可是餐馆生意不好，老板连底薪都压着不给。我问他，这次走了之后还回来吗？</p>
+  <p>“我再也不会回来了。”他这么说的，丝毫没有犹豫。我当时骑着车，有些吃惊，不知道该接什么话。疫情三年来，我看着不停有我取过餐、没取过餐的餐馆倒闭。前两天还取过餐的馆子，第二天路过就可能已经锁门了。餐饮业难做，更别说即将满三个月的疫情管控，对他们的影响。</p>
+  <p>我的家乡在安徽潜山，22岁的时候，我从老家来到上海。打零工、做学徒，后来开始做外卖骑手。</p>
+  <p>作为骑手，我感受到这座城市的生活节奏很快，人们的消费水平高。跑单多的时候，我一天能跑七八十单，从早忙到晚，根本没工夫想别的，忙着挣钱。穿梭在街道上，我会打开放在电动车上的小音箱，放着音乐骑行，想一想那时候是很快乐的。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681812-6289912aa5dc5." alt="image" /></p>
+  <div class="ts">
+图 | 余林新换的电动车
+  </div>
+  <p>三月份疫情以来，这份快乐改变了。快乐和想在这个城市奋斗出一番事业的心，变成了悲伤。</p>
+  <p>街道两边的绿化植物，在封控中的春天飞速生长。应该很少有人见到过这些树和草都变得很绿的样子。它们长得茂密，估计也没有人修剪，我白天跑单时，只能看到极少环卫工人在外面。</p>
+  <p>如果两个月后还是没办法回到过往的生活轨道，我或许也会离开。见证别人的离开不是一件轻松的事。他们坐上我电动车后座的时间里，临离别前的沉默影响着我，到后来，我也不知道自己还能在这里坚持多久。</p>
+  <p>不过选择离开的人，也有多现实的因素需要考虑，如果回到我的家乡，需要自费隔离，一天280元，隔离14天，要付将近四千元。过去三个月我都没办法正常跑单，没剩多少积蓄。</p>
+  <p>5月20号，上海下了一天的雨。我没有出去跑单，和另外两个骑手朋友约了一起喝点酒。这是疫情将近三个月的时间里，我觉得最开心的时候。夜晚11点，雨停了，我们买了几瓶啤酒，一盒辣条和花生米，一起坐在路边聊天。</p>
+  <p>他们两个前些天刚刚从一个仓库里搬出来，重新回到街道上露宿。原本在那里住了将近1个月，突然不知道什么原因，不能继续让他们住了。大家的生活压力都很大，而且变化是未知的。最近一段时间，我晚上很容易失眠，翻来覆去计算生活成本，烦得无法入睡。</p>
+  <p>我这两天看新闻，报道里说5月22号上海将逐渐恢复陆上公共交通。我想我还会准备好继续“摆渡”，如果遇到需要接送的人，我依然愿意帮他们。</p>
+  <p>– END –</p>
+  <p>口述 | 余林<br />撰文 | 宋春光<br />编辑 | 温丽虹</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+    
+    
+      <li>
+        <time>2022-05-21</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-21/404%E6%96%87%E5%BA%93-%E8%8E%AB%E7%8B%84%E9%AA%81%E5%B1%B1%E6%88%BF-%E4%B8%AD%E6%96%87%E5%B0%B1%E7%AE%97%E6%AD%BB%E4%BA%86-%E4%BD%A0%E4%B9%9F%E6%B2%A1%E6%89%BE%E5%AF%B9%E6%AD%BB%E5%9B%A0">
+          【404文库】莫狄骁山房｜中文就算死了，你也没找对死因
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-21</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-21/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.21">
+          每日一语 2022.5.21
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-21/%E5%88%86%E6%9E%90-%E6%BE%B3%E6%B4%B2%E6%96%B0%E6%94%BF%E5%BA%9C%E4%BA%B2%E7%BE%8E%E4%B9%9F%E5%AF%BB%E6%B1%82%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%AF%B9%E8%AF%9D">
+            前一篇：分析：澳洲新政府亲美也寻求与中国对话
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-21/%E5%88%98%E5%BE%B7%E5%8D%8E%E5%A5%A5%E8%BF%AA%E5%AE%A3%E4%BC%A0%E7%89%87%E6%96%87%E6%A1%88%E6%B6%89%E6%8A%84%E8%A2%AD-%E5%A5%A5%E8%BF%AA%E8%87%B4%E6%AD%89%E5%B9%B6%E4%B8%8B%E6%9E%B6%E8%A7%86%E9%A2%91">
+            后一篇：刘德华奥迪宣传片文案涉抄袭 奥迪致歉并下架视频
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/%E5%88%86%E6%9E%90-%E6%BE%B3%E6%B4%B2%E6%96%B0%E6%94%BF%E5%BA%9C%E4%BA%B2%E7%BE%8E%E4%B9%9F%E5%AF%BB%E6%B1%82%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%AF%B9%E8%AF%9D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/%E5%88%98%E5%BE%B7%E5%8D%8E%E5%A5%A5%E8%BF%AA%E5%AE%A3%E4%BC%A0%E7%89%87%E6%96%87%E6%A1%88%E6%B6%89%E6%8A%84%E8%A2%AD-%E5%A5%A5%E8%BF%AA%E8%87%B4%E6%AD%89%E5%B9%B6%E4%B8%8B%E6%9E%B6%E8%A7%86%E9%A2%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/404%E6%96%87%E5%BA%93-%E8%8E%AB%E7%8B%84%E9%AA%81%E5%B1%B1%E6%88%BF-%E4%B8%AD%E6%96%87%E5%B0%B1%E7%AE%97%E6%AD%BB%E4%BA%86-%E4%BD%A0%E4%B9%9F%E6%B2%A1%E6%89%BE%E5%AF%B9%E6%AD%BB%E5%9B%A0'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-21/%E5%88%86%E6%9E%90-%E6%BE%B3%E6%B4%B2%E6%96%B0%E6%94%BF%E5%BA%9C%E4%BA%B2%E7%BE%8E%E4%B9%9F%E5%AF%BB%E6%B1%82%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%AF%B9%E8%AF%9D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-21/%E5%88%98%E5%BE%B7%E5%8D%8E%E5%A5%A5%E8%BF%AA%E5%AE%A3%E4%BC%A0%E7%89%87%E6%96%87%E6%A1%88%E6%B6%89%E6%8A%84%E8%A2%AD-%E5%A5%A5%E8%BF%AA%E8%87%B4%E6%AD%89%E5%B9%B6%E4%B8%8B%E6%9E%B6%E8%A7%86%E9%A2%91">
+      <i>前</i>
+    </a>
+    
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-21/404%E6%96%87%E5%BA%93-%E8%8E%AB%E7%8B%84%E9%AA%81%E5%B1%B1%E6%88%BF-%E4%B8%AD%E6%96%87%E5%B0%B1%E7%AE%97%E6%AD%BB%E4%BA%86-%E4%BD%A0%E4%B9%9F%E6%B2%A1%E6%89%BE%E5%AF%B9%E6%AD%BB%E5%9B%A0">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

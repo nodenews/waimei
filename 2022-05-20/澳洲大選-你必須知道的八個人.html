@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>澳洲大選：你必須知道的八個人 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+澳洲大選：你必須知道的八個人
+——
+" />
+    <meta property="og:description" content="
+澳洲大選：你必須知道的八個人
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="澳洲大選：你必須知道的八個人" />
+    <meta property="twitter:title" content="澳洲大選：你必須知道的八個人" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25BE%25B3%25E6%25B4%25B2%25E5%25A4%25A7%25E9%2581%25B8%25EF%25BC%259A%25E4%25BD%25A0%25E5%25BF%2585%25E9%25A0%2588%25E7%259F%25A5%25E9%2581%2593%25E7%259A%2584%25E5%2585%25AB%25E5%2580%258B%25E4%25BA%25BA%2Fa-61873714&t=%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25BE%25B3%25E6%25B4%25B2%25E5%25A4%25A7%25E9%2581%25B8%25EF%25BC%259A%25E4%25BD%25A0%25E5%25BF%2585%25E9%25A0%2588%25E7%259F%25A5%25E9%2581%2593%25E7%259A%2584%25E5%2585%25AB%25E5%2580%258B%25E4%25BA%25BA%2Fa-61873714&t=%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA&d=2022-05-20&e=
+澳洲大選：你必須知道的八個人
+——
+
+
+  
+null 杜宗熹2022-05-20T07:56:32.492Z
+  
+  
+澳洲大選前夕，志願者在投票站前發放教導如何投票的文宣。
+  
+  （德國之聲中文網）澳洲即將舉行大選，德國之聲整理出澳洲大選中，您最需要知道的8個人。
+  自由黨
+  1. 現任總理莫里森
+  
+
+  
+  無論在澳洲各地或是對華人社群而言，現任總理莫里森是名極具有爭議性的人物．回顧過去三年任期，他從2019年大選中意外連任，創造出了「莫里森奇蹟」，並一度擁有很高的支持度。
+  莫里森出生於悉尼，畢業自新南威爾士大學，2007年當選眾議員至今，曾經擔任過移民部，社會服務部和財政部等部長職務．他在2018年代理內政部長時，禁止了華為和中興等兩家中國業者加入澳洲的5G網路。
+  但隨後，除了在他任內，中澳關係日益緊張，引發部分人士擔憂外，澳洲森林大火時他到夏威夷度..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25BE%25B3%25E6%25B4%25B2%25E5%25A4%25A7%25E9%2581%25B8%25EF%25BC%259A%25E4%25BD%25A0%25E5%25BF%2585%25E9%25A0%2588%25E7%259F%25A5%25E9%2581%2593%25E7%259A%2584%25E5%2585%25AB%25E5%2580%258B%25E4%25BA%25BA%2Fa-61873714" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714&text=澳洲大選：你必須知道的八個人&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714&title=澳洲大選：你必須知道的八個人" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714&title=澳洲大選：你必須知道的八個人" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=澳洲大選：你必須知道的八個人&body=
+澳洲大選：你必須知道的八個人
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714&title=澳洲大選：你必須知道的八個人&caption=
+澳洲大選：你必須知道的八個人
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=澳洲大選：你必須知道的八個人&url=https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>澳洲大選：你必須知道的八個人</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25BE%25B3%25E6%25B4%25B2%25E5%25A4%25A7%25E9%2581%25B8%25EF%25BC%259A%25E4%25BD%25A0%25E5%25BF%2585%25E9%25A0%2588%25E7%259F%25A5%25E9%2581%2593%25E7%259A%2584%25E5%2585%25AB%25E5%2580%258B%25E4%25BA%25BA%2Fa-61873714&t=%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA&d=2022-05-20&e=
+澳洲大選：你必須知道的八個人
+——
+
+
+  
+null 杜宗熹2022-05-20T07:56:32.492Z
+  
+  
+澳洲大選前夕，志願者在投票站前發放教導如何投票的文宣。
+  
+  （德國之聲中文網）澳洲即將舉行大選，德國之聲整理出澳洲大選中，您最需要知道的8個人。
+  自由黨
+  1. 現任總理莫里森
+  
+
+  
+  無論在澳洲各地或是對華人社群而言，現任總理莫里森是名極具有爭議性的人物．回顧過去三年任期，他從2019年大選中意外連任，創造出了「莫里森奇蹟」，並一度擁有很高的支持度。
+  莫里森出生於悉尼，畢業自新南威爾士大學，2007年當選眾議員至今，曾經擔任過移民部，社會服務部和財政部等部長職務．他在2018年代理內政部長時，禁止了華為和中興等兩家中國業者加入澳洲的5G網路。
+  但隨後，除了在他任內，中澳關係日益緊張，引發部分人士擔憂外，澳洲森林大火時他到夏威夷度..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%25BE%25B3%25E6%25B4%25B2%25E5%25A4%25A7%25E9%2581%25B8%25EF%25BC%259A%25E4%25BD%25A0%25E5%25BF%2585%25E9%25A0%2588%25E7%259F%25A5%25E9%2581%2593%25E7%259A%2584%25E5%2585%25AB%25E5%2580%258B%25E4%25BA%25BA%2Fa-61873714" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1653034625000-->
+<p><a href="https://www.dw.com/zh/%E6%BE%B3%E6%B4%B2%E5%A4%A7%E9%81%B8%EF%BC%9A%E4%BD%A0%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E5%85%AB%E5%80%8B%E4%BA%BA/a-61873714">澳洲大選：你必須知道的八個人</a>
+——</p>
+
+<div>
+  <div>
+<em>null 杜宗熹<br />2022-05-20T07:56:32.492Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61872149_303.jpg" width="100%" />  <div>
+<small style="color: #999;">澳洲大選前夕，志願者在投票站前發放教導如何投票的文宣。</small>
+  </div>
+  <p>（德國之聲中文網）澳洲即將舉行大選，德國之聲整理出澳洲大選中，您最需要知道的8個人。</p>
+  <p><strong>自由黨</strong></p>
+  <p><strong>1. 現任總理莫里森</strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61846994_303.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>無論在澳洲各地或是對華人社群而言，現任總理莫里森是名極具有爭議性的人物．回顧過去三年任期，他從2019年大選中意外連任，創造出了「莫里森奇蹟」，並一度擁有很高的支持度。</p>
+  <p>莫里森出生於悉尼，畢業自新南威爾士大學，2007年當選眾議員至今，曾經擔任過移民部，社會服務部和財政部等部長職務．他在2018年代理內政部長時，禁止了華為和中興等兩家中國業者加入澳洲的5G網路。</p>
+  <p>但隨後，除了在他任內，中澳關係日益緊張，引發部分人士擔憂外，澳洲森林大火時他到夏威夷度假，以及澳洲的新冠防疫從2020年的優等生直到2021年疫情轉為嚴峻，並造成缺工，醫療緊張和經濟衰退等問題，都引發民眾的不滿，也讓過去以經濟和防疫成果為主要政績的自由黨，這次選情蒙上一層陰影。</p>
+  <p>而隨著俄烏戰爭爆發，以及通貨膨脹日益嚴重，導致澳大利亞央行在選前意外升息0.25%，提高了購房者和工商業界的經濟壓力。雖然這項獨立決策與執政黨無關，卻也引發部分民眾反彈。</p>
+  <p>不過，在個人層面，莫里森仍是相當的有人氣．在過去幾個月的民調中，他個人支持度仍經常領先他的對手工黨黨魁阿爾巴尼斯，顯示不少選民仍對他相當支持。他所在的悉尼庫克選區（Cook），更是自由黨的鐵票區，基乎是篤定能連任。</p>
+  <p><strong>2. 現任財長費登堡</strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61823487_303.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>現任澳大利亞財政部長費登堡，父母來自東歐且具有猶太血統，是自由黨內較為溫和的政治人物，深受許多選民喜愛。生於墨爾本的他，擁有經濟學和法律學位，更曾在美國哈佛大學和英國牛津大學深造，也曾在德意志銀行的墨爾本分部擔任過部門主管。</p>
+  <p>2010年踏入政壇後，費登堡當選墨爾本庫揚選區（Kooyong）的眾議員至今，目前為自由黨的副黨魁。但根據目前民調，他在本屆的領先優勢非常微弱，有可能被強調重視氣候變化，性別平等等議題的「氣候200」基金會（ Climate 200），所支持的女性獨立候選人瑞安博士（Dr. Monique Ryan）或其他人取代。這些獨立候選人，成為本屆選情的最大變數。</p>
+  <p>不同於其他政治人物，有著學霸身份和完美經歷的費登堡，高中時曾經說服父母讓他放棄學業，全職去打網球，還曾經兩度代表澳洲參加世界大學生運動會（世大運），是位非典型的澳大利亞政治人物。倘若他順利連任，不少選民也關注他未來是否有機會出任自由黨黨魁，甚至登上澳大利亞總理一職。</p>
+  <p><strong>3. 現任防長達頓</strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/57416432_303.jpg" width="100%" />  <div>
+<small style="color: #999;">澳大利亞現任防長達頓（右）（資料照片）。</small>
+  </div>
+  <p>作為黨內的保守派，澳洲現任國防部長達頓在華人圈最廣為人知的部分，就是他的對華態度相當強硬，甚至比總理莫里森還要強硬。他在過去幾年中，從中國對達爾文港的租借問題，到近期中國間諜船出現在西澳海域，都對中國不假辭色，強烈抨擊中國危害地區安全。</p>
+  <p>達頓生於昆士蘭，2001年起當選昆士蘭迪克森選區當選眾議員，其後曾在不同時期擔任過就業勞工部長、助理財政部長、衛生部長、體育部長，移民部長、內政部長、以及目前的國防部長等職。</p>
+  <p>值得一提的是，他一直抱有擔任總理的期待。2018年時，時任內政部長的達頓，曾兩度挑戰當時的自由黨總理譚保（Malcolm  Turnbull）。第二次挑戰時，譚保發現自己在議會黨團中已無法取得多數支持，隨即自行辭去總理一職。不過，他最終在黨內競爭時，仍不敵當時的財政部長莫里森，而失去擔任總理的機會。</p>
+  <p>外界也關注，若自由黨選情不佳，且達頓順利連任的話，是否會在此出馬挑戰黨魁一職。但也有媒體認為，達頓此次的選情有些艱苦，甚至與費登堡一樣，存在著一定程度的落選可能。</p>
+  <p><strong>4. 現任眾議員廖嬋娥</strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61871896_303.jpeg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>廖嬋娥是澳大利亞史上首位華裔眾議員，她生於香港，畢業於香港理工大學，1985年獲獎學金後到澳大利亞的樂卓博大學（La Trobe University）留學，並在1992年歸化為澳洲公民，2002年加入自由黨。</p>
+  <p>廖嬋娥所在的墨爾本奇澤姆選區（Chisholm），是公認的華人聚集區．在2019年的大選中，廖嬋娥以大約1000票的微弱優勢，擊敗了台灣出生的工黨候選人楊千慧。而這場史上首次，當時兩位華人菁英女性的對決，也為人津津樂道．</p>
+  <p>但值得一提的是，楊千慧這次並沒有再度參選，也讓過去兩位華人女性對決的選戰無法重現。面對極具連任壓力的廖嬋娥，工黨本屆提名義大利裔女性，擁有雪梨大學博士學位的加蘭德（Carina Garland）與之對戰。</p>
+  <p>而在中澳關係不佳的情況下，廖嬋娥對待中國的態度，也成為輿論關注的焦點。澳大利亞廣播公司報導，在澳中關係問題上，廖嬋娥表示，莫里森政府隨時歡迎與中國恢復對話，也歡迎與中國恢復正常貿易，她說她是建立更強大的澳中關係的最堅定倡導者。</p>
+  <p><strong>澳洲工黨</strong></p>
+  <p><strong>5. 黨魁阿爾巴尼斯（Anthony Albanese）</strong></p>
+  <p><strong></strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61847035_303.jpg" width="100%" />  <div>
+<small style="color: #999;">阿爾巴尼斯在澳洲本地及海外知名度並不高。</small>
+  </div>
+  <p>若工黨勝選的話，阿爾巴尼斯將出任下一屆的澳大利亞總理。但在不久以前，無倫是在澳洲或海外他都是一個沒有什麼存在感的政治人物。他既沒有亮眼經歷，也不具有獨特的人格魅力，在國際上更幾乎毫無知名度可言。阿爾巴尼斯在民調中，個人支持度長期落後於自由黨現任總理莫里森。</p>
+  <p>澳大利亞廣播公司在關鍵選區詢問選民對阿爾巴尼斯的看法時，最常得到的答案莫非是「是個好人」，「有點平凡」，「不太知名」以及「沒經驗」等評價。</p>
+  <p>2007至2013年，他曾擔任運輸和基礎設施的部長，並在2013年短暫擔任過副總理一職。2019年工黨意外敗選後，阿爾巴尼斯在沒有對手的情況下，當選為新任的工黨領袖。</p>
+  <p>雖然同為工黨，但阿爾巴尼斯的對華政策，外界研判會比陸克文時代更為強硬。他已經表明，若是順利執政，他將會出席下周二（5月24日）在東京舉行的美澳日印「四方會談」，並支持英美澳同盟（AUKUS）機制。</p>
+  <p>另外，阿爾巴尼斯在選前確診過新冠，且在2021的1月初曾經出過一次嚴重的車禍，被一位17歲少年開車撞上，住院了好幾天，差點命喪黃泉。但他成功從兩次個人危機中走出。   <strong>6.影子外長黃英賢（Penny Wong）</strong></p>
+  <p>擁有一半華人血統的黃英賢，是澳洲政壇史上地位最高的華人，同時也是澳洲首位位出櫃的參議員，有可能會成為下一屆澳大利亞的外交部長，這也使得她的選情和動態，成為輿論關注的焦點。</p>
+  <p>黃英賢出生在馬來西亞，父親是大馬華人建築師，母親是歐裔澳大利亞人。8歲父母離異後，她的母親帶著8歲的黃英賢和弟弟，回到南澳的首府阿德雷德定居至今．黃英賢最終在阿德雷德大學舉得學位，並成為一位律師。</p>
+  <p>她於1988年加入工黨，並且在2001年起當選南澳的參議員。2007年陸克文勝選出任澳洲總理後，黃英賢被任命為負責處理氣候變化與水源保護事務的部長，也是澳大利亞史上第一位華裔部長。</p>
+  <p>她後來兼任工黨參議員領袖，在工黨內部是排名第三位的政治人物，2016年起更擔任影子內閣外長。換言之，若本屆選舉工黨勝出，黃英賢將成為下一任的外交部長，此事也已獲得工黨黨魁阿爾巴尼斯點頭。</p>
+  <p>而具有華裔血統的她，目前對中國的態度比起過去的工黨政府更為強硬，外界也很期待他的對華政策。她在選舉期間多次抨擊自由黨政府，並未妥善處理好索羅門群島與中國的安全協議，並認為這是二戰之後澳洲最嚴重的外交失誤。</p>
+  <p><strong>7. 挑戰者陳莎莉（Sally Sitou）</strong></p>
+  <p>陳莎莉是首次參選的華裔政治素人，她擁有悉尼大學商學院博士學位，在金融業擔任研究人員。陳莎莉的父母雙方都是寮國華人，並在越戰之後逃到澳洲．這次陳莎莉將在悉尼都會區西部的瑞德（Reid）選區，對戰同樣是高知女性的現任眾議員馬丁（Fiona Martin）。</p>
+  <p>根據2016年人口普查結果，該選區的居民只有43.7%是在澳洲出生，且多達18.1%的人有華裔血統。她的對手，馬丁在上次2019年大選首次步入政壇。作為希臘移民第三代，馬丁是有20年從業經驗的心理學家，並開設了自己的精神科診所。所以這次的對決，也被視為是兩位高學歷女性之間的對決。</p>
+  <p>澳洲公共媒體《SBS》報導，面對中澳關係不佳的結果，陳莎莉認為應該謹慎處理，「莫里森已先後激怒法國、中國和所羅門群島，澳洲需要更願意溝通的領袖和外長」。</p>
+  <p>她亦提到，作為候選人，她為可以代表本地華人社區而自豪，而華人移民與中國共產黨是兩回事，澳中關係與華人及主流社會的關係也不能混為一談。</p>
+  <p><strong>8. 人氣王陸克文（Kevin Rudd）</strong></p>
+  <p><strong></strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17073099_303.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>精通中文，曾在台灣師範大學讀書的前總理陸克文，是華人世界最為人熟知的澳大利亞政治人物。他在2013年工黨敗選後離開政壇，並自2014年10月起，擔任美國非營利組織亞洲協會（Asia Society）的負責人。</p>
+  <p>他在2013年，從歷史上人氣最高峰的總理之一，突然在一夜之間被黨內人士換掉後，引發了工黨支持者的憤怒，並間接導至工黨在2013年輸掉聯邦大選，且一路在野至今。但他下台後人氣不減，是工黨候選人喜愛的人氣王，受到不少工黨選民，特別是華人選民的喜愛。</p>
+  <p>值得一提的是，陸克文在今年3月出版了新書《可以避免的戰爭：美國與習近平領導下的中國之間災難性衝突的危險》，強調美國若是與中國爆發全面戰爭的後果，將會嚴重得令人難以想像。而隨著這本新書的出版，他在選前也在全澳巡迴演說，發表他對時局的看法。</p>
+  <p>陸克文近期不斷砲轟自由黨的外交政策，同時也批評中國無意改善與澳洲的關係。《SBS》報導稱，陸克文在澳洲國立大學舉行的一場活動中說，「如果中國確實有意重設與澳大利亞之間的關係，實在沒有比與所羅門群島簽訂協議更加愚蠢的舉動」。</p>
+  <p><em>© 2022年德國之聲版權聲明：本文所有內容受到著作權法保護，如無德國之聲特別授權，不得擅自使用。任何不當行為都將導致追償，並受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-20</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-20/%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%B7%9E%E6%95%99%E6%9C%83%E6%A7%8D%E6%93%8A%E6%A1%88-%E5%85%87%E6%89%8B%E5%91%A8%E6%96%87%E5%81%89%E6%98%AF%E8%AA%B0">
+          美國加州教會槍擊案：兇手周文偉是誰？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-20</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%8C%B4%E7%97%98-%E5%A4%9A%E5%9B%BD%E7%9B%B8%E7%BB%A7%E5%8F%91%E7%8E%B0%E7%8C%B4%E7%97%98%E7%97%85%E4%BE%8B">
+          什么是猴痘？多国相继发现猴痘病例  
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-20</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-20/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2-%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F-%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95-%E6%85%A2%E5%8D%8A%E6%8B%8D">
+          混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-19</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-19/%E7%8B%AC%E5%AE%B6-%E5%9C%A8%E5%BE%B7%E5%9B%BD%E7%9A%84%E4%B8%AD%E5%9B%BD%E8%AE%BF%E9%97%AE%E5%AD%A6%E8%80%85-%E4%B8%BA%E5%86%9B%E6%96%B9%E6%9C%8D%E5%8A%A1">
+          独家：在德国的中国访问学者——为军方服务？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-20/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2-%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F-%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95-%E6%85%A2%E5%8D%8A%E6%8B%8D">
+            前一篇：混亂中摸索「新台灣模式」：台灣防疫為何「慢半拍」？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-20/%E5%9B%9E%E5%BA%94%E5%9B%BD%E6%B0%91%E5%85%9A%E6%89%B9%E8%AF%84-%E6%B0%91%E8%BF%9B%E5%85%9A%E6%89%BF%E8%AF%BA%E7%BB%A7%E7%BB%AD%E7%A8%B3%E5%81%A5%E6%89%A7%E6%94%BF">
+            后一篇：回应国民党批评 民进党承诺继续稳健执政
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2-%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F-%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95-%E6%85%A2%E5%8D%8A%E6%8B%8D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E5%9B%9E%E5%BA%94%E5%9B%BD%E6%B0%91%E5%85%9A%E6%89%B9%E8%AF%84-%E6%B0%91%E8%BF%9B%E5%85%9A%E6%89%BF%E8%AF%BA%E7%BB%A7%E7%BB%AD%E7%A8%B3%E5%81%A5%E6%89%A7%E6%94%BF'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%8C%B4%E7%97%98-%E5%A4%9A%E5%9B%BD%E7%9B%B8%E7%BB%A7%E5%8F%91%E7%8E%B0%E7%8C%B4%E7%97%98%E7%97%85%E4%BE%8B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-20/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2-%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F-%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95-%E6%85%A2%E5%8D%8A%E6%8B%8D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-20/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2-%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F-%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95-%E6%85%A2%E5%8D%8A%E6%8B%8D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-20/%E5%9B%9E%E5%BA%94%E5%9B%BD%E6%B0%91%E5%85%9A%E6%89%B9%E8%AF%84-%E6%B0%91%E8%BF%9B%E5%85%9A%E6%89%BF%E8%AF%BA%E7%BB%A7%E7%BB%AD%E7%A8%B3%E5%81%A5%E6%89%A7%E6%94%BF">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%8C%B4%E7%97%98-%E5%A4%9A%E5%9B%BD%E7%9B%B8%E7%BB%A7%E5%8F%91%E7%8E%B0%E7%8C%B4%E7%97%98%E7%97%85%E4%BE%8B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-20/%E6%B7%B7%E4%BA%82%E4%B8%AD%E6%91%B8%E7%B4%A2-%E6%96%B0%E5%8F%B0%E7%81%A3%E6%A8%A1%E5%BC%8F-%E5%8F%B0%E7%81%A3%E9%98%B2%E7%96%AB%E7%82%BA%E4%BD%95-%E6%85%A2%E5%8D%8A%E6%8B%8D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

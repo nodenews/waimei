@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>NOWNESS现在｜如果，我的生活只剩下必要 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+NOWNESS现在｜如果，我的生活只剩下必要
+——
+" />
+    <meta property="og:description" content="
+NOWNESS现在｜如果，我的生活只剩下必要
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="NOWNESS现在｜如果，我的生活只剩下必要" />
+    <meta property="twitter:title" content="NOWNESS现在｜如果，我的生活只剩下必要" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681594.html&t=NOWNESS%E7%8E%B0%E5%9C%A8%EF%BD%9C%E5%A6%82%E6%9E%9C%EF%BC%8C%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%AA%E5%89%A9%E4%B8%8B%E5%BF%85%E8%A6%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681594.html&t=NOWNESS%E7%8E%B0%E5%9C%A8%EF%BD%9C%E5%A6%82%E6%9E%9C%EF%BC%8C%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%AA%E5%89%A9%E4%B8%8B%E5%BF%85%E8%A6%81&d=2022-05-18&e=
+NOWNESS现在｜如果，我的生活只剩下必要
+——
+
+
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：如果，我的生活只剩下必要作者：宗城来源：微信公众号“NOWNESS现在”发表日期：2022.5.18主题归类：非必要情CDS收藏：网络话语馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  所以，到底什么是「非必要」？
+  封控期间，我进入到一种必要的生活。
+  起床—抢菜—做抗原（核酸）—工作—做饭—吃饭—工作—做饭—吃饭—睡觉—抢菜，日复一日，生活如同网剧《开端》一般很有规律，唯独不能出小区，不能踏进春天。
+  
+  必要的事构成了我封控生活的主体，仅存下阅读、写小说、看美食纪录片是少有不被暂停的“非必要”。但更多的非必要已经失去。起初是非必要不出入境、..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681594.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681594.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681594.html&text=NOWNESS现在｜如果，我的生活只剩下必要&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681594.html&title=NOWNESS现在｜如果，我的生活只剩下必要" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681594.html&title=NOWNESS现在｜如果，我的生活只剩下必要" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=NOWNESS现在｜如果，我的生活只剩下必要&body=
+NOWNESS现在｜如果，我的生活只剩下必要
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681594.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681594.html&title=NOWNESS现在｜如果，我的生活只剩下必要&caption=
+NOWNESS现在｜如果，我的生活只剩下必要
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=NOWNESS现在｜如果，我的生活只剩下必要&url=https://chinadigitaltimes.net/chinese/681594.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>NOWNESS现在｜如果，我的生活只剩下必要</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681594.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681594.html&t=NOWNESS%E7%8E%B0%E5%9C%A8%EF%BD%9C%E5%A6%82%E6%9E%9C%EF%BC%8C%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%AA%E5%89%A9%E4%B8%8B%E5%BF%85%E8%A6%81&d=2022-05-18&e=
+NOWNESS现在｜如果，我的生活只剩下必要
+——
+
+
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：如果，我的生活只剩下必要作者：宗城来源：微信公众号“NOWNESS现在”发表日期：2022.5.18主题归类：非必要情CDS收藏：网络话语馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  所以，到底什么是「非必要」？
+  封控期间，我进入到一种必要的生活。
+  起床—抢菜—做抗原（核酸）—工作—做饭—吃饭—工作—做饭—吃饭—睡觉—抢菜，日复一日，生活如同网剧《开端》一般很有规律，唯独不能出小区，不能踏进春天。
+  
+  必要的事构成了我封控生活的主体，仅存下阅读、写小说、看美食纪录片是少有不被暂停的“非必要”。但更多的非必要已经失去。起初是非必要不出入境、..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681594.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652878791000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681594.html">NOWNESS现在｜如果，我的生活只剩下必要</a>
+——</p>
+
+<div>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652877372237.png" alt="file" /></p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>如果，我的生活只剩下必要<br /><strong>作者：</strong>宗城<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/EvenYZ45sKghTIh9Tye4Fg" target="_blank" rel="noopener">微信公众号“NOWNESS现在”</a><br /><strong>发表日期：</strong>2022.5.18<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/非必要/" target="_blank">非必要情</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%AF%9D%E8%AF%AD%E9%A6%86" target="_blank" rel="noopener">网络话语馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>所以，到底什么是「非必要」？</p>
+  <p>封控期间，我进入到一种必要的生活。</p>
+  <p>起床—抢菜—做抗原（核酸）—工作—做饭—吃饭—工作—做饭—吃饭—睡觉—抢菜，日复一日，生活如同网剧《开端》一般很有规律，唯独不能出小区，不能踏进春天。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc71dd43." alt="image" /></p>
+  <p>必要的事构成了我封控生活的主体，仅存下阅读、写小说、看美食纪录片是少有不被暂停的“非必要”。但更多的非必要已经失去。起初是非必要不出入境、非必要不离沪，随后变成了非必要不出小区、非必要不团购、非必要不外卖。朋友说，可团购就是必要的呀，为什么非必要呢？我说，必要不必要，不是我们说了算。</p>
+  <h3 id="section">一些人的非必要，却是其他人的一座山</h3>
+  <p>什么才是必要的，非必要又是由谁来定义，当我们讨论这个问题时，它关涉到一个“语言的滥用问题”，以及语言污染背后的权力边界。</p>
+  <p>非必要命名背后的边界问题，似乎因为居民们默认都是由“上面”定义的，只能听之任之，久而久之习惯了这种术语的滥用。但“上面”是一个含混不清的词，除了不言自明的官方，还包括疾控中心、街道办、居委会、物业，甚至是小区门口的保安，实际上这些也是“上面”的组成，比官方更直接与我们个体接触。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc7281f7." alt="image" /></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc7318e3." alt="image" /></p>
+  <p>一轮轮非必要辞令就这样在日常生活中蔓延开来。作为封控的承受者，人们反对的不是保护生命安全，而是——为何制造种种非必要，却不给非必要设置一个时限？为何顾及居民的生存安危，却忽略了一部分人的非必要，其实是他人的必要。</p>
+  <p>比如说：散步、喝奶茶、买书，看上去是非必要的吧？至少你不去做，也能活下去。但是对于奶茶店店员来说，当喝奶茶成为非必要活动，全体市民被禁止线下喝奶茶，奶茶店营业额骤降，最终演变为店铺停歇、店员失业。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc73b506." alt="image" /></p>
+  <p>再比如说电影。21世纪的魔法行为，非必要的典型消遣，却是电影创作者、影视行业从业人员安生立命的存在。封控后电影行业的萧条无需多言，随之而来的是影视公司关门，创作者离开志业，转而去电子游戏、剧本杀、短视频等行业另谋生路，但还有更多人——待业在家。</p>
+  <p>你看，<strong>一些人的非必要，却是另一部分人的一座山。</strong>倘若说你我认可，防疫的初衷是为了普通人生命保障，那么慎用“非必要”、为“非必要”设定一个时限，其实就很有必要。因为人要挣钱才能立足，而21世纪早已不再是刀耕火种的时代，无数人依靠着非必要谋生。因此非必要绝不仅仅是浪漫，它关乎着生存。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc74595b." alt="image" /></p>
+  <p>再者说，出门，可以不出的吧？但不出门，怎么种地？书，可以不买的吧？但不去线下买，实体书店怎么生存？不要举例网购，真正了解行业的会知道，实体书店的网购拼不过电商。</p>
+  <p><strong>因此，反思“非必要不……”这一话语，是从语言本身警醒人们对生存的尊重、对于生命尊严的尊重，尝试跳出必要性与非必要性的二元思维，理解现代社会多数人的生存本就是二者的交织与融合。</strong></p>
+  <h3 id="section-1">捍卫语言的精确是公共生活的第一步</h3>
+  <p>到此，我还能举出很多关于非必要被滥用的例子，但这里格外想补充的，其实是小区刚刚有解封的信号——居委会开始发出入证了，居民群有人会说:“大家非必要先别外出，过几天再看看。”</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc75085b." alt="image" /></p>
+  <p>不需要一纸文书，自我已经开始规训。不只一个人这么说，他们的大概意思是<strong>“不给小区添麻烦”、“现在出去也没什么好看的”</strong>，如此一来，原本属于个人权利的外出，反而因为“非必要”而成了需要谨慎的行为。于是我们生活的底线，以非必要之名，一步步后退。但是，如何界定“非必要”这个词，谁又具备解释它的权力，它的界限在哪里？</p>
+  <p>当我们梳理“非必要”的词源，一个词组会映入脑海，叫作“充分不必要条件”。回到生活中的逻辑，所谓“非必要”，一开始无非是说不那么紧迫的、不是非做不可的事。它对应的必要，是温饱、睡眠，是活着本身。于是你发现，非必要是活着以外的任何事物——任何有关生活和思考的事物。但疫情造就的紧急状态，使得活着是必要，其他非必要都可以舍弃，可问题在于——</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc75ab9e." alt="image" /></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc765c88." alt="image" /></p>
+  <p><strong>如果，这个紧急状态活在了我们心里呢？</strong></p>
+  <p>我们为了一种相对安全状态，牺牲掉种种非必要，可是当物理意义上的封控解除，人心却不一定走出封控，人心依然在紧急状态。一开始你以为过了紧急状态，失去的非必要就会回来，后来你发现失去的只会一件件更加失去，所谓正常生活留在了昨日的世界，三年后依然没有回归的迹象。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc7703db." alt="image" /></p>
+  <p>真正令人担忧的，是权力面前个人的弱小。多少剥夺假借非必要之名层层加码，可本该如此吗？仅仅是为了确保安全吗？人心的不安全感比现实的瘟疫更难破除，因为它是一种自我规训的状态。当一个人习惯了自我规训，当他默认世界总是不安全的，为了安全我可以上缴自由，这时候，疫情就成为他的无限状态，因为他已经不敢为了自由冒一点点风险。</p>
+  <p>当更多人加入到非必要辞令的滥用，出于安全、麻木或多一事不如少一事的心态将“非必要不……”的话语扩大化时，它会在潜意识层面规训人们的行为。在封控期间，我们目睹了太多语言开始发生变异。比方说，得新冠的人被叫作“阳人”，医护人员、志愿者被称为“大白”，封控成为“慢生活”“静态管理”，词汇每天都在变着花样翻新。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc779203." alt="image" /></p>
+  <p>人类生活的改变往往是从最细微的地方开始，对于语言损害的容忍久而久之是观念的退步，进而影响人的行动。语言是我们认知、描述自我和世界的载体，譬如我们先有了一个印象，然后才会说那是身穿白色制服的防疫人员。如何描绘看见的事物，决定我们观看生活的方式，进一步影响到观念的水位。</p>
+  <p>对于语言的反思不但不是无用，反而是个体所能做的具体抵抗。毕竟，<strong>捍卫语言的精确是守卫公共生活的第一步，否则一切的思考都容易沦为“现实无用”的虚无。</strong></p>
+  <h3 id="section-2">“人间是由无数个非必要组成的呀”</h3>
+  <p>散步、喝酒、恋爱、见面叙旧，跟爸妈出门看电影，跟恋人手牵手去海边看夕阳……这些都是非必要，这些又都很重要。</p>
+  <p>那些真正对我们重要的事物，被一个个以非必要之名暂停了。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc7817ae." alt="image" /></p>
+  <p>反思非必要的滥用，反思的其实是语言的污染。今天你接受了这个非必要，明天会有下一个非必要出现。今天我们因紧急状态默许了非必要的存在，仿佛只要是与活着无关的，就有合法性将其禁止，但如果每一天都变成了紧急状态呢？如果紧急状态不因为疫情而结束，反而成了人们忍耐之下铸成的生活，我们又该如何面对这种事实上的倒退？</p>
+  <p>它不仅是一个语言问题，也是一个哲学问题——<strong>人类究竟是为了必要性而活着，还是为了非必要而活着？</strong></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681594-6284edc78f0e5." alt="image" /></p>
+  <p>《非必要离校》这首作者朱皓月投稿全球华语大学生短诗大赛的诗歌流行，正是因为它击中了读者对于“非必要事物”的渴望。诗中罗列的几个意象——蹲守一朵飞檐上的云、捂回一袋板栗、被落叶淋上头发、坐两个小时昏昏欲睡的校车，去牵另一半的手，看起来都是非必要的，都不像呼吸、吃饭那么关乎人的生存。但是，正如诗歌的转折——</p>
+  <p><em>万一 这张照片被传成经典呢</em></p>
+  <p><em>万一 这袋板栗分给了一个濒临崩溃的同学呢</em></p>
+  <p><em>万一 淋湿的是一个诗人呢</em></p>
+  <p><em>万一 这辈子就是他呢</em></p>
+  <p><em>疫情让这一切都变成了正襟危坐的必要</em></p>
+  <p><em>诶 人间是由无数个非必要组成的呀</em></p>
+  <p>或许，正是因为人类社会有种种非必要，我们才作为人而活着。对于爱我们的人来说，它就是值得活下去的理由。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E7%BB%B4%E8%88%9F%E7%9A%84%E6%96%B9%E8%88%9F-%E5%A4%A7%E5%8F%B7%E5%86%8D%E8%A2%AB%E5%B0%81%E5%8D%8A%E5%B9%B4">
+          维舟的方舟｜大号再被封半年
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.18">
+          每日一语 2022.5.18
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/404%E6%96%87%E5%BA%93-%E7%81%B0%E9%B8%BD%E5%8F%94%E5%8F%94-%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%BA%9B%E6%8A%A5%E9%81%93-%E6%81%90%E6%80%95%E4%BC%9A%E6%8A%8A%E6%88%91%E7%9A%84%E8%80%81%E9%A2%86%E5%AF%BC%E6%B0%94%E7%82%B8">
+          【404文库】灰鸽叔叔｜现在有些报道，恐怕会把我的老领导气炸
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-18/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%B0%91%E8%88%AA%E5%B1%80%E5%8F%91%E5%B8%83%E4%B8%9C%E8%88%AA%E7%A9%BA%E9%9A%BE-%E4%B8%87%E8%83%BD%E5%9B%9E%E5%BA%94-%E6%97%A2%E4%B8%8D%E6%89%BF%E8%AE%A4%E4%B9%9F%E4%B8%8D%E5%90%A6%E8%AE%A4">
+          【网络民议】民航局发布东航空难“万能回应”：既不承认也不否认
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-18/%E8%8B%B1%E5%9C%8B%E9%98%B2%E7%96%AB%E7%89%A9%E8%B3%87%E9%AB%98%E5%BA%A6%E4%BE%9D%E8%B3%B4%E4%B8%AD%E5%9C%8B-%E8%AD%B0%E5%93%A1%E7%B1%B2%E5%8F%83%E8%80%83%E5%8F%B0%E7%BE%8E%E6%97%A5%E7%B6%93%E9%A9%97">
+            前一篇：英國防疫物資高度依賴中國 議員籲參考台美日經驗
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-18/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0%E8%BF%84%E4%BB%8A%E4%B8%BA%E6%AD%A2%E4%B8%AD%E5%9B%BD%E6%9C%80%E9%AB%98%E6%A0%91%E6%9C%A8">
+            后一篇：科学家发现迄今为止中国最高树木
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E8%8B%B1%E5%9C%8B%E9%98%B2%E7%96%AB%E7%89%A9%E8%B3%87%E9%AB%98%E5%BA%A6%E4%BE%9D%E8%B3%B4%E4%B8%AD%E5%9C%8B-%E8%AD%B0%E5%93%A1%E7%B1%B2%E5%8F%83%E8%80%83%E5%8F%B0%E7%BE%8E%E6%97%A5%E7%B6%93%E9%A9%97'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0%E8%BF%84%E4%BB%8A%E4%B8%BA%E6%AD%A2%E4%B8%AD%E5%9B%BD%E6%9C%80%E9%AB%98%E6%A0%91%E6%9C%A8'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.18'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-18/404%E6%96%87%E5%BA%93-%E7%81%B0%E9%B8%BD%E5%8F%94%E5%8F%94-%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%BA%9B%E6%8A%A5%E9%81%93-%E6%81%90%E6%80%95%E4%BC%9A%E6%8A%8A%E6%88%91%E7%9A%84%E8%80%81%E9%A2%86%E5%AF%BC%E6%B0%94%E7%82%B8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-18/%E8%8B%B1%E5%9C%8B%E9%98%B2%E7%96%AB%E7%89%A9%E8%B3%87%E9%AB%98%E5%BA%A6%E4%BE%9D%E8%B3%B4%E4%B8%AD%E5%9C%8B-%E8%AD%B0%E5%93%A1%E7%B1%B2%E5%8F%83%E8%80%83%E5%8F%B0%E7%BE%8E%E6%97%A5%E7%B6%93%E9%A9%97">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-18/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0%E8%BF%84%E4%BB%8A%E4%B8%BA%E6%AD%A2%E4%B8%AD%E5%9B%BD%E6%9C%80%E9%AB%98%E6%A0%91%E6%9C%A8">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.18">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-18/404%E6%96%87%E5%BA%93-%E7%81%B0%E9%B8%BD%E5%8F%94%E5%8F%94-%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%BA%9B%E6%8A%A5%E9%81%93-%E6%81%90%E6%80%95%E4%BC%9A%E6%8A%8A%E6%88%91%E7%9A%84%E8%80%81%E9%A2%86%E5%AF%BC%E6%B0%94%E7%82%B8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>大白入室消杀？举着宪法也挡不住！ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+大白入室消杀？举着宪法也挡不住！
+——
+" />
+    <meta property="og:description" content="
+大白入室消杀？举着宪法也挡不住！
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="大白入室消杀？举着宪法也挡不住！" />
+    <meta property="twitter:title" content="大白入室消杀？举着宪法也挡不住！" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25A4%25A7%25E7%2599%25BD%25E5%2585%25A5%25E5%25AE%25A4%25E6%25B6%2588%25E6%259D%2580%25EF%25BC%259F%25E4%25B8%25BE%25E7%259D%2580%25E5%25AE%25AA%25E6%25B3%2595%25E4%25B9%259F%25E6%258C%25A1%25E4%25B8%258D%25E4%25BD%258F%25EF%25BC%2581%2Fa-61748658&t=%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25A4%25A7%25E7%2599%25BD%25E5%2585%25A5%25E5%25AE%25A4%25E6%25B6%2588%25E6%259D%2580%25EF%25BC%259F%25E4%25B8%25BE%25E7%259D%2580%25E5%25AE%25AA%25E6%25B3%2595%25E4%25B9%259F%25E6%258C%25A1%25E4%25B8%258D%25E4%25BD%258F%25EF%25BC%2581%2Fa-61748658&t=%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81&d=2022-05-10&e=
+大白入室消杀？举着宪法也挡不住！
+——
+
+
+  
+2022-05-10T12:22:11.354Z
+  
+  
+防疫层层加码，上海居民担心所谓“终末消杀”
+  
+  （德国之声中文网）近日网上流传的视频显示，一群被称为"大白"的防疫人员在居民家中对着地板、家具、沙发和冰箱内部狂喷消毒水，并将冰箱里的食物统统扔进垃圾袋。
+  据中国大陆新闻杂志《Vista看天下》报导，江苏省徐州市睢宁县宣传部工作人员坦言这段视频就发生在当地，并强调对确诊者住处全面消毒是经过专家指导后执行的，全部都有录音录影；至于把食物全扔掉，"这也是一种正常的处置方式"，因为病毒在低温下可能存活更久，所以必须"做到万无一失"。
+  "无线睢宁"微信公众号于7日、9日分别发布文章《终末消杀，必须做！》以及《终末消杀有多重要？》，回应公众的质疑。
+  在质疑政府防疫手段的言论和视频通常只有很短的存活时间的微博上，有网民..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25A4%25A7%25E7%2599%25BD%25E5%2585%25A5%25E5%25AE%25A4%25E6%25B6%2588%25E6%259D%2580%25EF%25BC%259F%25E4%25B8%25BE%25E7%259D%2580%25E5%25AE%25AA%25E6%25B3%2595%25E4%25B9%259F%25E6%258C%25A1%25E4%25B8%258D%25E4%25BD%258F%25EF%25BC%2581%2Fa-61748658" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658&text=大白入室消杀？举着宪法也挡不住！&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658&title=大白入室消杀？举着宪法也挡不住！" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658&title=大白入室消杀？举着宪法也挡不住！" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=大白入室消杀？举着宪法也挡不住！&body=
+大白入室消杀？举着宪法也挡不住！
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658&title=大白入室消杀？举着宪法也挡不住！&caption=
+大白入室消杀？举着宪法也挡不住！
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=大白入室消杀？举着宪法也挡不住！&url=https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>大白入室消杀？举着宪法也挡不住！</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25A4%25A7%25E7%2599%25BD%25E5%2585%25A5%25E5%25AE%25A4%25E6%25B6%2588%25E6%259D%2580%25EF%25BC%259F%25E4%25B8%25BE%25E7%259D%2580%25E5%25AE%25AA%25E6%25B3%2595%25E4%25B9%259F%25E6%258C%25A1%25E4%25B8%258D%25E4%25BD%258F%25EF%25BC%2581%2Fa-61748658&t=%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81&d=2022-05-10&e=
+大白入室消杀？举着宪法也挡不住！
+——
+
+
+  
+2022-05-10T12:22:11.354Z
+  
+  
+防疫层层加码，上海居民担心所谓“终末消杀”
+  
+  （德国之声中文网）近日网上流传的视频显示，一群被称为"大白"的防疫人员在居民家中对着地板、家具、沙发和冰箱内部狂喷消毒水，并将冰箱里的食物统统扔进垃圾袋。
+  据中国大陆新闻杂志《Vista看天下》报导，江苏省徐州市睢宁县宣传部工作人员坦言这段视频就发生在当地，并强调对确诊者住处全面消毒是经过专家指导后执行的，全部都有录音录影；至于把食物全扔掉，"这也是一种正常的处置方式"，因为病毒在低温下可能存活更久，所以必须"做到万无一失"。
+  "无线睢宁"微信公众号于7日、9日分别发布文章《终末消杀，必须做！》以及《终末消杀有多重要？》，回应公众的质疑。
+  在质疑政府防疫手段的言论和视频通常只有很短的存活时间的微博上，有网民..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25A4%25A7%25E7%2599%25BD%25E5%2585%25A5%25E5%25AE%25A4%25E6%25B6%2588%25E6%259D%2580%25EF%25BC%259F%25E4%25B8%25BE%25E7%259D%2580%25E5%25AE%25AA%25E6%25B3%2595%25E4%25B9%259F%25E6%258C%25A1%25E4%25B8%258D%25E4%25BD%258F%25EF%25BC%2581%2Fa-61748658" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652186824000-->
+<p><a href="https://www.dw.com/zh/%E5%A4%A7%E7%99%BD%E5%85%A5%E5%AE%A4%E6%B6%88%E6%9D%80%EF%BC%9F%E4%B8%BE%E7%9D%80%E5%AE%AA%E6%B3%95%E4%B9%9F%E6%8C%A1%E4%B8%8D%E4%BD%8F%EF%BC%81/a-61748658">大白入室消杀？举着宪法也挡不住！</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2022-05-10T12:22:11.354Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61684147_303.jpg" width="100%" />  <div>
+<small style="color: #999;">防疫层层加码，上海居民担心所谓“终末消杀”</small>
+  </div>
+  <p>（德国之声中文网）近日网上流传的视频显示，一群被称为"大白"的防疫人员在居民家中对着地板、家具、沙发和冰箱内部狂喷消毒水，并将冰箱里的食物统统扔进垃圾袋。</p>
+  <p>据中国大陆新闻杂志《Vista看天下》报导，江苏省徐州市睢宁县宣传部工作人员坦言这段视频就发生在当地，并强调对确诊者住处全面消毒是经过专家指导后执行的，全部都有录音录影；至于把食物全扔掉，"这也是一种正常的处置方式"，因为病毒在低温下可能存活更久，所以必须"做到万无一失"。</p>
+  <p>"无线睢宁"微信公众号于7日、9日分别发布文章《终末消杀，必须做！》以及《终末消杀有多重要？》，回应公众的质疑。</p>
+  <p>在质疑政府防疫手段的言论和视频通常只有很短的存活时间的微博上，有网民写道，"这回应啥了？没人质疑消杀，质疑的是消杀的手段和粗暴破坏私人财物，好一个避重就轻"，"防疫成为免死金牌，不容反驳，不容置疑"，"哪个专家指导的，敢报上名吗？你敢去领导家里也这么来一下吗？欺软怕硬而已！"</p>
+  <p><strong>荒谬而可怕</strong></p>
+  <p>入户消杀的事件也发生在上海等地。上海黄浦区淮海中路街道西成里甚至传出强制入户消杀事件，引起民众强烈担忧。</p>
+  <p>网名"桃花潭李白"的博主批评说，入户消杀"很荒谬，也很可怕"。这篇网文写道，"根据现有的全世界科学界对新冠病毒的研究，病毒暴露在空气或物体表面，超过72小时，就基本没什么毒性和传染性了。新冠病毒，主要就是人与人之间飞沫口鼻传播。病毒物传人的证据，极其缺乏。这些都是科学常识。现在，人都给拉到方舱隔离14天了，人身上的病毒都死了，从阳性都转阴了，停留在人体以外的病毒，还能活吗，还能传染人吗？"文章继续写道，"强制入户消杀，是一件踩底线的事......如果那扇被称为家门的门，可以随时被人以一个理由撬开，普通人，还有什么最后的安全感可言？"作者呼吁，"个人的人身自由与财产权不受侵犯，是我国宪法的基本条款。那是每个人安全感的基石。任何人，任何组织，不能随意动这个基石。不能以防疫的名义，突破这根红线。任何地方政府，不能以防疫消杀为名，未经个人允许和授权，随意处置、破坏、侵害个人私产。"</p>
+  <p>家住上海、网名"敦煌妖迹"的博主写道，他的父亲是一位老一代漫画家，一辈子跟幽默打交道，但给他打电话时"开口就是一句话：我真的好难过呀。"这位博主写道，父亲担心，"我们家要是被人进来，全方位地喷消毒剂，我的书怎么办？我的画怎么办？我收藏的那些卷轴、国画，怎么办？"这位父亲还说，"我的老朋友，以前上海电视台的主持人叶惠贤，他跟我说，他家里藏书过万册，有很多精品，甚至是孤本，要是有人要进门消杀，他就从楼上跳下去......"</p>
+  <p>一张在推特上发布的照片显示，两名身着蓝色防护者试图翻居民楼的窗户入室。转发该照片的网民写道，转朋友转：上海一个朋友介绍说，现在搞入室消毒，主人隔离在方舱不肯交钥匙，就强迫入室了。</p>
+  <p><strong>法学人士呼吁保障民生权利不受侵犯</strong></p>
+  <p>上海律师刘大力5月8日在网上发文，紧急请求上海市人大常委会依法审查新冠密接者全部隔离的防疫措施的合法性和适当性，并紧急讨论如何在防疫的同时，保障市民的民生权利不被侵犯。</p>
+  <p>华东政法大学法学教授童之伟5月8日也发文指，官方将民众强制送往方舱隔离为非法，且无权强行进入民宅消毒。他在《对上海新冠防疫两措施的法律意见》一文中说，防疫人员威胁居民并强制遣送居民去方舱隔离时，通常声称依据的是《治安管理处罚法》第50条中第一项涉及紧急状态的有关规定，而上海市或上海市任何地区都没有依法进入紧急状态。此外，即便按照《传染病防治法》第39条的规定，有关机构也无权使用强制手段强制送居民到方舱隔离。因为该条规定中所指的可采取强制措施隔离的对象是"病人、病原携带者和疑似病人"，并不包括"密切接触者"和其他居民。童之伟还指出，上海任何机构无权强行要求市民交出住宅锁匙，并入内消毒。原因是中国没有任何法律授权任何机构和个人，让居民向公务人员交出住宅锁匙后离家，让后者进入住宅作病毒消杀。</p>
+  <p>童之伟在社交媒体上公开发表的上述文章立即被当局全网封杀，他的微博等社交账户叶遭当局禁言。童之伟的微博显示，"因违法社区公约，该用户暂时处于禁言状态。"</p>
+  <p><strong>"举着宪法也挡不住白卫兵"</strong></p>
+  <p>网民对此留言道，"童之伟教授的建议也要封删的话，是不是代表已经枉法了？没救了！"； "优先解决了站出来说话的人。"；"几十年前举着宪法挡不住红卫兵，现在举着宪法也一样挡不住白卫兵。"</p>
+  <p>在中共政治局常委会5月5日开会宣示"一定能够打赢大上海保卫战"之后，上海的防疫管控再度收紧。浦东甚至有小区采取"一人阳性、全楼隔离"措施，徐汇、青浦、宝山等区多个街道和小区都下发通知，要求全体居民足不出户、暂停快递、外卖和团购。</p>
+  <h3 id="section">相关图集：“全域靜態管理”的上海和瑟瑟發抖的北京</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61566615_303.jpeg" width="100%" /><b>不准出入 </b>：上海的大部分區域都已經被封控了一月有餘，居民小區的門口往往由防疫志願人員持續把守。只有在特定情況下，比如運送食品等基本物資、居民需要出門接受核酸檢測、有人突發急症時，沉重的鐵門才會開啓。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61571802_303.jpeg" width="100%" /><strong>居家禁足</strong>：根據當前的規定，只有在整棟居民樓數十戶乃至上百戶連續14天未出現陽性病例的情況下，居民才被允許下樓在小區内自由活動。只有在整個街道片區連續14天未出現感染病例的情況下，民衆才被允許在劃定為“防範區”的街區内活動。但是這樣的片區目前並不占多數。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61574058_303.jpg" width="100%" /><b>筋疲力竭 </b>：衛生部門的職員、各級醫院的醫護、防疫部門的專家、居民小區的志願者都在綿延數周的“全域靜態管理”中疲憊不堪，許多人爲了免去穿脫防護服的麻煩，甚至連續六七個小時不上厠所。圖爲黃浦區的一組衛生部門職員準備噴灑消毒劑。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61501947_303.jpg" width="100%" /><b>擁擠不堪 </b>：上海每天都新增上萬乃至超過兩萬起病例，當局修建“方艙醫院”臨時隔離點的速度明顯跟不上疫情發展勢頭，不斷有親歷者抱怨倉促趕工的方艙醫院居住條件惡劣的消息。隔離點醫護人員緊缺也是一大難題，甚至曾傳出“活蹦亂跳的無症狀感染者現場搶救筋疲力竭暈倒的護士”的影片。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61554090_303.jpg" width="100%" /><b>牽連全球 </b>：上海疫情的影響力遠遠超出了這座城市本身。由於物流受阻，上海港的貨物轉運出現了嚴重積壓，周轉速度明顯降低。卡車司機難以往返内陸和上海之間，積壓的貨物更是導致了大量國際貨輪無法靠港，只能在東海上徘徊。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61589022_303.jpg" width="100%" /><b>北京搶購 </b>：上海“全域靜態管理”后，最為民衆所詬病的一點就是食品等基本民生物資供應緊張。許多人指責政府前期決策不透明，在封城前一天還在承諾“上海不會封城”。在這一背景下，北京剛剛出現幾十人規模的小型奧密克戎疫情，就引發了民衆的搶購囤貨潮。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61583082_303.jpg" width="100%" /><b>首都封城? </b>：由於北京的疫情“已經隱匿傳播了一個星期”，防疫當局已經封控了朝陽等城區，以便對民衆進行核酸篩查。官方喉舌《環球時報》前主編胡錫進評論稱，北京絕不能走到“全域靜態管理”那一步。不過，官員們並沒有承諾首都絕不封城。
+  </div>
+  <p><strong>上海官方:入户消杀在征询居民意愿前提下进行</strong></p>
+  <p>5月10日，在上海市新冠肺炎疫情防控工作新闻发布会上，海市环境整治消杀工作专班副组长、上海市住房城乡建设管理委副主任金晨表示，上海对于住宅小区"保持日均出动消杀力量约16万人次，对全市1.3万个住宅小区的公共空间和部位开展全覆盖消杀。"他还称，下一步，上海将结合复工复产复市，聚焦商超、沿街商铺、农贸市场、办公楼宇、住宅小区等重点场所，推动相关企业单位做好常态化环境清洁消毒工作，做到"应消尽消、不留死角"。</p>
+  <p>金晨称"开展入户消毒是整个疫情防控的重要一环"，并提醒民众，"在终末消毒作业前，能主动告知屋内对消毒剂敏感的物品或需要特别保护的物品，便于消毒人员在作业时选取更有针对性的消毒方法。"</p>
+  <p>澎湃新闻网报道说，记者向黄浦区方面求证获悉，"淮海中路街道对重点区域西成里开展小区公共部位及楼道消杀，在征询居民意愿的前提下可进行入户消杀"。</p>
+  <p>据东方网报道，上海发布称，入户消毒针对的是阳性感染者家庭。但对于老旧小区内存在厨卫合用的情况，对与阳性感染者共用厨房、卫生间的住户室内，也需要开展终末消毒。</p>
+  <p><strong>如果主人不同意呢？</strong></p>
+  <p>对于上海官方"应消尽消、不留死角"以及有关入户消杀的表态并不能打消民众的担忧。在东方网该话题的微博留言中可以看到这些网民的声音："入户消毒的必要性在哪里？或者说，入户消毒的依据是什么？"；"家中所有的物品都需要保护"；"造成损失，谁来赔偿、怎么赔偿、用什么担保？消杀前是否应当签书面协议？"；这种消杀到底效果多大？会不会产生次生健康危害，和影响生态环境？；"还有一个问题，必须要公开公示所有消杀企业，包括所有工商登记信息，法人信息以及从业资质。政府每日公开更新抽查情况，消杀企业每日公开他们的业务情况并加盖公章，不然我们可以合理怀疑又是互相勾结的敛财行为"。也有网民写道，"如果主人不同意呢？"对此，官方并没有给出任何说法。</p>
+  <p><em>© 2022年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%BE%B7%E5%9B%BD%E8%BF%9B%E5%8F%A3%E6%B6%B2%E5%8C%96%E5%A4%A9%E7%84%B6%E6%B0%94%E8%AE%A1%E5%88%92%E8%BF%9B%E5%B1%95%E4%B8%8D%E7%95%85">
+          德国进口液化天然气计划进展不畅
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%AA%92%E4%BD%93-%E7%9B%91%E5%90%AC%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89-%E8%A5%BF%E7%8F%AD%E7%89%99%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1%E4%B8%A2%E4%B9%8C%E7%BA%B1%E5%B8%BD">
+          媒体：监听丑闻曝光 西班牙情报主管丢乌纱帽
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E7%8E%9B%E4%B8%BD%E8%8E%B2%E6%A2%A6%E9%9C%B2%E7%94%BB%E5%83%8F%E4%BB%A51.95%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A4%A9%E4%BB%B7%E5%94%AE%E5%87%BA">
+          玛丽莲梦露画像以1.95亿美元天价售出
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E6%9C%9F%E5%BE%85%E6%8B%9C%E7%99%BB%E5%88%B0%E8%AE%BF-%E9%9F%A9%E5%9B%BD%E6%96%B0%E6%80%BB%E7%BB%9F%E5%AE%A3%E8%AA%93%E5%B0%B1%E8%81%8C">
+          期待拜登到访 韩国新总统宣誓就职     
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E7%96%AB%E6%83%85%E4%B8%8B%E7%9A%84%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%8F%8D%E4%BA%9A%E8%A3%94%E7%A7%8D%E6%97%8F%E4%B8%BB%E4%B9%89-%E5%8C%97%E7%BE%8E%E6%9D%A5%E9%B8%BF">
+            前一篇：疫情下的加拿大反亚裔种族主义 - 北美来鸿
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E5%AA%92%E4%BD%93-%E7%9B%91%E5%90%AC%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89-%E8%A5%BF%E7%8F%AD%E7%89%99%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1%E4%B8%A2%E4%B9%8C%E7%BA%B1%E5%B8%BD">
+            后一篇：媒体：监听丑闻曝光 西班牙情报主管丢乌纱帽
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E7%96%AB%E6%83%85%E4%B8%8B%E7%9A%84%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%8F%8D%E4%BA%9A%E8%A3%94%E7%A7%8D%E6%97%8F%E4%B8%BB%E4%B9%89-%E5%8C%97%E7%BE%8E%E6%9D%A5%E9%B8%BF'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%AA%92%E4%BD%93-%E7%9B%91%E5%90%AC%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89-%E8%A5%BF%E7%8F%AD%E7%89%99%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1%E4%B8%A2%E4%B9%8C%E7%BA%B1%E5%B8%BD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E5%AA%92%E4%BD%93-%E7%9B%91%E5%90%AC%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89-%E8%A5%BF%E7%8F%AD%E7%89%99%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1%E4%B8%A2%E4%B9%8C%E7%BA%B1%E5%B8%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E7%8E%9B%E4%B8%BD%E8%8E%B2%E6%A2%A6%E9%9C%B2%E7%94%BB%E5%83%8F%E4%BB%A51.95%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A4%A9%E4%BB%B7%E5%94%AE%E5%87%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E7%96%AB%E6%83%85%E4%B8%8B%E7%9A%84%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%8F%8D%E4%BA%9A%E8%A3%94%E7%A7%8D%E6%97%8F%E4%B8%BB%E4%B9%89-%E5%8C%97%E7%BE%8E%E6%9D%A5%E9%B8%BF">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%AA%92%E4%BD%93-%E7%9B%91%E5%90%AC%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89-%E8%A5%BF%E7%8F%AD%E7%89%99%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1%E4%B8%A2%E4%B9%8C%E7%BA%B1%E5%B8%BD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-10/%E5%AA%92%E4%BD%93-%E7%9B%91%E5%90%AC%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89-%E8%A5%BF%E7%8F%AD%E7%89%99%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1%E4%B8%A2%E4%B9%8C%E7%BA%B1%E5%B8%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-10/%E7%8E%9B%E4%B8%BD%E8%8E%B2%E6%A2%A6%E9%9C%B2%E7%94%BB%E5%83%8F%E4%BB%A51.95%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A4%A9%E4%BB%B7%E5%94%AE%E5%87%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

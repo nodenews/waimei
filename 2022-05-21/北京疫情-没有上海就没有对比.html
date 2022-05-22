@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>北京疫情：没有上海就没有对比 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+北京疫情：没有上海就没有对比
+——
+" />
+    <meta property="og:description" content="
+北京疫情：没有上海就没有对比
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="北京疫情：没有上海就没有对比" />
+    <meta property="twitter:title" content="北京疫情：没有上海就没有对比" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258C%2597%25E4%25BA%25AC%25E7%2596%25AB%25E6%2583%2585%25EF%25BC%259A%25E6%25B2%25A1%25E6%259C%2589%25E4%25B8%258A%25E6%25B5%25B7%25E5%25B0%25B1%25E6%25B2%25A1%25E6%259C%2589%25E5%25AF%25B9%25E6%25AF%2594%2Fa-61887784&t=%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258C%2597%25E4%25BA%25AC%25E7%2596%25AB%25E6%2583%2585%25EF%25BC%259A%25E6%25B2%25A1%25E6%259C%2589%25E4%25B8%258A%25E6%25B5%25B7%25E5%25B0%25B1%25E6%25B2%25A1%25E6%259C%2589%25E5%25AF%25B9%25E6%25AF%2594%2Fa-61887784&t=%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94&d=2022-05-21&e=
+北京疫情：没有上海就没有对比
+——
+
+
+  
+2022-05-21T10:57:08.504Z
+  
+  
+民众质疑许多感染发生在集中检测的过程中（资料图片）
+  
+   （德国之声中文网）周六，上海谨慎地推进了恢复其部分交通网络的计划。这是为摆脱长达数周的新冠封锁迈出的重要一步。而北京则在持续了一个月的疫情中继续保持谨慎防疫状态。
+  自4月初以来，上海的封锁对中国人口最多的城市造成了沉重的经济打击，引发了对中国零清零政策可持续性的讨论，并激起了人们对未来封锁政策及其负面影响的担忧。
+  与上海这个金融中心不同，北京没有在全市范围内实行封锁，每天报告几十个新病例，而上海在高峰期有几万个病例。尽管如此，对中国首都实施的限制和无休止的大规模测试仍扰乱了经济和人民生活。
+  
+ 
+  
+  上海复苏
+  当北京仍然处于新冠焦虑中时，上海的工人正在对地铁站和列车进行消毒，准备周日恢复四条..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258C%2597%25E4%25BA%25AC%25E7%2596%25AB%25E6%2583%2585%25EF%25BC%259A%25E6%25B2%25A1%25E6%259C%2589%25E4%25B8%258A%25E6%25B5%25B7%25E5%25B0%25B1%25E6%25B2%25A1%25E6%259C%2589%25E5%25AF%25B9%25E6%25AF%2594%2Fa-61887784" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784&text=北京疫情：没有上海就没有对比&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784&title=北京疫情：没有上海就没有对比" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784&title=北京疫情：没有上海就没有对比" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=北京疫情：没有上海就没有对比&body=
+北京疫情：没有上海就没有对比
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784&title=北京疫情：没有上海就没有对比&caption=
+北京疫情：没有上海就没有对比
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=北京疫情：没有上海就没有对比&url=https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>北京疫情：没有上海就没有对比</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258C%2597%25E4%25BA%25AC%25E7%2596%25AB%25E6%2583%2585%25EF%25BC%259A%25E6%25B2%25A1%25E6%259C%2589%25E4%25B8%258A%25E6%25B5%25B7%25E5%25B0%25B1%25E6%25B2%25A1%25E6%259C%2589%25E5%25AF%25B9%25E6%25AF%2594%2Fa-61887784&t=%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94&d=2022-05-21&e=
+北京疫情：没有上海就没有对比
+——
+
+
+  
+2022-05-21T10:57:08.504Z
+  
+  
+民众质疑许多感染发生在集中检测的过程中（资料图片）
+  
+   （德国之声中文网）周六，上海谨慎地推进了恢复其部分交通网络的计划。这是为摆脱长达数周的新冠封锁迈出的重要一步。而北京则在持续了一个月的疫情中继续保持谨慎防疫状态。
+  自4月初以来，上海的封锁对中国人口最多的城市造成了沉重的经济打击，引发了对中国零清零政策可持续性的讨论，并激起了人们对未来封锁政策及其负面影响的担忧。
+  与上海这个金融中心不同，北京没有在全市范围内实行封锁，每天报告几十个新病例，而上海在高峰期有几万个病例。尽管如此，对中国首都实施的限制和无休止的大规模测试仍扰乱了经济和人民生活。
+  
+ 
+  
+  上海复苏
+  当北京仍然处于新冠焦虑中时，上海的工人正在对地铁站和列车进行消毒，准备周日恢复四条..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258C%2597%25E4%25BA%25AC%25E7%2596%25AB%25E6%2583%2585%25EF%25BC%259A%25E6%25B2%25A1%25E6%259C%2589%25E4%25B8%258A%25E6%25B5%25B7%25E5%25B0%25B1%25E6%25B2%25A1%25E6%259C%2589%25E5%25AF%25B9%25E6%25AF%2594%2Fa-61887784" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1653131823000-->
+<p><a href="https://www.dw.com/zh/%E5%8C%97%E4%BA%AC%E7%96%AB%E6%83%85%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%8A%E6%B5%B7%E5%B0%B1%E6%B2%A1%E6%9C%89%E5%AF%B9%E6%AF%94/a-61887784">北京疫情：没有上海就没有对比</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2022-05-21T10:57:08.504Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61649421_303.jpg" width="100%" />  <div>
+<small style="color: #999;">民众质疑许多感染发生在集中检测的过程中（资料图片）</small>
+  </div>
+  <p> （德国之声中文网）周六，上海谨慎地推进了恢复其部分交通网络的计划。这是为摆脱长达数周的新冠封锁迈出的重要一步。而北京则在持续了一个月的疫情中继续保持谨慎防疫状态。</p>
+  <p>自4月初以来，上海的封锁对中国人口最多的城市造成了沉重的经济打击，引发了对中国零清零政策可持续性的讨论，并激起了人们对未来封锁政策及其负面影响的担忧。</p>
+  <p>与上海这个金融中心不同，北京没有在全市范围内实行封锁，每天报告几十个新病例，而上海在高峰期有几万个病例。尽管如此，对中国首都实施的限制和无休止的大规模测试仍扰乱了经济和人民生活。</p>
+  <iframe width="100%" height="259" src="https://www.youtube.com/embed/MtyUKYjJGTE?wmode=transparent" frameborder="0" allowfullscreen="">
+ 
+  </iframe>
+  <p><strong>上海复苏</strong></p>
+  <p>当北京仍然处于新冠焦虑中时，上海的工人正在对地铁站和列车进行消毒，准备周日恢复四条地铁线路。虽然服务时间有限，但它将使上海居民可以在各区之间移动，并满足乘坐地铁前往火车站和该市两个机场的需求。同时200多条公交线路也将重新开放。</p>
+  <p>在强调谨慎程度的同时，上海官员说通勤者将接受检查，看看他们是否有超出异常的体温。并需要出示48小时内PCR测试的阴性结果。</p>
+  <p>上海市卫生局周六表示，周五发现868个新的本地病例，而前一天是858例。与上个月的每日病例数高峰相比，相差甚远。卫生当局补充说，在隔离区外没有发现新的病例，比前一天的3例有所减少。</p>
+  <p>这座拥有2500万人口的城市已逐步重新开放商场、便利店和批发市场，并允许更多的人走出家门。最近几天基本消除了社区传播。周五，上海对其16个区中的两个区进行了严格限制。</p>
+  <p>上海市应急管理局副局长沈伟忠在周六的新闻发布会上表示：“推动安全责任落实。针对疫情防控条件下，复工复产所面临的新情况新问题，各地区和各行业部门要按照‘管行业必须管安全、管业务必须管安全、管生产经营必须管安全’的要求，以‘一行业一规范、一企业一方案’的原则，分类制定行业领域安全生产工作要求和规范指引，督促企业严格落实安全生产主体责任”。</p>
+  <p>达美航空周五表示，它将从下周三开始恢复每天一次从上海经首尔飞往底特律的航班。</p>
+  <p><strong></strong></p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/61680203_303.jpg" width="100%" />  <div>
+<small style="color: #999;">北京朝阳区一处核酸检测站</small>
+  </div>
+  <p>对比带来伤害</p>
+  <p>北京最近发生的大多数新冠感染病例都发生在已经封锁的地区。在中国的极端严格的封控措施下，当局仍处于紧张状态并迅速采取行动。</p>
+  <p>在丰台区，这个拥有200万人口的地区是北京抗疫工作的中心，公交车和地铁站从周五开始大部分关闭。居民被告知留在家中。</p>
+  <p>路透社周六采访了一位正在附近的家乐福超市购买日用品的丰台区居民，他不确定这些限制是否会继续下去。</p>
+  <p>“我不确定在接下来的一周里我是否能购物。所以我今天买了很多东西，甚至还为6月初的端午假期买了一些粽子”，接受路透社采访时，她要求不要透露其身份。</p>
+  <p>据官媒《中国青年报》报道，在发现一些病例后，北京人口最多的朝阳区的数千名居民被转移到酒店进行隔离治疗。</p>
+  <p>中国微博上的社交媒体用户迅速地将北京和上海的情况相对比。在上海，整栋住宅楼的居民都会被送往集中隔离设施，以应对单一的新冠阳性病例。</p>
+  <p>据《中国青年报》报道，5月20日，北京新增58例新冠肺炎本土确诊病例、12例本土无症状感染者，治愈出院47例。北京市朝阳区南磨房乡南新园小区昨天新增1例感染者。北京市南磨房乡疫情防控指挥部发布通知称，为遏制疫情在该小区内扩散蔓延，最大限度地保护居民健康安全，经疾控专家研判，该小区居民将全部集中隔离观察，观察时间从5月21日零时起，为期7天。</p>
+  <iframe width="100%" height="259" src="https://www.youtube.com/embed/z_oPR3XEIwg?wmode=transparent" frameborder="0" allowfullscreen="">
+ 
+  </iframe>
+  <p><strong>“除了在上海的人，没有人会心疼北京南新园了”</strong></p>
+  <p>微博上的配音导演谢添天发文称：“可能…除了在上海的人，没有人会心疼北京南新园了。但其实也并不知道这句话会不会有人看到。”虽然中国政府在此轮上海疫情爆发期间强势加大了对网络舆论的审查力度，但是这条微博推文截止发稿时仍然可见。由用户在评论区留言称：“身在北京，我只觉得心寒”。另一位用户则表示：“上海发生的时候，谁共情了我们？当时恨不得谁都来踩一脚，真的寒心”。同时有用户发出质疑：“还专门去搜了搜，挺无语的。没有组织好，还大规模去隔离，这中间要是有一个阳性。不就是大规模聚集了么？不知道怎么想的”。</p>
+  <p>微博署名为“付小贝呀”的用户于北京时间周六下午发布了一个视频，其中显示有大量携带行李的民众在街道旁边等候。视频的配文称：“南磨房社区领导真是人才，邻居服从安排上车走了，到了隔离点完全没人管。我们还是高风险呢，孕妇老人就在街边站着，警察打电话都找不到人。来敲门说今晚六点必须全走，断水断电”。同时也有像“啊我还是个孩子”这样的用户表示，在漫长等待后，终于等到了转运的车辆。</p>
+  <p>路透社和法新社报道称，有关北京南新园地区内居民被集体隔离的消息一度在微博上被屏蔽。但到发稿时，新浪微博用户能够以“南新园”为关键词进行搜索，并看到上述用户评论。#北京南新园集中隔离入户消杀#的话题也有超过32万的阅读次数。</p>
+  <p>(路透社、法新社、新浪微博)</p>
+  <p><em>© 2022年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-21</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-21/%E5%BE%B7%E5%9B%BD7%E6%9C%88%E5%90%91%E4%B9%8C%E5%85%8B%E5%85%B0%E6%8F%90%E4%BE%9B15%E8%BE%86%E7%8C%8E%E8%B1%B9%E5%BC%8F%E9%98%B2%E7%A9%BA%E5%9D%A6%E5%85%8B">
+          德国7月向乌克兰提供15辆猎豹式防空坦克
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-21</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-21/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%96%8A%E8%AF%9D-%E5%AE%98%E5%AA%92%E8%BF%9E%E5%8F%91%E6%96%87-%E4%B8%AD%E5%9B%BD%E5%8A%9B%E6%B1%82%E7%A8%B3%E5%A4%96%E8%B5%84%E4%BF%9D%E5%B0%B1%E4%B8%9A">
+          习近平喊话 官媒连发文--中国力求稳外资保就业
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-21</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-21/%E6%8B%9C%E7%99%BB%E5%B0%B9%E9%94%A1%E6%82%A6%E4%BC%9A%E8%B0%88-%E8%87%B4%E5%8A%9B%E4%BA%8E%E6%9C%9D%E9%B2%9C%E6%97%A0%E6%A0%B8%E5%8C%96-%E7%BE%8E%E9%9F%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%90%88%E4%BD%9C">
+          拜登尹锡悦会谈: 致力于朝鲜无核化、美韩半导体合作
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-21</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-21/%E8%81%94%E5%90%88%E5%9B%BD%E4%BA%BA%E6%9D%83%E4%B8%93%E5%91%98%E8%83%BD%E5%90%A6%E8%87%AA%E7%94%B1%E8%AE%BF%E9%97%AE%E6%96%B0%E7%96%86-%E7%BE%8E%E5%9B%BD%E8%A1%A8%E5%85%B3%E5%88%87">
+          联合国人权专员能否自由访问新疆？美国表关切
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-21/%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E8%AE%BF%E6%97%A5%E8%AF%A6%E7%BB%86%E6%97%A5%E7%A8%8B%E6%9B%9D%E5%85%89">
+            前一篇：美国总统访日详细日程曝光
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-21/ACM-%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%BC%80%E6%94%BE%E5%89%8D%E4%BA%94%E5%8D%81%E5%B9%B4%E5%87%BA%E7%89%88%E7%9A%84%E6%96%87%E7%AB%A0">
+            后一篇：ACM 数字图书馆开放前五十年出版的文章
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E8%AE%BF%E6%97%A5%E8%AF%A6%E7%BB%86%E6%97%A5%E7%A8%8B%E6%9B%9D%E5%85%89'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/ACM-%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%BC%80%E6%94%BE%E5%89%8D%E4%BA%94%E5%8D%81%E5%B9%B4%E5%87%BA%E7%89%88%E7%9A%84%E6%96%87%E7%AB%A0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%96%8A%E8%AF%9D-%E5%AE%98%E5%AA%92%E8%BF%9E%E5%8F%91%E6%96%87-%E4%B8%AD%E5%9B%BD%E5%8A%9B%E6%B1%82%E7%A8%B3%E5%A4%96%E8%B5%84%E4%BF%9D%E5%B0%B1%E4%B8%9A'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-21/%E6%8B%9C%E7%99%BB%E5%B0%B9%E9%94%A1%E6%82%A6%E4%BC%9A%E8%B0%88-%E8%87%B4%E5%8A%9B%E4%BA%8E%E6%9C%9D%E9%B2%9C%E6%97%A0%E6%A0%B8%E5%8C%96-%E7%BE%8E%E9%9F%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%90%88%E4%BD%9C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-21/%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E8%AE%BF%E6%97%A5%E8%AF%A6%E7%BB%86%E6%97%A5%E7%A8%8B%E6%9B%9D%E5%85%89">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-21/ACM-%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%BC%80%E6%94%BE%E5%89%8D%E4%BA%94%E5%8D%81%E5%B9%B4%E5%87%BA%E7%89%88%E7%9A%84%E6%96%87%E7%AB%A0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-21/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%96%8A%E8%AF%9D-%E5%AE%98%E5%AA%92%E8%BF%9E%E5%8F%91%E6%96%87-%E4%B8%AD%E5%9B%BD%E5%8A%9B%E6%B1%82%E7%A8%B3%E5%A4%96%E8%B5%84%E4%BF%9D%E5%B0%B1%E4%B8%9A">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-21/%E6%8B%9C%E7%99%BB%E5%B0%B9%E9%94%A1%E6%82%A6%E4%BC%9A%E8%B0%88-%E8%87%B4%E5%8A%9B%E4%BA%8E%E6%9C%9D%E9%B2%9C%E6%97%A0%E6%A0%B8%E5%8C%96-%E7%BE%8E%E9%9F%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%90%88%E4%BD%9C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

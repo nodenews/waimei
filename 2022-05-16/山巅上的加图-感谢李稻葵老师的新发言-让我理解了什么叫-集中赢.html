@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”
+——
+" />
+    <meta property="og:description" content="
+山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”" />
+    <meta property="twitter:title" content="山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681381.html&t=%E5%B1%B1%E5%B7%85%E4%B8%8A%E7%9A%84%E5%8A%A0%E5%9B%BE%EF%BD%9C%E6%84%9F%E8%B0%A2%E6%9D%8E%E7%A8%BB%E8%91%B5%E8%80%81%E5%B8%88%E7%9A%84%E6%96%B0%E5%8F%91%E8%A8%80%EF%BC%8C%E8%AE%A9%E6%88%91%E7%90%86%E8%A7%A3%E4%BA%86%E4%BB%80%E4%B9%88%E5%8F%AB%E2%80%9C%E9%9B%86%E4%B8%AD%E8%B5%A2%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681381.html&t=%E5%B1%B1%E5%B7%85%E4%B8%8A%E7%9A%84%E5%8A%A0%E5%9B%BE%EF%BD%9C%E6%84%9F%E8%B0%A2%E6%9D%8E%E7%A8%BB%E8%91%B5%E8%80%81%E5%B8%88%E7%9A%84%E6%96%B0%E5%8F%91%E8%A8%80%EF%BC%8C%E8%AE%A9%E6%88%91%E7%90%86%E8%A7%A3%E4%BA%86%E4%BB%80%E4%B9%88%E5%8F%AB%E2%80%9C%E9%9B%86%E4%B8%AD%E8%B5%A2%E2%80%9D&d=2022-05-16&e=
+山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”作者：海边上的西塞罗来源：微信公众号“山巅上的加图”发表日期：2022.5.16主题归类：集中赢CDS收藏：真理馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  
+    “把工人集中起来，一边隔离，一边生产，一定能赢”，简称“集中赢”——这主意真妙啊。
+  
+  各位好，看我昨天《亨德尔，那个碰巧出生在德国的英国乐圣》一文的朋友知道，我这两天头疼的厉害。
+  说起来，《三国演义》里的曹操好像也经常犯这个病。
+  
+  有一次，正好要打官渡之战了，曹操这病又犯了，这时，他看到一篇雄文，是对手袁..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681381.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681381.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681381.html&text=山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681381.html&title=山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681381.html&title=山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”&body=
+山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681381.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681381.html&title=山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”&caption=
+山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”&url=https://chinadigitaltimes.net/chinese/681381.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-16
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681381.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681381.html&t=%E5%B1%B1%E5%B7%85%E4%B8%8A%E7%9A%84%E5%8A%A0%E5%9B%BE%EF%BD%9C%E6%84%9F%E8%B0%A2%E6%9D%8E%E7%A8%BB%E8%91%B5%E8%80%81%E5%B8%88%E7%9A%84%E6%96%B0%E5%8F%91%E8%A8%80%EF%BC%8C%E8%AE%A9%E6%88%91%E7%90%86%E8%A7%A3%E4%BA%86%E4%BB%80%E4%B9%88%E5%8F%AB%E2%80%9C%E9%9B%86%E4%B8%AD%E8%B5%A2%E2%80%9D&d=2022-05-16&e=
+山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”作者：海边上的西塞罗来源：微信公众号“山巅上的加图”发表日期：2022.5.16主题归类：集中赢CDS收藏：真理馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  
+    “把工人集中起来，一边隔离，一边生产，一定能赢”，简称“集中赢”——这主意真妙啊。
+  
+  各位好，看我昨天《亨德尔，那个碰巧出生在德国的英国乐圣》一文的朋友知道，我这两天头疼的厉害。
+  说起来，《三国演义》里的曹操好像也经常犯这个病。
+  
+  有一次，正好要打官渡之战了，曹操这病又犯了，这时，他看到一篇雄文，是对手袁..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681381.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652687453000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681381.html">山巅上的加图｜感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>感谢李稻葵老师的新发言，让我理解了什么叫“集中赢”<br /><strong>作者：</strong>海边上的西塞罗<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/ehXgW8rvApXB_cisdKZWmQ" target="_blank" rel="noopener">微信公众号“山巅上的加图”</a><br /><strong>发表日期：</strong>2022.5.16<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/集中赢" target="_blank">集中赢</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E7%9C%9F%E7%90%86%E9%A6%86" target="_blank" rel="noopener">真理馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <blockquote>
+    <p>“把工人集中起来，一边隔离，一边生产，一定能赢”，简称“集中赢”——这主意真妙啊。</p>
+  </blockquote>
+  <p>各位好，看我昨天《<a href="http://mp.weixin.qq.com/s?__biz=MzI1NzE1ODc1MA==&amp;mid=2247504988&amp;idx=1&amp;sn=a18030dd9186f9cc96f0db1932f66bb0&amp;chksm=ea192f6ddd6ea67b4ed9731b2972f77c3d00b51cb9a9378239036e2c76a66ac0cedcffcc3c78&amp;scene=21#wechat_redirect">亨德尔，那个碰巧出生在德国的英国乐圣</a>》一文的朋友知道，我这两天头疼的厉害。</p>
+  <p>说起来，《三国演义》里的曹操好像也经常犯这个病。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e0085c." alt="image" /></p>
+  <p>有一次，正好要打官渡之战了，曹操这病又犯了，这时，他看到一篇雄文，是对手袁绍那边的谋士陈琳写的《为袁绍檄豫州》。文中陈琳祖安老哥附体，把曹操连着他祖宗十八代骂了个遍，曹操看了气的大叫一声从床上跌下，突然头风就好了。又能生龙活虎的跟他发小袁本初联机对线去了。</p>
+  <p>我原先觉得，这个故事肯定是鬼扯——头疼本来多半就是气的，再气一下，怎么可能“负负得正”呢？又不是搞小学生算数。</p>
+  <p>但今儿早上，我看了国内知名经济学家李稻葵先生的一段发言后，我突然信了。罗贯中老师诚不欺我啊。</p>
+  <p>2022年5月14日，2022年第三届清华五道口首席经济学家论坛拉开帷幕。该论坛由清华大学五道口金融学院主办、清华大学国家金融研究院国际金融与经济研究中心(CIFER)承办，本届论坛主题为“动荡中的2022——全球与中国经济及政策展望”。清华大学弗里曼经济学讲席教授李稻葵在论坛发言中表示，面对当下复杂的国际形势和严峻挑战，中国最重要的是好好地控制疫情。严格抗疫实际上是两个“战场”，一是为了控制疫情不扩散，减少生命的损失；二是为了保经济。</p>
+  <p>这两个观点，当然都是很正确的，但怎么论证这俩观点？别开生面的就来了，李老师提了两个相当生猛的说法。</p>
+  <p>第一，对“减少生命损失”的事儿，李老师说疫情爆发这两年中，中国人民的平均寿命非但没有减少，反而“为每一个百姓的平均寿命延长了十天，平均每年5天。”所以李老师得证说，我们的抗疫取得了伟大的胜利。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e100b7." alt="imagev" /></p>
+  <p>第二，对于下一步怎么保经济，李老师觉得，要想继续长期保住未来人民的健康、生命，产业链一定要保住。所以他建议不要让一线工人居家隔离，就在工厂旁边建个板房集中居住，“一边隔离，一边生产”。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e20a99." alt="imagev" /></p>
+  <p>……</p>
+  <p>对于李老师的第一个见解吧……我倒没有什么多的可说的，毕竟我必须赞同他的结论——我们的抗疫确实取得了伟大的胜利。</p>
+  <p>但我对李老师说老百姓平均寿命延长十天就算我们赢这个论证方式有点意见。仅延长了十天寿命就说是“胜利”这个论证太粗糙了。我害怕有不怀好意的抬杠者，揪着他这个论证质问李老师——“就算我的寿命延长了十天吧，这十天够不够我们排队做核酸、集中被隔离消耗掉的时间呢？”</p>
+  <p>这么一问，李老师可能就没辙了，他没辙倒是不要紧，显得我们胜利的结论跟着一起动摇，那大大的不好了。</p>
+  <p>所以我建议李老师搞一点补充研究，海外不是盛传得了新冠有丁丁缩短、大脑萎缩等后遗症么？建议李老师和他的团队再接再厉、收集相关，再统计出闹疫情这两年，国外男性们平均丁丁缩短了多少。</p>
+  <p>彼之所短，我之长也。寿命延长再加上丁丁延长，我们赢了两次，双赢了属于是。岂不是更能显出我们胜利的辉煌？</p>
+  <p>而更让我开眼界的，是李老师的第二个见解：李老师建议把一线工人“集中起来建板房，在工厂旁边隔离，一边隔离一边生产。”——这个方案真妙啊！把工人集中起来，一边隔离，一边生产，既抓了防疫，又促了生产，我们一定能赢，李老师，这个方案名字我都替你想好了，就叫“集中赢”吧，您看怎样？</p>
+  <p>只是一说“集中赢”，我就产生了两个不当联想。</p>
+  <p>第一是清末那会儿闹太平天国，起义领袖洪秀全先生为了带领大家实现“地上天国”，搞了个制度叫“男有男行，女有女行”，意思就是凡是参加太平军的人，甭管多大岁数，男的必须和男的住一块，女的必须跟女的住一块。以便专心白天打仗、晚上受教育。听上去跟李老师这个“集中赢”挺像的。但真正执行起来有几个问题：这么一弄，太平军普通战士的正常生理需求就没法解决了，夫妻见不到面，小伙子大姑娘结不了婚，军营里不得不通过“搞小弟”等行为来发泄。</p>
+  <p>而洪老先生虽然想了这么个主意，他自己却要搞特殊化，非但不“男有男行，女有女行”，反而纳了N多“天王娘”，并执行编号化管理，今天从13号睡到38号，明天从250睡到404。还为此专门打了一张横宽都好几丈的雕花大床，玩的那叫一个不亦乐乎……</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e38514.png" alt="image" /></p>
+  <p>从这个故事中我们可以看出，一个主意甭管说的有多天花烂坠，哪怕像洪天王那样把上帝他老人家都拉出来背书，如果主意的设计者自己不打算身体力行，那这主意就有变馊的风险。</p>
+  <p><strong>所以我郑重建议李稻葵老师在“一线工人”里推广他的“集中赢”想法前，现在自己身上搞一下个体实验</strong>——<strong>请李老师自己搬到个邻近工厂的简易棚里照此住一段时间。</strong>每天一睁眼洗脸刷牙量体温测核酸，然后上工干十几个小时，晚上回来吃完饭、看看新闻联播、补补正能量，倒头就睡，明天起来再这么一套。天天抓防疫、促生产，看看李老师自己能撑多久，不喊婷婷。</p>
+  <p><strong>我觉得这个实验数据将很有价值、很有必要，</strong>因为像李老师这样浑身正能量的经济学家，一定能测出人在这种生活下的耐受上限。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652687148876.png" alt="file" /></p>
+  <p>第二个联想，其实说不上联想啦，我只是想到了一本书，叫《苦难的时代：美国奴隶制经济学》。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e44e0a." alt="imagev" /></p>
+  <p>顾名思义，这本书是从经济学角度解析美帝奴隶制的。</p>
+  <p>对美帝的奴隶制，当代历史学者一般都会说一些什么历史规律决定了它必然灭亡啊之类的便宜话。但作者罗伯特·福格尔跟李老师一样是个经济学者，经济学者屈尊来砸历史学家的场子，有些话说的就比较惊世骇俗。福格尔利用扎实的经济学论证，在书中提了这么几个事实：</p>
+  <p>第一，传统历史学者认为奴隶制是一种经济上低效的组织，但这其实是不对的。奴隶制并非是一个由那些对经济利益漠不关心或者无法关心的种植园主所维持的非理性制度。相反，对奴隶的购买是一种具有很强盈利能力的投资，其回报率甚至不亚于美国当代制造业里最具盈利能力的投资机会。奴隶制农业相比于自由农业并非毫无效率。规模经济、有效的管理以及对劳动与资本的密集使用，使南方奴隶制农业比北方家庭农场的生产效率高35%。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e53ae7." alt="image" /></p>
+  <p>第二，即便到了南北战争前夕，从经济上看奴隶制也并非是行将就木的。</p>
+  <p><strong>“我们没有证据能证明，如果没有战争或者其他形式的政治干预，奴隶制会由于单纯的经济因素而消亡。”</strong>事实正好相反，当南北战争到来之际，奴隶制作为一种经济制度表现出前所未有的强大，并表现出持续巩固的趋势。</p>
+  <p>第三，奴隶们在南方种植园里的生活，也未必像同期北方报纸宣传的那般辛苦而不幸，相反，他们可能觉得自己非常幸福，对奴隶的剥削率比我们通常认为的要低得多。对于一个典型的美国南方农业奴隶来说，终其一生，他能获得其产生的总收入的90%。而他们的收入总量其实也不低，1840～1860年，南方的人均收入增长比联邦其他地区更为迅速。到1860年，按当时的标准，南方已经成为全球高收入地区。</p>
+  <p>像意大利这样的“发达国家”，其“自由”的底层老百姓是直到第二次世界大战前夕才在墨索里尼老师的帮助下达到美国南方奴隶们类似的收入水平的。</p>
+  <p>第四，也是读来让人感觉最可怕的，福格尔认为，<strong>没有证据表明，美国南方的奴隶制不可以被套用在工业化大生产当中。</strong></p>
+  <p>事实上，就在南北战争前，美国南方一些州的工厂里已经出现了仿照种植园生产模式的“工业奴隶”。</p>
+  <p>这些黑人工业奴隶，他们生活在工厂主为他们修建的统一住房当中，过居住地与工作地两点一线的生活（除了不测核酸，并且能和妻子儿女生活在一起，听上去跟李老师那个主意倒挺像），而这些奴隶无论是在勤奋程度还是工作效率，均不逊色于北方自由工人。事实上，南方这些工业企业与北方同行相比，其发展速度更快而不是更慢。南北战争如果晚个一二十年再开打，还真说不准谁输谁赢……</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652687236318.png" alt="file" /></p>
+  <p>听上去，福格尔要是再这么论证下去，几乎就要得出“奴隶制度就是好”，“为了更高效的发展经济，让我们回到奴隶制”这样的结论了。</p>
+  <p>万幸，他没有。就像书名《苦难的时代》所揭示的。福格尔说，尽管奴隶制有这诸般“好处”，但它依然是“苦难的时代”，<strong>因为人是万物的尺度，人自由、平等、有尊严的活在这个世界上，是我们发展经济的最终目的，而不是为了达成经济发展所使用的手段。</strong></p>
+  <p>是的，人类历史上，之所以不断产生那些人奴役人、人拘束人的鬼点子、并且付诸实践，恰恰是因为这样做貌似是更符合高效经济发展需求的诱惑。</p>
+  <p>而一个正经经济学家，或者说，一个正常、理性、良善的知识分子的责任，就是要抵制住这种诱惑，在承认这种诱惑很“高效”的同时，提醒大众这是不人性的、是不道德的。并且，最好，指出一条与之相抗衡的、符合人性的发展之路。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e622c4." alt="imagev" /></p>
+  <p>而这个准则，福格尔做到了，而李稻葵老师，我觉得他经常忘。他的很多主张总让我看过之后觉得奴隶制好像也不错，并进而想起这本书和福格尔提示人们警醒的那种“苦难的年代”。</p>
+  <p>所以我建议他好好读读该书，如果可以，给个地址，我就送他一本也行。</p>
+  <p>行吧，这篇文章也不知能不能存得住，对李老师的吐槽，我就说这么多算了。</p>
+  <p>文尾我又想起陈琳和曹操那个段子：说，官渡之战打完以后，曹操还真把陈琳抓住了：说你小子骂我也就算了，你骂我祖宗十八代是几个意思？</p>
+  <p>陈琳怎么回答的呢？唉，箭在弦上不得不发么！我干的就是这个活儿，我能怎么办呢？我也很无奈啊！</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e6ce10." alt="image" /></p>
+  <p>曹操听了觉得很有道理，人为财死鸟为食亡么，要的恰饭么，就把他放了。</p>
+  <p>但我倒觉得，曹操这个地方，可能是头风还没好，其实没把道理想清楚——就算是命题作文，你也可以“枪口抬高一厘米”啊，也可以不把话说的那么狠，那么毒么！</p>
+  <p>哦，袁本初定个方向，让你写，你就什么丧良心话都往外喷，逮住个蛤蟆恨不得攥出屎来。你图个啥啊？</p>
+  <p>还不是图个借机上位，扬名立万？</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/post-681381-6282025e7a1e5." alt="image" /></p>
+  <p>全文完</p>
+  <p>今天的音乐，是美国19世纪民歌《Hard time come no more》，苦难的时代不再来，我觉得这是所有正常人类共同的向往——甭管有多少纸面上看着很美的理由，我们仍愿被困的人们少一些，愿苦难的日子不再来。</p>
+  <p>    <iframe loading="lazy" title="&quot;Hard Times Come Again No More&quot;  Mavis Staples" width="1080" height="810" src="https://www.youtube.com/embed/KZsO348BOW0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E5%8F%AA%E5%89%A9%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E5%9C%A8%E9%80%86%E8%A1%8C%E4%BA%86">
+          【立此存照】会不会全世界只剩一个国家在逆行了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.15">
+          每日一语 2022.5.15
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7-%E6%9D%8E%E7%A8%BB%E8%91%B5%E4%BB%AC%E8%A2%AB%E9%AA%82-%E4%B8%80%E7%82%B9%E4%B9%9F%E4%B8%8D%E5%86%A4">
+          冰川思享号｜李稻葵们被骂，一点也不冤
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-16/%E7%BB%95%E6%A2%81%E8%AF%B4-%E5%92%8C%E6%9D%8E%E7%A8%BB%E8%91%B5%E5%95%86%E6%A6%B7%E9%98%B2%E7%96%AB%E6%94%BF%E7%AD%96%E7%9A%84%E7%94%9F%E5%91%BD%E8%B4%A6">
+          绕梁说｜和李稻葵商榷防疫政策的生命账
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-16/%E5%8F%B0%E6%B9%BE%E6%96%B0%E5%A2%9E%E7%A1%AE%E8%AF%8A%E4%BB%8D%E7%BB%B4%E6%8C%81%E5%9C%A86%E4%B8%87%E4%BB%A5%E4%B8%8A29%E4%BA%BA%E7%A6%BB%E4%B8%96">
+            前一篇：台湾新增确诊仍维持在6万以上29人离世
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-16/%E9%99%86%E5%A4%9A%E7%9C%81%E9%BB%98%E8%AE%A4%E5%85%B3%E9%97%AD%E5%A2%83%E5%A4%96%E7%9F%AD%E4%BF%A1%E5%8A%9F%E8%83%BD-%E8%A2%AB%E6%8C%87%E5%8F%98%E7%9B%B8%E9%94%81%E5%9B%BD">
+            后一篇：陆多省默认关闭境外短信功能 被指变相锁国
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-16/%E5%8F%B0%E6%B9%BE%E6%96%B0%E5%A2%9E%E7%A1%AE%E8%AF%8A%E4%BB%8D%E7%BB%B4%E6%8C%81%E5%9C%A86%E4%B8%87%E4%BB%A5%E4%B8%8A29%E4%BA%BA%E7%A6%BB%E4%B8%96'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-16/%E9%99%86%E5%A4%9A%E7%9C%81%E9%BB%98%E8%AE%A4%E5%85%B3%E9%97%AD%E5%A2%83%E5%A4%96%E7%9F%AD%E4%BF%A1%E5%8A%9F%E8%83%BD-%E8%A2%AB%E6%8C%87%E5%8F%98%E7%9B%B8%E9%94%81%E5%9B%BD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-16/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.15'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-16/%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7-%E6%9D%8E%E7%A8%BB%E8%91%B5%E4%BB%AC%E8%A2%AB%E9%AA%82-%E4%B8%80%E7%82%B9%E4%B9%9F%E4%B8%8D%E5%86%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-16/%E5%8F%B0%E6%B9%BE%E6%96%B0%E5%A2%9E%E7%A1%AE%E8%AF%8A%E4%BB%8D%E7%BB%B4%E6%8C%81%E5%9C%A86%E4%B8%87%E4%BB%A5%E4%B8%8A29%E4%BA%BA%E7%A6%BB%E4%B8%96">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-16/%E9%99%86%E5%A4%9A%E7%9C%81%E9%BB%98%E8%AE%A4%E5%85%B3%E9%97%AD%E5%A2%83%E5%A4%96%E7%9F%AD%E4%BF%A1%E5%8A%9F%E8%83%BD-%E8%A2%AB%E6%8C%87%E5%8F%98%E7%9B%B8%E9%94%81%E5%9B%BD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-16/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2022.5.15">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-16/%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7-%E6%9D%8E%E7%A8%BB%E8%91%B5%E4%BB%AC%E8%A2%AB%E9%AA%82-%E4%B8%80%E7%82%B9%E4%B9%9F%E4%B8%8D%E5%86%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

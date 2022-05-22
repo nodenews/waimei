@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因
+——
+" />
+    <meta property="og:description" content="
+沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因" />
+    <meta property="twitter:title" content="沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4602)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681081.html&t=%E6%B2%89%E9%BB%98%E7%9A%84%E5%B9%BF%E5%9C%BA%EF%BD%9C%E6%88%91%E8%80%83%E5%AF%9F%E4%BA%86%E5%87%A0%E5%8D%83%E6%9D%A1%E5%AF%B9%E8%AF%9D%EF%BC%8C%E6%89%BE%E5%88%B0%E4%BA%86%E6%9D%AD%E5%B7%9E%E9%A9%AC%E6%9F%90%E6%9F%90%E8%A2%AB%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8%E9%83%A8%E9%97%A8%E6%8A%93%E6%8D%95%E7%9A%84%E5%8E%9F%E5%9B%A0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681081.html&t=%E6%B2%89%E9%BB%98%E7%9A%84%E5%B9%BF%E5%9C%BA%EF%BD%9C%E6%88%91%E8%80%83%E5%AF%9F%E4%BA%86%E5%87%A0%E5%8D%83%E6%9D%A1%E5%AF%B9%E8%AF%9D%EF%BC%8C%E6%89%BE%E5%88%B0%E4%BA%86%E6%9D%AD%E5%B7%9E%E9%A9%AC%E6%9F%90%E6%9F%90%E8%A2%AB%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8%E9%83%A8%E9%97%A8%E6%8A%93%E6%8D%95%E7%9A%84%E5%8E%9F%E5%9B%A0&d=2022-05-10&e=
+沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因作者：沉默的广场投稿人：电报匿名读者来源：2047BBS发表日期：2022.5.8主题归类：颠覆国家政权CDS收藏：老大哥馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  相关阅读：【立此存照】“马某某”不是“马某”，他组建“大陆临时国会”
+  背景：
+  
+    杭州市国家安全局对涉嫌利用网络从事危害国家安全活动人员马某某依法采取刑事强制措施。
+    2022年4月25日，杭州市国家安全局依法对勾结境外反华敌对势力，涉嫌从事煽动分裂国家、煽动颠覆国家政权等危害国家安全活..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681081.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/681081.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/681081.html&text=沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/681081.html&title=沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/681081.html&title=沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因&body=
+沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/681081.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/681081.html&title=沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因&caption=
+沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因&url=https://chinadigitaltimes.net/chinese/681081.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-05-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/681081.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681081.html&t=%E6%B2%89%E9%BB%98%E7%9A%84%E5%B9%BF%E5%9C%BA%EF%BD%9C%E6%88%91%E8%80%83%E5%AF%9F%E4%BA%86%E5%87%A0%E5%8D%83%E6%9D%A1%E5%AF%B9%E8%AF%9D%EF%BC%8C%E6%89%BE%E5%88%B0%E4%BA%86%E6%9D%AD%E5%B7%9E%E9%A9%AC%E6%9F%90%E6%9F%90%E8%A2%AB%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8%E9%83%A8%E9%97%A8%E6%8A%93%E6%8D%95%E7%9A%84%E5%8E%9F%E5%9B%A0&d=2022-05-10&e=
+沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因作者：沉默的广场投稿人：电报匿名读者来源：2047BBS发表日期：2022.5.8主题归类：颠覆国家政权CDS收藏：老大哥馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  相关阅读：【立此存照】“马某某”不是“马某”，他组建“大陆临时国会”
+  背景：
+  
+    杭州市国家安全局对涉嫌利用网络从事危害国家安全活动人员马某某依法采取刑事强制措施。
+    2022年4月25日，杭州市国家安全局依法对勾结境外反华敌对势力，涉嫌从事煽动分裂国家、煽动颠覆国家政权等危害国家安全活..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F681081.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1652178237000-->
+<p><a href="https://chinadigitaltimes.net/chinese/681081.html">沉默的广场｜我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因</a>
+——</p>
+
+<div>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>我考察了几千条对话，找到了杭州马某某被国家安全部门抓捕的原因<br /><strong>作者：</strong>沉默的广场<br /><strong>投稿人：</strong>电报匿名读者<br /><strong>来源：</strong><a href="https://2047.one/t/18426" target="_blank" rel="noopener">2047BBS</a><br /><strong>发表日期：</strong>2022.5.8<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/chinese/tag/颠覆国家政权" target="_blank">颠覆国家政权</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%80%81%E5%A4%A7%E5%93%A5%E9%A6%86" target="_blank" rel="noopener">老大哥馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>相关阅读：<a href="https://chinadigitaltimes.net/chinese/680696.html" title="【立此存照】“马某某”不是“马某”，他组建“大陆临时国会”">【立此存照】“马某某”不是“马某”，他组建“大陆临时国会”</a></p>
+  <h4 id="section">背景：</h4>
+  <blockquote>
+    <p>杭州市国家安全局对涉嫌利用网络从事危害国家安全活动人员马某某依法采取刑事强制措施。</p>
+    <p>2022年4月25日，杭州市国家安全局依法对勾结境外反华敌对势力，涉嫌从事煽动分裂国家、煽动颠覆国家政权等危害国家安全活动的马某某采取刑事强制措施，目前此案正在深入调查中。</p>
+    <p>法治日报记者向有关部门了解到，马某某，男，1985年出生于浙江温州，现任某科技有限公司研发部经理。长期以来，其在网上接受境外反华敌对势力“洗脑”，将境外活跃敌对分子视为“人生导师”，在其渗透影响下逐渐形成顽固的反政府思想，成为境外敌对势力“以华制华”的工具。马某某不仅充当境外敌对势力境内代理人、煽动分裂国家，还成立非法组织，制定“政治纲领”，煽动颠覆国家政权，更是将青年学生群体作为主要蛊惑煽动目标，鼓动学生参与抹黑祖国和民族的活动。</p>
+    <p>2022年3月以来，马某某利用互联网专业特长，匿名创建网络群组，肆意歪曲捏造事实，极力传播各类谣言信息，发表所谓“独立宣言”，煽动分裂国家、煽动颠覆国家政权，充当境外敌对势力在我境内的代理人。马某某屡屡扬言，其终极目标是颠覆国家政权，为此逐步升级“内奸”行径，着手制定反宣纲领，甚至筹备成立“大陆临时国会”，委托有关人员制定所谓“法律制度”，宣称要“借助境外的力量推翻中国政府”。</p>
+  </blockquote>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652178197484.png" alt="file" /></p>
+  <h4 id="section-1">马某某的失误一：用中国大陆手机号注册推特和电报</h4>
+  <p>从下面的对话可以看出，马某某（网名Ya Ya）的推特和电报账号均为国内手机号注册。中国大陆手机号和实名身份关联，对于大多数网友来说应该是常识，马某某为研发部经理，对此应该非常清楚。俗话说“淹死的都是会游泳的”，马某某在电报上“反共建国”，却又对自身安全如此疏忽，只能一声叹息。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177368965.png" alt="filev" /><br /><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177373959.png" alt="filev" /><br /><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177384433.png" alt="filev" /></p>
+  <h4 id="section-2">马某某的失误二：网络身份隔离不彻底</h4>
+  <p>搜集马某某的匿名身份不需要任何侦察或社会工程学技巧，因为马某某在国外网络平台上的账号，用户名一概叫“Ya Ya”，只要一搜便知。此外，马某某推特账号上明晃晃地写着自己的电报群，这是一个强有力的证据，可以证明他的账号之间的关联，也为国安定罪抓捕提供了便利。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177423471.png" alt="filev" /></p>
+  <h4 id="section-3">马某某的失误三：泄露的个人信息太多</h4>
+  <p>我在考察群聊时发现，尽管马某某一直声称自己在国外，但他在群聊时，却在多处无意暴露了自己在国内的事实。例如，马某某在4月18日下午4点，说“今天下午没什么人气”“接女儿放学”，在4月23日早晨8点，说自己“头还有点晕”“比昨晚好多了”，这些蛛丝马迹，都显示出他本人在国内。特别的，他在4月23日多次提到自己的“翻墙软件”，更是暴露出他本人就在国内的事实。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177479198.png" alt="file" /></p>
+  <p>尽管这些社会工程学信息不足以直接定位他的身份，但也足够表明他在安全防范上的疏忽。</p>
+  <h4 id="section-4">中国政府是怎么找到境外账号背后的人的？</h4>
+  <p>这几年很多社交平台在注册时都要求短信验证，可以留心观察，国外大网站发往国内的验证短信，几乎全部是1069开头的号段。1069号段又称“三网短信通道”，使用该号段的企业，必须拥有《中华人民共和国电信与信息服务业务经营许可证》和《二类增值电信业务经营许可证》（俗称ICP证和SP证）。</p>
+  <p>按照中国现行法律，外资独资或外资控股企业，不允许在中国内地经营电信与信息服务业，因此1069短信一定经过了中资企业之手。不仅如此，按照工信部要求，1069的短信内容必须事先报备。可以合理地认为，只要中国政府愿意，<strong>就可以知道某个手机号，在特定境外平台注册账号的精确时间</strong>。尽管这不足以反过来找到境外账户背后的手机号码，但结合一些其它信息，足够把排查范围缩小到几十个人了。</p>
+  <h4 id="section-5">推特的风险</h4>
+  <p>前些时候，我和一些国内因言获罪的人士有过沟通，蹊跷的是这些人士几乎全部因推特上的言论被定罪。据我了解，有当事人用朋友的手机号注册了推特，<strong>结果警察找到的是他的朋友而非他本人</strong>，直到推主接到自己朋友的电话，要求他去派出所“配合调查”，这才让警察抓到推主本人。因此可以认为，国内警察有某种手段找到注册推特的人，并且这种手段一定与注册时用到的手机号有关。</p>
+  <p>我对推特的安全性进行了一些测试分析，这里不谈“李飞飞是中共间谍”等阴谋论，仅从推特的交互逻辑上，公安或国安部门即可通过推特的设计缺陷，运用背后的国家能力定位特定用户。可能的途径有三：</p>
+  <h4 id="section-6">(1) 使用注册时间缩小排查范围</h4>
+  <p>根据前面的分析可知，中国政府可以获知某个手机号注册境外平台的时间，因此只要知道某个境外账号注册的时间，就可以通过相同的注册时间，把境外账号和手机号对应起来。</p>
+  <p>遗憾的是，推特的注册时间是公开可见的。尽管推特的个人主页上的注册时间仅仅显示到月，但推特提供了API，可以通过此API查询精确到日期的注册时间。例如：</p>
+  <blockquote>
+    <p>马某某的第二个推特账号：（<a href="https://web.archive.org/web/20220507221129/http://www.twitterjoindate.com/search?utf8=%E2%9C%93&amp;name=yaya20221010&amp;commit=Search">存档</a>）</p>
+    <p><a href="http://www.twitterjoindate.com/search?utf8=%E2%9C%93&amp;name=yaya20221010&amp;commit=Search">http://www.twitterjoindate.com/search?utf8=✓&amp;name=yaya20221010&amp;commit=Search</a></p>
+  </blockquote>
+  <p>根据reddit社区和电报头部频道的关注量推断，推特中文圈的用户的数量约在十万这个级别（不含政府水军）。假设十万用户平均在5年内注册，那么在某个特定日期，推特中文圈新加入用户约为100000÷365÷5≈55人。这个估算是很粗略的，但即使误差有一个数量级，这样的人数也足以让安全部门极大地缩小排查范围，运用其它手段进行定点侦察了。</p>
+  <p>国安可能使用的定点侦察手段有：</p>
+  <ul>
+    <li>社会工程学：马某某在电报上提过自己有汽车，有一个女儿。根据这些信息，国安部门不难把侦察范围缩小到几个人，甚至直接定位到他本人。</li>
+  </ul>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177479198.png" alt="file" /></p>
+  <ul>
+    <li>网络流量监控：公安或国安部门可以定点监控特定公民的翻墙流量，关联其翻墙流量的出现时间和境外网络账户的活动时间，找到特定的人。</li>
+  </ul>
+  <h4 id="section-7">(2) 不安全的密码恢复方式</h4>
+  <p>推特的找回密码功能非常不安全，点击忘记密码，推特就会向推主的手机发送一条验证短信，同时显示手机的最后两位数字。有了这些信息，找到某个人就非常简单了。例如，安全部门可以先用注册时间把侦察范围缩小到几十个手机号以内，然后根据手机尾号找到账号背后的手机号；安全部门也可以直接拦截推特的1069短信，在同一时刻接收推特短信的号码，就非常有可能是该推主的号码。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177710863.png" alt="file" /></p>
+  <h4 id="section-8">(3) 客服人员的问题</h4>
+  <p>推特的客服为外包，其人员素质参差不齐。理论上，即使隐藏了手机号（见下文），也可以向客服人员申诉忘记密码并发送一条恢复密码的短信。只要拦截这条恢复密码的短信，就可以用上文的方法定位特定用户了。</p>
+  <h2 id="section-9">安全建议：为推特设置额外密码保护并绑定邮箱</h2>
+  <p>根据上文的分析，理想的安全措施是不用国内手机号注册任何境外服务，只用国外的不记名的虚拟号码。然而，在现实中获取一个可以用来注册的国外虚拟号很困难。如果已经用了国内手机号注册了推特，只要做一些很简单的设置，就可以让公安或国安无法找到你。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2022/05/image-1652177738552.png" alt="file" /></p>
+  <p>设置额外密码保护之后，恢复密码前推特会要求输入手机号或邮箱进行验证，这避免了直接暴露尾号和恶意触发恢复短信。</p>
+  <p><strong>但是请注意，只绑定了手机的推特并不安全。</strong>尽管设置额外密码保护之后，恢复密码时会被要求输入手机号验证，但是若安全部门通过注册时间缩小了排查范围，那么他们只要几十次尝试就可以试出正确的手机号。</p>
+  <p>因此，有可能请尽量绑定邮箱，绑定邮箱之后恢复密码会要求先输入正确的邮箱，不会有触发恢复短信的问题。</p>
+  <p>最后强调一点，如果某个国内手机号已经注册过推特，那么换绑手机并不会更安全，因为这部手机的号码已经和推特的注册时间关联到一起了。因此，上策仍然是尽量用国外虚拟号注册，彻底避免国内实名手机号带来的风险。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/47%E5%B0%8F%E7%AE%A1%E5%AE%B6-%E5%BD%93%E6%88%91%E4%BB%AC%E7%BA%AA%E5%BF%B5%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3%E6%97%B6-%E6%88%91%E4%BB%AC%E5%9C%A8%E7%BA%AA%E5%BF%B5%E4%BB%80%E4%B9%88-%E7%BA%AA%E5%BF%B5%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3%E5%A4%B1%E8%B8%AA%E4%B8%80%E5%91%A8%E5%B9%B4">
+          47小管家｜当我们纪念编程随想时，我们在纪念什么？——纪念编程随想失踪一周年
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E4%BA%BA%E6%A0%BC%E5%BF%97-%E4%B8%8A%E6%B5%B7%E5%AD%95%E5%A6%87%E4%BD%8E%E4%BB%B7%E4%B9%B0%E9%B8%A1%E8%9B%8B%E5%88%86%E9%82%BB%E5%B1%85%E8%A2%AB%E9%80%BC%E5%86%99%E4%BF%9D%E8%AF%81%E4%B9%A6-%E6%9D%83%E5%8A%9B%E5%B9%BB%E8%A7%89%E5%AF%BC%E8%87%B4%E4%BA%BA%E6%80%A7%E5%BC%82%E5%8F%98">
+          人格志｜上海孕妇低价买鸡蛋分邻居被逼写保证书：权力幻觉导致人性异变
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/%E7%9C%8B%E7%90%86%E6%83%B3-%E6%8A%B5%E6%8A%97-%E4%B8%8D%E8%83%BD%E5%8F%AA%E9%9D%A0%E5%8F%8D%E5%AF%B9%E8%AF%B4-%E7%BE%8A-%E5%92%8C-%E5%A4%A7%E7%99%BD">
+          看理想｜抵抗，不能只靠反对说“羊”和“大白”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-05-10</time>
+        <a href="https://nodebe4.github.io/waimei/2022-05-10/BIE%E5%88%AB%E7%9A%84-%E4%B8%80%E5%9C%BA%E6%BC%AB%E9%95%BF%E7%9A%84%E4%B8%8A%E6%B5%B7%E9%80%83%E8%B7%91%E8%AE%A1%E5%88%92-%E4%B8%AD%E6%96%AD%E5%9C%A8%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA">
+          BIE别的｜一场漫长的上海逃跑计划，中断在浦东机场
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E6%94%B6%E5%8F%97%E5%B7%A8%E9%A2%9D%E8%B4%A2%E7%89%A9-%E6%B1%9F%E8%A5%BF%E5%89%AF%E9%83%A8%E7%BA%A7%E9%AB%98%E5%AE%98%E9%BE%9A%E5%BB%BA%E5%8D%8E%E8%A2%AB%E5%AE%A1%E6%9F%A5">
+            前一篇：收受巨额财物 江西副部级高官龚建华被审查
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%AD%E5%9B%BD%E5%8A%A8%E6%80%81%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E9%9D%A2%E4%B8%B4%E9%AA%91%E8%99%8E%E9%9A%BE%E4%B8%8B%E5%B1%80%E9%9D%A2">
+            后一篇：中国动态清零政策面临骑虎难下局面
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E6%94%B6%E5%8F%97%E5%B7%A8%E9%A2%9D%E8%B4%A2%E7%89%A9-%E6%B1%9F%E8%A5%BF%E5%89%AF%E9%83%A8%E7%BA%A7%E9%AB%98%E5%AE%98%E9%BE%9A%E5%BB%BA%E5%8D%8E%E8%A2%AB%E5%AE%A1%E6%9F%A5'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%AD%E5%9B%BD%E5%8A%A8%E6%80%81%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E9%9D%A2%E4%B8%B4%E9%AA%91%E8%99%8E%E9%9A%BE%E4%B8%8B%E5%B1%80%E9%9D%A2'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E4%BA%BA%E6%A0%BC%E5%BF%97-%E4%B8%8A%E6%B5%B7%E5%AD%95%E5%A6%87%E4%BD%8E%E4%BB%B7%E4%B9%B0%E9%B8%A1%E8%9B%8B%E5%88%86%E9%82%BB%E5%B1%85%E8%A2%AB%E9%80%BC%E5%86%99%E4%BF%9D%E8%AF%81%E4%B9%A6-%E6%9D%83%E5%8A%9B%E5%B9%BB%E8%A7%89%E5%AF%BC%E8%87%B4%E4%BA%BA%E6%80%A7%E5%BC%82%E5%8F%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-05-10/%E7%9C%8B%E7%90%86%E6%83%B3-%E6%8A%B5%E6%8A%97-%E4%B8%8D%E8%83%BD%E5%8F%AA%E9%9D%A0%E5%8F%8D%E5%AF%B9%E8%AF%B4-%E7%BE%8A-%E5%92%8C-%E5%A4%A7%E7%99%BD'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E6%94%B6%E5%8F%97%E5%B7%A8%E9%A2%9D%E8%B4%A2%E7%89%A9-%E6%B1%9F%E8%A5%BF%E5%89%AF%E9%83%A8%E7%BA%A7%E9%AB%98%E5%AE%98%E9%BE%9A%E5%BB%BA%E5%8D%8E%E8%A2%AB%E5%AE%A1%E6%9F%A5">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-05-10/%E4%B8%AD%E5%9B%BD%E5%8A%A8%E6%80%81%E6%B8%85%E9%9B%B6%E6%94%BF%E7%AD%96%E9%9D%A2%E4%B8%B4%E9%AA%91%E8%99%8E%E9%9A%BE%E4%B8%8B%E5%B1%80%E9%9D%A2">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-05-10/%E4%BA%BA%E6%A0%BC%E5%BF%97-%E4%B8%8A%E6%B5%B7%E5%AD%95%E5%A6%87%E4%BD%8E%E4%BB%B7%E4%B9%B0%E9%B8%A1%E8%9B%8B%E5%88%86%E9%82%BB%E5%B1%85%E8%A2%AB%E9%80%BC%E5%86%99%E4%BF%9D%E8%AF%81%E4%B9%A6-%E6%9D%83%E5%8A%9B%E5%B9%BB%E8%A7%89%E5%AF%BC%E8%87%B4%E4%BA%BA%E6%80%A7%E5%BC%82%E5%8F%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-05-10/%E7%9C%8B%E7%90%86%E6%83%B3-%E6%8A%B5%E6%8A%97-%E4%B8%8D%E8%83%BD%E5%8F%AA%E9%9D%A0%E5%8F%8D%E5%AF%B9%E8%AF%B4-%E7%BE%8A-%E5%92%8C-%E5%A4%A7%E7%99%BD">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
